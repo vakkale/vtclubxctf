@@ -10,7 +10,7 @@ export default class Slider extends Component {
                     <div class="slide"></div>
                     <div class="slide"></div>
                     <div class="slide"></div>
-                    <div style={{backgroundSize: 'cover'}}class="slide"></div>
+                    <div class="slide"></div>
                     <div class="slide"></div>
                     <div class="slide"></div>
                     <div class="overlay">

@@ -15,12 +15,15 @@ body {
     background-image: var(--bg);
 
     .slideshow {
-        $slide-bgs: url('./emmy_blocks.JPG'),
-        url('./seb_run.JPG'),
+        $slide-bgs: url('./wildcat22_adam_sprint.JPG'),
+        url('./wildcat22_emery_vault3.JPG'),
         url('./chris_jump.JPG'),
         url('./sienna_track.JPG'),
         url('./mitch_baton.JPG'),
         url('./wildcat_team.png');
+
+        
+        
 
         position: absolute;
         top: 0;
@@ -36,6 +39,9 @@ body {
             height: 100%;
             overflow: hidden;
             animation: slide-right 0.6s ease-in-out forwards;
+            filter:saturate(110%);
+            filter: brightness(120%);
+            filter: contrast(110%);
 
             // use pseudo element to avoid the side effect of bg-size: cover
             &::after {
@@ -49,7 +55,10 @@ body {
 
             @for $i from 1 through length($slide-bgs) {
                 &:nth-child(#{$i}) {
-                    animation-delay: 0.2s * $i;
+                    animation-delay: 0.16s * $i;
+                    @media only screen and (max-width: 600px){
+                        animation-delay: 0.2s * $i;
+                    }
 
                     &::after {
                         background: nth($slide-bgs, $i) center / cover no-repeat;
@@ -69,7 +78,7 @@ body {
             align-items: center;
             background-image: var(--bg);
             transform: translateX(-100%);
-            animation: move-right 0.6s ease-in-out forwards;
+            animation: move-right .6s ease-in-out forwards;
             animation-delay: 0.15s * length($slide-bgs) + 1s;
 
             h1 {
