@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.94c2a9d2.css",
+    "main.js": "/static/js/main.0a4d9be1.js",
+    "static/js/787.e9a213dc.chunk.js": "/static/js/787.e9a213dc.chunk.js",
+    "static/media/wildcat_team.png": "/static/media/wildcat_team.e28f34fc39fb0aa6ae73.png",
+    "static/media/chris_jump.JPG": "/static/media/chris_jump.69bde300427f1742e3ec.JPG",
+    "static/media/sienna_track.JPG": "/static/media/sienna_track.c53bf615f29764aef478.JPG",
+    "static/media/seb_run.JPG": "/static/media/seb_run.3a497a17ce64e3559209.JPG",
+    "static/media/mitch_baton.JPG": "/static/media/mitch_baton.ae1bcbeba524a085e4c7.JPG",
+    "static/media/emmy_blocks.JPG": "/static/media/emmy_blocks.291685bbc7ab3caec0dc.JPG",
+    "static/media/logo.png": "/static/media/logo.381d55014e3c72cc6db0.png",
+    "static/media/favicon.png": "/static/media/favicon.dbddb211b282d1cb1912.png",
+    "index.html": "/index.html",
+    "main.94c2a9d2.css.map": "/static/css/main.94c2a9d2.css.map",
+    "main.0a4d9be1.js.map": "/static/js/main.0a4d9be1.js.map",
+    "787.e9a213dc.chunk.js.map": "/static/js/787.e9a213dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94c2a9d2.css",
+    "static/js/main.0a4d9be1.js"
+  ]
+}
