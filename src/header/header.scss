@@ -1,0 +1,52 @@
+header {
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    animation: menu-reveal 0.6s ease-in-out forwards;
+    animation-delay: 3.4s;
+    opacity: 0;
+    box-shadow: 0px 1px 3px rgb(156, 156, 156);
+    height: 60px;
+}
+@font-face {
+    font-family: "ITCAvantGardePro-Md";
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITCAvantGardePro-Md'), url('../assets/fonts/ITCAvantGardePro-Md.woff') format('woff');
+    }
+.linkContainer {
+    display: flex;
+    flex: 100%;
+}
+.linkContainer a link {
+    justify-content: center;
+    align-items: center;
+}
+.menuPic {
+    flex: 15.33%;
+}
+a {
+    font-family: ITCAvantGardePro-Md,sans-serif;
+    text-decoration: none;
+    font-size: .7em;
+    letter-spacing: 2px;
+    color: black;
+    transition: 0.4s;
+    width: auto;
+    height: auto;
+}
+a:hover {
+    color: #F15A29;
+}
+.menuLink {
+    text-align: center;
+    align-self: center;
+    flex: 15%;
+}
+@keyframes menu-reveal {
+    to {
+        opacity: 1;
+    }
+}

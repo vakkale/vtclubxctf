@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Slider from './components/Slider.jsx'
+import Slider from './components/slider/Slider.jsx'
 
 export default class Home extends Component {
     render() {
