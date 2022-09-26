@@ -43,6 +43,7 @@ body {
             filter:saturate(110%);
             filter: brightness(120%);
             filter: contrast(110%);
+            z-index: 9;
 
             // use pseudo element to avoid the side effect of bg-size: cover
             &::after {
@@ -81,6 +82,7 @@ body {
             transform: translateX(-100%);
             animation: move-right .6s ease-in-out forwards;
             animation-delay: 0.15s * length($slide-bgs) + 1s;
+            z-index: 11;
 
             h1 {
                 font-size: 250%;
