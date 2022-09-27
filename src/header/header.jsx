@@ -42,7 +42,7 @@ export default class Header extends Component {
                 this.setState({ isActive: true });
                 break
         }
-        setTimeout(() => { this.setState({ isActive: false }); }, 2300);
+        setTimeout(() => { this.setState({ isActive: false }); }, 2100);
     }
 
     render() {

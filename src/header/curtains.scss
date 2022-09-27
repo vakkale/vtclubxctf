@@ -1,10 +1,3 @@
-@media only screen and (max-width: 1000px) {
-    .hide {
-        display: none;
-    }
-}
-
-
 .curtainsContainer {
     position: fixed;
     display: flex;
@@ -19,64 +12,107 @@
 
     .big {
         flex: 15.33%;
-        border-left: rgba(142, 142, 142, 0.43) solid 1px;
+        border-left: rgba(142, 142, 142, 0.13) solid 1px;
         background-color: #fff;
     }
 
     .small {
         flex: 4%;
         max-width: 6%;
-        border-left: rgba(142, 142, 142, 0.43) solid 1px;
+        border-left: rgba(142, 142, 142, 0.13) solid 1px;
         background-color: #fff;
     }
 
     .curtain {
-        transform: translateY(-100%);
+        visibility: hidden;
         transform-origin: center top;
-        animation-timing-function: cubic-bezier(.445, .05, .55, .95);
         background-color: #fff;
-        --animation-duration: 1.2s;
+        --delay-1: 0.73s;
+        --delay-2: 0.77s;
+        --delay-3: 0.81s;
+        --delay-4: 0.85s;
+        --delay-5: 875ms;
+        --animation-duration: 0.65s;
+        --total-length: calc(var(--delay-1) + var(--animation-duration));
+        --easing-down: cubic-bezier(.445, .05, .55, .95);
+        --easing-up: cubic-bezier(.445, .05, .55, .95);
     }
+
+    /* FORMAT OF ANIMATION:
+
+        animation: 
+        name_of_animation 
+        duration_of_animation 
+        ease/style
+        delay_before_animation 
+        
+    */
 
     :nth-child(1),
     :nth-child(8) {
-        animation: crescentDown var(--animation-duration) ease-in-out .73s;
+        animation: crescentDown var(--animation-duration) var(--easing-down) var(--delay-1), crescentUp calc(var(--animation-duration) + (var(--delay-5) - var(--delay-1))) var(--easing-up) var(--total-length);
     }
 
     :nth-child(2),
     :nth-child(7) {
-        animation: crescentDown var(--animation-duration) ease-in-out .76s;
+        animation: crescentDown calc(var(--total-length) - var(--delay-2)) var(--easing-down) var(--delay-2), crescentUp calc(var(--animation-duration) + (var(--delay-5) - var(--delay-2))) var(--easing-up) var(--total-length);
     }
 
     :nth-child(3),
     :nth-child(6) {
-        animation: crescentDown var(--animation-duration) ease-in-out .79s;
+        animation: crescentDown calc(var(--total-length) - var(--delay-3)) var(--easing-down) var(--delay-3), crescentUp calc(var(--animation-duration) + (var(--delay-5) - var(--delay-3))) var(--easing-up) var(--total-length);
     }
 
     :nth-child(4) {
-        animation: crescentDown var(--animation-duration) ease-in-out .82s;
+        animation: crescentDown calc(var(--total-length) - var(--delay-4)) var(--easing-down) var(--delay-4), crescentUp calc(var(--animation-duration) + (var(--delay-5) - var(--delay-4))) var(--easing-up) var(--total-length);
     }
 
     :nth-child(5) {
-        animation: crescentDown var(--animation-duration) ease-in-out 835ms;
+        animation: crescentDown calc(var(--total-length) - var(--delay-5)) var(--easing-down) var(--delay-5), crescentUp var(--animation-duration) var(--easing-up) var(--total-length);
     }
-}
 
-.show {
-    display: flex;
+    @media only screen and (max-width: 1000px) {
+        :nth-child(2) {
+            animation: crescentDown calc(var(--total-length) - var(--delay-4)) var(--easing-down) var(--delay-4), crescentUp calc(var(--animation-duration) + (var(--delay-5) - var(--delay-4))) var(--easing-up) var(--total-length);
+        }
+
+        :nth-child(1),
+        :nth-child(8) {
+            animation: crescentDown calc(var(--total-length) - var(--delay-3)) var(--easing-down) var(--delay-3), crescentUp calc(var(--animation-duration) + (var(--delay-5) - var(--delay-3))) var(--easing-up) var(--total-length);
+        }
+
+        :nth-child(7) {
+            animation: crescentDown calc(var(--total-length) - var(--delay-5)) var(--easing-down) var(--delay-5), crescentUp var(--animation-duration) var(--easing-up) var(--total-length);
+        }
+    }
 }
 
 @keyframes crescentDown {
-    
+
     0% {
+        visibility: visible;
         transform: translateY(-100%);
     }
 
-    50% {
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes crescentUp {
+
+    0% {
+        visibility: visible;
         transform: translateY(0%);
     }
 
     100% {
         transform: translateY(100%);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .hide {
+        display: none;
     }
 }
