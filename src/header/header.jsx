@@ -3,7 +3,6 @@ import './header.scss';
 import './curtains.scss';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo2.png';
-import { useScrollDirection } from 'react-use-scroll-direction'
 import { wait } from '@testing-library/user-event/dist/utils';
 import { render } from '@testing-library/react';
 
