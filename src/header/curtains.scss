@@ -35,29 +35,30 @@
         transform-origin: center top;
         animation-timing-function: cubic-bezier(.445, .05, .55, .95);
         background-color: #fff;
+        --animation-duration: 1.2s;
     }
 
     :nth-child(1),
     :nth-child(8) {
-        animation: crescent1 1.4s ease-in-out .73s;
+        animation: crescentDown var(--animation-duration) ease-in-out .73s;
     }
 
     :nth-child(2),
     :nth-child(7) {
-        animation: crescent1 1.4s ease-in-out .76s;
+        animation: crescentDown var(--animation-duration) ease-in-out .76s;
     }
 
     :nth-child(3),
     :nth-child(6) {
-        animation: crescent1 1.4s ease-in-out .79s;
+        animation: crescentDown var(--animation-duration) ease-in-out .79s;
     }
 
     :nth-child(4) {
-        animation: crescent1 1.4s ease-in-out .82s;
+        animation: crescentDown var(--animation-duration) ease-in-out .82s;
     }
 
     :nth-child(5) {
-        animation: crescent1 1.4s ease-in-out 835ms;
+        animation: crescentDown var(--animation-duration) ease-in-out 835ms;
     }
 }
 
@@ -65,14 +66,14 @@
     display: flex;
 }
 
-@keyframes crescent1 {
+@keyframes crescentDown {
     
     0% {
         transform: translateY(-100%);
     }
 
     50% {
-        transform: translateY(0);
+        transform: translateY(0%);
     }
 
     100% {
