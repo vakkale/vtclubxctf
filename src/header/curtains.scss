@@ -27,11 +27,11 @@
         visibility: hidden;
         transform-origin: center top;
         background-color: #fff;
-        --delay-1: 0.73s;
-        --delay-2: 0.77s;
-        --delay-3: 0.81s;
-        --delay-4: 0.85s;
-        --delay-5: 875ms;
+        --delay-1: 0.53s;
+        --delay-2: 0.57s;
+        --delay-3: 0.61s;
+        --delay-4: 0.65s;
+        --delay-5: 675ms;
         --animation-duration: 0.65s;
         --total-length: calc(var(--delay-1) + var(--animation-duration));
         --easing-down: cubic-bezier(.445, .05, .55, .95);
@@ -47,6 +47,9 @@
         delay_before_animation 
         
     */
+    :nth-child(1) {
+        border-left: none;
+    }
 
     :nth-child(1),
     :nth-child(8) {

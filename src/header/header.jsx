@@ -1,51 +1,46 @@
-import { React, Component, useState } from 'react';
+import React, { Component } from 'react';
 import './header.scss';
 import './curtains.scss';
+import './selector.scss';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo2.png';
-import { wait } from '@testing-library/user-event/dist/utils';
-import { render } from '@testing-library/react';
+import navData from '../data/navigation.json';
 
-function reveal() {
-
-}
-
-function hide() {
-
-}
-
-
-
-export default class Header extends Component {
+export default class Header extends Component() {
     constructor() {
         super();
         this.state = {
             name: "Header",
-            isActive: false
+            curtainActive: false,
+            selectorActive: false,
+            data: navData
         }
-        this.curtains = this.curtains.bind(this);
+        this.navigation = this.navigation.bind(this);
     }
 
-    curtains = (menuItem) => {
+    navigation = (menuItem) => {
+        const data = this.state.data;
         switch (menuItem) {
             case 'competition':
-                console.log('competition');
-                this.setState({ isActive: true });
+                this.setState({ curtainActive: true });
+                setTimeout(() => { this.setState({ selectorActive: true }); }, 1380);
+                Selector(data.competition);
                 break
             case 'training':
-                console.log('training');
-                this.setState({ isActive: true });
+                this.setState({ curtainActive: true });
+                setTimeout(() => { this.setState({ selectorActive: true }); }, 1380);
+                Selector(data.training);
                 break
-            case 'records':
-                console.log('records');
-                this.setState({ isActive: true });
+            case 'community':
+                this.setState({ curtainActive: true });
+                setTimeout(() => { this.setState({ selectorActive: true }); }, 1380);
+                Selector(data.community);
                 break
         }
-        setTimeout(() => { this.setState({ isActive: false }); }, 2100);
+        setTimeout(() => { this.setState({ curtainActive: false }); }, 1380);
     }
 
     render() {
-        const { isActive } = this.state;
         return (
             <>
                 <header id='header' style={{ display: 'flex', width: '100%' }}>
@@ -58,16 +53,17 @@ export default class Header extends Component {
 
                     <div className='linkContainer' style={{ flexWrap: 'nowrap', alignContent: 'center' }}>
                         <Link className='menuLink' to="/News">  NEWS  </Link>
-                        <div className='menuLink' onClick={() => this.curtains("competition")}>  COMPETITION </div>
-                        <div className='menuLink' onClick={() => this.curtains("training")}>  TRAINING  </div>
-                        <div className='menuLink' onClick={() => this.curtains("records")}>  RECORDS  </div>
+                        <div className='menuLink' onClick={() => this.navigation("competition")}>  COMPETITION </div>
+                        <div className='menuLink' onClick={() => this.navigation("training")}>  TRAINING  </div>
+                        <div className='menuLink' onClick={() => this.navigation("records")}>  COMMUNITY  </div>
                         <Link className='menuLink' to="/About">  ABOUT  </Link>
+
                     </div>
 
-                    <Link style={{ textAlign: 'left', left: '0', cursor: 'default' }} className='menuPic' to="/">
-                    </Link>
+                    <Link style={{ textAlign: 'left', left: '0', cursor: 'default' }} className='menuPic' to="/"></Link>
                 </header>
-                {isActive && <Curtain></Curtain>}
+                {this.state.curtainActive && <Curtain></Curtain>}
+                {this.state.selectorActive && <Selector></Selector>}
             </>
         )
     };
@@ -85,6 +81,20 @@ const Curtain = () => {
                 <div className="curtain big hide"></div>
                 <div className="curtain big"></div>
                 <div className="curtain small"></div>
+            </div>
+        </>
+    );
+}
+
+const Selector = (data) => {
+    return (
+        <>
+            <div className='selectorContainer'>
+                {
+                    data.map((item) => (
+                        <div className="selector">{item[1].name}</div>
+                    ))
+                }
             </div>
         </>
     );
