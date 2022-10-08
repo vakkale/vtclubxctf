@@ -22,6 +22,12 @@ export default class Header extends Component {
     navigation = (menuItem) => {
         const data = this.state.data;
         switch (menuItem) {
+            case 'home':
+                this.setState({ curtainActive: true });
+                setTimeout(() => {
+                    this.setState({ selectorActive: false });
+                }, 980);
+                break
             case 'competition':
                 this.setState({ curtainActive: true });
                 setTimeout(() => {
@@ -53,7 +59,7 @@ export default class Header extends Component {
                 <header id='header' style={{ display: 'flex', width: '100%' }}>
                     <Link style={{ alignSelf: 'center', textAlign: 'center' }} className='menuPic' to="/">
                         <div>
-                            <img width={50} src={logo} alt="png" />
+                            <img width={50} src={logo} alt="png" onClick={() => this.navigation("home")}/>
                         </div>
                     </Link>
 
