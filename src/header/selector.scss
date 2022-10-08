@@ -1,8 +1,92 @@
 .selectorContainer {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    bottom: 0;
+    z-index: 499;
     display: flex;
     flex: 100%;
     flex-wrap: nowrap;
+    position: fixed;
+    flex-direction: row;
+    cursor: default;
+
     .selector {
-        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 50%;
+        height: calc(100vh - 60px);
+        background-size: cover;
+        background-position: center;
+        filter: brightness(60%);
+        transition: filter 0.2s ease-in-out, flex 0.5s cubic-bezier(.215, .61, .355, 1), color 0.2s ease-in-out;
+        font-size: 5rem;
+        font-weight: 700;
+        color: #F15A29;
+        text-transform: uppercase;
+        font-kerning: none;
+        letter-spacing: -6px;
+    }
+
+    .selector:hover {
+        filter: brightness(90%);
+        flex: 55%;
+        color: white;
     }
 }
+
+/* 
+.selectorContainer {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    bottom: 0;
+    z-index: 499;
+    display: inline-flex;
+    flex: 100%;
+    flex-wrap: nowrap;
+    position: fixed;
+    flex-direction: row;
+    cursor: default;
+
+    .selector {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 50%;
+        height: calc(100vh - 60px);
+        transition: flex 0.5s cubic-bezier(.215, .61, .355, 1), color 0.2s ease-in-out;
+        font-size: 5rem;
+        font-weight: 700;
+        color: #F15A29;
+        text-transform: uppercase;
+        font-kerning: none;
+        letter-spacing: -6px;
+
+        .selectorImage {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+            filter: brightness(60%);
+            transition: filter 0.2s ease-in-out;
+        }
+
+        .selectorText {
+            z-index: 0;
+            position: relative;
+        }
+    }
+
+    .selector:hover {
+        flex: 55%;
+        color: white;
+
+        .selectorImage {
+            filter: brightness(90%);
+        }
+    }
+} */

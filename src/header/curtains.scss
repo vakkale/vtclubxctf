@@ -27,11 +27,11 @@
         visibility: hidden;
         transform-origin: center top;
         background-color: #fff;
-        --delay-1: 0.53s;
-        --delay-2: 0.57s;
-        --delay-3: 0.61s;
-        --delay-4: 0.65s;
-        --delay-5: 675ms;
+        --delay-1: 0.33s;
+        --delay-2: 0.37s;
+        --delay-3: 0.41s;
+        --delay-4: 0.45s;
+        --delay-5: 475ms;
         --animation-duration: 0.65s;
         --total-length: calc(var(--delay-1) + var(--animation-duration));
         --easing-down: cubic-bezier(.445, .05, .55, .95);
