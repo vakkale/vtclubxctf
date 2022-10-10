@@ -59,7 +59,7 @@ export default class Header extends Component {
                 <header id='header' style={{ display: 'flex', width: '100%' }}>
                     <Link style={{ alignSelf: 'center', textAlign: 'center' }} className='menuPic' to="/">
                         <div>
-                            <img width={50} src={logo} alt="png" onClick={() => this.navigation("home")}/>
+                            <img width={50} src={logo} alt="png" onClick={() => this.navigation("home")} />
                         </div>
                     </Link>
 
@@ -101,21 +101,22 @@ const Selector = (data) => {
         <div className="selectorContainer background">
             {
                 data.data.map((item) => (
-                    <div key={item.id} className="selector background" style={{ backgroundImage: `url(${item.image})` }}>{item.name}</div>
+                    <div key={item.id} className="selector background" style={{ backgroundImage: `url(${item.image})` }}>
+                        <span>{item.name}</span>
+                    </div>
                 ))
             }
         </div>
-        /* 
-        <div className="selectorContainer background">
-        {
-            data.data.map((item) => (
-                <div key={item.id} className="selector">
-                    <div className='selectorImage' style={{backgroundImage: `url(${item.image})`}}></div>
-                    <span className="selectorText">{item.name}</span>
-                </div>
-            ))
-        }
-    </div >
-     */
+
+        /* < div className="selectorContainer background" >
+            {
+                data.data.map((item) => (
+                    <div key={item.id} className="selector">
+                        <div className='selectorImage' style={{ backgroundImage: `url(${item.image})` }}></div>
+                        <span className="selectorText">{item.name}</span>
+                    </div>
+                ))
+            }
+        </div > */
     );
 }

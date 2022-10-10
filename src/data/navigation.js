@@ -21,7 +21,7 @@ const navData = {
                     "id": 1,
                     "name": "Track & Field",
                     "link": "/competition/trackandfield",
-                    "image": require("../header/images/tf_selector.jpg")
+                    "image": require("../header/images/tf_selector2.jpg")
                 }
             ]
         }

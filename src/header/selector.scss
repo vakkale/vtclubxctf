@@ -35,8 +35,8 @@
     }
 }
 
-/* 
-.selectorContainer {
+
+/* .selectorContainer {
     width: 100vw;
     height: calc(100vh - 60px);
     bottom: 0;
@@ -49,7 +49,7 @@
     cursor: default;
 
     .selector {
-        display: flex;
+        display: inline-block;
         align-items: center;
         justify-content: center;
         flex: 50%;
@@ -63,11 +63,9 @@
         letter-spacing: -6px;
 
         .selectorImage {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
+            display: flex;
+            height: inherit;
+            position: relative;
             z-index: -1;
             background-size: cover;
             background-position: center;
@@ -76,7 +74,7 @@
         }
 
         .selectorText {
-            z-index: 0;
+            z-index: 999;
             position: relative;
         }
     }

@@ -3,7 +3,7 @@
     display: flex;
     width: 100vw;
     max-width: 100vw;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 58px);
     flex: 100%;
     flex-wrap: nowrap;
     pointer-events: none;
@@ -27,11 +27,12 @@
         visibility: hidden;
         transform-origin: center top;
         background-color: #fff;
+        --increment: 50ms;
         --delay-1: 0.33s;
-        --delay-2: 0.37s;
-        --delay-3: 0.41s;
-        --delay-4: 0.45s;
-        --delay-5: 475ms;
+        --delay-2: calc(var(--delay-1) + var(--increment));
+        --delay-3: calc(var(--delay-2) + var(--increment));
+        --delay-4: calc(var(--delay-3) + var(--increment));
+        --delay-5: calc(var(--delay-4) + 30ms);
         --animation-duration: 0.65s;
         --total-length: calc(var(--delay-1) + var(--animation-duration));
         --easing-down: cubic-bezier(.445, .05, .55, .95);
