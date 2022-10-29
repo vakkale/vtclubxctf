@@ -43,7 +43,7 @@ const navData = {
                     "id": 1,
                     "name": "Distance",
                     "link": "/training/distance",
-                    "image": require("../header/images/distance_selector1.jpg")
+                    "image": require("../header/images/distance_selector2.jpg")
                 },
                 {
                     "id": 2,

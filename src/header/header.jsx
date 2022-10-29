@@ -17,6 +17,7 @@ export default class Header extends Component {
             selectorData: null
         }
         this.navigation = this.navigation.bind(this);
+        window.headerr = this;
     }
 
     navigation = (menuItem) => {
@@ -54,6 +55,22 @@ export default class Header extends Component {
     }
 
     render() {
+        const Selector = () => {
+            return (
+                console.log("selector rendered"),
+                <div className="selectorContainer background">
+                    {
+                        this.state.selectorData.map((item) => (
+                            <Link to={item.link} key={item.id} className="selector background" style={{ backgroundImage: `url(${item.image})` }}
+                                onClick={() => setTimeout(() => { this.setState({ selectorActive: false }); }, 980)}>
+                                <span>{item.name}</span>
+                            </Link>
+                        ))
+                    }
+                </div>
+            );
+        }
+
         return (
             <>
                 <header id='header' style={{ display: 'flex', width: '100%' }}>
@@ -64,16 +81,16 @@ export default class Header extends Component {
                     </Link>
 
                     <div className='linkContainer' style={{ flexWrap: 'nowrap', alignContent: 'center' }}>
-                        <Link className='menuLink' to="/News">  NEWS  </Link>
+                        <Link className='menuLink' to="/news">  NEWS  </Link>
                         <div className='menuLink' onClick={() => this.navigation("competition")}>  COMPETITION </div>
                         <div className='menuLink' onClick={() => this.navigation("training")}>  TRAINING  </div>
                         <div className='menuLink' onClick={() => this.navigation("community")}>  COMMUNITY  </div>
-                        <Link className='menuLink' to="/About">  ABOUT  </Link>
+                        <Link className='menuLink' to="/about">  ABOUT  </Link>
                     </div>
                     <Link style={{ textAlign: 'left', left: '0', cursor: 'default' }} className='menuPic' to="/"></Link>
                 </header>
                 {this.state.curtainActive && <Curtain></Curtain>}
-                {this.state.selectorActive && <Selector data={this.state.selectorData}></Selector>}
+                {this.state.selectorActive && <Selector></Selector>}
             </>
         )
     };
@@ -93,30 +110,5 @@ const Curtain = () => {
                 <div className="curtain small"></div>
             </div>
         </>
-    );
-}
-
-const Selector = (data) => {
-    return (
-        <div className="selectorContainer background">
-            {
-                data.data.map((item) => (
-                    <div key={item.id} className="selector background" style={{ backgroundImage: `url(${item.image})` }}>
-                        <span>{item.name}</span>
-                    </div>
-                ))
-            }
-        </div>
-
-        /* < div className="selectorContainer background" >
-            {
-                data.data.map((item) => (
-                    <div key={item.id} className="selector">
-                        <div className='selectorImage' style={{ backgroundImage: `url(${item.image})` }}></div>
-                        <span className="selectorText">{item.name}</span>
-                    </div>
-                ))
-            }
-        </div > */
     );
 }
