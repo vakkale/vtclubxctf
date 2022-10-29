@@ -50,6 +50,11 @@ export default class Training extends Component {
             return (
                 <div className="menuWrapper">
                     <div className="menuTitle">Training Plans:</div>
+                    {
+                        this.state.data.map((item) => (
+                            <div className="menuItem">{item}</div>
+                        ))
+                    }
                     {/* TODO: menu logic. Pull the names/links from the data and have them display nested. Reveal the children on hover */}
                 </div>
             );
@@ -58,7 +63,7 @@ export default class Training extends Component {
         const Plan = () => {
             return (
                 <div className="planWrapper">
-                    <iframe src=""
+                    <iframe src={}
                     width={"100%"} height={"100%"}></iframe>
                 </div>
             );
