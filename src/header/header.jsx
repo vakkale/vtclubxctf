@@ -1,4 +1,4 @@
-import { React, Component } from 'react';
+import { React, Component, useState } from 'react';
 import './header.scss';
 import './curtains.scss';
 import './selector.scss';
@@ -7,57 +7,64 @@ import logo from '../assets/logo2.png';
 import navData from '../data/navigation.js';
 
 export default class Header extends Component {
+
     constructor() {
         super();
         this.state = {
             name: "Header",
-            curtainActive: false,
             selectorActive: false,
             data: navData,
             selectorData: null
         }
         this.navigation = this.navigation.bind(this);
-        window.headerr = this;
     }
+
+    /* shouldComponentUpdate(nextProps) {
+        if (nextProps.value !== this.props.value) {
+            return true;
+          } else {
+            return false;
+          }
+    } */
 
     navigation = (menuItem) => {
         const data = this.state.data;
+        this.setState({curtainActive: false});
         switch (menuItem) {
-            case 'home':
+            /* case 'home':
                 this.setState({ curtainActive: true });
                 setTimeout(() => {
                     this.setState({ selectorActive: false });
                 }, 980);
-                break
+                break */
             case 'competition':
-                this.setState({ curtainActive: true });
+                setTimeout(() => {this.setState({ curtainActive: true });}, 5);
                 setTimeout(() => {
                     this.setState({ selectorActive: true });
                     this.setState({ selectorData: data.competition[1].sections });
                 }, 980);
                 break
             case 'training':
-                this.setState({ curtainActive: true });
+                setTimeout(() => {this.setState({ curtainActive: true });}, 5);
                 setTimeout(() => {
                     this.setState({ selectorActive: true });
                     this.setState({ selectorData: data.training[1].sections });
                 }, 980);
                 break
             case 'community':
-                this.setState({ curtainActive: true });
+                setTimeout(() => {this.setState({ curtainActive: true });}, 5);
                 setTimeout(() => {
                     this.setState({ selectorActive: true });
                     this.setState({ selectorData: data.community[1].sections });
                 }, 980);
                 break
         }
-        setTimeout(() => { this.setState({ curtainActive: false }); }, 2100);
     }
 
     render() {
+        console.log("selector rendered");
         const Selector = () => {
             return (
-                console.log("selector rendered"),
                 <div className="selectorContainer background">
                     {
                         this.state.selectorData.map((item) => (
@@ -89,8 +96,8 @@ export default class Header extends Component {
                     </div>
                     <Link style={{ textAlign: 'left', left: '0', cursor: 'default' }} className='menuPic' to="/"></Link>
                 </header>
-                {this.state.curtainActive && <Curtain></Curtain>}
-                {this.state.selectorActive && <Selector></Selector>}
+                {this.state.curtainActive && <Curtain />}
+                {this.state.selectorActive && <Selector />}
             </>
         )
     };

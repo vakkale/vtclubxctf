@@ -1,7 +1,11 @@
 import { React, Component } from 'react';
 import './training.scss';
+import '../helpers/side-menu/SideMenu.scss'
 import trainingData from '../data/training.json';
 import Loader from '../loader/loader';
+import SideMenu from '../helpers/side-menu/SideMenu.jsx';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Training extends Component {
     constructor(props) {
@@ -9,39 +13,76 @@ export default class Training extends Component {
         this.state = {
             name: "TrainingPlans",
             data: trainingData,
-            currentPlan: this.props.currentPlan,
-            mount: true
+            currentPlan: this.props.plan/* ,
+            mount: true */
         }
-        /* this.planSelector = this.planSelector.bind(this); */
-        /* const { currentPlan = "about" } = this.props.currentPlan; */
+        this.changeState = this.changeState.bind(this);
     }
 
-    /*  componentDidMount() {
-         this.state.mount = true;
-     } */
-
-    componentDidUpdate() {
-        this.setState.currentPlan = this.props.currentPlan;
+    changeState(plan) {
+        this.setState({ currentPlan: plan });
     }
-
-    /* planSelector = (currentPlan) => {
-        const data = this.state.data;
-        switch (menuItem) {
-            case 'home':
-                this.setState({ curtainActive: true });
-                setTimeout(() => {
-                    this.setState({ selectorActive: false });
-                }, 980);
-                break
-        }
-        setTimeout(() => { this.setState({ curtainActive: false }); }, 2100);
-    } */
 
     render() {
+
+        /* const SideMenu = ({ menuItems }) => {
+            const depthLevel = 0;
+            return (
+                <ul className="menus">
+                    {menuItems.map((menu, index) => {
+                        const depthLevel = 0;
+                        return <MenuItems items={menu} key={index} />;
+                    })}
+                </ul>
+            );
+        }
+
+        const MenuItems = ({ items, depthLevel }) => {
+            const [dropdown, setDropdown] = useState(false);
+            return (
+                <li className="menu-items">
+                    {items.children ? (
+                        <>
+                            <button
+                                aria-expanded={dropdown ? "true" : "false"}
+                                onClick={() => setDropdown((prev) => !prev)}
+                                type="button" aria-haspopup="menu"
+                            >
+                                {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
+                                {items.name}{' '}
+                            </button>
+                            <Dropdown
+                                submenus={items.children}
+                                dropdown={dropdown}
+                            />
+                        </>
+                    ) : (
+                        <Link to={`${items.id}`} onClick={() => this.changeState(items)}>{items.name}</Link>
+                    )
+                    }
+                </li >
+            );
+        }
+
+        const Dropdown = ({ submenus, dropdown, depthLevel }) => {
+            depthLevel = depthLevel + 1;
+            const dropdownClass = depthLevel > 1 ? "dropdown-submenu" : "";
+            return (
+                <ul className={`dropdown ${dropdownClass} ${dropdown ? "show" : ""}`}>
+                    {submenus.map((submenu, index) => (
+                        <MenuItems
+                            items={submenu}
+                            key={index}
+                            depthLevel={depthLevel} />
+                    ))}
+                </ul>
+            );
+        } */
+
         const Header = () => {
             return (
                 <div className="headerWrapper">
-                    <div className="headerText">{/* TODO: pull the name of the plan from the data */}</div>
+                    <div className="headerText">{this.state.currentPlan.fullName}</div>
                 </div>
             );
         }
@@ -49,13 +90,8 @@ export default class Training extends Component {
         const Menu = () => {
             return (
                 <div className="menuWrapper">
-                    <div className="menuTitle">Training Plans:</div>
-                    {
-                        this.state.data.map((item) => (
-                            <div className="menuItem">{item}</div>
-                        ))
-                    }
-                    {/* TODO: menu logic. Pull the names/links from the data and have them display nested. Reveal the children on hover */}
+                    <div className="menuTitle">Training Plans</div>
+                    <SideMenu menuItems={trainingData} className="menu"></SideMenu>
                 </div>
             );
         }
@@ -63,8 +99,13 @@ export default class Training extends Component {
         const Plan = () => {
             return (
                 <div className="planWrapper">
-                    <iframe src={}
-                    width={"100%"} height={"100%"}></iframe>
+                    <iframe 
+                    src={this.state.currentPlan.url} 
+                    title="plan"
+                    width="100%" 
+                    height="100%" 
+                    frameBorder="0"
+                    />
                 </div>
             );
         }
@@ -72,29 +113,12 @@ export default class Training extends Component {
         return (
             <>
                 {this.state.mount && <Loader></Loader>}
-                <div className="wrapper">
+                < div className="wrapper" key={this.props.key} >
                     <Header className="header" />
                     <Menu className="menu" />
                     <Plan className="plan" />
-                </div>
+                </div >
             </>
         )
     };
 }
-
-
-
-
-/* const Selector = (data) => {
-    return (
-        <div className="selectorContainer background">
-            {
-                data.data.map((item) => (
-                    <div key={item.id} className="selector background" style={{ backgroundImage: `url(${item.image})` }}>
-                        <span>{item.name}</span>
-                    </div>
-                ))
-            }
-        </div>
-    );
-} */

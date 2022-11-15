@@ -37,18 +37,21 @@ const navData = {
                     "id": 0,
                     "name": "Sprints",
                     "link": "/training/sprints",
+                    "plan": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSedNPTL4GbsxkDk38SzKzRMZX4b0H7sZCPv5ia-4qhbI5fm7YuQWLTOHpUKQRQFOlKIa1xH6lZN2UO/pubhtml?widget=true&amp;headers=false",
                     "image": require("../header/images/sprints_selector.jpg")
                 },
                 {
                     "id": 1,
                     "name": "Distance",
                     "link": "/training/distance",
+                    "plan": "https://docs.google.com/spreadsheets/d/e/2PACX-1vREIu_L2L_dpIUItMc0sJ_9R59tj5xlNIO_-8DXOufrbvhp8uPKIhJPqNLzivnv4nBhxEDIxEWBw6Pe/pubhtml?widget=true&amp;headers=false",
                     "image": require("../header/images/distance_selector2.jpg")
                 },
                 {
                     "id": 2,
                     "name": "Field",
                     "link": "/training/field",
+                    "plan": "https://docs.google.com/document/d/e/2PACX-1vSFsGwbQmx_GCUNEOZkhJILlxIhLegerAP3jB-9SbTuBNqCOdEmATLuEg9OH5IBggHdKLudXZJcdcbQ/pub?embedded=true",
                     "image": require("../header/images/field_selector.jpg")
                 }
             ]

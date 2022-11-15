@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "ITCAvantGardePro-Md";
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITCAvantGardePro-Md'), url('../assets/fonts/ITCAvantGardePro-Md.woff') format('woff');
+}
+
 .wrapper {
     display: flex;
     height: calc(100vh - 60px);
@@ -6,6 +13,7 @@
     position: fixed;
     z-index: 11;
     flex-wrap: wrap;
+    font-family: ITCAvantGardePro-Md, sans-serif;
 
     .headerWrapper {
         order: 1;
@@ -13,13 +21,19 @@
         height: 50px;
         flex: 100%;
         background-color: white;
-        border-bottom: rgba(142, 142, 142, 0.43) solid 1px;;
+        border-bottom: rgba(142, 142, 142, 0.43) solid 1px;
+        font-size: 2.3rem;
+        display: flex;
+        justify-content: center;
+        padding-top: 7px; /* TODO, center the text properly */
     }
 
     .menuWrapper {
         order: 2;
         flex: 15%;
         background-color: white;
+        font-size: 1rem;
+        border-right: rgba(142, 142, 142, 0.43) solid 1px;
 
         .menuTitle {
             text-align: center;

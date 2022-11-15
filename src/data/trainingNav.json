@@ -1,0 +1,65 @@
+[
+    {
+        "hasChildren": false,
+        "name": "Low Mileage",
+        "fullName": "Men's Distance Low Mileage",
+        "id": "mens-distance-low-mileage",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTMbJxwt6-jxP7VDiQAp-FiULyznDy0udeY74OlFKxU512jlUDA_f5p8-Ulpqq962USVD5p2NCeG1oD/pubhtml?widget=true&amp;headers=false"
+    },
+    {
+        "hasChildren": false,
+        "name": "High Mileage",
+        "fullName": "Men's Distance High Mileage",
+        "id": "mens-distance-high-mileage",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vREIu_L2L_dpIUItMc0sJ_9R59tj5xlNIO_-8DXOufrbvhp8uPKIhJPqNLzivnv4nBhxEDIxEWBw6Pe/pubhtml?widget=true&amp;headers=false"
+    },
+    {
+        "hasChildren": false,
+        "name": "Low Mileage",
+        "fullName": "Women's Distance Low Mileage",
+        "id": "womens-distance-low-mileage",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRvrbW7iIw9XSgZlQjWB5HZIbct9kZed9YTuuwWpNDAA4jhEhX6ZQSkUt9DAMYFrw/pubhtml?widget=true&amp;headers=false"
+    },
+    {
+        "hasChildren": false,
+        "name": "High Mileage",
+        "fullName": "Women's Distance High Mileage",
+        "id": "womens-distance-high-mileage",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vROlitQladGwcn1mzjt-x-pmPHfRYI6MJNv_KWxV1wRFK_FWK5fofgfu1lrC1DmcA/pubhtml?widget=true&amp;headers=false"
+    },
+    {
+        "hasChildren": false,
+        "name": "Sprints",
+        "fullName": "Sprints",
+        "id": "sprints",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSedNPTL4GbsxkDk38SzKzRMZX4b0H7sZCPv5ia-4qhbI5fm7YuQWLTOHpUKQRQFOlKIa1xH6lZN2UO/pubhtml?widget=true&amp;headers=false"
+    },
+    {
+        "hasChildren": false,
+        "name": "Lifts",
+        "fullName": "Field Lifts",
+        "id": "field-lifts",
+        "url": "https://docs.google.com/document/d/e/2PACX-1vRmTIB6yRxldCiafrQRVQqv6eWUn2fS4O9dADn1VEx-gcuGeHQngxMD44lxNpmoQRAydnIoDzP917Ec/pub?embedded=true"
+    },
+    {
+        "hasChildren": false,
+        "name": "Throws",
+        "fullName": "Throws",
+        "id": "throws",
+        "url": "https://docs.google.com/document/d/e/2PACX-1vSFsGwbQmx_GCUNEOZkhJILlxIhLegerAP3jB-9SbTuBNqCOdEmATLuEg9OH5IBggHdKLudXZJcdcbQ/pub?embedded=true"
+    },
+    {
+        "hasChildren": false,
+        "name": "High Jump",
+        "fullName": "High Jump",
+        "id": "high-jump",
+        "url": "https://docs.google.com/document/d/e/2PACX-1vSJo7KAlkXegItmFdd6hwrvfN_diuFqJBQQKU-oOcArFNzoM4uQD_GGHh79LycDufm2r12LS5ZHkldR/pub?embedded=true"
+    },
+    {
+        "hasChildren": false,
+        "name": "Triple/Long Jump",
+        "fullName": "Triple/Long Jump",
+        "id": "triple-long-jump",
+        "url": "https://docs.google.com/document/d/e/2PACX-1vTgoWhrbYRjF9kbxowHh7g5Q1RmTo01CuV8VW1dIBHMDDpb6tZu-xVwymzHVjAxOjwcs_hPo8KolwHS/pub?embedded=true"
+    }
+]
