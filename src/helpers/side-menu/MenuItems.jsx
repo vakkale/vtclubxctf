@@ -12,9 +12,10 @@ const MenuItems = ({ items, depthLevel }) => {
                         aria-expanded={dropdown ? "true" : "false"}
                         onClick={() => setDropdown((prev) => !prev)}
                         type="button" aria-haspopup="menu"
-                    >{/* 
-                        {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />} */}
+                    >
+                        {/* add a check for if setdropdown is true and change the symbol from expand_more to expand_less */}
                         {items.name}{' '}
+                        {depthLevel > 0 ? <span>&raquo;</span> : <span className="material-symbols-outlined">hand_bones</span>}
                     </button>
                     <Dropdown
                         submenus={items.children}
