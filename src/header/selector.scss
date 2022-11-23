@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "ITCAvantGardePro-Md";
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITCAvantGardePro-Md'), url('../assets/fonts/ITCAvantGardePro-Md.woff') format('woff');
+}
+
 .selectorContainer {
     width: 100vw;
     height: calc(100vh - 60px);
@@ -26,6 +33,7 @@
         text-transform: uppercase;
         font-kerning: none;
         letter-spacing: -6px;
+        text-decoration: none;
     }
 
     .selector:hover {
@@ -35,56 +43,3 @@
     }
 }
 
-
-/* .selectorContainer {
-    width: 100vw;
-    height: calc(100vh - 60px);
-    bottom: 0;
-    z-index: 499;
-    display: inline-flex;
-    flex: 100%;
-    flex-wrap: nowrap;
-    position: fixed;
-    flex-direction: row;
-    cursor: default;
-
-    .selector {
-        display: inline-block;
-        align-items: center;
-        justify-content: center;
-        flex: 50%;
-        height: calc(100vh - 60px);
-        transition: flex 0.5s cubic-bezier(.215, .61, .355, 1), color 0.2s ease-in-out;
-        font-size: 5rem;
-        font-weight: 700;
-        color: #F15A29;
-        text-transform: uppercase;
-        font-kerning: none;
-        letter-spacing: -6px;
-
-        .selectorImage {
-            display: flex;
-            height: inherit;
-            position: relative;
-            z-index: -1;
-            background-size: cover;
-            background-position: center;
-            filter: brightness(60%);
-            transition: filter 0.2s ease-in-out;
-        }
-
-        .selectorText {
-            z-index: 999;
-            position: relative;
-        }
-    }
-
-    .selector:hover {
-        flex: 55%;
-        color: white;
-
-        .selectorImage {
-            filter: brightness(90%);
-        }
-    }
-} */

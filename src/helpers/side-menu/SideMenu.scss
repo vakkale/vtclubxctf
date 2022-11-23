@@ -15,27 +15,12 @@ header {
   color: #212529;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 300,
-    'GRAD' 0,
-    'opsz' 48
-}
-
 .nav-area {
   display: flex;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px;
-}
-
-.logo {
-  text-decoration: none;
-  font-size: 25px;
-  color: inherit;
-  margin-right: 20px;
 }
 
 .menus {
@@ -49,43 +34,49 @@ header {
   position: relative;
   font-size: 14px;
   flex: 100%;
-}
 
-.menu-items a {
-  display: block;
-  font-size: inherit;
-  color: inherit;
-  text-decoration: none;
-}
+  a,
+  button {
+    display: block;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    text-align: left;
+    padding: 0.7rem 1rem;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+  }
 
-.menu-items button {
-  display: flex;
-  align-items: center;
-  color: inherit;
-  font-size: inherit;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  width: 100%;
-}
+  button {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    font-size: inherit;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
 
-button span {
-  margin-left: 3px;
-}
-
-.menu-items>a,
-.menu-items button {
-  text-align: left;
-  padding: 0.7rem 1rem;
+    .button-title {
+      flex: 100%;
+    }
+  }
 }
 
 .menu-items a:hover,
 .menu-items button:hover {
   background-color: #f2f2f2;
-  color: #F15A29;
+  animation: hover-bg 0.08s ease forwards;
+
+  @keyframes hover-bg {
+    to {
+      color: #F15A29;
+    }
+  }
 }
 
-.arrow::after {
+/* .arrow::after {
   content: "";
   display: inline-block;
   margin-left: 0.28em;
@@ -93,7 +84,7 @@ button span {
   border-top: 0.42em solid;
   border-right: 0.32em solid transparent;
   border-left: 0.32em solid transparent;
-}
+} */
 
 .dropdown {
   right: 0;
@@ -104,31 +95,22 @@ button span {
   list-style: none;
   background-color: #fff;
   display: none;
+
+  .dropdown-submenu {
+    position: absolute;
+    left: 100%;
+    top: -7px;
+  }
 }
 
-.dropdown.show {
+.show {
   display: block;
 }
 
-.dropdown .dropdown-submenu {
-  position: absolute;
-  left: 100%;
-  top: -7px;
-}
-
-/* content */
-
-.content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 20px;
-}
-
-.content h2 {
-  margin-bottom: 1rem;
-}
-
-.content a {
-  color: #cc3852;
-  margin-right: 10px;
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 48
 }

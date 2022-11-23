@@ -14,5 +14,4 @@ const Dropdown = ({ submenus, dropdown, depthLevel }) => {
         </ul>
     );
 };
-
 export default Dropdown;

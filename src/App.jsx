@@ -10,8 +10,8 @@ import Favicon from 'react-favicon';
 import favicon from './assets/favicon.png';
 import trainingData from './data/training.json';
 import trainingNav from './data/trainingNav.json';
-import Loader from './loader/loader.jsx';
-import { usePreloadImages } from './hooks/usePreloadImages.tsx';
+/* import Loader from './loader/loader.jsx';
+import { usePreloadImages } from './hooks/usePreloadImages.tsx'; */
 
 export default class App extends Component {
   render() {
@@ -37,9 +37,6 @@ export default class App extends Component {
                   ))
                 }
                 <Route path="/training/sprints" element={<Training key={0} plan={trainingData[1]}></Training>}></Route>
-                {/* <Route exact path="/training/distance" element={<Training currentPlan={trainingData[0].children[0].children[0]} key={0} />}></Route>
-                <Route exact path="/training/sprints" element={<Training currentPlan={trainingData[1]} key={1} />}></Route>
-                <Route exact path="/training/field" element={<Training currentPlan={trainingData[2].children[0]} key={2} />}></Route> */}
                 <Route exact path="/about" element={<Home />}></Route>
                 {/* <Route component={() => <h1 style={{ textAlign: "center", height: "500px", marginTop: "250px" }}>404 Page not found. <p>
                 <Link style={{ color: "lightgreen" }} to="/">click here</Link></p></h1>} /> */}

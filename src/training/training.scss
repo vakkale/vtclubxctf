@@ -13,7 +13,6 @@
     position: fixed;
     z-index: 11;
     flex-wrap: wrap;
-    font-family: ITCAvantGardePro-Md, sans-serif;
 
     .headerWrapper {
         order: 1;
@@ -22,7 +21,7 @@
         flex: 100%;
         background-color: white;
         border-bottom: rgba(142, 142, 142, 0.43) solid 1px;
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         display: flex;
         justify-content: center;
         padding-top: 7px; /* TODO, center the text properly */
@@ -37,6 +36,9 @@
 
         .menuTitle {
             text-align: center;
+            justify-content: center;
+            padding-top: 15px;
+            padding-bottom: 5px;
         }
     }
 
