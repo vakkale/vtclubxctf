@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Slider.scss'
+import './Slider.scss';
 import logo from '../../../assets/logo.png'
 
 export default class Slider extends Component {
