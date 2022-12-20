@@ -53,11 +53,28 @@
   font-style: normal;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
 }
 
 ::-moz-scrollbar {
+  display: none;
+} */
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-color: transparent transparent;
+}
+
+@-moz-document url-prefix() {
+  html,
+  body {
+    overflow: auto;
+    margin-right: -17px;
+  }
+}
+
+::-webkit-scrollbar {
   display: none;
 }
 

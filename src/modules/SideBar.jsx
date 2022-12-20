@@ -16,11 +16,12 @@ export default function SideBar({ data }) {
         }
         return pathname.substring(0, pathname.lastIndexOf("/"));
     }
+    
     const Features = () => {
         return (
             featuredItem
                 ? (
-                    <div className="featured-content">
+                    <div className="featured-content ">
                         <div className="list-header">
                             <span className="list-item-date">{featuredItem.date}</span>
                             <span className="list-item-category">{featuredItem.category}</span>
