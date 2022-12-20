@@ -1,0 +1,24 @@
+.article-container {
+    font-family: ITCAvantGardePro, sans-serif;
+    font-size: 0.9rem;
+    flex: 66.6%;
+    z-index: 11;
+    translate: 0 calc(-0.5 * 8.2vw);
+    border-left: #f6f6f6 solid 1px;
+
+    .image-container {
+        text-align: center;
+        max-height: 500px;
+        overflow-y: hidden;
+    }
+
+    .html-container {
+        width: 46.05vw;
+        padding: 2vw 2vw 0 2vw;
+        background-color: white;
+    }
+
+    p{
+        padding: 0.6vw 0 0.6vw 0;
+    }
+}

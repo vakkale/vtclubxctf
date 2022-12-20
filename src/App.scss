@@ -32,7 +32,36 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'ITCAvantGardeBold';
+  src: url('./assets/fonts/itc__avant__garde_bold-webfont.woff') format('woff2'),
+    url('./assets/fonts/itc__avant__garde_bold-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ITCAvantGardePro';
+  src: url('./assets/fonts/ITCAvantGardePro-Md.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-moz-scrollbar {
+  display: none;
+}
+
+::selection {
+  background: orange;
+  color: white;
 }

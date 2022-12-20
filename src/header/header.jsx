@@ -1,4 +1,4 @@
-import { React, Component, useState } from 'react';
+import { React, Component } from 'react';
 import './header.scss';
 import './curtains.scss';
 import './selector.scss';
@@ -14,7 +14,8 @@ export default class Header extends Component {
             name: "Header",
             selectorActive: false,
             data: navData,
-            selectorData: null
+            selectorData: null,
+            currMenu: " "
         }
         this.navigation = this.navigation.bind(this);
     }
@@ -29,47 +30,67 @@ export default class Header extends Component {
 
     navigation = (menuItem) => {
         const data = this.state.data;
-        this.setState({curtainActive: false});
-        switch (menuItem) {
-            /* case 'home':
-                this.setState({ curtainActive: true });
-                setTimeout(() => {
-                    this.setState({ selectorActive: false });
-                }, 980);
-                break */
-            case 'competition':
-                setTimeout(() => {this.setState({ curtainActive: true });}, 5);
-                setTimeout(() => {
-                    this.setState({ selectorActive: true });
-                    this.setState({ selectorData: data.competition[1].sections });
-                }, 980);
-                break
-            case 'training':
-                setTimeout(() => {this.setState({ curtainActive: true });}, 5);
-                setTimeout(() => {
-                    this.setState({ selectorActive: true });
-                    this.setState({ selectorData: data.training[1].sections });
-                }, 980);
-                break
-            case 'community':
-                setTimeout(() => {this.setState({ curtainActive: true });}, 5);
-                setTimeout(() => {
-                    this.setState({ selectorActive: true });
-                    this.setState({ selectorData: data.community[1].sections });
-                }, 980);
-                break
+        this.setState({ curtainActive: false });
+        if (menuItem === this.state.currMenu) {
+            this.setState({ selectorActive: false });
+        }
+        else {
+            switch (menuItem) {
+                default:
+                    break
+                /* case 'home':
+                    this.setState({ curtainActive: true });
+                    setTimeout(() => {
+                        this.setState({ selectorActive: false });
+                    }, 980);
+                    break */
+                case 'competition':
+                    setTimeout(() => { this.setState({ curtainActive: true }); }, 5);
+                    setTimeout(() => {
+                        this.setState({ selectorActive: true });
+                        this.setState({ selectorData: data.competition[1].sections });
+                        this.setState({ currMenu: menuItem });
+                    }, 980);
+                    break
+                case 'training':
+                    setTimeout(() => { this.setState({ curtainActive: true }); }, 5);
+                    setTimeout(() => {
+                        this.setState({ selectorActive: true });
+                        this.setState({ selectorData: data.training[1].sections });
+                        this.setState({ currMenu: menuItem });
+                    }, 980);
+                    break
+                case 'community':
+                    setTimeout(() => { this.setState({ curtainActive: true }); }, 5);
+                    setTimeout(() => {
+                        this.setState({ selectorActive: true });
+                        this.setState({ selectorData: data.community[1].sections });
+                        this.setState({ currMenu: menuItem });
+                    }, 980);
+                    break
+            }
         }
     }
 
     render() {
-        console.log("selector rendered");
         const Selector = () => {
             return (
                 <div className="selectorContainer background">
                     {
                         this.state.selectorData.map((item) => (
-                            <Link to={item.link} key={item.id} className="selector background" style={{ backgroundImage: `url(${item.image})` }}
-                                onClick={() => setTimeout(() => { this.setState({ selectorActive: false }); }, 980)}>
+                            <Link
+                                to={item.link}
+                                key={item.id}
+                                className="selector background"
+                                /* SOLUTIION TO DARKNESS PROBLEM?????? Find out how to pass the item.image as a css variable
+                                so i can also have hover
+                                
+                                style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${item.image})`}} */
+                                style={{ backgroundImage: `url(${item.image})` }}
+                                onClick={() => setTimeout(() => {
+                                    this.setState({ selectorActive: false });
+                                    this.setState({ currMenu: " " });
+                                }, 980)}>
                                 <span>{item.name}</span>
                             </Link>
                         ))

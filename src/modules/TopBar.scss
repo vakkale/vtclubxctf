@@ -1,0 +1,17 @@
+.topbar-container {
+    position: relative;
+    width: 92vw;
+    right: 4vw;
+    left: 4vw;
+    height: 8.2vw;
+    z-index: 11;
+    background-color: #971a43;
+    translate: 0;
+    animation: slideUp 1s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+    to {
+        translate: 0 -50%;
+    }
+}
