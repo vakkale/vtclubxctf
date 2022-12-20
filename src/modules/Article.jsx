@@ -16,7 +16,9 @@ export default function Article({ article, image }) {
 
     const LoadingScreen = () => {
         return (
-            <div className="article-loading-screen" style={{ backgroundColor: "white", width: "100%", height: "100%", zIndex: 999, position: "absolute" }}></div>
+            <div className="article-loading-screen" style={{ backgroundColor: "white", width: "100%", height: "100%", zIndex: 999, position: "absolute" }}>
+                <div className="spinner"></div>
+            </div>
         );
     }
 
