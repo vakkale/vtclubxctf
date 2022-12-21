@@ -16,6 +16,7 @@
     z-index: 10;
     flex: 100%;
     flex-wrap: nowrap;
+    pointer-events: none;
 
     .outerLine {
         flex: 4%;

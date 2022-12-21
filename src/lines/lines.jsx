@@ -1,4 +1,4 @@
-import './lines.scss'
+import './lines.scss';
 
 const Lines = () =>
     <>

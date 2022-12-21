@@ -2,42 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+//declares the font family ITCAvantGardeBold
 @font-face {
   font-family: 'ITCAvantGardeBold';
   src: url('./assets/fonts/itc__avant__garde_bold-webfont.woff') format('woff2'),
@@ -46,6 +11,7 @@
   font-style: normal;
 }
 
+//declares the font family ITCAvantGardePro
 @font-face {
   font-family: 'ITCAvantGardePro';
   src: url('./assets/fonts/ITCAvantGardePro-Md.woff') format('woff');
@@ -53,53 +19,72 @@
   font-style: normal;
 }
 
-/* ::-webkit-scrollbar {
-  display: none;
-}
-
-::-moz-scrollbar {
-  display: none;
-} */
-
+//removes the scrollbar on Firefox
 * {
-  -ms-overflow-style: none;
-  scrollbar-color: transparent transparent;
+  scrollbar-width: none;
 }
 
-@-moz-document url-prefix() {
-  html,
-  body {
-    overflow: auto;
-    margin-right: -17px;
-  }
-}
-
+//removes the scrollbar on Chrome and Safari
 ::-webkit-scrollbar {
   display: none;
 }
 
+//changes the color of highlighted text
 ::selection {
   background: orange;
   color: white;
 }
 
-.article-loading-screen {
+//temp
+.page-loading-screen {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 9;
 
-  .spinner {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      border: 3px solid #ccc;
-      border-top-color: #333;
-      animation: spin 1s linear infinite;
-  }
+  .spinner-container {
 
-  @keyframes spin {
-      to {
-          transform: rotate(360deg);
+
+    --spinner-size: 150px;
+
+    .spinner-logo {
+      width: var(--spinner-size);
+      height: var(--spinner-size);
+      background: url('./assets/VT_logo.png') no-repeat center center;
+      background-size: contain;
+      opacity: 0.9;
+      filter: drop-shadow(0 0 2px #ccc);
+      filter:grayscale(10%);
+      translate: 8px 0px;
+    }
+
+    .spinner-line {
+      width: var(--spinner-size);
+      height: 2px;
+      background: #ccc;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .spinner-line::before {
+      content: "";
+      width: 80%;
+      height: 100%;
+      background: #971a43;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: loop 1.5s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    }
+
+    @keyframes loop {
+      0% {
+        transform: translateX(-100%);
       }
+
+      100% {
+        transform: translateX(120%);
+      }
+    }
   }
 }

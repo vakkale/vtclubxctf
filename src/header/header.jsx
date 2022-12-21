@@ -1,6 +1,7 @@
 import { React, Component } from 'react';
 import './header.scss';
-import './curtains.scss';
+import '../helpers/curtains.scss';
+import Curtains from '../helpers/Curtains.jsx';
 import './selector.scss';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo2.png';
@@ -38,12 +39,6 @@ export default class Header extends Component {
             switch (menuItem) {
                 default:
                     break
-                /* case 'home':
-                    this.setState({ curtainActive: true });
-                    setTimeout(() => {
-                        this.setState({ selectorActive: false });
-                    }, 980);
-                    break */
                 case 'competition':
                     setTimeout(() => { this.setState({ curtainActive: true }); }, 5);
                     setTimeout(() => {
@@ -117,26 +112,9 @@ export default class Header extends Component {
                     </div>
                     <Link style={{ textAlign: 'left', left: '0', cursor: 'default' }} className='menuPic' to="/"></Link>
                 </header>
-                {this.state.curtainActive && <Curtain />}
+                {this.state.curtainActive && <Curtains />}
                 {this.state.selectorActive && <Selector />}
             </>
         )
     };
-}
-
-const Curtain = () => {
-    return (
-        <>
-            <div className="curtainsContainer">
-                <div className="curtain small"></div>
-                <div className="curtain big"></div>
-                <div className="curtain big hide"></div>
-                <div className="curtain big hide"></div>
-                <div className="curtain big hide"></div>
-                <div className="curtain big hide"></div>
-                <div className="curtain big"></div>
-                <div className="curtain small"></div>
-            </div>
-        </>
-    );
 }
