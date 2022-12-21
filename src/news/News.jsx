@@ -5,7 +5,7 @@ import SideBar from "../modules/SideBar";
 import Article from "../modules/Article";
 import background from "../assets/photos/news-bg.jpg";
 import articles from "../data/articles";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useEffect } from 'react';
 
 export default function News() {
@@ -16,7 +16,14 @@ export default function News() {
     const location = useLocation();
     const pathname = location.pathname;
     const articleName = pathname.substring(pathname.lastIndexOf('/') + 1);
-    const article = articles.find(featuredItem => featuredItem.url === articleName)
+    const article = articles.find(article => article.url === articleName)
+
+    //sets window scroll to the position of TopBar
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+
 
     return (
         <>

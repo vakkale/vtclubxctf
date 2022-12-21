@@ -1,7 +1,25 @@
+const fillerhtml = <>
+    <p>This is random text.</p>
+    <p>While filling big shoes left by former Alberta Golden Bears coach Terry Danyluk, Brock Davidiuk has also brought a wealth of volleyball knowledge to the university’s sideline.</p>
+    <p>Davidiuk took over the head coaching reins of his former team in 2019, 13 years after graduating from the school. As a player with the Bears, he was named Championship MVP as he helped lead the team to a 2005 CIS National Championship title– a milestone he’ll be looking to re-create now that he’s behind the bench.</p>
+    <p>After his time with the university, Davidiuk went to have an impressive playing career professionally overseas, and a international career with the Canadian National Team, eventually serving as the team’s captain. He helped lead the squad to a berth at the 2010 FIVB World Championship.</p>
+    <p>He re-joined the Bears in 2012 as a part-time volunteer, working his way up to assistant coach, then associate coach, and now serves as the head coach. In 2016, he completed his Masters of Coaching degree.</p>
+    <p>Volleyball Canada recently had a chance to talk with Davidiuk about his coaching career and some thoughts on coaching in the sport.</p>
+    <p>After his time with the university, Davidiuk went to have an impressive playing career professionally overseas, and a international career with the Canadian National Team, eventually serving as the team’s captain. He helped lead the squad to a berth at the 2010 FIVB World Championship.</p>
+    <p>He re-joined the Bears in 2012 as a part-time volunteer, working his way up to assistant coach, then associate coach, and now serves as the head coach. In 2016, he completed his Masters of Coaching degree.</p>
+    <p>Volleyball Canada recently had a chance to talk with Davidiuk about his coaching career and some thoughts on coaching in the sport.</p>
+    <p>After his time with the university, Davidiuk went to have an impressive playing career professionally overseas, and a international career with the Canadian National Team, eventually serving as the team’s captain. He helped lead the squad to a berth at the 2010 FIVB World Championship.</p>
+    <p>He re-joined the Bears in 2012 as a part-time volunteer, working his way up to assistant coach, then associate coach, and now serves as the head coach. In 2016, he completed his Masters of Coaching degree.</p>
+    <p>Volleyball Canada recently had a chance to talk with Davidiuk about his coaching career and some thoughts on coaching in the sport.</p>
+    <p>After his time with the university, Davidiuk went to have an impressive playing career professionally overseas, and a international career with the Canadian National Team, eventually serving as the team’s captain. He helped lead the squad to a berth at the 2010 FIVB World Championship.</p>
+    <p>He re-joined the Bears in 2012 as a part-time volunteer, working his way up to assistant coach, then associate coach, and now serves as the head coach. In 2016, he completed his Masters of Coaching degree.</p>
+    <p>Volleyball Canada recently had a chance to talk with Davidiuk about his coaching career and some thoughts on coaching in the sport.</p>
+</>
+
 const articles = [
     {
         title: "Webdev Diaries 1",
-        url: "webdev-diaries-1",/* decide whether to include / in the url or not */
+        url: "webdev-diaries-1",
         year: "2022",
         date: "12 - 20",
         season: "Spring",
@@ -17,29 +35,44 @@ const articles = [
         </>
     },
     {
+        title: "They call me Mr. Examiner the way I keep on testing",
+        url: "they-call-me-mr-examiner-the-way-i-keep-on-testing",
+        year: "2022",
+        date: "9 - 32",
+        season: "Summer",
+        category: "test",
+        image: require("../assets/photos/IMG_3260.jpg"),
+        content: fillerhtml
+    },
+    {
+        title: "Enought Tests Yet? Probably Not.",
+        url: "enough-tests-yet-probably-not",
+        year: "2022",
+        date: "1 - 15",
+        season: "Winter",
+        category: "test",
+        image: require("../home/components/slider/images/sienna_track.JPG"),
+        content: fillerhtml
+    },
+    {
+        title: "Yet Another Filler Post",
+        url: "yet-another-filler-post",
+        year: "2022",
+        date: "12 - 21",
+        season: "Fall",
+        category: "test",
+        image: require("../home/components/slider/images/mitch_baton.JPG"),
+        content: fillerhtml
+    },
+    {
         title: "What Are We Doing Here? Does this Work?",
-        url: "what-are-we-doing-here-does-this-work",/* decide whether to include / in the url or not */
+        url: "what-are-we-doing-here-does-this-work",
         year: "2022",
         date: "12 - 20",
         season: "Fall",
-        category: "Also Test",
+        category: "test",
         image: require("../assets/photos/test-main.jpg"),
-        content: <>
-            <p>While filling big shoes left by former Alberta Golden Bears coach Terry Danyluk, Brock Davidiuk has also brought a wealth of volleyball knowledge to the university’s sideline.</p>
-            <p>Davidiuk took over the head coaching reins of his former team in 2019, 13 years after graduating from the school. As a player with the Bears, he was named Championship MVP as he helped lead the team to a 2005 CIS National Championship title– a milestone he’ll be looking to re-create now that he’s behind the bench.</p>
-            <p>After his time with the university, Davidiuk went to have an impressive playing career professionally overseas, and a international career with the Canadian National Team, eventually serving as the team’s captain. He helped lead the squad to a berth at the 2010 FIVB World Championship.</p>
-            <p>He re-joined the Bears in 2012 as a part-time volunteer, working his way up to assistant coach, then associate coach, and now serves as the head coach. In 2016, he completed his Masters of Coaching degree.</p>
-            <p>Volleyball Canada recently had a chance to talk with Davidiuk about his coaching career and some thoughts on coaching in the sport.</p>
-            <p>After his time with the university, Davidiuk went to have an impressive playing career professionally overseas, and a international career with the Canadian National Team, eventually serving as the team’s captain. He helped lead the squad to a berth at the 2010 FIVB World Championship.</p>
-            <p>He re-joined the Bears in 2012 as a part-time volunteer, working his way up to assistant coach, then associate coach, and now serves as the head coach. In 2016, he completed his Masters of Coaching degree.</p>
-            <p>Volleyball Canada recently had a chance to talk with Davidiuk about his coaching career and some thoughts on coaching in the sport.</p>
-            <p>After his time with the university, Davidiuk went to have an impressive playing career professionally overseas, and a international career with the Canadian National Team, eventually serving as the team’s captain. He helped lead the squad to a berth at the 2010 FIVB World Championship.</p>
-            <p>He re-joined the Bears in 2012 as a part-time volunteer, working his way up to assistant coach, then associate coach, and now serves as the head coach. In 2016, he completed his Masters of Coaching degree.</p>
-            <p>Volleyball Canada recently had a chance to talk with Davidiuk about his coaching career and some thoughts on coaching in the sport.</p>
-            <p>After his time with the university, Davidiuk went to have an impressive playing career professionally overseas, and a international career with the Canadian National Team, eventually serving as the team’s captain. He helped lead the squad to a berth at the 2010 FIVB World Championship.</p>
-            <p>He re-joined the Bears in 2012 as a part-time volunteer, working his way up to assistant coach, then associate coach, and now serves as the head coach. In 2016, he completed his Masters of Coaching degree.</p>
-            <p>Volleyball Canada recently had a chance to talk with Davidiuk about his coaching career and some thoughts on coaching in the sport.</p>
-        </>
+        content: fillerhtml
     }
 ]
 export default articles;

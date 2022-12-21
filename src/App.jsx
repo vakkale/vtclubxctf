@@ -13,6 +13,7 @@ import trainingData from './data/training.json';
 import trainingNav from './data/trainingNav.json';
 import News from './news/News';
 import loadImages from './helpers/loadImages';
+import Footer from './footer/Footer.jsx';
 
 import img1 from './home/components/slider/images/wildcat22_adam_sprint.JPG';
 import img2 from './home/components/slider/images/wildcat22_emery_vault3.JPG';
@@ -21,21 +22,18 @@ import img4 from './home/components/slider/images/sienna_track.JPG';
 import img5 from './home/components/slider/images/mitch_baton.JPG';
 import img6 from './home/components/slider/images/wildcat_team.jpg';
 import logo from './assets/logo.png';
-import header1 from './header/images/distance_selector.jpg';
-import header2 from './header/images/distance_selector1.jpg';
 import header3 from './header/images/distance_selector2.jpg';
 import header4 from './header/images/field_selector.jpg';
 import header5 from './header/images/socials_selector.jpg';
 import header6 from './header/images/sprints_selector.jpg';
-import header7 from './header/images/tf_selector.jpg';
 import header8 from './header/images/xc_selector.jpg';
-import header9 from './header/images/tf_selector1.jpg';
 import header10 from './header/images/tf_selector2.jpg';
 import header11 from './header/images/traditions_selector.jpg';
+import news1 from './assets/photos/news-bg.jpg';
 
 export default function App() {
 
-  const imgs = [img1, img2, img3, img4, img5, img6, logo, header1, header2, header3, header4, header5, header6, header7, header8, header9, header10, header11];
+  const imgs = [img1, img2, img3, img4, img5, img6, logo, header3, header4, header5, header6, header8, header10, header11, news1];
 
   const [loading, setLoading] = useState(true);
 
@@ -94,7 +92,7 @@ export default function App() {
                 {/* <Route component={() => <h1 style={{ textAlign: "center", height: "500px", marginTop: "250px" }}>404 Page not found. <p>
                 <Link style={{ color: "lightgreen" }} to="/">click here</Link></p></h1>} /> */}
               </Routes>
-              {/* <Footer></Footer> */}
+              <Footer></Footer>
             </BrowserRouter>
           </Fragment>
         </div>

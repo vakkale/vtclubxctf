@@ -14,7 +14,7 @@
 
     .html-container {
         width: 46.05vw;
-        padding: 2vw 2vw 0 2vw;
+        padding: 2vw 2vw 5vw 2vw;
         background-color: white;
     }
 
@@ -22,24 +22,45 @@
         padding: 0.6vw 0 0.6vw 0;
     }
 
-    .article-loading-screen {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .loading-overlay {
+        width: 0%;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        background: #f6f6f6;
+        z-index: 12;
+        transition: all 0.5s cubic-bezier(0, 0.5, 0.5, 1);
+        overflow: hidden;
+      }
+      
+      .loading-overlay.loading {
+        width: 100%;
+        left: 0;
+      }
 
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: 3px solid #ccc;
-            border-top-color: #333;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-    }
+      .loading-overlay.loaded {
+        right: 0;
+      }
+      
+      .loading-spinner {
+        top: 20vw;
+        left: 30.66vw;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 2px;/* 
+        background: #ccc; */
+        position: absolute;
+        overflow: hidden;
+      }
+  
+      .loading-spinner::before {
+        content: "";
+        width: 80%;
+        height: 100%;
+        background: #971a43;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: loop 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+      }
 }

@@ -16,8 +16,9 @@ export default function SideBar({ data }) {
         }
         return pathname.substring(0, pathname.lastIndexOf("/"));
     }
-    
+
     const Features = () => {
+        
         return (
             featuredItem
                 ? (
@@ -41,7 +42,7 @@ export default function SideBar({ data }) {
 
     return (
         <>
-            <div className="sidebar-container">
+            <div className="sidebar-container" id="sidebar">
                 <Features></Features>
                 <div className="content-list">
                     {data.map((item, index) => {
@@ -49,7 +50,9 @@ export default function SideBar({ data }) {
                             <div
                                 key={index}
                                 className="list-item"
-                                onClick={() => navigate(`${domain()}/${item.url}`)}>
+                                onClick={() => navigate(`${domain()}/${item.url}`)}
+                                //sets style to active if the url matches the current url
+                                style={item.url === articleName ? { backgroundColor: "#f6f6f6" } : {}}>
                                 <div className="list-header">
                                     <span className="list-item-date">{item.date}</span>
                                     <span className="list-item-category">{item.category}</span>

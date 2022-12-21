@@ -2,7 +2,7 @@ import "./TopBar.scss";
 
 const TopBar = () => {
     return (
-        <div className="topbar-container">
+        <div className="topbar-container" id="topbar">
             {/* TODO: Make this actually turn into menus */}
         </div >
     );

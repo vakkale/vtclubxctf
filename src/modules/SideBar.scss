@@ -4,13 +4,17 @@
     width: var(--wid); */
     flex: 33.3%;
     /* make this exact */
-    height: 100vh;
-    position: relative;
+    height: calc(100vh - 59px);
     background-color: #fff;
     translate: 0 calc(-0.5 * 8.2vw);
     z-index: 11;
     border-left: #f6f6f6 1px solid;
     font-family: ITCAvantGardePro, sans-serif;
+    position: sticky;
+    //includes padding in top and bottom sticky
+    top: 8.2vw;
+    bottom: -8.2vw;
+    overflow: scroll;
 
     .featured-content {
         width: 100%;
@@ -32,8 +36,8 @@
         .list-header, .feature-title {
             translate: 0 30%;
             opacity: 0;
-            animation: feature-load .8s ease-in-out forwards;
-            animation-delay: 0.4s;
+            animation: feature-load 1s ease-in-out forwards;
+            animation-delay: 0.7s;
         }
     }
 
@@ -45,9 +49,10 @@
             border-bottom: 1px solid #f6f6f6;
             position: relative;
             cursor: pointer;
+            transition: all 0.15s ease-in-out;
 
             &:hover {
-                background-color: #a5a1a1c5;
+                background-color: #f6f6f6;
             }
 
             .list-header {

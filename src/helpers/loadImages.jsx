@@ -10,7 +10,6 @@ function loadImages(imageUrls) {
     return new Promise((resolve, reject) => {
         //creates an array of images from the imageUrls array
         const images = imageUrls.map((url) => {
-            console.log(`url: ${url}`)
             const image = new window.Image();
             image.src = url;
             return image;
