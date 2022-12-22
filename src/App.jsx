@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import React, { Fragment, Suspense } from 'react';
 import { useState, useEffect } from 'react';
 
 import './App.scss';
@@ -7,33 +6,31 @@ import Lines from './lines/lines.jsx';
 import Header from './header/header.jsx';
 import Home from './home/home.jsx';
 import Training from './training/training';
-import Favicon from 'react-favicon';
-import favicon from './assets/favicon.png';
 import trainingData from './data/training.json';
 import trainingNav from './data/trainingNav.json';
 import News from './news/News';
 import loadImages from './helpers/loadImages';
 import Footer from './footer/Footer.jsx';
 
-import img1 from './home/components/slider/images/wildcat22_adam_sprint.JPG';
-import img2 from './home/components/slider/images/wildcat22_emery_vault3.JPG';
-import img3 from './home/components/slider/images/chris_jump.JPG';
-import img4 from './home/components/slider/images/sienna_track.JPG';
-import img5 from './home/components/slider/images/mitch_baton.JPG';
-import img6 from './home/components/slider/images/wildcat_team.jpg';
-import logo from './assets/logo.png';
-import header3 from './header/images/distance_selector2.jpg';
-import header4 from './header/images/field_selector.jpg';
-import header5 from './header/images/socials_selector.jpg';
-import header6 from './header/images/sprints_selector.jpg';
-import header8 from './header/images/xc_selector.jpg';
-import header10 from './header/images/tf_selector2.jpg';
-import header11 from './header/images/traditions_selector.jpg';
-import news1 from './assets/photos/news-bg.jpg';
-
 export default function App() {
 
-  const imgs = [logo, img1, img2, img3, img4, img5, img6, header3, header4, header5, header6, header8, header10, header11, news1];
+  const slider1 = 'https://i.imgur.com/IbOEzu7.jpg';
+  const slider2 = 'https://i.imgur.com/SDSA9wy.jpg';
+  const slider3 = 'https://i.imgur.com/dmlDE7L.jpg';
+  const slider4 = 'https://i.imgur.com/vAPljlf.jpg';
+  const slider5 = 'https://i.imgur.com/UtEwbtG.jpg';
+  const slider6 = 'https://i.imgur.com/htohQqv.jpg';
+  const news1 = 'https://i.imgur.com/RItaeRr.jpg';
+  const logo = 'https://i.imgur.com/uF93d94.png';
+  const header1 = 'https://i.imgur.com/tEac9kB.jpg';
+  const header2 = 'https://i.imgur.com/H5zwEvg.jpg';
+  const header3 = 'https://i.imgur.com/iZ9hzza.jpg';
+  const header4 = 'https://i.imgur.com/JHNPyP2.jpg';
+  const header5 = 'https://i.imgur.com/orU4bPW.jpg';
+  const header6 = 'https://i.imgur.com/2oNXRUg.jpg';
+  const header7 = 'https://i.imgur.com/zsLMckC.jpg';
+
+  const imgs = [logo, slider1, slider2, slider3, slider4, slider5, slider6, header1, header2, header3, header4, header5, header6, header7, news1];
 
   const [loading, setLoading] = useState(true);
 
@@ -46,7 +43,7 @@ export default function App() {
         }, 1500);
       });
     }
-  }, []);
+  });
 
   const LoadingScreen = () => {
     return (

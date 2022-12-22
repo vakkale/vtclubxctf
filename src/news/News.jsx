@@ -3,15 +3,12 @@ import PageHeader from "../modules/PageHeader";
 import TopBar from "../modules/TopBar";
 import SideBar from "../modules/SideBar";
 import Article from "../modules/Article";
-import background from "../assets/photos/news-bg.jpg";
 import articles from "../data/articles";
 import { useLocation } from "react-router-dom";
 import { useEffect } from 'react';
 
 export default function News() {
-    /* CONSTRUCTOR */
-    /* set the current article as the first article at the top of array (most recent article) */
-    /* set category and season to all, set year to year of current article */
+    const background = 'https://i.imgur.com/RItaeRr.jpg';
 
     const location = useLocation();
     const pathname = location.pathname;

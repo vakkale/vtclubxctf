@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Slider.scss';
-import logo from '../../../assets/logo.png'
+
+const logo = 'https://i.imgur.com/CULT2yN.png';
 
 export default class Slider extends Component {
     render() {

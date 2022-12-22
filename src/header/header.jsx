@@ -4,8 +4,9 @@ import '../helpers/curtains.scss';
 import Curtains from '../helpers/Curtains.jsx';
 import './selector.scss';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo2.png';
 import navData from '../data/navigation.js';
+
+const logo = 'https://i.imgur.com/TogHaZv.png';
 
 export default class Header extends Component {
 

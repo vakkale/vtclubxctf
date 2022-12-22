@@ -24,7 +24,7 @@ const articles = [
         date: "12 - 20",
         season: "Spring",
         category: "Webdev Diaries",
-        image: require("../assets/photos/webdev-diaries-1-main.jpg"),
+        image: 'https://i.imgur.com/3vF7nT0.jpg',
         content: <>
             <p>Welcome y'all to your new favorite corner of the internet, my unhinged thoughts during the making of this website, or what I like to call 'Webdev Diaries.'</p>
             <p>It's 2:36AM and I've been doing this for about 12 hours now but I finally finished the main functionality and most of the polish for the page you're on now. Despite how long it took, working on this page actually gave me a lot of confidence for how the rest of this process will go.</p>
@@ -41,7 +41,7 @@ const articles = [
         date: "9 - 32",
         season: "Summer",
         category: "test",
-        image: require("../assets/photos/IMG_3260.jpg"),
+        image: 'https://i.imgur.com/qczrzqz.jpg',
         content: fillerhtml
     },
     {
@@ -51,7 +51,7 @@ const articles = [
         date: "1 - 15",
         season: "Winter",
         category: "test",
-        image: require("../home/components/slider/images/sienna_track.JPG"),
+        image: 'https://i.imgur.com/vAPljlf.jpg',
         content: fillerhtml
     },
     {
@@ -61,7 +61,7 @@ const articles = [
         date: "12 - 21",
         season: "Fall",
         category: "test",
-        image: require("../home/components/slider/images/mitch_baton.JPG"),
+        image: 'https://i.imgur.com/UtEwbtG.jpg',
         content: fillerhtml
     },
     {
@@ -71,7 +71,7 @@ const articles = [
         date: "12 - 20",
         season: "Fall",
         category: "test",
-        image: require("../assets/photos/test-main.jpg"),
+        image: 'https://i.imgur.com/PYlzbrh.jpg',
         content: fillerhtml
     }
 ]

@@ -15,13 +15,13 @@ const navData = {
                     "id": 0,
                     "name": "Cross Country",
                     "link": "/competition/crosscountry",
-                    "image": require("../header/images/xc_selector.jpg")
+                    "image": 'https://i.imgur.com/tEac9kB.jpg'
                 },
                 {
                     "id": 1,
                     "name": "Track & Field",
                     "link": "/competition/trackandfield",
-                    "image": require("../header/images/tf_selector2.jpg")
+                    "image": 'https://i.imgur.com/JHNPyP2.jpg'
                 }
             ]
         }
@@ -37,20 +37,20 @@ const navData = {
                     "id": 0,
                     "name": "Sprints",
                     "link": "/training/sprints",
-                    "image": require("../header/images/sprints_selector.jpg")
+                    "image": 'https://i.imgur.com/zsLMckC.jpg'
                 },
                 {
                     "id": 1,
                     "name": "Distance",
                     "link": "/training/mens-distance-high-mileage",
-                    "image": require("../header/images/distance_selector2.jpg")
+                    "image": 'https://i.imgur.com/orU4bPW.jpg'
                 },
                 {
                     "id": 2,
                     "name": "Field",
                     "link": "/training/throws",
                     "plan": "https://docs.google.com/document/d/e/2PACX-1vSFsGwbQmx_GCUNEOZkhJILlxIhLegerAP3jB-9SbTuBNqCOdEmATLuEg9OH5IBggHdKLudXZJcdcbQ/pub?embedded=true",
-                    "image": require("../header/images/field_selector.jpg")
+                    "image": 'https://i.imgur.com/iZ9hzza.jpg'
                 }
             ]
         }
@@ -66,13 +66,13 @@ const navData = {
                     "id": 0,
                     "name": "Socials",
                     "link": "/community/socials",
-                    "image": require("../header/images/socials_selector.jpg")
+                    "image": 'https://i.imgur.com/H5zwEvg.jpg'
                 },
                 {
                     "id": 1,
                     "name": "Traditions",
                     "link": "/community/traditions",
-                    "image": require("../header/images/traditions_selector.jpg")
+                    "image": 'https://i.imgur.com/2oNXRUg.jpg'
                 }
             ]
         }
