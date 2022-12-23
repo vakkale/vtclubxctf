@@ -1,13 +1,115 @@
 .footer-container {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 40vh;
     margin: calc(-0.5 * 8.2vw) 4vw 0 4vw;
     position: relative;
-    
+
     width: 92%;
-    background-color: black;
 
     z-index: 12;
+
+    box-sizing: content-box;
+
+    .footer-top {
+        width: 100%;
+        height: 25vh;
+        min-height: 150px;
+        background-color: #000;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        //equally space and center the children
+        &>* {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-link {
+            color: #f6f6f6;
+            text-decoration: none;
+            position: relative;
+            font-size: 1rem;
+            font-family: ITCAvantGarde, sans-serif;
+
+            //on mobile hide
+            @media (max-width: 768px) {
+                display: none;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                width: 0;
+                height: 1px;
+                background-color: #fff;
+                transition: width 0.5s;
+                margin-top: 25px;
+                position: absolute;
+                right: 0;
+            }
+
+            &:hover {
+                color: #fff;
+
+                &::before {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+
+        .footer-logo {
+            //TODO: FIX THIS STUPID SHIT
+            background-image: url('../assets/logos/xctf_logo_black.svg');
+            background-repeat: no-repeat;
+            --logo-size: 200px;
+            width: var(--logo-size);
+            height: calc(var(--logo-size) * 0.5);
+        }
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex: 100%;
+        height: 15vh;
+        max-height: 15vh;
+        background-color: #111;
+
+        &>* {
+            display: flex;
+            flex: 33%;
+        }
+
+        .footer-bottom-left,
+        .footer-bottom-right {
+
+            //on mobile hide
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        .footer-bottom-middle {
+            flex-direction: row;
+            justify-content: space-around;
+
+            .footer-social {
+                //black magic
+                transition: filter 0.15s ease-in-out;
+                filter: invert(60%) sepia(0%) saturate(643%) hue-rotate(193deg) brightness(89%) contrast(91%);
+
+                &:hover {
+                    filter: invert(98%) sepia(3%) saturate(150%) hue-rotate(213deg) brightness(116%) contrast(93%);
+                }
+            }
+        }
+    }
 }

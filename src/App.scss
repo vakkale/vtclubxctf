@@ -4,19 +4,46 @@
 
 //declares the font family ITCAvantGardeBold
 @font-face {
-  font-family: 'ITCAvantGardeBold';
+  font-family: 'ITCAvantGarde';
   src: url('./assets/fonts/itc__avant__garde_bold-webfont.woff') format('woff2'),
     url('./assets/fonts/itc__avant__garde_bold-webfont.woff2') format('woff');
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 
 //declares the font family ITCAvantGardePro
 @font-face {
-  font-family: 'ITCAvantGardePro';
+  font-family: 'ITCAvantGarde';
   src: url('./assets/fonts/ITCAvantGardePro-Md.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'akkurat';
+  src: url('./assets/fonts/akkurat-light-webfont.woff2') format('woff2'),
+       url('./assets/fonts/akkurat-light-webfont.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'akkurat';
+  src: url('./assets/fonts/akkurat-bold-webfont.woff2') format('woff2'),
+       url('./assets/fonts/akkurat-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'akkurat';
+  src: url('./assets/fonts/akkuratpro-regular-webfont.woff2') format('woff2'),
+       url('./assets/fonts/akkuratpro-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 //removes the scrollbar on Firefox

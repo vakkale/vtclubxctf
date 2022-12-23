@@ -8,7 +8,7 @@ export default function SideBar({ data }) {
 
     const pathname = location.pathname;
     const articleName = pathname.substring(pathname.lastIndexOf('/') + 1);
-    const featuredItem = data.find(featuredItem => featuredItem.url === articleName);
+    var featuredItem = data.find(featuredItem => featuredItem.url === articleName);
 
     function domain() {
         if (pathname.lastIndexOf('/') === 0) {
@@ -18,25 +18,20 @@ export default function SideBar({ data }) {
     }
 
     const Features = () => {
-        
+
+        //if featuredItem is not null, do nothing, otherwise set featuredItem to the first item in the list
+        if (!featuredItem) {
+            featuredItem = data[0];
+        }
+
         return (
-            featuredItem
-                ? (
-                    <div className="featured-content ">
-                        <div className="list-header">
-                            <span className="list-item-date">{featuredItem.date}</span>
-                            <span className="list-item-category">{featuredItem.category}</span>
-                        </div>
-                        <div className="feature-title">{featuredItem.title}</div>
-                    </div>
-                )
-                : (<div className="featured-content">
-                    <div className="list-header">
-                        <span className="list-item-date">{data[0].date}</span>
-                        <span className="list-item-category">{data[0].category}</span>
-                    </div>
-                    <div className="feature-title">{data[0].title}</div>
-                </div>)
+            <div className="featured-content ">
+                <div className="list-header">
+                    <span className="list-item-date">{featuredItem.date}</span>
+                    <span className="list-item-category">{featuredItem.category}</span>
+                </div>
+                <div className="feature-title">{featuredItem.title}</div>
+            </div>
         );
     }
 
