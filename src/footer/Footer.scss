@@ -3,15 +3,17 @@
     justify-content: center;
     align-items: center;
     height: 40vh;
-    margin: 0 4vw 0 4vw;
+    margin: 0 var(--smallbar);
     position: relative;
-    top: calc(-0.5 * 17vh);
-
-    width: 92%;
-
+    bottom: 0;
     z-index: 12;
-
     box-sizing: content-box;
+
+    //on mobile, no margin and 100% width
+    @media (max-width: 768px) {
+        margin: 0;
+        width: 100%;
+    }
 
     .footer-top {
         width: 100%;

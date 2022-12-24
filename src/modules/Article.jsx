@@ -6,7 +6,6 @@ import { useRef } from "react";
 
 export default function Article({ article, image }) {
 
-    const images = [image];
     const [loading, setLoading] = useState(true);
 
     const currentArticle = useRef(null);
@@ -18,10 +17,12 @@ export default function Article({ article, image }) {
         const topbar = document.getElementById('topbar');
         const element = document.getElementById("sidebar");
 
+        const images = [image];
+
         setLoading(true);
         loadImages(images).then(() => {
             setTimeout(() => {
-            element.scrollTop = 0;
+                element.scrollTop = 0;
             }, 100);
             setTimeout(() => {
                 currentArticle.current = article;
@@ -34,7 +35,7 @@ export default function Article({ article, image }) {
                 setLoading(false);
             }, 800);
         });
-    }, [image]);
+    }, [article, image]);
 
     return (
         <div className="article-container">

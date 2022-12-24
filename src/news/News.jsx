@@ -20,8 +20,6 @@ export default function News() {
         window.scrollTo(0, 0);
     }, []);
 
-
-
     return (
         <>
             <PageHeader image={background} title={"News"} subtitle={"VT Club XCTF"} />
@@ -31,7 +29,7 @@ export default function News() {
                     <SideBar className="sidebar" data={articles}></SideBar>
                     {article
                         ? <Article className="article" article={article.content} image={article.image}></Article>
-                        : <Article className="article" article={articles[0].content} image={articles[0].image}></Article>}
+                        : <Article lassName="article" article={articles[0].content} image={articles[0].image}></Article>}
                 </div>
             </div>
 

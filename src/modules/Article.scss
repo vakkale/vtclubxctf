@@ -42,10 +42,9 @@
 
 
 .article-container {
-  flex: 66%;
+  flex: calc(100% * (2 / 3));
   z-index: 11;
   border-left: #f6f6f6 solid 1px;
-  transform: translateY(calc(-0.5 * 17vh));
 
   .image-container {
     text-align: center;

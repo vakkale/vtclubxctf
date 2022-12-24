@@ -3,4 +3,9 @@
     display: flex;
     height: fit-content;
     position: relative;
+
+    &>* {
+        transform: translateY(calc(-0.5 * 17vh));
+        margin-bottom: calc(-0.5 * 17vh);
+    }
 }
