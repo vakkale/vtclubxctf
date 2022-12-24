@@ -1,6 +1,7 @@
 import "./SideBar.scss";
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function SideBar({ data }) {
     const location = useLocation();
@@ -8,7 +9,6 @@ export default function SideBar({ data }) {
 
     const pathname = location.pathname;
     const articleName = pathname.substring(pathname.lastIndexOf('/') + 1);
-    var featuredItem = data.find(featuredItem => featuredItem.url === articleName);
 
     function domain() {
         if (pathname.lastIndexOf('/') === 0) {
@@ -17,11 +17,20 @@ export default function SideBar({ data }) {
         return pathname.substring(0, pathname.lastIndexOf("/"));
     }
 
+
     const Features = () => {
 
-        //if featuredItem is not null, do nothing, otherwise set featuredItem to the first item in the list
-        if (!featuredItem) {
-            featuredItem = data[0];
+        const [featuredItem, setFeaturedItem] = useState(data[0]);
+
+        useEffect(() => {
+            setFeaturedItem(data.find(featuredItem => featuredItem.url === articleName));
+            if (featuredItem === undefined) {
+                setFeaturedItem(errorFeaturedItem);
+            }
+        }, [articleName]);
+
+        if (featuredItem === undefined) {
+            return <></>;
         }
 
         return (
@@ -34,6 +43,16 @@ export default function SideBar({ data }) {
             </div>
         );
     }
+
+    const errorFeaturedItem = { date: "Error", category: "404", title: "No Matching Results" };
+
+    useEffect(() => {
+        if (data.length === 0) {
+            navigate(`${domain()}/no-results`);
+        }
+        else
+            navigate(`${domain()}/${data[0].url}`);
+    }, [data]);
 
     return (
         <>

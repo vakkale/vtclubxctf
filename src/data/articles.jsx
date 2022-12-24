@@ -1,3 +1,5 @@
+/* Something something, the who asked of articles */
+
 const fillerhtml =
     <div className="article-content">
         <p>This is random text.</p>
