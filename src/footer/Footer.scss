@@ -3,8 +3,9 @@
     justify-content: center;
     align-items: center;
     height: 40vh;
-    margin: calc(-0.5 * 8.2vw) 4vw 0 4vw;
+    margin: 0 4vw 0 4vw;
     position: relative;
+    top: calc(-0.5 * 17vh);
 
     width: 92%;
 
@@ -34,7 +35,7 @@
             text-decoration: none;
             position: relative;
             font-size: 1rem;
-            font-family: ITCAvantGarde, sans-serif;
+            font-family: 'ITCAvantGarde', sans-serif;
 
             //on mobile hide
             @media (max-width: 768px) {

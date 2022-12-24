@@ -1,6 +1,6 @@
 .page-content {
-    margin-right: 4vw;
-    margin-left: 4vw;
+    margin: 0 var(--smallbar);
     display: flex;
     height: fit-content;
+    position: relative;
 }

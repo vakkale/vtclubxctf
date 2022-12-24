@@ -1,3 +1,16 @@
+// Use :root to declare global variables
+:root {
+  --bigbar: 15.33vw;
+  --smallbar: 4vw;
+  /* --standard-margins: var(--smallbar); */
+
+  //mobile
+  @media (max-width: 1000px) {
+    --smallbar: 6vw;
+    --bigbar: calc((100vw - (2 * var(--smallbar))) / 2);
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -22,7 +35,7 @@
 @font-face {
   font-family: 'akkurat';
   src: url('./assets/fonts/akkurat-light-webfont.woff2') format('woff2'),
-       url('./assets/fonts/akkurat-light-webfont.woff') format('woff');
+    url('./assets/fonts/akkurat-light-webfont.woff') format('woff');
   font-weight: lighter;
   font-style: normal;
 
@@ -31,7 +44,7 @@
 @font-face {
   font-family: 'akkurat';
   src: url('./assets/fonts/akkurat-bold-webfont.woff2') format('woff2'),
-       url('./assets/fonts/akkurat-bold-webfont.woff') format('woff');
+    url('./assets/fonts/akkurat-bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 
@@ -40,7 +53,7 @@
 @font-face {
   font-family: 'akkurat';
   src: url('./assets/fonts/akkuratpro-regular-webfont.woff2') format('woff2'),
-       url('./assets/fonts/akkuratpro-regular-webfont.woff') format('woff');
+    url('./assets/fonts/akkuratpro-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -81,7 +94,7 @@
       background-size: contain;
       opacity: 0.9;
       filter: drop-shadow(0 0 2px #ccc);
-      filter:grayscale(10%);
+      filter: grayscale(10%);
       translate: 8px 0px;
     }
 

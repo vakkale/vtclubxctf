@@ -1,10 +1,14 @@
 @media only screen and (max-width: 1000px) {
+    //tablet and mobile
     .hide {
         display: none;
     }
 }
 
-@media only screen and (max-width: 700px) {}
+@media only screen and (max-width: 768px) {
+    //mobile only
+
+}
 
 .lineContainer {
     width: 100vw;
@@ -12,20 +16,23 @@
     height: 100vh;
     display: flex;
     position: fixed;
-    /* z-indices higher than this will render over the lines, below will render below the lines. DO NOT set an element's z-index equal to this z-index*/
+
+    // z-indices higher than this will render over the lines
+    // below will render below the lines
+    //DO NOT set an element's z-index equal to this z-index
     z-index: 10;
+
     flex: 100%;
     flex-wrap: nowrap;
     pointer-events: none;
 
     .outerLine {
-        flex: 4%;
-        max-width: 6%;
+        width: var(--smallbar);
         border-left: rgba(142, 142, 142, 0.13) solid 1px;
     }
 
     .innerLine {
-        flex: 15.33%;
+        width: var(--bigbar);
         border-left: rgba(142, 142, 142, 0.13) solid 1px;
     }
 }

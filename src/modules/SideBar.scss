@@ -4,16 +4,16 @@
     width: var(--wid); */
     flex: 33.3%;
     /* make this exact */
-    height: calc(100vh - 59px);
+    height: calc(100vh - 60px);
     background-color: #fff;
-    translate: 0 calc(-0.5 * 8.2vw);
     z-index: 11;
+    --fuckingshit: calc(-0.5 * 17vh);
+    transform: translateY(var(--fuckingshit));
     border-left: #f6f6f6 1px solid;
     font-family: 'ITCAvantGarde', sans-serif;
     position: sticky;
     //includes padding in top and bottom sticky
-    top: 8.2vw;    
-    bottom: 8.2vw;
+    top: calc(0px + 60px - var(--fuckingshit));
     overflow: scroll;
 
     .featured-content {
@@ -34,7 +34,8 @@
             font-weight: bold;
         }
 
-        .list-header, .feature-title {
+        .list-header,
+        .feature-title {
             translate: 0 30%;
             opacity: 0;
             animation: feature-load 1s ease-in-out forwards;

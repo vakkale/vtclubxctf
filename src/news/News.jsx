@@ -26,12 +26,15 @@ export default function News() {
         <>
             <PageHeader image={background} title={"News"} subtitle={"VT Club XCTF"} />
             <TopBar></TopBar>{/* TODO: make sidebar get data from topbar instead */}
-            <div className="page-content">
-                <SideBar className="sidebar" data={articles}></SideBar>
-                {article
-                    ? <Article className="article" article={article.content} image={article.image}></Article>
-                    : <Article className="article" article={articles[0].content} image={articles[0].image}></Article>}
+            <div className="bar-plus-content">
+                <div className="page-content">
+                    <SideBar className="sidebar" data={articles}></SideBar>
+                    {article
+                        ? <Article className="article" article={article.content} image={article.image}></Article>
+                        : <Article className="article" article={articles[0].content} image={articles[0].image}></Article>}
+                </div>
             </div>
+
         </>
     );
 }
