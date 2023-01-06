@@ -1,66 +1,62 @@
-import { React, Component } from 'react';
-import './training.scss';
-import '../helpers/side-menu/SideMenu.scss'
-import trainingData from '../data/training.json';
-import SideMenu from '../helpers/side-menu/SideMenu.jsx';
+import './Training.scss';
+import PageHeader from "../modules/PageHeader";
+import TopBar from "../modules/TopBar";
+import SideBar from "../modules/SideBar";
+import Article from "../modules/Article";
+import planData from "../data/plansData";
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import TrainingPlan from '../modules/TrainingPlan';
 
-export default class Training extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            name: "TrainingPlans",
-            data: trainingData,
-            currentPlan: this.props.plan/* ,
-            mount: true */
-        }
-        this.changeState = this.changeState.bind(this);
-    }
+export default function Training() {
 
-    changeState(plan) {
-        this.setState({ currentPlan: plan });
-    }
+    const location = useLocation();
+    const pathname = location.pathname;
+    const planName = pathname.substring(pathname.lastIndexOf('/') + 1);
 
-    render() {
+    //set teamName to the part of the url before the last / but after the second /
+    const teamName = pathname.substring(pathname.indexOf('/', 1) + 1, pathname.lastIndexOf('/'));
 
-        const Header = () => {
-            return (
-                <div className="headerWrapper">
-                    <div className="headerText">{this.state.currentPlan.fullName}</div>
-                </div>
-            );
-        }
+    //sets the team as the first team in the array
+    const [team, setTeam] = useState(planData[0]);
 
-        const Menu = () => {
-            return (
-                <div className="menuWrapper">
-                    <div className="menuTitle">Training Plans</div>
-                    <SideMenu menuItems={trainingData} className="menu"></SideMenu>
-                </div>
-            );
-        }
+    //set the plan as the first plan in the array
+    const [plan, setPlan] = useState(team.plans[0]);
 
-        const Plan = () => {
-            return (
-                <div className="planWrapper">
-                    <iframe
-                        src={this.state.currentPlan.url}
-                        title="plan"
-                        width="100%"
-                        height="100%"
-                        frameBorder="0"
-                    />
-                </div>
-            );
-        }
+    //set plan as the plan that matches the url
+    useEffect(() => {
+        setTeam(planData.find(team => team.url === teamName));
+        setPlan(team.plans.find(plan => plan.url === planName));
+        setSortedPlans(team.plans);
+    }, [planName, teamName, team.plans]);
 
-        return (
-            <>
-                < div className="wrapper" key={this.props.key} >
-                    <Header className="header" />
-                    <Menu className="menu" />
-                    <Plan className="plan" />
-                </div >
-            </>
-        )
+    // Array of filters for the ArticleSorter component
+    const filters = ['year', 'season', 'title'];
+    // Set the sorted articles to send to the SideBar component
+    const [sortedPlans, setSortedPlans] = useState(team.plans);
+
+    // Callback function to handle sorted articles
+    const handleSortedArticles = plansSorted => {
+        setSortedPlans(plansSorted);
     };
+
+    useEffect(() => {
+        console.log(planName);
+        console.log(teamName);
+        console.log(plan);
+    }, [plan]);
+
+    return (
+        <>
+            <PageHeader image={team.image} title={team.title} subtitle="Training" />
+            <TopBar articles={team.plans} filters={filters} onSort={handleSortedArticles}></TopBar>
+            <div className="bar-plus-content">
+                <div className="page-content">
+                    <SideBar className="sidebar" data={sortedPlans} size="small"></SideBar>
+                    {plan ? <TrainingPlan className="plan" sheetID={plan.sheetID} sheets={plan.sheets}></TrainingPlan>
+                        : <Article className="article" article={<></>} image={""}></Article>}
+                </div>
+            </div>
+        </>
+    );
 }

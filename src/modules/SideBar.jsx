@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-export default function SideBar({ data }) {
+export default function SideBar({ data, size }) {
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -56,7 +56,9 @@ export default function SideBar({ data }) {
 
     return (
         <>
-            <div className="sidebar-container" id="sidebar">
+            <div className="sidebar-container" id="sidebar" style={{
+                flex: size === "big" ? "calc(100% * (1 / 3))" : "calc(100% * (1 / 4))",
+            }}>
                 <Features></Features>
                 <div className="content-list">
                     {data.map((item, index) => {

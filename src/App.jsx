@@ -5,7 +5,7 @@ import './App.scss';
 import Lines from './lines/lines.jsx';
 import Header from './header/header.jsx';
 import Home from './home/home.jsx';
-import Training from './training/training';
+import Training from './training/Training';
 import trainingData from './data/training.json';
 import trainingNav from './data/trainingNav.json';
 import News from './news/News';
@@ -67,12 +67,7 @@ export default function App() {
             <Route exact path="/news/*" element={<News />}></Route>
             <Route exact path="/competition" element={<Home />}></Route>
             <Route exact path="/records" element={<Home />}></Route>
-            <Route exact path="/training" element={<Training key={0} plan={trainingData[0].children[0].children[0]} />}></Route>
-            {
-              trainingNav.map((item, index) => (
-                <Route exact path={`/training/${item.id}`} key={index} element={<Training key={index} plan={item}></Training>}></Route>
-              ))
-            }
+            <Route exact path="/training/*" element={<Training />}></Route>
             <Route path="/training/sprints" element={<Training key={0} plan={trainingData[1]}></Training>}></Route>
             <Route exact path="/about" element={<Home />}></Route>
           </Routes>

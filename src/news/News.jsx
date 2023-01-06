@@ -14,10 +14,10 @@ export default function News() {
     const pathname = location.pathname;
     const articleName = pathname.substring(pathname.lastIndexOf('/') + 1);
 
-    //set article as usestate
+    //set article as state
     const [article, setArticle] = useState(articleData[0]);
 
-    //set article as the article that matches the url
+    //set article to the article that matches the url
     useEffect(() => {
         setArticle(articleData.find(article => article.url === articleName));
     }, [articleName]);
@@ -35,10 +35,10 @@ export default function News() {
     return (
         <>
             <PageHeader image={background} title={"News"} subtitle={"VT Club XCTF"} />
-            <TopBar articles={articleData} filters={filters} onSort={handleSortedArticles}></TopBar>{/* TODO: make sidebar get data from topbar instead */}
+            <TopBar articles={articleData} filters={filters} onSort={handleSortedArticles}></TopBar>
             <div className="bar-plus-content">
                 <div className="page-content">
-                    <SideBar className="sidebar" data={sortedArticles}></SideBar>
+                    <SideBar className="sidebar" data={sortedArticles} size="big"></SideBar>
                     {article ? <Article className="article" article={article.content} image={article.image}></Article>
                         : <Article className="article" article={<></>} image={""}></Article>}
                 </div>

@@ -11,8 +11,14 @@
   }
 }
 
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
+  scrollbar-gutter: stable both-edges;
 }
 
 //declares the font family ITCAvantGardeBold
@@ -59,14 +65,25 @@
 
 }
 
-//removes the scrollbar on Firefox
-* {
-  scrollbar-width: none;
+//on webkit browsers, custom scrollbar
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-//removes the scrollbar on Chrome and Safari
-::-webkit-scrollbar {
-  display: none;
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e5e5e5; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(212, 212, 212); 
 }
 
 //changes the color of highlighted text
