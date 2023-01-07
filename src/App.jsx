@@ -5,9 +5,7 @@ import './App.scss';
 import Lines from './lines/lines.jsx';
 import Header from './header/header.jsx';
 import Home from './home/home.jsx';
-import Training from './training/Training';
-import trainingData from './data/training.json';
-import trainingNav from './data/trainingNav.json';
+import Training from './training/Training.jsx';
 import News from './news/News';
 import loadImages from './helpers/loadImages';
 import Footer from './footer/Footer.jsx';
@@ -68,7 +66,6 @@ export default function App() {
             <Route exact path="/competition" element={<Home />}></Route>
             <Route exact path="/records" element={<Home />}></Route>
             <Route exact path="/training/*" element={<Training />}></Route>
-            <Route path="/training/sprints" element={<Training key={0} plan={trainingData[1]}></Training>}></Route>
             <Route exact path="/about" element={<Home />}></Route>
           </Routes>
           <Footer></Footer>
