@@ -42,7 +42,7 @@ const navData = {
                 {
                     "id": 1,
                     "name": "Distance",
-                    "link": "/training/mens-distance-high-mileage",
+                    "link": "/training/mens-distance/400m-800m",
                     "image": 'https://i.imgur.com/orU4bPW.jpg'
                 },
                 {

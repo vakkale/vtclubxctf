@@ -1,4 +1,5 @@
 /* Something something, the who asked of articles */
+import { Link } from "react-router-dom";
 
 const fillerhtml =
     <div className="article-content">
@@ -20,6 +21,25 @@ const fillerhtml =
     </div >
 
 const articles = [
+    {
+        title: "They Said it Couldn't Be Done",
+        url: "they-said-it-couldnt-be-done",
+        year: "2023",
+        date: "1 - 6",
+        season: "Spring",
+        category: "Webdev Diaries",
+        image: 'https://i.imgur.com/u5FyQL2.jpg',
+        content:
+            <div className="article-content">
+                <p>Did someone call an exterminator? Cuz I've been squashing bugs like its nobody's business (Please ignore the bugs that are still there :D). Not only that but if you'd be so kind as to navigate over to our &#10024;Brand New&#10024; Training Page, your eyes will thank you for showing them the best way to see training plans yet!</p>
+                <p style={{ fontSize: '0.9rem', paddingTop: '0', paddingBottom: '0' }}>I am open to critism of course.</p>
+                <p>There's not much more to it but basically it took a lot of work so you better appreciate it. Here's a few links that take you directly there because if you're reading this before the site is live, the navigation's a bit broken atm. Enjoy!</p>
+                <ul>
+                    <li><Link to="/training/mens-distance/400m-800m" >Men's Distance Winter Plans</Link></li>
+                    <li><Link to="/training/womens-distance/distance">Women's Distance Winter Plans</Link></li>
+                </ul>
+            </div>
+    },
     {
         title: "I'm Losing My Mind",
         url: "im-losing-my-mind",

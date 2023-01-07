@@ -1,5 +1,6 @@
 .sidebar-container {
     height: calc(100vh - 60px);
+    max-width: calc(2 * var(--bigbar));
     background-color: #fff;
     z-index: 11;
     --transform-const: calc(-0.5 * 17vh);
@@ -18,7 +19,6 @@
     }
 
     .featured-content {
-        width: 100%;
         padding: 4.2127435492vw 2.1063717746vw 4.2127435492vw 2.1063717746vw;
         border-bottom: 1px solid #f6f6f6;
         position: relative;
@@ -48,7 +48,6 @@
 
         .list-item {
             padding: 2.1063717746vw 2.1063717746vw 2.1063717746vw 2.1063717746vw;
-            width: 100%;
             border-bottom: 1px solid #f6f6f6;
             position: relative;
             cursor: pointer;

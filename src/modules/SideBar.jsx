@@ -53,7 +53,7 @@ export default function SideBar({ data, size }) {
         if (data.length === 0) {
             navigate(`${domain()}/no-results`);
         }
-        else if (pathnameRef.current !== pathname)
+        else /* if (pathnameRef.current !== pathname) */
             navigate(`${domain()}/${data[0].url}`);
     }, [data]);
 

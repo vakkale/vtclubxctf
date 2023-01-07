@@ -65,25 +65,33 @@ html {
 
 }
 
+/* 
 //on webkit browsers, custom scrollbar
-/* width */
+//width
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
+//track
 ::-webkit-scrollbar-track {
   background: transparent; 
 }
  
-/* Handle */
+//handle
 ::-webkit-scrollbar-thumb {
   background: #e5e5e5; 
 }
 
-/* Handle on hover */
+//handle on hover
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(212, 212, 212); 
+}
+ */
+
+//disable scrollbar on firefox and webkit
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 //changes the color of highlighted text

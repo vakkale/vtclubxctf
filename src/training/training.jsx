@@ -55,7 +55,7 @@ export default function Training() {
 
     return (
         <>
-            <PageHeader image={team.image} title={team.team} subtitle="Training" />
+            <PageHeader image={team.image} title={team.team} yPos={team.yPos} subtitle="Training" />
             <TopBar articles={planData} filters={filters} onSort={handleSortedTeams}></TopBar>
             <div className="bar-plus-content">
                 <div className="page-content">

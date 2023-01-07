@@ -2,7 +2,8 @@ const plansData = [
     {
         team: "Men's Distance",
         url: "mens-distance",
-        image: "https://i.imgur.com/iBDwk0s.jpg",
+        image: "https://i.imgur.com/PSgzqgt.jpg",
+        yPos: "30%",
         plans: [
             {
                 title: "400m/800m",
@@ -66,7 +67,8 @@ const plansData = [
     {
         team: "Women's Distance",
         url: "womens-distance",
-        image: "https://i.imgur.com/8cG3AeD.jpg",
+        image: "https://i.imgur.com/6pa8c49.jpg",
+        yPos: "top",
         plans: [
             {
                 title: "Mid-Distance",

@@ -42,7 +42,7 @@ function TopBar({ articles, filters, onSort }) {
             {filters.map(filter => (
                 <>
                     <select className="filter-dropdown" id={`${filter}-select`} onChange={e => handleChange(e, filter)}>
-                        {/* <option className="filter" value="">All</option> */}
+                        <option className="filter" value="">All</option>
                         {filterValues[filter].map(value => (
                             <option className="filter" key={value} value={value} data-value={value}>{value}</option>
                         ))}
