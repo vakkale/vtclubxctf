@@ -1,6 +1,6 @@
 const plansData = [
     {
-        title: "Men's Distance",
+        team: "Men's Distance",
         url: "mens-distance",
         image: "https://i.imgur.com/iBDwk0s.jpg",
         plans: [
@@ -64,18 +64,47 @@ const plansData = [
         ]
     },
     {
-        title: "Women's Distance",
+        team: "Women's Distance",
         url: "womens-distance",
         image: "https://i.imgur.com/8cG3AeD.jpg",
         plans: [
+            {
+                title: "Mid-Distance",
+                url: "mid-distance",
+                year: "2022",
+                season: "Winter",
+                sheetID: "1oPmpp0pHt6ua5nmTIZgLVTcDSyxUZ0ZbwVWTzVIgAho",
+                sheets: [
+                    {
+                        title: "December",
+                        url: "december",
+                        range: "B2:H22"
+                    },
+                    {
+                        title: "January",
+                        url: "january",
+                        range: "B2:H22"
+                    }
+                ]
+            },
             {
                 title: "Distance",
                 url: "distance",
                 year: "2022",
                 season: "Winter",
                 sheetID: "1xHh2Dc07zVctCuK1H-3JYpqhsOcylwg5zBiJ9DMnexs",
-                sheetName: "December",
-                sheetRange: "B2:H22"
+                sheets: [
+                    {
+                        title: "December",
+                        url: "december",
+                        range: "B2:H22"
+                    },
+                    {
+                        title: "January",
+                        url: "january",
+                        range: "B2:H18"
+                    }
+                ]
             }
         ]
     }

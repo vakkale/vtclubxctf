@@ -1,7 +1,7 @@
 import "./SideBar.scss";
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function SideBar({ data, size }) {
     const location = useLocation();
@@ -9,6 +9,9 @@ export default function SideBar({ data, size }) {
 
     const pathname = location.pathname;
     const articleName = pathname.substring(pathname.lastIndexOf('/') + 1);
+
+    //useref for the pathname
+    const pathnameRef = useRef(pathname);
 
     function domain() {
         if (pathname.lastIndexOf('/') === 0) {
@@ -36,8 +39,8 @@ export default function SideBar({ data, size }) {
         return (
             <div className="featured-content ">
                 <div className="list-header">
-                    <span className="list-item-date">{featuredItem.date}</span>
-                    <span className="list-item-category">{featuredItem.category}</span>
+                    <span className="list-item-date">{(featuredItem.date) || (featuredItem.season)}</span>
+                    <span className="list-item-category">{(featuredItem.category) || (featuredItem.year)}</span>
                 </div>
                 <div className="feature-title">{featuredItem.title}</div>
             </div>
@@ -50,7 +53,7 @@ export default function SideBar({ data, size }) {
         if (data.length === 0) {
             navigate(`${domain()}/no-results`);
         }
-        else
+        else if (pathnameRef.current !== pathname)
             navigate(`${domain()}/${data[0].url}`);
     }, [data]);
 
@@ -70,8 +73,8 @@ export default function SideBar({ data, size }) {
                                 //sets style to active if the url matches the current url
                                 style={item.url === articleName ? { backgroundColor: "#f6f6f6" } : {}}>
                                 <div className="list-header">
-                                    <span className="list-item-date">{item.date}</span>
-                                    <span className="list-item-category">{item.category}</span>
+                                    <span className="list-item-date">{(item.date) || (item.season)}</span>
+                                    <span className="list-item-category">{(item.category) || (item.year)}</span>
                                 </div>
                                 <div className="list-item-title">{item.title}</div>
                             </div>

@@ -18,11 +18,12 @@ export default function TrainingPlan({ sheetID, sheets }) {
         return -1;
     }
 
+    const [sheetIndex, setSheetIndex] = useState(sheets.findIndex(sheet => getMonthFromString(sheet.title) === month));
+
     const [currentSheet, setCurrentSheet] = useState(
         //sets the current sheet to the first sheet in the array or the sheet that matches the current month
         (sheets.find(sheet => getMonthFromString(sheet.title) === month) !== null) ? sheets.find(sheet => getMonthFromString(sheet.title) == month) : sheets[sheetIndex]
     );
-    const [sheetIndex, setSheetIndex] = useState(sheets.findIndex(sheet => getMonthFromString(sheet.title) === month));
 
     const API_KEY = 'AIzaSyCrhqwQnST889kf5Sj28iH3Sz9EaUHn2Hw';
     const SHEET_ID = sheetID;
@@ -32,19 +33,19 @@ export default function TrainingPlan({ sheetID, sheets }) {
 
     const [loading, setLoading] = useState(true);
 
-    const currentPlan = useRef(null);
-
     const [updatingNow, setUpdatingNow] = useState(true);
+
+    const currentPlan = useRef(null);
 
     const [planMonth, setPlanMonth] = useState(getMonthFromString(currentSheet.sheetName));
 
     const [data, setData] = useState(null);
 
-    useEffect(() => {
+    //I can use something like this to set the current sheet to the current month, look at it later
+    /* useEffect(() => {
         if (sheets.find(sheet => getMonthFromString(sheet.title) === month) !== null)
             sheets.find(sheet => getMonthFromString(sheet.title) == month);
-        console.log(sheetID);
-    }, [sheets]);
+    }, [sheets]); */
 
     useEffect(() => {
 
@@ -52,8 +53,9 @@ export default function TrainingPlan({ sheetID, sheets }) {
         const topbar = document.getElementById('topbar');
         const element = document.getElementById("sidebar");
 
-        setLoading(true);
+
         async function fetchData() {
+            setLoading(true);
             const response = await axios.get(
                 `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${currentSheet.title}!${currentSheet.range}`,
                 {
@@ -63,28 +65,33 @@ export default function TrainingPlan({ sheetID, sheets }) {
                 }
             );
             setData(response.data.values);
+            setTimeout(() => {
+                element.scrollTop = 0;
+            }, 100);
+            setTimeout(() => {
+                window.scrollTo({
+                    behavior: 'smooth',
+                    left: 0,
+                    top: (topbar.offsetTop - topbar.offsetHeight + 4)
+                });
+                setLoading(false);
+                setUpdatingNow(true);
+            }, 800);
         }
         fetchData();
-
-        setTimeout(() => {
-            element.scrollTop = 0;
-        }, 100);
-        setTimeout(() => {
-            window.scrollTo({
-                behavior: 'smooth',
-                left: 0,
-                top: (topbar.offsetTop - topbar.offsetHeight + 4)
-            });
-            setLoading(false);
-            setUpdatingNow(true);
-        }, 800);
     }, [SHEET_ID, currentSheet, sheets]);
 
     useEffect(() => {
-        setTimeout(() => {
+        if (updatingNow) {
             currentPlan.current = data;
             setPlanMonth(getMonthFromString(currentSheet.title));
-        }, 600);
+        }
+        else {
+            setTimeout(() => {
+                currentPlan.current = data;
+                setPlanMonth(getMonthFromString(currentSheet.title));
+            }, 600);
+        }
     }, [data]);
 
     useEffect(() => {
@@ -163,9 +170,10 @@ export default function TrainingPlan({ sheetID, sheets }) {
                                                             return (
                                                                 <div key={k} className="table-body plan-date"
                                                                     style={{
-                                                                        color: cellMonth == month && cellDay == day
+                                                                        //gives errors when I use == instead of === and I have to say Number() to use === so whatever
+                                                                        color: Number(cellMonth) === Number(month) && Number(cellDay) === Number(day)
                                                                             ? 'darkorange'
-                                                                            : planMonth != cellMonth
+                                                                            : Number(planMonth) !== Number(cellMonth)
                                                                                 ? 'darkgray'
                                                                                 : 'black'
                                                                     }}
@@ -180,14 +188,15 @@ export default function TrainingPlan({ sheetID, sheets }) {
                                                                         'plan-extra'                //extra
                                                                 }`}
                                                                 style={{
-                                                                    //Makes the font for the mileage larger if the only description is the mileage
-                                                                    fontSize: (k === 2 && subrow[j].length < 10) ? '1.4rem' : '1rem',
+                                                                    //Makes the font for the mileage larger if the only description is the mileage (less than 10 characters)
+                                                                    fontSize: (k === 2 && subrow[j] != null && subrow[j].length < 10) ? '1.4rem' : '0.8rem',
+
                                                                     //if subrow[j] includes the word 'mile', capitalize the text
 
                                                                     //capitalize the text for Mile
                                                                     textTransform: k === 2 ? 'capitalize' : 'none',
                                                                     //if the cell is empty, set height to what it would be if it had text
-                                                                    height: subrow[j] === '' ? '1.5rem' : 'auto',
+                                                                    height: (subrow[j] == null) || (subrow[j] === '') ? '1.5rem' : 'auto',
                                                                 }}>{
                                                                     //if the cell is empty, return a space, otherwise return the cell
                                                                     subrow[j] === '' ? ' ' : subrow[j]

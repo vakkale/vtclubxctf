@@ -34,7 +34,7 @@ export default function News() {
 
     return (
         <>
-            <PageHeader image={background} title={"News"} subtitle={"VT Club XCTF"} />
+            <PageHeader image={background} title={"News"} subtitle={"VT Club XCTF"} yPos={"top"}/>
             <TopBar articles={articleData} filters={filters} onSort={handleSortedArticles}></TopBar>
             <div className="bar-plus-content">
                 <div className="page-content">

@@ -9,9 +9,6 @@ function TopBar({ articles, filters, onSort }) {
     // Initialize state for dropdown menu selections
     const [selectedFilters, setSelectedFilters] = useState({});
 
-    // Initialize state for sorted articles
-    const [articlesSorted, setArticlesSorted] = useState([]);
-
     // Populate dropdown menus with unique values from articles array
     const filterValues = {};
     filters.forEach(filter => {
@@ -37,6 +34,7 @@ function TopBar({ articles, filters, onSort }) {
             }
         });
         onSort(articlesFiltered);
+        console.log(articlesFiltered);
     };
 
     return (
@@ -44,7 +42,7 @@ function TopBar({ articles, filters, onSort }) {
             {filters.map(filter => (
                 <>
                     <select className="filter-dropdown" id={`${filter}-select`} onChange={e => handleChange(e, filter)}>
-                        <option className="filter" value="">All</option>
+                        {/* <option className="filter" value="">All</option> */}
                         {filterValues[filter].map(value => (
                             <option className="filter" key={value} value={value} data-value={value}>{value}</option>
                         ))}

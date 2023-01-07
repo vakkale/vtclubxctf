@@ -1,12 +1,12 @@
 import "./PageHeader.scss";
 
-const PageHeader = ({ image, title, subtitle }) => {
+const PageHeader = ({ image, title, subtitle, yPos }) => {
     return (
         <div className="page-header" style={{
             background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            backgroundPositionY: "top"
+            backgroundPositionY: yPos ? yPos : "center"
         }}>
             <div className="header-content">
                 <div className="page-subtitle">{subtitle}</div>
