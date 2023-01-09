@@ -34,7 +34,6 @@ function TopBar({ articles, filters, onSort }) {
             }
         });
         onSort(articlesFiltered);
-        console.log(articlesFiltered);
     };
 
     return (

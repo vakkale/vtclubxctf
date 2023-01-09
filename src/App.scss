@@ -88,10 +88,18 @@ html {
 }
  */
 
-//disable scrollbar on firefox and webkit
-body {
+//disable scrollbar on firefox
+* {
   scrollbar-width: none;
+  /* Firefox */
   -ms-overflow-style: none;
+  /* IE 10+ */
+}
+
+//disable scrollbar on chrome
+*::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
 }
 
 //changes the color of highlighted text

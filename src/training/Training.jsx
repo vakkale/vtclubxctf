@@ -18,9 +18,6 @@ export default function Training() {
     //set teamName to the part of the url before the last / but after the second /
     const teamName = pathname.substring(pathname.indexOf('/', 1) + 1, pathname.lastIndexOf('/'));
 
-    console.log("Plan Name: " + planName);
-    console.log("Team Name: " + teamName);
-
     //sets the team as the first team in the array
     const [team, setTeam] = useState(planData.find(team => team.url === teamName));
 
@@ -36,7 +33,7 @@ export default function Training() {
         setTeam(planData.find(team => team.url === teamName));
         setPlan(team.plans.find(plan => plan.url === planName));
         setSortedTeams(team);
-    }, [planName, teamName, team.plans]);
+    }, [planName, teamName, team]);
 
     // Array of filters for the ArticleSorter component
     //MASSIVE TIME SINK, FIX LATER

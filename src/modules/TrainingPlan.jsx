@@ -1,6 +1,5 @@
 import "./TrainingPlan.scss";
 import { useState, useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
 import axios from "axios";
 
 export default function TrainingPlan({ sheetID, sheets }) {
@@ -144,7 +143,7 @@ export default function TrainingPlan({ sheetID, sheets }) {
                             <thead key={i} className="table-header table-days">
                                 <tr key={i} className="calendar-week">
                                     {row.map((cell, j) => (
-                                        <th key={j}>{cell}</th>
+                                        <th style={{textTransform: 'capitalize'}} key={j}>{cell}</th>
                                     ))}
                                 </tr>
                             </thead>

@@ -7,7 +7,7 @@
     flex: 100%;
     flex-wrap: nowrap;
     pointer-events: none;
-    z-index: 500;
+    z-index: 50;
     bottom: 0;
 
     .big {
@@ -37,6 +37,8 @@
         --total-length: calc(var(--delay-1) + var(--animation-duration));
         --easing-down: cubic-bezier(.445, .05, .55, .95);
         --easing-up: cubic-bezier(.445, .05, .55, .95);
+        /* --easing-down: ease-out;
+        --easing-up: ease-out; */
     }
 
     /* FORMAT OF ANIMATION:

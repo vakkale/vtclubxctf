@@ -11,6 +11,10 @@ export default function News() {
     const background = 'https://i.imgur.com/RItaeRr.jpg';
 
     const location = useLocation();
+
+    if (location.pathname !== '/news') {
+        // Update the pathname here using the `history` object provided by the `useHistory` hook
+    }
     const pathname = location.pathname;
     const articleName = pathname.substring(pathname.lastIndexOf('/') + 1);
 
@@ -34,7 +38,7 @@ export default function News() {
 
     return (
         <>
-            <PageHeader image={background} title={"News"} subtitle={"VT Club XCTF"} yPos={"top"}/>
+            <PageHeader image={background} title={"News"} subtitle={"VT Club XCTF"} yPos={"top"} />
             <TopBar articles={articleData} filters={filters} onSort={handleSortedArticles}></TopBar>
             <div className="bar-plus-content">
                 <div className="page-content">
