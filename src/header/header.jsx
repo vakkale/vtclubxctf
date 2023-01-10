@@ -1,7 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { jsx } from '@emotion/react';
 
-
 import './header.scss';
 import '../helpers/curtains.scss';
 import Curtains from '../helpers/Curtains.jsx';
@@ -10,8 +9,10 @@ import { Link } from 'react-router-dom';
 import navData from '../data/navData.jsx';
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import AccordionMenu from '../modules/AccordionMenu.jsx';
 
 const logo = 'https://i.imgur.com/TogHaZv.png';
+/* const logo2 = 'https://i.imgur.com/1EBVBAi.png'; */
 const logo2 = 'https://i.imgur.com/u1KaQeC.png';
 
 
@@ -23,6 +24,7 @@ export default function Header() {
     useEffect(() => {
         setSelectorOpen(false);
         setSelector(null);
+        setMobileMenuOpen(false);
     }, [pathname]);
 
     //mobile or not
@@ -34,6 +36,7 @@ export default function Header() {
                 setIsMobile(true);
             } else {
                 setIsMobile(false);
+                setMobileMenuOpen(false);
             }
         }
 
@@ -69,32 +72,37 @@ export default function Header() {
         }
     }
 
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const handleMobileMenu = () => {
+        console.log('mobile menu clicked');
+        setMobileMenuOpen(!mobileMenuOpen);
+    }
+
     const MobileMenu = () => {
         return (
-            <header className='header mobile-header' id='header'>
-                <div className="mobile-hamburger-menu">
+            <>
+                <header className='header mobile-header' id='header'>
+                    <div className='header-logo'>
+                        <Link
+                            to='/'><img
+                                src={logo2}
+                                alt='logo'
+                                css={{
+                                    width: '80px',
+                                    height: '80px',
+                                    objectFit: 'contain',
+                                }}
+                            /></Link>
+                    </div>
+                    <div className="mobile-menu" onClick={() => { handleMobileMenu(); }}>
+                        <span class="material-symbols-outlined">
+                            {mobileMenuOpen ? 'close' : 'menu'}
+                        </span>
+                    </div>
 
-                </div>
-                <div className='header-logo'>
-                    <Link
-                        to='/'
-                        css={{
-                            width: '80px',
-                            height: '80px',
-                            position: 'absolute',
-                            marginLeft: '-40px',
-                            marginTop: '-40px',
-                        }}><img
-                            src={logo2}
-                            alt='logo'
-                            css={{
-                                width: '100%',
-                                height: '100%',
-                                objectFit: 'contain',
-                            }}
-                        /></Link>
-                </div>
-            </header>
+                </header>
+            </>
         );
     }
 
@@ -114,8 +122,8 @@ export default function Header() {
                             src={logo}
                             alt='logo'
                             css={{
-                                width: '100%',
-                                height: '100%',
+                                width: '50px',
+                                height: '50px',
                                 objectFit: 'contain',
                             }}
                         /></Link>
@@ -233,7 +241,12 @@ export default function Header() {
     return (
         <>
             {isMobile ? <MobileMenu></MobileMenu> : <DesktopMenu></DesktopMenu>}
-            {selectorOpen ? <Selector></Selector> : null}
+            {(isMobile && mobileMenuOpen) ?
+                <div className="mobile-menu-container">
+                    <AccordionMenu data={navData} />
+                </div>
+                : null}
+            {(!isMobile && selectorOpen) ? <Selector></Selector> : null}
             {curtainsOn ? <Curtains></Curtains> : null}
         </>
     );

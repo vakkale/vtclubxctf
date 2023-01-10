@@ -68,7 +68,6 @@
 
             .menu-reveal {
                 align-items: center;
-                transition: all 1s ease-in-out;
 
                 .menu-reveal-text {
                     display: hidden;
@@ -103,7 +102,7 @@
 
             .menu-reveal-container {
                 opacity: 1;
-                transition: all 0.2s ease-in-out 0.6s;
+                transition: all 0.2s ease-in-out 0.5s;
             }
         }
     }

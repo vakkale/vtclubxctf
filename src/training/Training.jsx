@@ -46,9 +46,9 @@ export default function Training() {
         setSortedTeams(plansSorted);
     };
 
-    useEffect(() => {
+    /* useEffect(() => {
         navigate("/training/" + sortedTeams.url + "/" + sortedTeams.plans[0].url);
-    }, [sortedTeams]);
+    }, [sortedTeams]); */
 
     return (
         <>
