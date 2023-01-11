@@ -32,11 +32,11 @@ const navData = [
                 submenus: [
                     {
                         name: "Women's Distance",
-                        url: "/training/womens-distance/distance",
+                        url: "/training/womens-distance/mid-distance",
                     },
                     {
                         name: "Men's Distance",
-                        url: "/training/mens-distance/400m-800m",
+                        url: "/training/mens-distance/",
                     }
                 ]
             },

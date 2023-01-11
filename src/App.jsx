@@ -67,6 +67,7 @@ export default function App() {
             <Route exact path="/records" element={<Home />}></Route>
             <Route exact path="/training/*" element={<Training />}></Route>
             <Route exact path="/about" element={<Home />}></Route>
+            <Route exact path="*" element={<Home />}></Route>
           </Routes>
           <Footer></Footer>
         </BrowserRouter>

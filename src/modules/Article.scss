@@ -15,6 +15,10 @@
     padding: 14px 0;
   }
 
+  li {
+    margin-left: 15px;
+  }
+
   a {
     color: #ff7f50;
     transition: all 0.5s cubic-bezier(0, 0.5, 0.5, 1);
@@ -54,14 +58,15 @@
   }
 
   .html-container {
-    width: 46.05vw;
+    width: 100%;
     padding: 2vw 2vw 5vw 2vw;
     background-color: white;
 
     //on mobile 100% width
     @media (max-width: 768px) {
-      width: calc(100% - 8vw);
+      width: 100%;
       padding: 2vw 4vw 5vw 4vw;
+      margin-right: 0;
     }
   }
 

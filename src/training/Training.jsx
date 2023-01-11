@@ -19,7 +19,7 @@ export default function Training() {
     const teamName = pathname.substring(pathname.indexOf('/', 1) + 1, pathname.lastIndexOf('/'));
 
     //sets the team as the first team in the array
-    const [team, setTeam] = useState(planData.find(team => team.url === teamName));
+    const [team, setTeam] = useState((planData.find(team => team.url === teamName) || planData[0]));
 
     //set the plan as the first plan in the array
     const [plan, setPlan] = useState(
@@ -30,14 +30,18 @@ export default function Training() {
 
     //set plan as the plan that matches the url
     useEffect(() => {
-        setTeam(planData.find(team => team.url === teamName));
-        setPlan(team.plans.find(plan => plan.url === planName));
-        setSortedTeams(team);
+        try {
+            setTeam(planData.find(team => team.url === teamName));
+            setPlan(team.plans.find(plan => plan.url === planName));
+            setSortedTeams(team);
+        } catch (error) {
+            navigate("/training/" + team.url + "/" + team.plans[0].url);
+        }
     }, [planName, teamName, team]);
 
     // Array of filters for the ArticleSorter component
     //MASSIVE TIME SINK, FIX LATER
-    const filters = [''];
+    /* const filters = ['']; */
     // Set the sorted articles to send to the SideBar component
     const [sortedTeams, setSortedTeams] = useState(team);
 
@@ -53,7 +57,8 @@ export default function Training() {
     return (
         <>
             <PageHeader image={team.image} title={team.team} yPos={team.yPos} subtitle="Training" />
-            <TopBar articles={planData} filters={filters} onSort={handleSortedTeams}></TopBar>
+            {/* <TopBar articles={planData} filters={filters} onSort={handleSortedTeams}></TopBar> */}
+            <div className='topbar-container' id='topbar'></div>
             <div className="bar-plus-content">
                 <div className="page-content">
                     <SideBar className="sidebar" data={sortedTeams.plans} size="small"></SideBar>
