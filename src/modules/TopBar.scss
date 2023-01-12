@@ -10,6 +10,11 @@
     flex-wrap: nowrap;
     text-align: center;
 
+    @media screen and (max-width: 768px) {
+        margin: 0;
+        height: 10vh;
+    }
+
     .filter-dropdown {
         flex: 100%;
         background-color: #971a43;
@@ -24,6 +29,9 @@
 
         @media screen and (max-width: 768px) {
             max-width: 100%;
+            font-size: 1rem;
+            padding-left: var(--smallbar);
+            padding-right: var(--smallbar);
         }
 
         &:focus {

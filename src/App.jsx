@@ -9,6 +9,7 @@ import Training from './training/Training.jsx';
 import News from './news/News';
 import loadImages from './helpers/loadImages';
 import Footer from './footer/Footer.jsx';
+import Contact from './contact/Contact';
 
 export default function App() {
 
@@ -66,7 +67,7 @@ export default function App() {
             <Route exact path="/competition" element={<Home />}></Route>
             <Route exact path="/records" element={<Home />}></Route>
             <Route exact path="/training/*" element={<Training />}></Route>
-            <Route exact path="/about" element={<Home />}></Route>
+            <Route exact path="/contact" element={<Contact />}></Route>
             <Route exact path="*" element={<Home />}></Route>
           </Routes>
           <Footer></Footer>

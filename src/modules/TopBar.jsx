@@ -42,10 +42,12 @@ function TopBar({ articles, filters, onSort }) {
                 {filters.map(filter => (
                     <>
                         <select className="filter-dropdown" id={`${filter}-select`} onChange={e => handleChange(e, filter)}>
-                            <option className="filter" value="">{
-                                //this is so simple but i feel like a genius
-                                `All ${(filter.substring(filter.length - 1) === 'y') ? `${filter.substring(0, filter.length - 1)}ies` : `${filter}s`
-                                }`}</option>
+                            {filter !== ('title' || 'name') ?
+                                <option key={filter} className="filter" value="">{
+                                    //this is so simple but i feel like a genius
+                                    `All ${(filter.substring(filter.length - 1) === 'y') ? `${filter.substring(0, filter.length - 1)}ies` : `${filter}s`
+                                    }`}</option>
+                                : <></>}
                             {filterValues[filter].map(value => (
                                 <option className="filter" key={value} value={value} data-value={value}>{value}</option>
                             ))}
@@ -55,8 +57,8 @@ function TopBar({ articles, filters, onSort }) {
             </div >
         );
     else
-    return (
-        <div className="topbar-container" id="topbar"></div>
-    );
+        return (
+            <div className="topbar-container" id="topbar"></div>
+        );
 }
 export default TopBar;

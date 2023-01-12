@@ -73,10 +73,18 @@ export default function Header() {
     }
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [mobileMenuClosing, setMobileMenuClosing] = useState(false);
 
     const handleMobileMenu = () => {
-        console.log('mobile menu clicked');
-        setMobileMenuOpen(!mobileMenuOpen);
+        if (mobileMenuOpen) {
+            setMobileMenuClosing(true);
+            setTimeout(() => {
+                setMobileMenuOpen(false);
+                setMobileMenuClosing(false);
+            }, 500);
+        } else {
+            setMobileMenuOpen(true);
+        }
     }
 
     const MobileMenu = () => {
@@ -106,6 +114,47 @@ export default function Header() {
         );
     }
 
+    const [aboutOpen, setAboutOpen] = useState(false);
+    const [aboutClosing, setAboutClosing] = useState(false);
+    const aboutData = navData.find(item => item.name === 'about').submenus;
+
+    const handleAbout = () => {
+        if (aboutOpen) {
+            setAboutClosing(true);
+            setTimeout(() => {
+                setAboutOpen(false);
+                setAboutClosing(false);
+            }, 500);
+        } else {
+            setAboutOpen(true);
+        }
+    }
+
+    const About = () => {
+        return (
+            <>
+                <nav className={`about-menu ${aboutClosing ? 'closing' : ''}`}>
+                    {aboutData.map((item, index) => {
+                        return (
+                            <Link
+                                to={item.url}
+                                key={index}
+                                className={`about-link ${aboutClosing ? 'closing' : ''}`}
+                                onClick={() => {
+                                    handleAbout();
+                                }}
+                            >
+                                {item.name}
+                            </Link>
+                        );
+                    })}
+                </nav>
+                <div className={`darken-page ${aboutClosing ? 'closing' : ''}`}></div>
+            </>
+        );
+    }
+
+
     const DesktopMenu = () => {
         return (
             <header className='header desktop-header' id='header'>
@@ -118,6 +167,10 @@ export default function Header() {
                             position: 'absolute',
                             paddingLeft: 'calc(var(--smallbar) - (0.5 * 53px))',
                             marginTop: '-25px',
+                        }}
+                        onClick={() => {
+                            setSelectorOpen(false);
+                            setSelector(null);
                         }}><img
                             src={logo}
                             alt='logo'
@@ -151,7 +204,9 @@ export default function Header() {
                                 //if the item has subitems, create a link that opens a selector when clicked
                                 <div className='header-link' key={index}>
                                     <div className='header-link-text' onClick={() => {
-                                        handleSelector(item.submenus);
+                                        item.name !== 'about'
+                                            ? handleSelector(item.submenus)
+                                            : handleAbout()
                                     }
                                     }>{item.name}</div>
                                 </div>
@@ -242,12 +297,13 @@ export default function Header() {
         <>
             {isMobile ? <MobileMenu></MobileMenu> : <DesktopMenu></DesktopMenu>}
             {(isMobile && mobileMenuOpen) ?
-                <div className="mobile-menu-container">
+                <div className={`mobile-menu-container ${mobileMenuClosing ? 'closing' : ''}`}>
                     <AccordionMenu data={navData} />
                 </div>
                 : null}
             {(!isMobile && selectorOpen) ? <Selector></Selector> : null}
             {curtainsOn ? <Curtains></Curtains> : null}
+            {aboutOpen ? <About></About> : null}
         </>
     );
 }

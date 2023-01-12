@@ -2,7 +2,6 @@ import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import './AccordionMenu.scss';
 
-
 function AccordionMenu({ data }) {
     /* const [showMenu, setShowMenu] = useState(true); */
 
@@ -27,6 +26,7 @@ function AccordionMenu({ data }) {
                             aria-haspopup="menu"
                             aria-expanded={children ? 'true' : 'false'}
                             onClick={() => setChildren((prev) => !prev)}
+                            className="menu-item"
                         >
                             {items.name}{' '}
                             <span className="arrow" />
@@ -38,7 +38,7 @@ function AccordionMenu({ data }) {
                         />
                     </>
                 ) : (
-                    <Link to={items.url} onClick={closeChildren}> {items.name} </Link>
+                    <Link className="menu-item" to={items.url} onClick={closeChildren}> {items.name} </Link>
                 )}
             </li>
         );
@@ -46,7 +46,6 @@ function AccordionMenu({ data }) {
 
     const Dropdown = ({ submenus, dropdown, depthLevel }) => {
         depthLevel = depthLevel + 1;
-        console.log(submenus);
         return (
             <ul
                 className={`dropdown ${dropdown ? 'show' : ''

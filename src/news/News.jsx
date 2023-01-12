@@ -10,6 +10,18 @@ import { useEffect, useState } from 'react';
 export default function News() {
     const background = 'https://i.imgur.com/RItaeRr.jpg';
 
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        if (window.innerWidth < 1000) {
+            setIsMobile(true);
+            setFilters(['title']);
+        }
+        else {
+            setIsMobile(false);
+        }
+    }, []);
+
     const location = useLocation();
 
     if (location.pathname !== '/news') {
@@ -27,13 +39,15 @@ export default function News() {
     }, [articleName]);
 
     // Array of filters for the ArticleSorter component
-    const filters = ['year', 'season', 'category'];
+    const [filters, setFilters] = useState(['year', 'season', 'category']);
     // Set the sorted articles to send to the SideBar component
     const [sortedArticles, setSortedArticles] = useState(articleData);
 
     // Callback function to handle sorted articles
     const handleSortedArticles = articlesSorted => {
         setSortedArticles(articlesSorted);
+        if (isMobile)
+            setArticle(articlesSorted[0]);
     };
 
     return (
@@ -47,7 +61,6 @@ export default function News() {
                         : <Article className="article" article={<></>} image={""}></Article>}
                 </div>
             </div>
-
         </>
     );
 }

@@ -64,7 +64,28 @@ const navData = [
     },
     {
         name: "about",
-        url: "/about",
+        submenus: [
+            {
+                name: "join",
+                url: "/join"
+            },
+            {
+                name: "athletic trainer",
+                url: "/athletic-trainer"
+            },
+            {
+                name: "sponsors",
+                url: "/sponsors"
+            },
+            {
+                name: "contact us",
+                url: "/contact"
+            },
+            {
+                name: "support us",
+                url: "/donate"
+            }
+        ]
     }
 ];
 export default navData;
