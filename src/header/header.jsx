@@ -54,6 +54,7 @@ export default function Header() {
 
     function handleSelector(newSelector) {
         setCurtainsOn(false);
+        if (aboutOpen) handleAbout();
 
         //if newSelector is the same as the current selector, close the selector
         if (newSelector === selector) {
@@ -127,6 +128,8 @@ export default function Header() {
             }, 500);
         } else {
             setAboutOpen(true);
+            setSelectorOpen(false);
+            setSelector(null);
         }
     }
 
@@ -206,7 +209,7 @@ export default function Header() {
                                     <div className='header-link-text' onClick={() => {
                                         item.name !== 'about'
                                             ? handleSelector(item.submenus)
-                                            : handleAbout()
+                                            : handleAbout();
                                     }
                                     }>{item.name}</div>
                                 </div>
