@@ -10,6 +10,7 @@ import News from './news/News';
 import loadImages from './helpers/loadImages';
 import Footer from './footer/Footer.jsx';
 import Contact from './contact/Contact';
+import MapRoutes from './routes/Routes';
 
 export default function App() {
 
@@ -68,6 +69,7 @@ export default function App() {
             <Route exact path="/records" element={<Home />}></Route>
             <Route exact path="/training/*" element={<Training />}></Route>
             <Route exact path="/contact" element={<Contact />}></Route>
+            <Route exact path="/routes/*" element={<MapRoutes />}></Route>
             <Route exact path="*" element={<Home />}></Route>
           </Routes>
           <Footer></Footer>

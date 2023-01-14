@@ -22,11 +22,13 @@ export default function Contact() {
                         <div className="officer-info">
                             <h3 className='name'>{officer.name}</h3>
                             <p className='position'>{officer.position}</p>
-                            <p className='email'>{officer.email}</p>
                         </div>
                     </div>
                     <div className="card-bottom">
                         <p className='bio'>{officer.bio}</p>
+                    </div>
+                    <div className="mailto">
+                        <a href={`mailto:${officer.email}`} className="mail">{officer.email}</a>
                     </div>
                 </div>
             </>
@@ -35,7 +37,7 @@ export default function Contact() {
 
     return (
         <>
-            <PageHeader image={image} title={"Officers"} yPos={"35%"} subtitle="Contact Us" />
+            <PageHeader image={image} title={"Officer Board"} yPos={"35%"} subtitle="Contact Us" />
             <div className="bar-plus-content">
                 <div className='topbar-container' id='topbar'></div>
                 <div className="page-content">

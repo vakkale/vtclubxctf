@@ -42,7 +42,7 @@ export default function SideBar({ data, size }) {
                     <span className="list-item-date">{(featuredItem.date) || (featuredItem.season)}</span>
                     <span className="list-item-category">{(featuredItem.category) || (featuredItem.year)}</span>
                 </div>
-                <div className="feature-title">{featuredItem.title}</div>
+                <div className="feature-title">{featuredItem.title || featuredItem.name}</div>
             </div>
         );
     }
@@ -76,7 +76,7 @@ export default function SideBar({ data, size }) {
                                     <span className="list-item-date">{(item.date) || (item.season)}</span>
                                     <span className="list-item-category">{(item.category) || (item.year)}</span>
                                 </div>
-                                <div className="list-item-title">{item.title}</div>
+                                <div className="list-item-title">{item.title || item.name}</div>
                             </div>
                         );
                     })}
