@@ -152,7 +152,7 @@ export default function Header() {
                         );
                     })}
                 </nav>
-                <div className={`darken-page ${aboutClosing ? 'closing' : ''}`}></div>
+                <div className={`darken-page ${aboutClosing ? 'closing' : ''}`} onClick={() => { handleAbout(); }}></div>
             </>
         );
     }

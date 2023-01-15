@@ -9,6 +9,10 @@
     --smallbar: 6vw;
     --bigbar: calc((100vw - (2 * var(--smallbar))) / 2);
   }
+
+  --maroon: #971a43;
+  --orange: #ff7f50;
+
 }
 
 html {

@@ -24,9 +24,6 @@ export default function News() {
 
     const location = useLocation();
 
-    if (location.pathname !== '/news') {
-        // Update the pathname here using the `history` object provided by the `useHistory` hook
-    }
     const pathname = location.pathname;
     const articleName = pathname.substring(pathname.lastIndexOf('/') + 1);
 
@@ -35,7 +32,7 @@ export default function News() {
 
     //set article to the article that matches the url
     useEffect(() => {
-        setArticle(articleData.find(article => article.url === articleName));
+        setArticle(articleData.find(article => article.url === location.pathname.substring(pathname.lastIndexOf('/') + 1)));
     }, [articleName]);
 
     // Array of filters for the ArticleSorter component
