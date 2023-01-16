@@ -9,8 +9,9 @@
     pointer-events: none;
     overflow: hidden;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         height: 40vh;
+        margin-top: 60px;
     }
 
     .header-content {

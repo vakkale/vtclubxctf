@@ -1,3 +1,9 @@
+.article-container {
+  @media screen and (max-width: 1000px) {
+    margin-top: 20px;
+  }
+}
+
 .article-content {
   font-family: 'akkurat';
   font-size: 1rem;
@@ -19,6 +25,21 @@
     margin-left: 15px;
   }
 
+  ol {
+
+    li {
+      padding: 9px 0;
+
+      ol,
+      ul {
+
+        li {
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+
   a {
     color: var(--orange);
     transition: all 0.5s cubic-bezier(0, 0.5, 0.5, 1);
@@ -38,7 +59,7 @@
     img {
       //drop shadow
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      
+
       @media screen and (max-width: 1000px) {
         max-width: 90%;
       }
@@ -49,7 +70,7 @@
     max-width: 70%;
     height: auto;
 
-    
+
 
     &::before {
       content: "";
@@ -81,7 +102,7 @@
     background-color: white;
 
     //on mobile 100% width
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       width: 100%;
       padding: 2vw 4vw 5vw 4vw;
       margin-right: 0;

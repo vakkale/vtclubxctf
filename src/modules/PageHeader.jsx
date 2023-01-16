@@ -10,7 +10,7 @@ const PageHeader = ({ image, title, subtitle, yPos }) => {
             backgroundRepeat: "no-repeat",
         }}>
             <div className="header-content">
-                <div className="page-subtitle">{subtitle}</div>
+                {subtitle ? <div className="page-subtitle">{subtitle}</div> : <div style={{opacity: 0}} className="page-subtitle">placeholder</div>}
                 <div className="page-title">{title}</div>
             </div>
         </div >

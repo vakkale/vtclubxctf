@@ -25,7 +25,7 @@ export default function Donate() {
 
     return (
         <>
-            <PageHeader image={background} title={"Support Us"} subtitle={"Donate"} yPos={"15%"} />
+            <PageHeader image={background} title={"Support Us"} subtitle={""} yPos={"15%"} />
             <div className="topbar-container" id='topbar'></div>
             <div className="bar-plus-content">
                 <div className="page-content">

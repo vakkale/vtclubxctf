@@ -78,7 +78,7 @@ const navData = [
                 url: "/sponsors"
             },
             {
-                name: "contact us",
+                name: "officer board",
                 url: "/contact"
             },
             {

@@ -11,7 +11,8 @@ import loadImages from './helpers/loadImages';
 import Footer from './footer/Footer.jsx';
 import Contact from './contact/Contact';
 import MapRoutes from './routes/Routes';
-import Donate from './donate/Donate';
+import Donate from './about_pages/Donate';
+import Join from './about_pages/Join';
 
 export default function App() {
 
@@ -72,6 +73,7 @@ export default function App() {
             <Route exact path="/contact" element={<Contact />}></Route>
             <Route exact path="/routes/*" element={<MapRoutes />}></Route>
             <Route exact path="/donate" element={<Donate />}></Route>
+            <Route exact path="/join" element={<Join />}></Route>
             <Route exact path="*" element={<Home />}></Route>
           </Routes>
           <Footer></Footer>
