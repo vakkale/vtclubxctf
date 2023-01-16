@@ -31,39 +31,37 @@ const socialdata = [
 const Footer = () => {
 
     const location = useLocation();
-    if (location.pathname !== "/") {
-        return (
-            <div className="footer-container" id="footer">
-                <div className="footer-top">
-                    <Link to="/contact" className="footer-link">Contact Us</Link>
-                    <Link to="/" className="footer-logo"></Link>
-                    <Link to="/donate" className="footer-link">Support Us</Link>
-                </div>
-                <div className="footer-bottom">
-                    <div className="footer-bottom-left"></div>
-                    <div className="footer-bottom-middle">
-                        {socialdata.map((social) => {
-                            return (
-                                <a
-                                    key={social.id}
-                                    className="footer-social"
-                                    href={social.link}
-                                    target={"_blank"}
-                                    rel="noreferrer"
-                                    style={{
-                                        backgroundImage: `url(${social.logo})`,
-                                        backgroundSize: "cover",
-                                        width: "20px",
-                                        height: "20px"
-                                    }}>
-                                </a>
-                            );
-                        })}
-                    </div>
-                    <div className="footer-bottom-right"></div>
-                </div>
+    return (
+        <div className="footer-container" id="footer">
+            <div className="footer-top">
+                <Link to="/contact" className="footer-link">Contact Us</Link>
+                <Link to="/" className="footer-logo"></Link>
+                <Link to="/donate" className="footer-link">Support Us</Link>
             </div>
-        );
-    }
+            <div className="footer-bottom">
+                <div className="footer-bottom-left"></div>
+                <div className="footer-bottom-middle">
+                    {socialdata.map((social) => {
+                        return (
+                            <a
+                                key={social.id}
+                                className="footer-social"
+                                href={social.link}
+                                target={"_blank"}
+                                rel="noreferrer"
+                                style={{
+                                    backgroundImage: `url(${social.logo})`,
+                                    backgroundSize: "cover",
+                                    width: "20px",
+                                    height: "20px"
+                                }}>
+                            </a>
+                        );
+                    })}
+                </div>
+                <div className="footer-bottom-right"></div>
+            </div>
+        </div>
+    );
 }
 export default Footer;

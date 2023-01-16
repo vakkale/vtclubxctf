@@ -58,6 +58,12 @@
                 padding-bottom: 17px;
                 display: flex;
                 font-size: 0.9rem;
+
+                .recent-article-category {
+                    position: absolute;
+                    padding-left: 60px;
+                    color: var(--maroon);
+                }
             }
 
             .recent-article-title {
