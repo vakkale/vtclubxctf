@@ -17,10 +17,29 @@ export default function Article({ article, image }) {
         const topbar = document.getElementById('topbar');
         const element = document.getElementById("sidebar");
 
-        const images = [image];
+        if (image) {
 
-        setLoading(true);
-        loadImages(images).then(() => {
+            const images = [image];
+
+            setLoading(true);
+            loadImages(images).then(() => {
+                setTimeout(() => {
+                    element.scrollTop = 0;
+                }, 100);
+                setTimeout(() => {
+                    currentArticle.current = article;
+                    currentImage.current = image;
+                    window.scrollTo({
+                        behavior: 'smooth',
+                        left: 0,
+                        top: (topbar.offsetTop - topbar.offsetHeight + 4)
+                    });
+                    setLoading(false);
+                }, 800);
+            });
+        }
+        else if (image == null) {
+            setLoading(true);
             setTimeout(() => {
                 element.scrollTop = 0;
             }, 100);
@@ -34,7 +53,8 @@ export default function Article({ article, image }) {
                 });
                 setLoading(false);
             }, 800);
-        });
+        }
+
     }, [article, image]);
 
     return (
@@ -46,9 +66,11 @@ export default function Article({ article, image }) {
                     </div>
                 )}
             </div>
-            <div className="image-container">
-                <img src={currentImage.current} style={{ width: '100%', objectFit: 'cover', objectPosition: 'center' }}></img>
-            </div>
+            {image &&
+                <div className="image-container">
+                    <img src={currentImage.current} style={{ width: '100%', objectFit: 'cover', objectPosition: 'center' }}></img>
+                </div>
+            }
             <div className="html-container">
                 {currentArticle.current}
             </div>
