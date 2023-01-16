@@ -20,11 +20,11 @@
   }
 
   a {
-    color: #ff7f50;
+    color: var(--orange);
     transition: all 0.5s cubic-bezier(0, 0.5, 0.5, 1);
 
     &:hover {
-      color: #801936;
+      color: var(--maroon);
       text-decoration: underline;
     }
   }

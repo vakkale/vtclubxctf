@@ -1,6 +1,7 @@
 import React from 'react';
 import GeneralInfo from '../modules/home/GeneralInfo.jsx';
 import RecentArticles from '../modules/home/RecentArticles.jsx';
+import PracticeInfo from '../modules/home/PracticeInfo.jsx';
 
 import Slider from './components/slider/Slider.jsx'
 
@@ -10,6 +11,7 @@ const Home = () => {
             <Slider />
             <RecentArticles />
             <GeneralInfo />
+            <PracticeInfo />
         </div>
     )
 }

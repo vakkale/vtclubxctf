@@ -1,0 +1,101 @@
+.pi-container {
+    margin: calc(2 * var(--smallbar)) calc(var(--smallbar) + (0.5 * var(--bigbar)));
+    position: relative;
+    height: calc(2 * var(--bigbar));
+    display: flex;
+
+    .pi-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-position-y: 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pi-items-container {
+
+        .overlay-left {
+            position: absolute;
+            left: var(--bigbar);
+            height: 100%;
+            width: calc(0.5 * var(--bigbar));
+            background-color: white;
+            bottom: 0;
+        }
+
+        .info-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(1.5 * var(--bigbar));
+            background-color: white;
+            font-size: 1.2rem;
+            /* height: calc(1.2 * var(--bigbar)); */
+            height: fit-content;
+            min-height: 100%;
+            z-index: 11;
+            font-family: 'ITCAvantGarde', sans-serif;
+            border: 1px solid rgba(142, 142, 142, 0.13);
+
+            @media screen and (max-width: 1200px) {
+                font-size: 1rem;
+            }
+
+            &>* {
+                padding: 12px;
+            }
+
+            .info-bar-title {
+                font-size: 1.5rem;
+                padding-bottom: 35px;
+                margin-top: var(--smallbar);
+            }
+
+            .info-item {
+                padding-bottom: 20px;
+                display: flex;
+                align-items: center;
+
+                &:first-child {
+                    padding-top: 12px;
+                }
+
+                .info-icon {
+                    padding-right: 5px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .info-description {}
+            }
+        }
+
+        .map-container {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border: white solid calc(0.5 * var(--smallbar));
+
+            iframe {}
+        }
+
+        .overlay-right {
+            position: absolute;
+            bottom: 0;
+            left: calc(1.5 * var(--bigbar));
+            width: var(--bigbar);
+            height: var(--smallbar);
+            background-color: white;
+        }
+
+        .overlay-top {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: calc(3.5 * var(--bigbar) + 2px);
+            height: var(--smallbar);
+            background-color: white;
+        }
+    }
+}
