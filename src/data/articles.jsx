@@ -1,26 +1,58 @@
 /* Something something, the who asked of articles */
 import { Link } from "react-router-dom";
 
-const fillerhtml =
-    <div className="article-content">
-        <p>This is random text.</p>
-        <p>While filling big shoes left by former Alberta Golden Bears coach Terry Danyluk, Brock Davidiuk has also brought a wealth of volleyball knowledge to the university’s sideline.</p>
-        <p>Davidiuk took over the head coaching reins of his former team in 2019, 13 years after graduating from the school. As a player with the Bears, he was named Championship MVP as he helped lead the team to a 2005 CIS National Championship title– a milestone he’ll be looking to re-create now that he’s behind the bench.</p>
-        <p>After his time with the university, Davidiuk went to have an impressive playing career professionally overseas, and a international career with the Canadian National Team, eventually serving as the team’s captain. He helped lead the squad to a berth at the 2010 FIVB World Championship.</p>
-        <p>He re-joined the Bears in 2012 as a part-time volunteer, working his way up to assistant coach, then associate coach, and now serves as the head coach. In 2016, he completed his Masters of Coaching degree.</p>
-        <p>Volleyball Canada recently had a chance to talk with Davidiuk about his coaching career and some thoughts on coaching in the sport.</p>
-        <p>After his time with the university, Davidiuk went to have an impressive playing career professionally overseas, and a international career with the Canadian National Team, eventually serving as the team’s captain. He helped lead the squad to a berth at the 2010 FIVB World Championship.</p>
-        <p>He re-joined the Bears in 2012 as a part-time volunteer, working his way up to assistant coach, then associate coach, and now serves as the head coach. In 2016, he completed his Masters of Coaching degree.</p>
-        <p>Volleyball Canada recently had a chance to talk with Davidiuk about his coaching career and some thoughts on coaching in the sport.</p>
-        <p>After his time with the university, Davidiuk went to have an impressive playing career professionally overseas, and a international career with the Canadian National Team, eventually serving as the team’s captain. He helped lead the squad to a berth at the 2010 FIVB World Championship.</p>
-        <p>He re-joined the Bears in 2012 as a part-time volunteer, working his way up to assistant coach, then associate coach, and now serves as the head coach. In 2016, he completed his Masters of Coaching degree.</p>
-        <p>Volleyball Canada recently had a chance to talk with Davidiuk about his coaching career and some thoughts on coaching in the sport.</p>
-        <p>After his time with the university, Davidiuk went to have an impressive playing career professionally overseas, and a international career with the Canadian National Team, eventually serving as the team’s captain. He helped lead the squad to a berth at the 2010 FIVB World Championship.</p>
-        <p>He re-joined the Bears in 2012 as a part-time volunteer, working his way up to assistant coach, then associate coach, and now serves as the head coach. In 2016, he completed his Masters of Coaching degree.</p>
-        <p>Volleyball Canada recently had a chance to talk with Davidiuk about his coaching career and some thoughts on coaching in the sport.</p>
-    </div >
-
 const articles = [
+    {
+        title: "New Year, New Website",
+        url: "new-year-new-website",
+        year: "2023",
+        date: "1 - 17",
+        season: "Spring",
+        category: "Announcements",
+        image: 'https://i.imgur.com/u0b2RaB.jpg',
+        content:
+            <div className="article-content">
+                <p>Happy first day of classes everyone!</p>
+                <p>It is my great honor to present to you our new club website! Several months and 5,427 lines of code later, it is finally here. Making this website has been one of the most rewarding experiences of my life and I hope you enjoy using it as much as I enjoyed making it!</p>
+                <p>Anyways, here's some announcements:</p>
+                <ul>
+                    <li>First Week of Practice (FWOP) starts on Monday, Jan 23. We meet at the Johnson-Miller Track and distance runners will meet at 4:30 PM whereas sprints/field events will meet at 5:00 PM.</li>
+                    <li>New and returning members, follow the instructions on the <Link to={"/join"}>join</Link> page and make sure that you have everything completed by Friday, Jan 27.</li>
+                </ul>
+                <h3>A message from our Race Coordinator:</h3>
+                <ul>
+                    <li><span style={{ fontWeight: "bold" }}>All new members, or anyone else that is new to racing with our club</span> need to complete the <a href="https://forms.gle/r6rbgkNrY5viQWNK8" rel="noreferrer" target={"_blank"}>NIRCA registration survey</a> Once I create your account you will get 2 emails to finish setting up your account and complete a waiver. Please do this <span style={{ fontWeight: "bold" }}>ASAP</span> because you cannot race without this, but if you raced with us in the Fall you are all set.</li>
+                    <li><span style={{ fontWeight: "bold" }}>All returning members</span> need to log into their <a href="https://clubrunning.org/" rel="noreferrer" target={"_blank"}>NIRCA account</a> and fill out the waiver <span style={{ fontWeight: "bold" }}>ASAP</span> as you also cannot race before this is done. <span style={{ fontWeight: "bold" }}>If you have done this in the Fall or have raced with us in the Fall you do not have to do it again.</span></li>
+                    <li>If you are planning on racing this semester, we need you to pay your racing dues <span style={{ fontWeight: "bold" }}>as soon as possible!</span></li>
+                </ul>
+                <h3>Indoor Meet Volunteering!</h3>
+                <p>Virginia Tech Track & Field is hosting their Hokie Invitational <span style={{ fontWeight: "bold" }}>January 20-21st (this weekend)</span> at the Rector Field House, and they asked for our help in volunteering at the meet! This is a big fundraiser for the Spring semester and this will help send us to Nationals, so it is really important that we do this event. Food will be provided for the volunteers as well. </p>
+                <p>Please <a href="https://www.signupgenius.com/go/8050A4DA9AE28A2FC1-2023" rel="noreferrer" target={"_blank"}>sign up</a> for whatever you can, there are not many official time slots left, but even if they are full you are encouraged to come to the meet and cheer on the team or see if anything else is needed! If you have already signed up, please double check that the time still works for you. </p>
+                <h3>Singlets are in!</h3>
+                <p>That's right, our singlets are finally in! For everyone who ordered singlets in the Fall, we will be handing these out shortly after practice starts. Please be on the lookout for updates from Suzie in the GroupMe in the upcoming weeks for information about uniform distribution! For those who are planning on racing with us in the Spring, have no fear, we have already ordered more singlets to avoid more waiting issues.</p>
+            </div>
+    },
+    {
+        title: "It's Alive!!!",
+        url: "its-alive",
+        year: "2023",
+        date: "1 - 17",
+        season: "Spring",
+        category: "Webdev Diaries",
+        image: 'https://i.imgur.com/38928we.jpg',
+        content:
+            <div className="article-content">
+                <p>Hey, at least I don't have class tomorrow...</p>
+                <p>Good morning fellow club members and website enjoyers. It is currently 3:46 AM and I've been staring at this website for the past 14 hours. But it's ok, because as I'm writing this, the website is live on the proper domain and we are no longer "powered by Weebly!" :D</p>
+                <p>So what's new? Well, everything. Basically, if it was on the old site, its here and even better. Want uniform training plans? We got it. Maybe you want to see the routes we run on every day? It's here. Maybe you wanted the webmaster's thoughts beamed straight to your eyeballs. Guess what? You're looking at it.</p>
+                <p>That being said, I'm always open to suggestions so if you don't think something working the way it should or you would like to see something added to the website, I'm your guy. Just let me know at practice.</p>
+                <p>I'm also assuming my self-appointed position as club reporter. I'll be posting articles here about announcements, meets, etc. so make sure to check this page on the regular.</p>
+                <p>PS: I know I said everything is here but if you're wondering where the records page went, don't worry I'm working on a new system to keep track of records. The new records page will be up soon.</p>
+                <div className="img-container">
+                    <img src="https://i.imgur.com/4UR0vU6.jpg" alt="Webmaster Volkan is incredibly happy to see his life's work functioning as intended." />
+                </div>
+            </div>
+    },
     {
         title: "They Said it Couldn't Be Done",
         url: "they-said-it-couldnt-be-done",
@@ -83,46 +115,6 @@ const articles = [
                 <p>I'll leave a link to it <a href="https://chat.openai.com/" target={"_blank"} rel="noreferrer">here</a> so you can see for yourself and this is also my first time testing external links from articles so hopefully that worked.</p>
                 <p>There's a lot of work to do tomorrow so I should probably get some sleep so thank you for tuning in to the first ever (weekly?) edition of Webdev Diaries by yours truly, Volkan, and if you're reading this in the future, which you will be, let me know at practice what you think!</p>
             </div>
-    },
-    {
-        title: "They call me Mr. Examiner the way I keep on testing",
-        url: "they-call-me-mr-examiner-the-way-i-keep-on-testing",
-        year: "2022",
-        date: "9 - 32",
-        season: "Summer",
-        category: "test",
-        image: 'https://i.imgur.com/qczrzqz.jpg',
-        content: fillerhtml
-    },
-    {
-        title: "Enought Tests Yet? Probably Not.",
-        url: "enough-tests-yet-probably-not",
-        year: "2022",
-        date: "1 - 15",
-        season: "Winter",
-        category: "test",
-        image: 'https://i.imgur.com/vAPljlf.jpg',
-        content: fillerhtml
-    },
-    {
-        title: "Yet Another Filler Post",
-        url: "yet-another-filler-post",
-        year: "2022",
-        date: "12 - 21",
-        season: "Fall",
-        category: "test",
-        image: 'https://i.imgur.com/UtEwbtG.jpg',
-        content: fillerhtml
-    },
-    {
-        title: "What Are We Doing Here? Does this Work?",
-        url: "what-are-we-doing-here-does-this-work",
-        year: "2022",
-        date: "12 - 20",
-        season: "Fall",
-        category: "test",
-        image: 'https://i.imgur.com/PYlzbrh.jpg',
-        content: fillerhtml
     }
 ]
 export default articles;

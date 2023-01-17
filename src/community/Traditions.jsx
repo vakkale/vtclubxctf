@@ -13,7 +13,8 @@ export default function Traditions() {
     const pageContent =
         <div className="article-content">
             <h3>You can count on these sticking around...</h3>
-            <p>Our club has a rich history of annual events that bring members together and create lasting memories. Some of our most cherished traditions include Assassin, the Fall Cookout, Semester Banquet, Friendsgiving, and the Fun Meet at the end of the Spring semester. It's not just about the socials, however. Some of the best memories and friendhsips people make as a part of the club are at fun runs during practice, and traveling with teammates to and from meets. Here are some highlights from the past year:</p>
+            <p>Our club has a rich history of annual events that bring members together and create lasting memories. Some of our most cherished traditions include Assassin, the Fall Cookout, Semester Banquet, Friendsgiving, and the Fun Meet at the end of the Spring semester. </p>
+            <p>It's not just about the socials, however. Some of the best memories and friendhsips people make as a part of the club are at fun runs during practice, and traveling with teammates to and from meets. Here are some highlights from the past year:</p>
             <div className="img-container">
                 <img src="https://i.imgur.com/BvTJOIh.jpg" alt="Club members enjoying cornhole at our annual Spring Banquet."></img>
             </div>
