@@ -1,0 +1,24 @@
+.semester-video {
+    --width: calc(100vw - 2 * ((0.5 * var(--bigbar)) + var(--smallbar)));
+    width: var(--width);
+    height: calc(var(--width) / 2);
+    margin: 0 auto;
+    margin-top: 2.1063717746vw;
+    margin-bottom: 2.1063717746vw;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: 1000px) {
+        --width: calc(100vw - 2 * var(--smallbar));
+        width: var(--width);
+        height: calc(var(--width) / 1.5);
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

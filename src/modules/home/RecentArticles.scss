@@ -148,6 +148,10 @@
                     display: flex;
                     padding-bottom: 17px;
                     font-size: 0.8rem;
+                    
+                    @media screen and (max-width: 1000px) {
+                        font-size: 0.7rem;
+                    }
 
                     .recent-article-date {
                         position: absolute;
@@ -158,6 +162,10 @@
                         position: absolute;
                         padding-left: 60px;
                         color: var(--maroon);
+
+                        @media screen and (max-width: 1000px) {
+                            padding-left: 40px;
+                        }
                     }
                 }
 

@@ -2,8 +2,8 @@ import React from 'react';
 import GeneralInfo from '../modules/home/GeneralInfo.jsx';
 import RecentArticles from '../modules/home/RecentArticles.jsx';
 import PracticeInfo from '../modules/home/PracticeInfo.jsx';
-
 import Slider from './components/slider/Slider.jsx'
+import SemesterVideo from '../modules/home/SemesterVideo.jsx';
 
 const Home = () => {
     return (
@@ -11,6 +11,7 @@ const Home = () => {
             <Slider />
             <RecentArticles />
             <GeneralInfo />
+            <SemesterVideo />
             <PracticeInfo />
         </div>
     )

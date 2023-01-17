@@ -46,7 +46,15 @@ export default function TrainingPlan({ sheetID, sheets }) {
             sheets.find(sheet => getMonthFromString(sheet.title) == month);
     }, [sheets]); */
 
+    const [isMobile, setIsMobile] = useState(false);
+
     useEffect(() => {
+        if (window.innerWidth < 1000) {
+            setIsMobile(true);
+        }
+        else {
+            setIsMobile(false);
+        }
 
         //gets the element with id topbar from the DOM
         const topbar = document.getElementById('topbar');
@@ -113,6 +121,12 @@ export default function TrainingPlan({ sheetID, sheets }) {
         );
     }
 
+    /* const [planFeatures, setPlanFeatures] = useState([]);
+
+    const PlanFeature = ({ feature }) => {
+
+    } */
+
     return (
         <div className="plan-container">
             <div className={`loading-overlay ${(loading && updatingNow) ? 'loading' : 'loaded'}`}>
@@ -143,7 +157,7 @@ export default function TrainingPlan({ sheetID, sheets }) {
                             <thead key={i} className="table-header table-days">
                                 <tr key={i} className="calendar-week">
                                     {row.map((cell, j) => (
-                                        <th style={{textTransform: 'capitalize'}} key={j}>{cell}</th>
+                                        <th style={{ textTransform: 'capitalize' }} key={j}>{cell}</th>
                                     ))}
                                 </tr>
                             </thead>
@@ -161,7 +175,12 @@ export default function TrainingPlan({ sheetID, sheets }) {
                                                 transition: `opacity 0.3s ${(i + j) * 0.03}s`,
                                                 //no pointer events until the opacity is 1
                                                 pointerEvents: loading ? 'none' : 'auto',
-                                            }}>
+                                            }}
+                                                id={cell}
+                                                /* onClick={() => {
+                                                    setPlanFeatures(cell);
+                                                }} */
+                                            >
                                                 <div>
                                                     {currentPlan.current.slice(i, i + 4).map((subrow, k) => {
                                                         if (k === 0) {
@@ -213,6 +232,11 @@ export default function TrainingPlan({ sheetID, sheets }) {
                     );
                 })}
             </table>
+            {isMobile && (
+                <div className="plan-feature">
+                    Mobile Plans Under Construction, Use Desktop
+                </div>
+            )}
         </div >
     );
 }
