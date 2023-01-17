@@ -19,6 +19,7 @@ import CrossCountry from './competition/crosscountry';
 import Socials from './community/Socials';
 import Traditions from './community/Traditions';
 import Sponsors from './about_pages/Sponsors';
+import ScrollToTop from './helpers/ScrollToTop';
 
 export default function App() {
 
@@ -69,6 +70,7 @@ export default function App() {
       <Lines></Lines>
       {loading ? <LoadingScreen></LoadingScreen> :
         <BrowserRouter>
+          <ScrollToTop></ScrollToTop>
           <Header></Header>
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
