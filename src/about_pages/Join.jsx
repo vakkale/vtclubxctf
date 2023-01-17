@@ -14,7 +14,7 @@ export default function Join() {
     const pageContent =
         <div className="article-content">
             <h3>Want to join the best?</h3>
-            <p>Want to run distance, sprint, jump, or throw? Well you came to the right place. There's just a few things you need to do before you can officially be a part of the club.</p>
+            <p>Want to run distance, sprint, jump, or throw? Well you came to the right place. Before we get into it, we want to let you know that we know life as a college student is very busy. Because of this, nothing we do as a club is mandatory, whether it be practice, socials, or even meets. With that out of the way, there's just a few things you need to do before you can officially be a part of the club.</p>
             <h3>As easy as 1-2-3!</h3>
             <p>There are 3 steps to becoming a member of the club. All items are due by <span style={{ fontWeight: "bold" }}>Friday, January 27th.</span></p>
             <ol>
@@ -35,7 +35,7 @@ export default function Join() {
                 <li>Complete the <a href="https://forms.gle/Np5kHqx8YQR6HUmw9" target="_blank" rel="noreferrer">membership survey.</a></li>
             </ol>
             <p>
-                And you're done! If any item is not completed by the deadline, you will not be able to participate in any practices or meets until it is completed. If you have any questions, please contact an <Link to={"/contact"}>officer</Link> or come speak with us at practice. We cant wait to see you there!
+                And you're done! If any item is not completed by the deadline, you will not be able to participate in any practices or meets until it is completed. If you have any questions, please contact an <Link to={"/contact"}>officer</Link> or come speak with us at practice. We can't wait to see you there!
             </p>
         </div >
 
