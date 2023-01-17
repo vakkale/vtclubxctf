@@ -1,6 +1,6 @@
 import './SideBarLite.scss';
 
-export default function SideBarLite({ item }) {
+export default function SideBarLite({ item, schedule }) {
     const featuredItem = item;
 
     return (
@@ -13,6 +13,17 @@ export default function SideBarLite({ item }) {
                     <span className="list-item-category">{(featuredItem.category) || (featuredItem.year)}</span>
                 </div>
                 <div className="feature-title">{featuredItem.title || featuredItem.name}</div>
+                {schedule &&
+                    <ul className="schedule">
+                        {schedule.map((item, index) => {
+                            return (
+                                <li className='meet' key={index}>
+                                    <a href={item.url} rel="noreferrer" target="_blank">{item.title}</a>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                }
             </div>
         </div>
     );

@@ -117,8 +117,8 @@ const plansData = [
         yPos: "top",
         plans: [
             {
-                title: "Throws",
-                url: "throws",
+                title: "Jumps",
+                url: "jumps",
                 year: "2023",
                 season: "Spring",
                 sheetID: "1mYsNVCgdb8GiXdYEHwrRXnvgmX2EFtubDZkHfGFWlgE",

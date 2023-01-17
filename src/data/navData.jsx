@@ -8,12 +8,12 @@ const navData = [
         submenus: [
             {
                 name: "cross country",
-                url: "/competition/crosscountry",
+                url: "/competition/cross-country",
                 image: 'https://i.imgur.com/tEac9kB.jpg'
             },
             {
                 name: "track & field",
-                url: "/competition/trackandfield",
+                url: "/competition/track-and-field",
                 image: 'https://i.imgur.com/JHNPyP2.jpg'
             }
         ]
@@ -42,7 +42,7 @@ const navData = [
             },
             {
                 name: "field",
-                url: "/training/field/throws",
+                url: "/training/field/jumps",
                 image: 'https://i.imgur.com/iZ9hzza.jpg'
             }
         ]

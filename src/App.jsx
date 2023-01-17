@@ -14,6 +14,8 @@ import MapRoutes from './routes/Routes';
 import Donate from './about_pages/Donate';
 import Join from './about_pages/Join';
 import AthleticTrainer from './about_pages/AthleticTrainer';
+import TrackAndField from './competition/trackandfield';
+import CrossCountry from './competition/crosscountry';
 
 export default function App() {
 
@@ -76,6 +78,8 @@ export default function App() {
             <Route exact path="/donate" element={<Donate />}></Route>
             <Route exact path="/join" element={<Join />}></Route>
             <Route exact path="/athletic-trainer" element={<AthleticTrainer />}></Route>
+            <Route exact path="/competition/track-and-field" element={<TrackAndField />}></Route>
+            <Route exact path="/competition/cross-country" element={<CrossCountry />}></Route>
             <Route exact path="*" element={<Home />}></Route>
           </Routes>
           <Footer></Footer>

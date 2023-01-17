@@ -24,6 +24,14 @@
         position: relative;
         justify-content: left;
 
+        .schedule {
+            padding-top: 2vw;
+            .meet {
+                list-style-type: none;
+                padding-bottom: 10px;
+            }
+        }
+
 
         .list-header {
             padding-bottom: 25px;
