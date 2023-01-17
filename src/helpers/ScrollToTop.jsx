@@ -12,7 +12,7 @@ export default function ScrollToTop() {
 
     useEffect(() => {
         //if domain changes
-        if ((domainRef.current !== domain) || (domain === "competition") || (domain === "community")) {
+        if ((domainRef.current !== domain) || (domain === "competition") || (domain === "community") || (domain === "/"))  {
             window.scrollTo(0, 0);
         }
         domainRef.current = domain;
