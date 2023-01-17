@@ -173,11 +173,24 @@ const plansData = [
     },
     {
         team: "Sprint",
-        url: "sprint/",
-        image: "https://i.imgur.com/6pa8c49.jpg",
+        url: "sprint",
+        image: "https://i.imgur.com/WbyiBeI.jpg",
         yPos: "top",
         plans: [
-            //ahem
+            {
+                title: "Spring Plan",
+                url: "spring-plan",
+                year: "2023",
+                season: "Spring",
+                sheetID: "1ifNnP6N57tiqqppdcV9P0DnbbgWH-3uBQmbOfkjWa4g",
+                sheets: [
+                    {
+                        title: "January",
+                        url: "january",
+                        range: "B2:H22"
+                    }
+                ]
+            }
         ]
     }
 ];
