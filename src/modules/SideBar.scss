@@ -35,8 +35,13 @@
             font-weight: bold;
         }
 
+        .route-link {
+            padding-top: 25px;
+            margin-bottom: -20px;
+        }
+
         .list-header,
-        .feature-title {
+        .feature-title, .route-link {
             translate: 0 30%;
             opacity: 0;
             animation: feature-load 1s ease-in-out forwards;

@@ -1,6 +1,5 @@
 import "./SideBar.scss";
-import { useLocation } from 'react-router-dom';
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { useEffect, useState, useRef } from "react";
 
 export default function SideBar({ data, size }) {
@@ -42,7 +41,14 @@ export default function SideBar({ data, size }) {
                     <span className="list-item-date">{(featuredItem.date) || (featuredItem.season)}</span>
                     <span className="list-item-category">{(featuredItem.category) || (featuredItem.year)}</span>
                 </div>
-                <div className="feature-title">{featuredItem.title || featuredItem.name}</div>
+                <div className="feature-title">{featuredItem.title || featuredItem.name || featuredItem.route}</div>
+                {pathname.includes("training") &&
+                    <div className="route-link">
+                        <span>
+                            <Link to={"/routes/warm-up-loop"}>Routes</Link>
+                        </span>
+                    </div>
+                }
             </div>
         );
     }
@@ -76,7 +82,7 @@ export default function SideBar({ data, size }) {
                                     <span className="list-item-date">{(item.date) || (item.season)}</span>
                                     <span className="list-item-category">{(item.category) || (item.year)}</span>
                                 </div>
-                                <div className="list-item-title">{item.title || item.name}</div>
+                                <div className="list-item-title">{item.title || item.name || item.route}</div>
                             </div>
                         );
                     })}

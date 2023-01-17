@@ -50,6 +50,12 @@
     flex: calc(100% * (2 / 3));
     z-index: 11;
     border-left: #f6f6f6 solid 1px;
+
+    @media screen and (max-width: 1000px) {
+      margin-top: 30px;
+      height: 400px;
+      padding-bottom: 5px;
+    }
   
     .image-container {
       text-align: center;

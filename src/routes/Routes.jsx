@@ -37,8 +37,8 @@ export default function Routes() {
             setRoute(routeData[0]);
     }, [routeName]);
 
-    /* // Array of filters for the ArticleSorter component
-    const [filters, setFilters] = useState(['year', 'season', 'category']);
+    // Array of filters for the ArticleSorter component
+    const [filters, setFilters] = useState(['route']);
     // Set the sorted articles to send to the SideBar component
     const [sortedArticles, setSortedArticles] = useState(routeData);
 
@@ -47,13 +47,13 @@ export default function Routes() {
         setSortedArticles(articlesSorted);
         if (isMobile)
             setRoute(articlesSorted[0]);
-    }; */
+    };
 
     return (
         <>
             <PageHeader image={background} title={"Trails"} subtitle={"Routes"} yPos={"30%"} />
-            {/* <TopBar articles={articleData} filters={filters} onSort={handleSortedArticles}></TopBar> */}
-            <div className="topbar-container" id='topbar'></div>
+            {isMobile ? <TopBar articles={routeData} filters={filters} onSort={handleSortedArticles}></TopBar>
+                : <div className="topbar-container" id='topbar'></div>}
             <div className="bar-plus-content">
                 <div className="page-content">
                     <SideBar className="sidebar" data={routeData} size="big"></SideBar>
