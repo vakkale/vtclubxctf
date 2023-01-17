@@ -16,6 +16,9 @@ import Join from './about_pages/Join';
 import AthleticTrainer from './about_pages/AthleticTrainer';
 import TrackAndField from './competition/trackandfield';
 import CrossCountry from './competition/crosscountry';
+import Socials from './community/Socials';
+import Traditions from './community/Traditions';
+import Sponsors from './about_pages/Sponsors';
 
 export default function App() {
 
@@ -80,6 +83,9 @@ export default function App() {
             <Route exact path="/athletic-trainer" element={<AthleticTrainer />}></Route>
             <Route exact path="/competition/track-and-field" element={<TrackAndField />}></Route>
             <Route exact path="/competition/cross-country" element={<CrossCountry />}></Route>
+            <Route exact path="/community/socials" element={<Socials />}></Route>
+            <Route exact path="/community/traditions" element={<Traditions />}></Route>
+            <Route exact path="/sponsors" element={<Sponsors />}></Route>
             <Route exact path="*" element={<Home />}></Route>
           </Routes>
           <Footer></Footer>

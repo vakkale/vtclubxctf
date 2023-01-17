@@ -174,6 +174,7 @@ export default function Header() {
                         onClick={() => {
                             setSelectorOpen(false);
                             setSelector(null);
+                            if (aboutOpen) handleAbout();
                         }}><img
                             src={logo}
                             alt='logo'
@@ -200,6 +201,7 @@ export default function Header() {
                                         onClick={() => {
                                             setSelectorOpen(false);
                                             setSelector(null);
+                                            if (aboutOpen) handleAbout();
                                         }}
                                     >{item.name}</Link>
                                 </div>
