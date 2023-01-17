@@ -149,6 +149,25 @@ const plansData = [
                         range: "B2:H22"
                     }
                 ]
+            },
+            {
+                title: "Throws",
+                url: "throws",
+                year: "2023",
+                season: "Spring",
+                sheetID: "1pR9nGo03EIzML0cBG5Sv8ISwoSXMguflXOS0P7qDePY",
+                sheets: [
+                    {
+                        title: "January",
+                        url: "january",
+                        range: "B2:H22"
+                    },
+                    {
+                        title: "February",
+                        url: "february",
+                        range: "B2:H22"
+                    }
+                ]
             }
         ]
     },

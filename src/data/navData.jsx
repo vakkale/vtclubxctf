@@ -42,8 +42,17 @@ const navData = [
             },
             {
                 name: "field",
-                url: "/training/field/jumps",
-                image: 'https://i.imgur.com/iZ9hzza.jpg'
+                image: 'https://i.imgur.com/iZ9hzza.jpg',
+                submenus: [
+                    {
+                        name: "Jumps",
+                        url: "/training/field/jumps",
+                    },
+                    {
+                        name: "Throws",
+                        url: "/training/field/throws",
+                    }
+                ]
             }
         ]
     },

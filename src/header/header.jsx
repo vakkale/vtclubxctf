@@ -277,14 +277,27 @@ export default function Header() {
                                                 }
                                                 className={`menu-reveal-container ${index === 0 ? 'top-container' : 'bottom-container'
                                                     }`}>
-                                                <div key={index} className='menu-reveal'>
-                                                    <span className='menu-reveal-letter'>
-                                                        {index === 0 ? 'W' : 'M'}
-                                                    </span>
-                                                    <span className='menu-reveal-text'>
-                                                        {index === 0 ? 'omen' : 'en'}
-                                                    </span>
-                                                </div>
+                                                {
+                                                    //if item's name doesnt include 'men' or women, just display the name
+                                                    item.name.includes('Distance') ?
+                                                        <div key={index} className='menu-reveal'>
+                                                            <span className='menu-reveal-letter'>
+                                                                {index === 0 ? 'W' : 'M'}
+                                                            </span>
+                                                            <span className='menu-reveal-text'>
+                                                                {index === 0 ? 'omen' : 'en'}
+                                                            </span>
+                                                        </div>
+                                                        :
+                                                        <div key={index} className='menu-reveal'>
+                                                            <span className='menu-reveal-letter'>
+                                                                {item.name.substring(0, 1)}
+                                                            </span>
+                                                            <span className='menu-reveal-text'>
+                                                                {item.name.substring(1)}
+                                                            </span>
+                                                        </div>
+                                                }
                                             </Link>
                                         );
                                     })}
