@@ -121,10 +121,18 @@ html {
   /* IE 10+ */
 }
 
-//disable scrollbar on chrome
+/* //disable scrollbar on chrome
 *::-webkit-scrollbar {
   display: none;
-  /* Chrome, Safari, Opera*/
+} */
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
 }
 
 //changes the color of highlighted text
