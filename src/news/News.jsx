@@ -25,15 +25,14 @@ export default function News() {
     const location = useLocation();
 
     const pathname = location.pathname;
-    const articleName = pathname.substring(pathname.lastIndexOf('/') + 1);
 
     //set article as state
-    const [article, setArticle] = useState(articleData[0]);
+    const [article, setArticle] = useState(null);
 
     //set article to the article that matches the url
     useEffect(() => {
-        setArticle(articleData.find(article => article.url === location.pathname.substring(pathname.lastIndexOf('/') + 1)));
-    }, [articleName]);
+        setArticle(articleData.find(article => article.url === location.pathname.substring(pathname.lastIndexOf('/') + 1)) || articleData[0]);
+    }, [location]);
 
     // Array of filters for the ArticleSorter component
     const [filters, setFilters] = useState(['year', 'season', 'category']);
