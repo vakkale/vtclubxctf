@@ -283,6 +283,34 @@
   }
 }
 
+.calendar-day-mobile {
+  padding: 5px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &>* {
+    padding: 3px;
+    padding-left: 0;
+  }
+
+  .plan-type-mobile {
+    font-weight: bold;
+    color: #971a43;
+  }
+
+  .plan-date-mobile {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .plan-details-mobile {}
+
+  .plan-extra-mobile {
+    color: rgb(95, 95, 95);
+  }
+}
+
 table {
   width: 100%;
 

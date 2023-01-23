@@ -1,6 +1,7 @@
 import "./TrainingPlan.scss";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function TrainingPlan({ sheetID, sheets }) {
 
@@ -39,6 +40,8 @@ export default function TrainingPlan({ sheetID, sheets }) {
     const [planMonth, setPlanMonth] = useState(getMonthFromString(currentSheet.sheetName));
 
     const [data, setData] = useState(null);
+
+    const [planFeatures, setPlanFeatures] = useState(['']);
 
     //I can use something like this to set the current sheet to the current month, look at it later
     /* useEffect(() => {
@@ -121,11 +124,50 @@ export default function TrainingPlan({ sheetID, sheets }) {
         );
     }
 
-    /* const [planFeatures, setPlanFeatures] = useState([]);
 
-    const PlanFeature = ({ feature }) => {
+    function handlePlanClick(week, day) {
+        const featureDay = [];
+        async function work() {
+            week.map((thisweek) => {
+                featureDay.push(thisweek[day]);
+            })
+        }
+        work();
+        setPlanFeatures(featureDay);
+    }
 
-    } */
+    const PlanFeature = () => {
+        return (
+            <div className="calendar-week">
+                <div className="calendar-day-mobile">
+                    {planFeatures.map((feature, index) => {
+                        return (
+                            <div
+                                className={
+                                    `table-body ${
+                                    //set different css classes for each index
+                                    (index === 0) ? 'plan-date-mobile' :
+                                        (index === 1) ? 'plan-type-mobile' :
+                                            (index === 2) ? 'plan-details-mobile' :
+                                                'plan-extra-mobile'
+                                    }`
+                                }
+                                key={index}
+                            >
+                                {feature}
+                            </div>
+                        )
+                    })}
+                    {planFeatures == '' &&
+                        <div className="table-body plan-date-mobile">
+                            Click on a day to see the details
+                        </div>
+                    }
+                    <Link to={'/routes/warm-up-loop'} className="table-body">See the routes</Link>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className="plan-container">
@@ -177,9 +219,6 @@ export default function TrainingPlan({ sheetID, sheets }) {
                                                 pointerEvents: loading ? 'none' : 'auto',
                                             }}
                                                 id={cell}
-                                                /* onClick={() => {
-                                                    setPlanFeatures(cell);
-                                                }} */
                                             >
                                                 <div>
                                                     {currentPlan.current.slice(i, i + 4).map((subrow, k) => {
@@ -195,7 +234,10 @@ export default function TrainingPlan({ sheetID, sheets }) {
                                                                                 ? 'darkgray'
                                                                                 : 'black'
                                                                     }}
-                                                                >{cellDay}</div>
+                                                                    onClick={() => handlePlanClick(currentPlan.current.slice(
+                                                                        i, i + 4
+                                                                    ), j)}
+                                                                > {cellDay}</div>
                                                             );
                                                         }
                                                         else return (
@@ -232,11 +274,11 @@ export default function TrainingPlan({ sheetID, sheets }) {
                     );
                 })}
             </table>
-            {isMobile && (
-                <div className="plan-feature">
-                    Mobile Plans Under Construction, Use Desktop
-                </div>
-            )}
+            {
+                isMobile && (
+                    <PlanFeature></PlanFeature>
+                )
+            }
         </div >
     );
 }

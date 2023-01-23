@@ -6,7 +6,6 @@ export default function ScrollToTop() {
 
     //set domain equal to between the first and last slash
     const domain = pathname.substring(pathname.indexOf("/") + 1, pathname.lastIndexOf("/"));
-    console.log(domain);
 
     const domainRef = useRef(null);
 

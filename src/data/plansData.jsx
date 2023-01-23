@@ -85,7 +85,7 @@ const plansData = [
                     {
                         title: "January",
                         url: "january",
-                        range: "B2:H22"
+                        range: "B2:H18"
                     }
                 ]
             },

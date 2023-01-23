@@ -41,24 +41,25 @@ export default function Training() {
 
     // Array of filters for the ArticleSorter component
     //MASSIVE TIME SINK, FIX LATER
-    /* const filters = ['']; */
+    const filters = ['title'];
     // Set the sorted articles to send to the SideBar component
     const [sortedTeams, setSortedTeams] = useState(team);
 
     // Callback function to handle sorted articles
     const handleSortedTeams = plansSorted => {
-        setSortedTeams(plansSorted);
+        navigate("/training/" + team.url + "/" + plansSorted[0].url);
     };
 
-    /* useEffect(() => {
-        navigate("/training/" + sortedTeams.url + "/" + sortedTeams.plans[0].url);
-    }, [sortedTeams]); */
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1000);
 
     return (
         <>
             <PageHeader image={team.image} title={team.team} yPos={team.yPos} subtitle="Training" />
-            {/* <TopBar articles={planData} filters={filters} onSort={handleSortedTeams}></TopBar> */}
-            <div className='topbar-container' id='topbar'></div>
+            {
+                isMobile ?
+                    <TopBar articles={sortedTeams.plans} filters={filters} onSort={handleSortedTeams}></TopBar>
+                    : <div className='topbar-container' id='topbar'></div>
+            }
             <div className="bar-plus-content">
                 <div className="page-content">
                     <SideBar className="sidebar" data={sortedTeams.plans} size="small"></SideBar>
