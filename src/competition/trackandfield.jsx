@@ -21,11 +21,11 @@ export default function TrackAndField() {
             location: "University of Lynchburg, Lynchburg, VA"
         },
         {
-            title: "NIRCA Track & Field Nationals",
+            title: "Apr. 1/2 -NIRCA Track & Field Nationals",
             location: "Location TBD"
         },
         {
-            title: "MEET TBA",
+            title: "Apr. 15 -MEET TBA",
             location: "Location TBD"
         },
         {
