@@ -7,9 +7,32 @@ export default function TrackAndField() {
     const background = 'https://i.imgur.com/7h1tvnX.jpg';
 
     const item = {
-        date: "2023 Meet Schedule",
-        title: "To Be Announced"
+        date: "Spring 2023",
+        title: "Meet Schedule"
     };
+
+    const schedule = [
+        {
+            title: "Mar. 18 - Hokie Track Invitational",
+            location: "Blacksburg High School, Blacksburg, VA"
+        },
+        {
+            title: "Mar. 25 - Dr. Jack M. Toms Alumni Invitational",
+            location: "University of Lynchburg, Lynchburg, VA"
+        },
+        {
+            title: "NIRCA Track & Field Nationals",
+            location: "Location TBD"
+        },
+        {
+            title: "MEET TBA",
+            location: "Location TBD"
+        },
+        {
+            title: "Apr. 22 - Wildcat Twilight",
+            location: "Randolph College, Lynchburg, VA"
+        }
+    ];
 
     const pageContent =
         <div className="article-content">
@@ -33,7 +56,7 @@ export default function TrackAndField() {
             <div className="topbar-container" id='topbar'></div>
             <div className="bar-plus-content">
                 <div className="page-content">
-                    <SideBarLite className="sidebar" item={item}></SideBarLite>
+                    <SideBarLite className="sidebar" item={item} schedule={schedule}></SideBarLite>
                     <Article className="article" article={pageContent}></Article>
                 </div>
             </div>

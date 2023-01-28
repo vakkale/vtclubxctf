@@ -14,15 +14,34 @@ export default function SideBarLite({ item, schedule }) {
                 </div>
                 <div className="feature-title">{featuredItem.title || featuredItem.name}</div>
                 {schedule &&
-                    <ul className="schedule">
-                        {schedule.map((item, index) => {
-                            return (
-                                <li className='meet' key={index}>
-                                    <a href={item.url} rel="noreferrer" target="_blank">{item.title}</a>
-                                </li>
-                            )
-                        })}
-                    </ul>
+                    <>
+                        <ul className="schedule">
+                            {schedule.map((item, index) => {
+                                return (
+                                    <ul>
+                                        <li className='meet' key={index}>
+                                            <a href={item.url} rel="noreferrer" target="_blank"
+                                                style={{
+                                                    //no text decoration if no url
+                                                    textDecoration: item.url ? 'underline' : 'none'
+                                                }}
+                                            >{item.title}</a>
+                                        </li>
+                                        <li className='location'>
+                                            {item.location}
+                                        </li>
+                                    </ul>
+                                )
+                            })}
+                        </ul>
+                        <div className='schedule'>
+                            <span className='meet'>All-time records can be found <a 
+                                href="https://docs.google.com/spreadsheets/d/1zZUx2uUMNxXSfT_NWlqtQy-4GPsGB0dLrmT53pfjcoo/edit?usp=sharing"
+                                rel="noreferrer"
+                                target="_blank"
+                            >here.</a></span>
+                        </div>
+                    </>
                 }
             </div>
         </div>
