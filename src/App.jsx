@@ -54,9 +54,10 @@ export default function App() {
 
     if (loading === true) {
       loadImages(imgs).then(() => {
-        setTimeout(() => {
+        /* setTimeout(() => {
           setLoading(false);
-        }, 1500);
+        }, 1500); */
+        setLoading(false);
       });
     }
   });
