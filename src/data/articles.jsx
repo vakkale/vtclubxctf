@@ -3,6 +3,49 @@ import { Link } from "react-router-dom";
 
 const articles = [
     {
+        title: "Weekly Updates 1/30",
+        url: "weekly-updates-1-30",
+        year: "2023",
+        date: "1 - 30",
+        season: "Spring",
+        category: "Announcements",
+        image: 'https://i.imgur.com/PTptR3Q.jpg',
+        content:
+            <div className="article-content">
+                <p>Hey y'all! I hope you all had a great first week of practice! Before we get into the weekly updates, I want to let you all know that the records can now be found in the competition pages. There's <b>a ton</b> of new information below so make sure to read it all so you don't miss out on any of the fun things we have planned!</p>
+                <h3>Media Week!</h3>
+                <p>We will be having our first ever media week next week (Starting Feb 5th)! We will be filming clips at practice for a video that we are making, and what I am most excited for is our photoshoots! We will be taking professional athletic photos on <b>Tuesday and Thursday, February 7/9th at the Media Studio in Newman Library, Rm 209.</b> We have access to a green screen, white background, black background, professional lighting setup, and nice cameras! Please come in your uniform and get ready to pose! </p>
+                <p>You can <a href="https://www.signupgenius.com/go/8050A4DA9AE28A2FC1-media" target="_blank" rel="noopener noreferrer">sign up</a> for a 20 minute time slot between 6:00-7:40pm for either day in the sign up genius below, and sign up with your friends if you want group photos! Due to the size of the studio, we will not be able to have groups of more than 10. If you do not have a singlet yet, the uniform order survey is later in this post. You will need to order and pay for your singlet as well as pick it up from Suzie before your time slot though. This is available to any member of the club, even if you do not have a uniform.</p>
+                <h3>First Percentage Night and Social!</h3>
+                <p>Our first percentage night will be this <b>Wednesday 2/1 at Panda Express!</b> From 10:30AM-9:30PM, if you order at the Panda Express on Prices Fork Road and show them <a href="https://drive.google.com/file/d/1D1QHkTz4zH-qn6n7di-BGgKyG8rTLytT/view?usp=sharing" target="_blank" rel="noopener noreferrer">this flyer</a> at checkout, or order online with the code 348415, our club will receive 20% of the profits! We will be having a team dinner there after practice on Wednesday, but you can also go at any time throughout the day! Invite your friends and don't forget to show them the flyer!</p>
+                <p>We are also having our <b>first social event this Friday!</b> Your favorite Vice-President, Wyatt, will be hosting a <b>Jeopardy night in New Classroom Building, Room 250 at 7:00pm!</b> This is a great chance to meet new people from the club and get more connected, plus it will be a lot of fun! There is no sign up required, you can just show up to NCB 250 after practice! </p>
+                <h3>New Officer Interest Meeting!</h3>
+                <p>New officer elections are coming up fast! If you are interested in becoming an officer for the best club on campus, we will be having an interest meeting next <b>Sunday, February 5th at 2:00pm in Wallace 340.</b> At the meeting we will be going over each officer position and what they do, and also talking about the officer election process! There are 12 officer positions that you can run for: Vice-President, Treasurer, Race Coordinator, Apparel Officer, Social Coordinator, Webmaster, Men's Distance Captain, Women's Distance Captain, 2 Sprint Captains, Throws Captain, and Jumps Captain. You can talk to any of these officers about their position or if you have any questions for them, and then in the interest meeting they will each share more about their positions. If you are at all interested in becoming an officer, we encourage you to attend the interest meeting!</p>
+                <h3>Order Singlets & Apparel!</h3>
+                <p>For those who ordered singlets in the Fall, please be sure to get your singlet from Suzie at practice, we cannot hang on to your singlets for too long so please pick it up if you bought one!</p>
+                <p>Our new singlet and apparel surveys are here! If you want to buy some really cool merch and rock an awesome singlet, these are for you. For those who plan on racing with us this Spring, <b>**a uniform singlet is required for competition**.</b> Once you buy a singlet, you will be able to use it for your entire time here with the club. Also for those who want to wear an official VT singlet for our upcoming media day, please be sure to fill out the survey and pay for your singlet before those days come. <b>All orders and payments are due by Friday, February 10th</b>, if you do not order/pay by this date, you will be charged a late fee for a singlet order. For an apparel order, if you do not pay on time your apparel will not be ordered. You can pay for these at practice using cash or check only, this is because we are required to turn in all of the money to our sports club office, and they only take cash/check.</p>
+                <p><a href="https://forms.gle/6sZN4dgJPQgitmaPA" target="_blank" rel="noopener noreferrer">Uniform Survey</a></p>
+                <p><a href="https://forms.gle/M8KkKBQPxtHaQFnc8" target="_blank" rel="noopener noreferrer">Apparel Survey</a></p>
+                <h3>Lifting Timeslot</h3>
+                <p>Rec Sports has given us a time slot where we will be able to lift in the Rec Sports Field House! We have been given Tuesday from 7:00am-8:00am as our time slot, and any club member is able to come and lift with us!</p>
+                <h3>Administrative Updates!</h3>
+                <p>As it is a new semester, we have to quickly mention a few administrative things about being a club member. Every club member must agree to the <a href="https://drive.google.com/file/d/1spaF6IMfr2eUkN4Yq1VaN6rUx5yBX_RO/view?usp=sharing" target="_blank" rel="noopener noreferrer">Sport Club Code of Conduct</a> (this was on your IMLeague forms).Please be sure to read it again and understand it, as those are the rules that our club must follow and that we enforce. We want to remind everyone that alcohol is not permitted at any official club events, and that no one should be wearing any club apparel if they plan on drinking alcohol in a public environment. Each and every one of you who are official members are representatives of the club and by extension, Virginia Tech. Please be sure to make wise decisions and always represent the club well as you already do!</p>
+                <h3>Spring Meet Schedule and New Racer Info</h3>
+                <p>The meet schedules can be found on our competition pages. As you can see there are a couple of locations that are tbd. The first is NIRCA Nationals — we are still waiting for NIRCA to announce this year’s nationals location but as soon as I hear about it I will let you all know! Secondly, on April 15th we will be going to a meet, but we are still finalizing which meet that will be. We just wanted to give you all the date so that you can mark your calendars!</p>
+                <p>Additionally, with a lot of the meets being later in the semester, we wanted to offer an additional opportunity for those of you who would like to race. On February 11th, the Penn State XCTF Club is hosting an indoor meet. **THIS IS AN UNOFFICIAL MEET** That means you are free to go and compete as a club athlete (you can wear your uniform), but we will not be traveling as a team for this. Therefore <b>ALL travel/lodging accommodations are up to you!</b> However, we will cover the entry fee. If you are interested, please fill <a href="https://forms.gle/rPQBMkaV8zZ9swAK7">this form</a> out by February 4th.</p>
+                <b>Please make sure you read this whole next section if you have paid racing dues and want to go to meets this Spring.</b>
+                <ol>
+                    <li><p>
+                        <b>All new members, or anyone else that is new to racing with our club</b> need to complete <a href="https://forms.gle/r6rbgkNrY5viQWNK8">the NIRCA registration survey.</a> Once we create your account you will get 2 emails to finish setting up your account and complete a waiver. Please do this <b>asap</b> because you cannot race without this, but if you raced with us in the Fall you are all set.
+                    </p></li>
+                    <li><p>
+                        <b>All returning members</b> need to log into your NIRCA account <a href="https://clubrunning.org/">here</a> and fill out the waiver <b>asap</b> as you also cannot race before this is done. If you have done this in the Fall or have raced with us in the Fall you do not have to do it again.
+                    </p></li>
+                </ol>
+                <p>Okay... that's everything (for now). Feel free to reach out if you have any questions!</p>
+            </div>
+    },
+    {
         title: "New Year, New Website",
         url: "new-year-new-website",
         year: "2023",
