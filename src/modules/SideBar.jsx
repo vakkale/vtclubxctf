@@ -71,6 +71,30 @@ export default function SideBar({ data, size }) {
                 <Features></Features>
                 <div className="content-list">
                     {data.map((item, index) => {
+                        let date = "";
+
+                        if (item.mapUrl) {
+                            const string = JSON.stringify(item.mapUrl); //converts the mapUrl object to a string
+                            const d_pos = string.indexOf("d=") + 2; //position of the start of the meters
+
+                            //gets the meters from the string
+                            date = string.substring(
+                                //position of the beginning of the meters
+                                d_pos,
+                                //position of the end of the meters
+                                string.indexOf("&", d_pos))
+
+                                //converts the meters to a number
+                                .split(",")
+                                //converts the meters to miles
+                                .map(meters => (meters * 0.000621371).toFixed(2))
+                                //converts the miles to a string
+                                .join(", ");
+                                //adds the units
+                                date += " mi";
+                        }
+                        else date = item.date;
+
                         return (
                             <div
                                 key={index}
@@ -79,7 +103,7 @@ export default function SideBar({ data, size }) {
                                 //sets style to active if the url matches the current url
                                 style={item.url === articleName ? { backgroundColor: "#f6f6f6" } : {}}>
                                 <div className="list-header">
-                                    <span className="list-item-date">{(item.date) || (item.season)}</span>
+                                    <span className="list-item-date">{date || (item.season)}</span>
                                     <span className="list-item-category">{(item.category) || (item.year)}</span>
                                 </div>
                                 <div className="list-item-title">{item.title || item.name || item.route}</div>
