@@ -19,7 +19,6 @@ export default function SideBar({ data, size }) {
         return pathname.substring(0, pathname.lastIndexOf("/"));
     }
 
-
     const Features = () => {
 
         const [featuredItem, setFeaturedItem] = useState(data[0]);
@@ -62,6 +61,8 @@ export default function SideBar({ data, size }) {
         else if ((domain() === pathname) || (pathnameRef.current !== pathname))
             navigate(`${domain()}/${data[0].url}`);
     }, [data]);
+
+    
 
     return (
         <>

@@ -3,6 +3,57 @@ import { Link } from "react-router-dom";
 
 const articles = [
     {
+        title: "Media Week!",
+        url: "media-week",
+        year: "2023",
+        date: "2 - 8",
+        season: "Spring",
+        category: "Announcements",
+        image: 'https://i.imgur.com/mdL6PqP.jpg',
+        content:
+            <div className="article-content">
+                <h3>Media Week is in full swing!</h3>
+                <p>
+                    We've been filming clips at practice for a video that we are making, and day 1 of our photoshoots was a huge success, thank you to everyone who came out! I can't wait to show you all the final product! Our second day of photoshoots is tomorrow, <b>Thursday, February 9th at the Media Studio in Newman Library, Rm 209.</b> We have access to a green screen, white background, black background, professional lighting setup, and nice cameras! Please come in your uniform and get ready to pose!
+                </p>
+                <h3>When can I see my photos?</h3>
+                <p>
+                    We will be posting the unedited photos on our Google Photos albums the day following each photoshoot. I will also be going through and touching up/replacing backgrounds to get professional sports portrait versions of each photo that we will share as soon as it's ready. If you have any questions about the photoshoots, please contact <a href="mailto:volkanakkale@vt.edu">Volkan</a> or <a href="mailto:lphilip01@vt.edu">Phil</a>. You can also message us on GroupMe.
+                </p>
+                <p>
+                    <b><a href="https://photos.app.goo.gl/YzHXdNZD4Vc5XS579" target="_blank" rel="noopener noreferrer">Tuesday Photo Album</a></b>
+                </p>
+                <p>
+                    <b><a href="https://photos.app.goo.gl/FJMd5GYNSvAvEJ1j6" target="_blank" rel="noopener noreferrer">Thursday Photo Album</a></b>
+                </p>
+                <h3>Giving Day!</h3>
+                <p>Giving Day is on <b>February 15-16 from noon to noon,</b> and it is a 24 hour time where all donations that are made to the club through the <a href="https://givingday.vt.edu/" target="_blank" rel="noopener noreferrer">Giving Day portal</a> go directly to our club. This is extremely important to our club as we received over $6,000 from 200+ donors last year, and we are hoping to up that even more this year! </p>
+                <p>There is also a competition among Sport Clubs where the club with the most amount of donors receives an additional $1,500 for their club, and we are planning on winning that prize! We will talk about this more at practice and in the GroupMe, but there will be a fun raffle for all club members who donate, and we encourage all friends and family to donate as well to help support the club!</p>
+                <h3>Singlets & Apparel!</h3>
+                <p>For those who ordered singlets in the Fall, please be sure to get your singlet from Suzie at practice, we cannot hang on to your singlets for too long so please pick it up if you bought one!</p>
+                <p><b>All apparel/singlet orders and payments are due by this Friday, February 10th,</b> if you do not order/pay by this date, you will be charged a late fee for a singlet order. For an apparel order, if you do not pay on time your apparel will not be ordered. You can pay for these at practice using <b>cash or check only. Singlets are required for racing!</b></p>
+                <p><a href="https://forms.gle/6sZN4dgJPQgitmaPA" target="_blank" rel="noopener noreferrer">Uniform Survey</a></p>
+                <p><a href="https://forms.gle/M8KkKBQPxtHaQFnc8" target="_blank" rel="noopener noreferrer">Apparel Survey</a></p>
+                <h3>Racing Reminders</h3>
+                <b>If you are racing with us this Spring and have not completed the following items, please do so ASAP.</b>
+                <ol>
+                    <li><p>
+                        <b>All new members, or anyone else that is new to racing with our club</b> need to complete <a href="https://forms.gle/r6rbgkNrY5viQWNK8">the NIRCA registration survey.</a> Once we create your account you will get 2 emails to finish setting up your account and complete a waiver. Please do this <b>asap</b> because you cannot race without this, but if you raced with us in the Fall you are all set.
+                    </p></li>
+                    <li><p>
+                        <b>All returning members</b> need to log into your NIRCA account <a href="https://clubrunning.org/">here</a> and fill out the waiver <b>asap</b> as you also cannot race before this is done. If you have done this in the Fall or have raced with us in the Fall you do not have to do it again.
+                    </p></li>
+                </ol>
+                <div className="img-container">
+                    <img src="https://i.imgur.com/KNUpPWB.jpg" alt="Fun photos at the Media Day photoshoots!" />
+
+                </div>
+                <div className="img-container">
+                    <img src="https://i.imgur.com/GUXV0CL.jpg" alt="More fun photos at the Media Day photoshoots!" />
+                </div>
+            </div>
+    },
+    {
         title: "Weekly Updates 1/30",
         url: "weekly-updates-1-30",
         year: "2023",

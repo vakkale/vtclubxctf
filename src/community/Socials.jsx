@@ -7,7 +7,7 @@ export default function Socials() {
 
     const item = {
         date: "Spring 2023 Socials",
-        title: "To Be Announced"
+        title: "Upcoming:"
     };
 
     const pageContent =
