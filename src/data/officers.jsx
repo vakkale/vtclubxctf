@@ -11,7 +11,7 @@ const Officers = [
         name: "Wyatt Thomas",
         email: "wyatt@vt.edu",
         image: "https://i.imgur.com/vxSWd0H.jpg",
-        bio: "Hey there! My name is Wyatt and I’m the vice president of the club! A little bit about myself is that I’m a sophomore majoring in both physics and math and I’m a distance runner, so I love a good 5k and I have all the quirks that distance guys have. Being VP is a really fun and rewarding position, and I love getting to know everyone. Our club is such a fun, tight knit community that makes showing up every day with it, from the painful workouts to our bumpin’ socials. Please feel free to email me if you have any questions and I can’t wait to see you out on the track!"
+        bio: "Hey there! My name is Wyatt and I’m the vice president of the club! A little bit about myself is that I’m a sophomore majoring in both physics and math and I’m a distance runner, so I love a good 5k and I have all the quirks that distance guys have. Being VP is a really fun and rewarding position, and I love getting to know everyone. Our club is such a fun, tight knit community that makes showing up every day worth it, from the painful workouts to our bumpin’ socials. Please feel free to email me if you have any questions and I can’t wait to see you out on the track!"
     },
     {
         position: "Race Coordinator",
