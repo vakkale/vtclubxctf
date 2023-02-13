@@ -53,19 +53,19 @@ export default function Banner() {
                 <div className="banner-countdown-item">
                     <div className="banner-countdown-number" id="days">
                     </div>
-                    <div className="banner-countdown-text">Days</div>
+                    <div className="banner-countdown-text">DAYS</div>
                 </div>
                 <div className="banner-countdown-item">
                     <div className="banner-countdown-number" id="hours"></div>
-                    <div className="banner-countdown-text">Hours</div>
+                    <div className="banner-countdown-text">HRS</div>
                 </div>
                 <div className="banner-countdown-item">
                     <div className="banner-countdown-number" id="minutes"></div>
-                    <div className="banner-countdown-text">Minutes</div>
+                    <div className="banner-countdown-text">MIN</div>
                 </div>
                 <div className="banner-countdown-item">
                     <div className="banner-countdown-number" id="seconds"></div>
-                    <div className="banner-countdown-text">Seconds</div>
+                    <div className="banner-countdown-text">SEC</div>
                 </div>
             </div>
         )
