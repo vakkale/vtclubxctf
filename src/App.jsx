@@ -22,6 +22,8 @@ import Sponsors from './about_pages/Sponsors';
 import ScrollToTop from './helpers/ScrollToTop';
 import Records from './records/Records';
 import Redirects from './helpers/Redirects';
+import Banner from './header/banner';
+import GivingDay from './about_pages/GivingDay';
 
 export default function App() {
 
@@ -81,6 +83,7 @@ export default function App() {
           <ScrollToTop></ScrollToTop>
           <Redirects></Redirects>
           <Header></Header>
+          <Banner></Banner>
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/news/*" element={<News />}></Route>
@@ -97,6 +100,7 @@ export default function App() {
             <Route exact path="/community/socials" element={<Socials />}></Route>
             <Route exact path="/community/traditions" element={<Traditions />}></Route>
             <Route exact path="/sponsors" element={<Sponsors />}></Route>
+            <Route exact path="/giving-day" element={<GivingDay />}></Route>
             {/*< Route exact path="/records/*" element={<Records />}></Route> */}
             <Route exact path="*" element={<Home />}></Route>
           </Routes>

@@ -13,6 +13,11 @@ export default function TrackAndField() {
 
     const schedule = [
         {
+            title: "Feb. 11 - Happy Valley Invitational",
+            location: "Penn State University, State College, PA",
+            url: "https://drive.google.com/file/d/16mPZ-8OCI3kTlnAFQ8gOAeJ_lrTu-dST/view?usp=sharing"
+        },
+        {
             title: "Mar. 18 - Hokie Track Invitational",
             location: "Blacksburg High School, Blacksburg, VA"
         },
@@ -56,7 +61,7 @@ export default function TrackAndField() {
             <div className="topbar-container" id='topbar'></div>
             <div className="bar-plus-content">
                 <div className="page-content">
-                    <SideBarLite className="sidebar" item={item} schedule={schedule}></SideBarLite>
+                    <SideBarLite className="sidebar" item={item} schedule={schedule} records={true}></SideBarLite>
                     <Article className="article" article={pageContent}></Article>
                 </div>
             </div>

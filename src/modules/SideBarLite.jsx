@@ -1,6 +1,6 @@
 import './SideBarLite.scss';
 
-export default function SideBarLite({ item, schedule }) {
+export default function SideBarLite({ item, schedule, records }) {
     const featuredItem = item;
 
     return (
@@ -34,13 +34,15 @@ export default function SideBarLite({ item, schedule }) {
                                 )
                             })}
                         </ul>
-                        <div className='schedule'>
-                            <span className='meet'>All-time records can be found <a 
-                                href="https://docs.google.com/spreadsheets/d/1zZUx2uUMNxXSfT_NWlqtQy-4GPsGB0dLrmT53pfjcoo/edit?usp=sharing"
-                                rel="noreferrer"
-                                target="_blank"
-                            >here.</a></span>
-                        </div>
+                        {records &&
+                            <div className='schedule'>
+                                <span className='meet'>All-time records can be found <a
+                                    href="https://docs.google.com/spreadsheets/d/1zZUx2uUMNxXSfT_NWlqtQy-4GPsGB0dLrmT53pfjcoo/edit?usp=sharing"
+                                    rel="noreferrer"
+                                    target="_blank"
+                                >here.</a></span>
+                            </div>
+                        }
                     </>
                 }
             </div>

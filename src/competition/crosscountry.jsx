@@ -55,7 +55,7 @@ export default function CrossCountry() {
             <div className="topbar-container" id='topbar'></div>
             <div className="bar-plus-content">
                 <div className="page-content">
-                    <SideBarLite className="sidebar" item={item} schedule={schedule}></SideBarLite>
+                    <SideBarLite className="sidebar" item={item} schedule={schedule} records={true}></SideBarLite>
                     <Article className="article" article={pageContent}></Article>
                 </div>
             </div>

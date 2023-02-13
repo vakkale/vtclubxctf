@@ -3,6 +3,34 @@ import { Link } from "react-router-dom";
 
 const articles = [
     {
+        title: "Giving Day 2023!",
+        url: "giving-day-2023",
+        year: "2023",
+        date: "2 - 13",
+        season: "Spring",
+        category: "Announcements",
+        image: 'https://i.imgur.com/PUVge5r.jpg',
+        content:
+            <div className="article-content">
+                <h3>Giving Day Information!</h3>
+                <p>Giving Day is <b>Wednesday-Thursday February 15-16 from noon to noon,</b> and it is a 24 hour time where all donations that are made to the club during that time through our <a href="https://givingday.vt.edu/amb/clubxctf" target="_blank" rel="noreferrer">Giving Day link</a> go directly to our club. This is extremely important to our club as we received over $6,000 from 150+ donors last year, and we are hoping to up that even more this year!</p>
+                <p>There is also a competition among Sport Clubs where the club with the <b>most donors ($5 minimum donation)</b> receives an additional $1,500 for their club, and we are planning on winning that prize! Please share this link with your friends and family, as this is the biggest way that they can support you with our club. Please also be sure to donate so that we can beat all the other sport clubs and prove that we are indeed the best!</p>
+                <p>Also, there is a raffle that any member who donates will be able to enter themselves in for! For every $5 that you donate, you will get 1 raffle ticket which can then be used to enter yourself for any prize you want. Prizes included some nice apparel, semester shirts, an Instagram shoutout from the club account, Phil buys you dinner, and much more!</p>
+                <p>Additionally, if we reach certain donor goals, then there will be rewards for the whole club! If we reach <b>100 donors,</b> we will let you all choose some of the events that we will have at our fun meet at the end of the year! If we reach <b>150 donors,</b> there will be ice cream sandwiches at practice for one day. If we receive over <b>200 donors,</b> all 13 officers will have a pie thrown at them at practice by randomly selected donors!</p>
+                <p>All of this information can also be found in the extremely cool and slick banner above!</p>
+                <h3>Game Night with Rec Sports!</h3>
+                <p>Rec Sports will be having a sports club shout out night at the VT Women's Basketball game <b>this Sunday (2/19)!</b> Athletics has offered to hold a section of Cassell for sport club athletes to sit together for the game. During a timeout of the game, clubs will be honored on the video board with a recognition. Additionally, national championship teams will have the opportunity to be recognized on the court and throw out t-shirts to the crowd!</p>
+                <p>If you want to attend the game and sit in the sport club section, please <a href="https://forms.gle/ECgCasmeETunxePt9" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://forms.gle/ECgCasmeETunxePt9&amp;source=gmail&amp;ust=1676395908605000&amp;usg=AOvVaw3JQkepiOgKMDMU072bouaN">RSVP HERE</a> by tomorrow. You must be on our roster to attend.</p>
+                <p><b>For those who travelled to Nationals with us last year only,</b> if you want to be a part of the group that goes onto the court please <a href="https://forms.gle/fc5iiPUGUhyhDYSb7" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://forms.gle/fc5iiPUGUhyhDYSb7&amp;source=gmail&amp;ust=1676395908605000&amp;usg=AOvVaw364tzSAWjTQchbiiI2lJTw">RSVP HERE</a> by tomorrow.</p>
+                <p>Student tickets are free, just visit athletics’ <a href="https://tickets.hokiesports.com/student/lottery/" target="_blank" rel="noreferrer">student lottery site</a> at noon on gameday and request a free ticket.</p>
+                <h3>Soccer Social!</h3>
+                <p>This Saturday we will be having a soccer social where we will have multiple games! One will have Distance against Sprints/Field. Who is better? Track & Field or Distance? We will also have other games like Freshmen and Seniors vs Sophomores and Juniors. Come out to the <b>Rec Fields this Saturday at 1 pm</b> to find out!</p>
+                <h3>Looking for Officers!</h3>
+                <p>As we are nearing the end of the year, we are looking for new officers to take over the club for next year! If you are interested in being an officer, please fill out <a href="https://forms.gle/cse6Ms4aVnyo8kdC6" target="_blank" rel="noreferrer">this form</a> by <b>February 17th</b> to be considered for an officer position. If you have any questions, please reach out to any of the current officers.</p>
+                <p><a href="https://docs.google.com/presentation/d/1nk0E9zp6DhNguJ9GTlDc5ur96L664ABSw41kxHOOYP8/edit?usp=sharing" target="_blank" rel="noreferrer">Here</a> are slides explaining the officer positions and what they do.</p>
+            </div >
+    },
+    {
         title: "Media Week!",
         url: "media-week",
         year: "2023",

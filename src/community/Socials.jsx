@@ -10,6 +10,17 @@ export default function Socials() {
         title: "Upcoming:"
     };
 
+    const schedule = [
+        {
+            title: "Feb. 18 - Soccer Social",
+            location: "1PM at the Rec Fields"
+        },
+        {
+            title: "Feb. 25 - Breakzone Social",
+            location: "2PM - 4PM at the Breakzone (Squires)"
+        }
+    ];
+
     const pageContent =
         <div className="article-content">
             <h3>All the Fun Stuff!</h3>
@@ -32,7 +43,7 @@ export default function Socials() {
             <div className="topbar-container" id='topbar'></div>
             <div className="bar-plus-content">
                 <div className="page-content">
-                    <SideBarLite className="sidebar" item={item}></SideBarLite>
+                    <SideBarLite className="sidebar" item={item} schedule={schedule}></SideBarLite>
                     <Article className="article" article={pageContent}></Article>
                 </div>
             </div>
