@@ -11,7 +11,7 @@ export default function Banner() {
     const isMobile = window.innerWidth <= 1000;
 
     const countDownStart = new Date("Feb 15, 2023 12:00:00").getTime();
-    /* const countDownEnd = new Date("Feb 16, 2023 12:00:00").getTime(); */
+    const countDownEnd = new Date("Feb 16, 2023 12:00:00").getTime();
     const now = new Date().getTime();
 
     //countdown timer
@@ -20,14 +20,14 @@ export default function Banner() {
         const x = setInterval(function () {
 
             const now = new Date().getTime();
+            let distance;
 
-            /* if (now > countDownStart) {
-                distance = countDownStart - now;
+            if (now > countDownStart) {
+                distance = countDownEnd - now;
             }
             else {
-                distance = countDownEnd - now;
-            } */
-            const distance = countDownStart - now;
+                distance = countDownStart - now;
+            }
 
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -50,11 +50,13 @@ export default function Banner() {
 
         return (
             <div className="banner-countdown">
-                <div className="banner-countdown-item">
-                    <div className="banner-countdown-number" id="days">
+                {!isMobile &&
+                    <div className="banner-countdown-item">
+                        <div className="banner-countdown-number" id="days">
+                        </div>
+                        <div className="banner-countdown-text">DAYS</div>
                     </div>
-                    <div className="banner-countdown-text">DAYS</div>
-                </div>
+                }
                 <div className="banner-countdown-item">
                     <div className="banner-countdown-number" id="hours"></div>
                     <div className="banner-countdown-text">HRS</div>
@@ -77,8 +79,16 @@ export default function Banner() {
                 marginTop: ((location.pathname === '/') && isMobile) ? '60px' : !isMobile ? '60px' : '0px',
             }}
         >
-            <h1 className='banner-text'>{!isMobile ? "Giving Day 2023! Feb 15/16 Noon to Noon!" : "Giving Day 2023!"}</h1>
-            {now > countDownStart ? <button className='banner-button'>Donate Now</button> : null}
+            <h1 className='banner-text'>{!isMobile ? "Giving Day is Here! Please Consider Supporting the Club!" : "Giving Day 2023!"}</h1>
+            {now > countDownStart ?
+                <a
+                    href='https://givingday.vt.edu/amb/clubxctf'
+                    target='_blank'
+                    rel='noreferrer'
+                    className='banner-link'>
+                    <button className='banner-button'>Donate Now</button>
+                </a>
+                : null}
 
             <Link to={'/giving-day'} className='banner-link'>
                 <button className='banner-button'>
