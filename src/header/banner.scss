@@ -50,9 +50,9 @@
             cursor: pointer;
             transition: all 0.3s ease-in-out;
             box-sizing: border-box;
-            
+
             height: 40px;
-    
+
             &:hover {
                 background-color: maroon;
                 color: white;
@@ -67,6 +67,8 @@
     .banner-countdown {
         order: 1;
         display: flex;
+
+        
 
         .banner-countdown-item {
             display: flex;
@@ -88,5 +90,13 @@
                 font-weight: 400;
             }
         }
+
+        .banner-days {
+
+            @media screen and (max-width: 1000px) {
+                display: none;
+            }
+        }
     }
 }
+

@@ -50,13 +50,11 @@ export default function Banner() {
 
         return (
             <div className="banner-countdown">
-                {!isMobile &&
-                    <div className="banner-countdown-item">
-                        <div className="banner-countdown-number" id="days">
-                        </div>
-                        <div className="banner-countdown-text">DAYS</div>
+                <div className="banner-countdown-item banner-days">
+                    <div className="banner-countdown-number" id="days">
                     </div>
-                }
+                    <div className="banner-countdown-text">DAYS</div>
+                </div>
                 <div className="banner-countdown-item">
                     <div className="banner-countdown-number" id="hours"></div>
                     <div className="banner-countdown-text">HRS</div>
