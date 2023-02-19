@@ -14,7 +14,7 @@ export default function GeneralInfo() {
         },
         {
             icon: "schedule",
-            description: "Distance: 4:30PM"
+            description: "Distance: 5:00PM"
         },
         {
             icon: "schedule",

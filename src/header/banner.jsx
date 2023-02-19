@@ -10,12 +10,11 @@ export default function Banner() {
     //isMobile
     const isMobile = window.innerWidth <= 1000;
 
-    const countDownStart = new Date("Feb 15, 2023 12:00:00").getTime();
     const countDownEnd = new Date("Feb 16, 2023 12:00:00").getTime();
     const now = new Date().getTime();
 
     //countdown timer
-    function BannerCountdown() {
+    /* function BannerCountdown() {
 
         const x = setInterval(function () {
 
@@ -39,13 +38,13 @@ export default function Banner() {
             document.getElementById("minutes").innerHTML = minutes;
             document.getElementById("seconds").innerHTML = seconds;
 
-            /* if (now > countDownStart) {
+            if (now > countDownStart) {
                 clearInterval(x);
                 document.getElementById("days").innerHTML = "EXPIRED";
                 document.getElementById("hours").innerHTML = "EXPIRED";
                 document.getElementById("minutes").innerHTML = "EXPIRED";
                 document.getElementById("seconds").innerHTML = "EXPIRED";
-            } */
+            }
         }, 1000);
 
         return (
@@ -69,7 +68,7 @@ export default function Banner() {
                 </div>
             </div>
         )
-    }
+    } */
 
     return (
         <div className="banner"
@@ -77,8 +76,12 @@ export default function Banner() {
                 marginTop: ((location.pathname === '/') && isMobile) ? '60px' : !isMobile ? '60px' : '0px',
             }}
         >
-            <h1 className='banner-text'>{!isMobile ? "Giving Day is Here! Please Consider Supporting the Club!" : "Giving Day 2023!"}</h1>
-            {now > countDownStart ?
+            <h1 className='banner-text'>{
+
+                !isMobile ? "Practice time has been moved to 5:00pm for distance runners!" : "Practice now at 5PM for Distance!"
+
+            }</h1>
+            {/* {now > countDownStart ?
                 <a
                     href='https://givingday.vt.edu/amb/clubxctf'
                     target='_blank'
@@ -93,7 +96,7 @@ export default function Banner() {
                     Learn More
                 </button>
             </Link>
-            <BannerCountdown />
+            <BannerCountdown /> */}
         </div>
     );
 }
