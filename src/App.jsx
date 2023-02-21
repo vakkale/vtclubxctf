@@ -83,7 +83,7 @@ export default function App() {
           <ScrollToTop></ScrollToTop>
           <Redirects></Redirects>
           <Header></Header>
-          <Banner></Banner>
+          {/* <Banner></Banner> */}
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/news/*" element={<News />}></Route>

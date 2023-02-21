@@ -19,6 +19,10 @@ export default function GeneralInfo() {
         {
             icon: "schedule",
             description: "Sprints/Field: 5:00PM"
+        },
+        {
+            icon: "schedule",
+            description: "Lifting Timeslot: Tuesdays 7:00-8:00AM @ Rec Field House"
         }
     ];
 

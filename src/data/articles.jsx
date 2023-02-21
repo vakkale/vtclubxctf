@@ -1,7 +1,39 @@
-/* Something something, the who asked of articles */
 import { Link } from "react-router-dom";
 
+//shortcut for a new image, just pass in the src and alt
+//ex: <Image src="https://i.imgur.com/0GBxapW.jpg" alt="Soccer Social"></Image>
+function Image(props) {
+    return (
+        <div className="img-container">
+            <img src={props.src} alt={props.alt} />
+        </div>
+    );
+}
+
 const articles = [
+    {
+        title: "Elections, Sports, and Even Bigger Socials!",
+        url: "elections-sports-and-even-bigger-socials",
+        year: "2023",
+        date: "2 - 21",
+        season: "Spring",
+        category: "Announcements",
+        image: 'https://i.imgur.com/mQIXD6F.jpg',
+        content:
+            <div className="article-content">
+                <p>Thank you to everyone who came out to the WBB game vs. NC State on Sunday! I'll see you all in the Fall at Cassel when you inevitably need to scratch your newfound women's basketball itch :D. But that's enough about the best D1 team on campus, here's some news about the best club team on campus:</p>
+                <Image src="https://i.imgur.com/0GBxapW.jpg" alt="Soccer Social"></Image>
+                <p>The soccer social on Saturday was a huge success! The sprinters crushed the distance team with a 5-0 win and the Freshmen/Senior team scored 2-1 against the Sophomore/Junior team in a heated match. Photos from the event and all other photos we take this semester can be found on our <a href="https://photos.app.goo.gl/XFMPNQgvbF6czWiT6" target={"_blank"}>Google Photos Album.</a></p>
+                <h3>Officer Elections!</h3>
+                <p>Officer elections for the 2023-2024 school year are upon us, and we want to get your input! These candidates are all running for roles that are heavily involved with the members, so we want to hear what you think would make them good officers. Please look through <a href="https://forms.gle/XtNwLdtQkpLpD9DA6" target={"_blank"}>this form</a> and write down what you think their strengths are and why they would be a great candidate for an officer position!</p>
+                <h3>Breakzone Social!</h3>
+                <p>We are super excited to announce that we rented out the Breakzone in Squires <b>this Saturday (2/25) from 2:00pm-4:00pm!</b> All club members are welcome to join for bowling, pool, darts, foosball, ping pong, video games, board games, and more! It's going to be a lot of fun so we hope to see you there!</p>
+                <h3>Giving Day Raffle</h3>
+                <p>As mentioned in many many messages, Giving day was this past week and you all absolutely crushed it! I wanted to remind you that any club member who donated at least $5 is able to enter themselves into a raffle for some cool prizes! The link for that is <a href="https://forms.gle/VhaNjbj76yLUsFaJ9" target={"_blank"}>here,</a> and the winners will be announced at practice on Wednesday so please complete the form before then.</p>
+                <h3>Message from Phil</h3>
+                <p>Bit of a chiller week with fun stuff planned, but we are also 2 weeks away from Spring break! I know you all have been working super hard being student athletes, so you all have earned a well deserved break soon. Until then, keep on grinding and doing your best in everything that you do! I believe in all of you, and I hear a lot about the great things you are all involved in which makes me so very proud to be able to get to know all of you. <br /><br />-Phil</p>
+            </div>
+    },
     {
         title: "Giving Day 2023!",
         url: "giving-day-2023",
@@ -74,7 +106,6 @@ const articles = [
                 </ol>
                 <div className="img-container">
                     <img src="https://i.imgur.com/KNUpPWB.jpg" alt="Fun photos at the Media Day photoshoots!" />
-
                 </div>
                 <div className="img-container">
                     <img src="https://i.imgur.com/GUXV0CL.jpg" alt="More fun photos at the Media Day photoshoots!" />
