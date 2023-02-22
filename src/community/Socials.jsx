@@ -11,13 +11,41 @@ export default function Socials() {
     };
 
     const schedule = [
-        {
+        /* {
             title: "Feb. 18 - Soccer Social",
             location: "1PM at the Rec Fields"
-        },
+        }, */
         {
             title: "Feb. 25 - Breakzone Social",
             location: "2PM - 4PM at the Breakzone (Squires)"
+        },
+        {
+            title: "Mar. 16 - Team Dinner",
+            location: "After Practice at D2"
+        },
+        {
+            title: "Mar. 20 - Assassin Begins",
+            location: "You're never safe..."
+        },
+        {
+            title: "Mar. 29 - Chipotle Night",
+            location: "5PM - 9PM at North Main Chipotle"
+        },
+        {
+            title: "Apr. 8 - McAffee Knob Hike",
+            location: "McAffee Knob"
+        },
+        {
+            title: "Apr. 13 - Team Dinner",
+            location: "After Practice at D2"
+        },
+        {
+            title: "Apr 19 - Panda Express Night",
+            location: "5PM - 9PM at Prices Fork Panda Express"
+        },
+        {
+            title: "Apr. 29 - End of Year Banquet",
+            location: "TBA"
         }
     ];
 
