@@ -1,0 +1,3 @@
+#put files you want to be ignored by git in this folder
+#such as config files that contain sensitive information
+database_config.jsx
