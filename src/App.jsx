@@ -51,10 +51,6 @@ export default function App() {
   //runs once on page load, calls loadImages function to load all images in the array and doest re-render the page until all images are loaded, displays a loading screen while images are loading, doesnt run on rerender
   useEffect(() => {
 
-    if (window.location.pathname === '/records') {
-      window.location.assign('https://docs.google.com/spreadsheets/d/1zZUx2uUMNxXSfT_NWlqtQy-4GPsGB0dLrmT53pfjcoo/edit?usp=sharing')
-    }
-
     if (loading === true) {
       loadImages(imgs).then(() => {
         /* setTimeout(() => {
@@ -82,14 +78,13 @@ export default function App() {
       {loading ? <LoadingScreen></LoadingScreen> :
         <BrowserRouter>
           <ScrollToTop></ScrollToTop>
-          <Redirects></Redirects>
+          {/* <Redirects></Redirects> */}
           <Header></Header>
           {/* <Banner></Banner> */}
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/news/*" element={<News />}></Route>
             <Route exact path="/competition" element={<Home />}></Route>
-            <Route exact path="/records" element={<Home />}></Route>
             <Route exact path="/training/*" element={<Training />}></Route>
             <Route exact path="/contact" element={<Contact />}></Route>
             <Route exact path="/routes/*" element={<MapRoutes />}></Route>
@@ -103,7 +98,7 @@ export default function App() {
             <Route exact path="/sponsors" element={<Sponsors />}></Route>
             <Route exact path="/giving-day" element={<GivingDay />}></Route>
             <Route exact path="/racing-forms" element={<RaceForms />} />
-            {/*< Route exact path="/records/*" element={<Records />}></Route> */}
+            {/* <Route exact path="/records/*" element={<Records />}></Route> */}
             <Route exact path="*" element={<Home />}></Route>
           </Routes>
           <Footer></Footer>

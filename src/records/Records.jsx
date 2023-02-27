@@ -1,64 +1,144 @@
+import './Records.scss';
 import PageHeader from "../modules/PageHeader";
 import TopBar from "../modules/TopBar";
 import SideBar from "../modules/SideBar";
-import Route from "../modules/Route";
-import recordsData from "../data/recordsData";
-import routeData from '../data/routes';
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from 'react';
+import Parser from './Parser';
 
 export default function Records() {
-    const background = 'https://i.imgur.com/CxLIxTh.jpg';
+    const page_props = {
+        title: "Records",
+        subtitle: "Competition",
+        background: 'hhttps://i.imgur.com/yRhfhOL.jpg',
+        yPos: "30%"
+    };
 
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         if (window.innerWidth < 1000) {
-            setIsMobile(true);/* 
-            setFilters(['title']); */
+            setIsMobile(true);
         }
         else {
             setIsMobile(false);
         }
     }, []);
 
+    /*
+
     const location = useLocation();
     const pathname = location.pathname;
     const routeName = pathname.substring(pathname.lastIndexOf('/') + 1);
 
-    const [records, setRecords] = useState(recordsData[0]);
+    //set article as state
+    const [route, setRoute] = useState(recordData[0]);
 
     //set article to the article that matches the url
     useEffect(() => {
         if (routeName !== '')
-            setRecords(routeData.find(route => route.url === routeName));
+            setRoute(routeData.find(route => route.url === routeName));
         else
-            setRecords(routeData[0]);
-    }, [routeName]);
+            setRoute(recordData[0]);
+    }, [routeName]); */
 
     // Array of filters for the ArticleSorter component
-    const [filters, setFilters] = useState(['page']);
+    const [filters, setFilters] = useState(['title']);
     // Set the sorted articles to send to the SideBar component
-    const [sortedArticles, setSortedArticles] = useState(routeData);
+    const [sortedArticles, setSortedArticles] = useState(recordData);
 
     // Callback function to handle sorted articles
-    const handleSortedArticles = articlesSorted => {
+    const handleSortedRecords = articlesSorted => {
         setSortedArticles(articlesSorted);
         if (isMobile)
-            setRecords(articlesSorted[0]);
+            setRecordData(articlesSorted[0]);
     };
 
-    return (
-        <>
-            <PageHeader image={background} title={"Trails"} subtitle={"Routes"} yPos={"30%"} />
-            {isMobile ? <TopBar articles={routeData} filters={filters} onSort={handleSortedArticles}></TopBar>
-                : <div className="topbar-container" id='topbar'></div>}
-            <div className="bar-plus-content">
-                <div className="page-content">
-                    <SideBar className="sidebar" data={routeData} size="big"></SideBar>
-                    {/* <Route className="article" route={route} ></Route> */}
-                </div>
+    //before doing anything, parse the data
+    const [recordData, setRecordData] = useState([]);
+    useEffect(() => {
+        Parser().then(data => {
+            setRecordData(data);
+        }).then(() => {
+            console.log(recordData);
+        });
+    }, []);
+
+    const Accordion = (event) => {
+        const [isOpen, setIsOpen] = useState(false);
+
+        return (
+            <div className="accordion" onClick={() => setIsOpen(!isOpen)}>
+                <div className="accordion-title">{event.name}</div>
+                {
+                    isOpen &&
+                    <>
+                        <div className="accordion-header">
+                            <div className="accordion-header-item">No.</div>
+                            <div className="accordion-header-item">Meet</div>
+                            <div className="accordion-header-item">Year</div>
+                            <div className="accordion-header-item">Athlete</div>
+                            <div className="accordion-header-item">Time</div>
+                        </div>
+                        {
+                            event.records.map((item, index) => {
+                                return (
+                                    <AccordionItem key={index} item={item} />
+                                )
+                            })}
+                    </>
+                }
             </div>
-        </>
-    );
+        )
+    }
+
+    const AccordionItem = ({ record }) => {
+
+        return (
+            <div className="accordion-item">
+                <div className="accordion-item-number">{record.number}</div>
+                <div className="accordion-item-meet">{record.meet}</div>
+                <div className="accordion-item-year">{record.year}</div>
+                <div className="accordion-item-athlete">{record.athlete}</div>
+                <div className="accordion-item-time">{record.time}</div>
+            </div>
+        );
+    }
+
+    const Page = () => {
+        return (
+            <div className="page">
+                {
+                    recordData.map((event, index) => {
+                        return (
+                            <Accordion key={index} event={event} />
+                        )
+                    })
+                }
+            </div>
+        );
+    }
+
+    Parser().then(data => {
+        setRecordData(data).then(() => {
+            return (
+                <>
+                    <PageHeader
+                        image={page_props.background}
+                        title={page_props.title}
+                        subtitle={page_props.subtitle}
+                        yPos={page_props.yPos}
+                    />
+                    {isMobile ? <TopBar articles={recordData} filters={filters} onSort={handleSortedRecords}></TopBar>
+                        : <div className="topbar-container" id='topbar'></div>}
+                    <div className="bar-plus-content">
+                        <div className="page-content">
+                            <SideBar className="sidebar" data={recordData} size="big"></SideBar>
+                            <Page></Page>
+                        </div>
+                    </div>
+                </>
+            );
+        });
+    });
 }

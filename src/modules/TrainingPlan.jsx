@@ -4,6 +4,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 export default function TrainingPlan({ sheetID, sheets }) {
+    /* SPAGHETTI CODE WARNING */
 
     const today = new Date();
     const month = today.getMonth() + 1; //January is 0!

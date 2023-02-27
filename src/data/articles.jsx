@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 //shortcut for a new image, just pass in the src and alt
 //ex: <Image src="https://i.imgur.com/0GBxapW.jpg" alt="Soccer Social"></Image>
 function Image(props) {
@@ -9,8 +8,81 @@ function Image(props) {
         </div>
     );
 }
-
+function Gallery({ images }) {
+    return (
+        <div className="img-container">
+            {images.map((image, index) => {
+                return (
+                    <img key={index} src={image.src} alt={image.alt} />
+                );
+            })}
+        </div>
+    );
+}
 const articles = [
+    {
+        title: "Knock Knock, Who's There? It's your 2023-2024 Officers!",
+        url: "knock-knock-whos-there-its-the-2023-2024-officers",
+        year: "2023",
+        date: "2 - 27",
+        season: "Spring",
+        category: "Announcements",
+        image: 'https://i.imgur.com/uaeC230.jpg',
+        content:
+            <div className="article-content">
+                <h3>Weekly Updates 2/27/23</h3>
+                <p>Welcome to the Club XCTF Updates (Wyatt&#39;s Version (But also Volkan’s Version because I added a bunch of stuff here)). I hope you all had a fun time at our Breakzone Social this past weekend and watched the drama unfold over bowling and ping pong. Shoutout to Konnor for scoring 200 points in bowling!</p>
+                <Image src="https://i.imgur.com/r5FIYGe.jpg" alt="Prez vs. VP Ping Pong"></Image>
+                <p>I've sprinkled in some pictures from our social throughout this post but if you want to see all of the photos we took there and throughout this whole semester, check out our <a href="https://photos.app.goo.gl/XFMPNQgvbF6czWiT6" rel="nofollow noreferrer">Google Photos Album</a>.</p>
+                <h3>Officer Election Results</h3>
+                <p>Introducing your 2023-2024 Officer Board:</p>
+                <li><strong>President: </strong><i>Wyatt Thomas</i></li>
+                <li><strong>Vice President: </strong><i>Volkan Akkale</i></li>
+                <li><strong>Race Coordinator: </strong><i>Roman Ciulla</i></li>
+                <li><strong>Treasurer: </strong><i>Evelyn Tipper</i></li>
+                <li><strong>Apparel Officer: </strong><i>Molly Donaldson</i></li>
+                <li><strong>Social Coordinator: </strong><i>Harris Naseh</i></li>
+                <li><strong>Webmaster: </strong><i>Charlotte Baxter</i></li>
+                <li><strong>M Distance Captain: </strong><i>Ben Darden</i></li>
+                <li><strong>W Distance Captain: </strong><i>Sydney Szabos</i></li>
+                <li><strong>Sprint Captain: </strong><i>Adam DeFosse</i></li>
+                <li><strong>Sprint Captain: </strong><i>Riley Ophof</i></li>
+                <li><strong>Throws Captain: </strong><i>Nyle Sheriff</i></li>
+                <li><strong>Jumps Captain: </strong><i>Aidan McCrory</i></li>
+                <h3>Home Meet Signup</h3>
+                <p>That&#39;s right! It&#39;s finally time to start signing up for races again. Here is a message from our sponsor (Hannah):</p>
+                <p>It&#39;s time to sign up for the first track meet of the season!! This will be our home meet on <strong>Saturday, March 18th</strong>, at Blacksburg High School with events starting at 11 am. For the first time, we are offering a one time only racing opportunity for ALL members, including our non-racing members! This would include a $25 fee if you haven&#39;t paid racing dues this semester and more info can be found in the survey.</p>
+                <p>Please fill <a href="https://www.google.com/url?q=https://forms.gle/JQt1ixRN6Jxu33zR6&amp;source=gmail-html&amp;ust=1677626392604000&amp;usg=AOvVaw22Cv6XEv0-cfs-y1QRfHEJ" rel="nofollow noreferrer" target="_blank">this survey</a> out by <strong>Wednesday, March 8th</strong>, which is after we come back from Spring break! As always let me know if you have any questions.</p>
+                <Image src="https://i.imgur.com/EPzGHlM.jpg" alt="Harris and his balls"></Image>
+                <h3>Officer Feedback</h3>
+                <p>How have we been doing? Now that we&#39;re almost halfway done through the semester (that&#39;s wild to think about), we’d like to hear from you about what we&#39;ve been doing well and what we can improve upon!</p>
+                <p>Please fill out <a href="https://www.google.com/url?q=https://forms.gle/Y4SPbwjsX2y4Dkkv9&amp;source=gmail-html&amp;ust=1677626392604000&amp;usg=AOvVaw2aL-wvJHOU7KNOzop4bc8G" rel="nofollow noreferrer" target="_blank">this anonymous survey</a> and let us know your thoughts.</p>
+                <p>The more people that fill it out, the more input we have, and the easier it is for us to become the best officer board we can be!</p>
+                <h3>Giving Day Rewards</h3>
+                <p>Because our club is full of so many amazing people, you all reached all three of our donation incentives! The most anticipated one, of course, is throwing a pie at an officer! That will take place <strong>this Tuesday at practice. </strong></p>
+                <p>We will be randomly selecting 13 individuals to throw a plate of whipped cream at each one of the officers at practice. If practice is canceled over weather, we will postpone this until a better day. </p>
+                <p>We will also be bringing ice cream to practice after Spring Break. If you won a prize in our raffle, Suzie will be handing those out at practice as well. </p>
+                <h3>Spike Night &amp; Shoe Drive</h3>
+                <p>Normally I would announce this next week, but because of Spring Break, I am going to let you all know of this exciting opportunity now! Starting the week of <strong>March 13th</strong>, we will be conducting a used shoe drive where you can hand us your used pairs of shoes and spikes! The used shoes will be donated to the MORE Foundation Group (learn more <a href="https://www.google.com/url?q=https://www.morefoundationgroup.org/&amp;source=gmail-html&amp;ust=1677626392604000&amp;usg=AOvVaw2uj7YhlGd3va9B9gmhKOc4" rel="nofollow noreferrer" target="_blank">here</a>) to help those in need.</p>
+                <p>Any spikes you donate will be given to athletes at Blacksburg Middle and High School, so your donations are directly benefiting the running community in Blacksburg, which I think is great.</p>
+                <p>In conjunction with this, we will also be doing a spike night at RunAbout sports on <strong>Tuesday, March 14th, from 5-7 pm.</strong> We will have the store to ourselves for two hours, and we will receive 15% of the proceeds made. This is a great way for you to support the club and the Blacksburg running community while also grabbing a sweet pair of shoes.</p>
+                <Gallery images={[
+                    {
+                        src: 'https://i.imgur.com/M4AfaZC.jpg',
+                        alt: 'Tara Bowling'
+                    },
+                    {
+                        src: 'https://i.imgur.com/WMml5Fn.jpg',
+                        alt: 'Chris taking a trickshot'
+                    }
+                ]} />
+                <h3>Practice on March 3rd</h3>
+                <p>Because of Spring Break starting the next week, <strong>we will not be having practice on Friday, March 3rd</strong>. Be sure to look out for unofficial practices, though, as plenty of people will be organizing activities. I hope you have a fun and safe Spring Break!</p>
+                <h3>Fun Fact of the Week (FFOTW) - Wyatt</h3>
+                <p>Thank you for reading to the very end. I&#39;m thinking of including a fun fact at the bottom of each so you can become just a little more enlightened each week by a useless fun fact. This week is going to be about otters. Did you know that otters have a favorite rock that they will carry with them to crack open clams? I think that is lovely.</p>
+                <Image src="https://i.imgur.com/t4Pazjx.jpg" alt="Pool enjoyers."></Image>
+            </div>
+    },
     {
         title: "Elections, Sports, and Even Bigger Socials!",
         url: "elections-sports-and-even-bigger-socials",
