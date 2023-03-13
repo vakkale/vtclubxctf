@@ -78,7 +78,7 @@ export default function Banner() {
         >
             <h1 className='banner-text'>{
 
-                !isMobile ? "Practice time has been moved to 5:00pm for distance runners!" : "Practice now at 5PM for Distance!"
+                !isMobile ? "Practice time has been moved to 6:00PM for everybody!" : "Practice now at 6PM!"
 
             }</h1>
             {/* {now > countDownStart ?
