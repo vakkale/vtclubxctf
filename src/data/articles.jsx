@@ -21,7 +21,7 @@ function Gallery({ images }) {
 }
 const articles = [
     {
-        title: "Race Season ft. ",
+        title: "Race Season ft. Snow",
         url: "so-called-spring-weather",
         year: "2023",
         date: "3 - 13",
