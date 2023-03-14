@@ -21,6 +21,46 @@ function Gallery({ images }) {
 }
 const articles = [
     {
+        title: "Race Season ft. ",
+        url: "so-called-spring-weather",
+        year: "2023",
+        date: "3 - 13",
+        season: "Spring",
+        category: "Announcements",
+        image: "https://i.imgur.com/t0w1PJC.jpg",
+        content:
+            <div className="article-content">
+                <p>Good “morning” Spring Breakers! I hope you all had a lovely break full of warm weather, and welcome back to Blacksburg where March is the new January!</p>
+                <p>Here are all the updates as we get into racing season! There will be a lot of information sent out here so please be sure to read it all so you don&#39;t miss any deadlines or miss anything else.</p>
+                <p><strong>PSA to all Freshmen:</strong> It gets cold, don't leave your gloves and jackets at home please. We don't want you to freeze to death walking up Beamer.</p>
+                <p><strong><mark>All practices will be moved to 6:00pm starting this week!</mark></strong> The reason we move practice to 6 is because the varsity team has moved into their outdoor season, and will be on the track every day now. We have to stay out of their way unfortunately, so we will now practice at 6 to avoid that problem. <strong>We will also <mark>not</mark> have practice this Tuesday because we are having a spike night that night (more info below).</strong> It&#39;s gonna be freezing that day as well. In place of practice on Tuesday, we have a lifting slot available to any club member from <strong>7:00-8:00 am on Tuesdays</strong> at the Rec Sports Field House!</p>
+                <p>You can also find the link to our Spring 2023 Google Photos album <a href="https://www.google.com/url?q=https://photos.app.goo.gl/XFMPNQgvbF6czWiT6&amp;source=gmail-html&amp;ust=1678858425302000&amp;usg=AOvVaw3R6GFXZ93HNqvmTEuAAGll" rel="nofollow noreferrer" target="_blank">here</a>.</p>
+                <Image src="https://i.imgur.com/d7k3Jto.jpg" alt="Snowy practice."></Image>
+                <h3><strong>Racing Information</strong></h3>
+                <p>Hannah will be sending out an email to all racers with more information regarding some important racing items to be completed, so if you are racing this season please be on the lookout for that! She will be bringing NIRCA eligibility forms to practice the next two weeks that must be filled out for anyone that wants to compete at nationals. She will also talk about the prior performance submission that is needed to run certain events at Nationals.</p>
+                <p>Information about the home meet this upcoming Saturday will be sent out later this week as well! We are super excited to get to see all of your hard work get shown through your races!</p>
+                <p>It&#39;s time to sign up for the second meet of the season. It&#39;ll be at the<strong> University of Lynchburg March 24-25</strong>. Please note the Friday events in the survey (Javelin, 3k Steeple, 10k), in order to plan around your class schedule. Please fill <a href="https://www.google.com/url?q=https://forms.gle/MJzUBXnoWvaw7dff9&amp;source=gmail-html&amp;ust=1678858425302000&amp;usg=AOvVaw2di6Ph_TpUCYTaVVrxpGIP" rel="nofollow noreferrer" target="_blank">this</a> out by <strong>next Sunday, March 19th</strong>!</p>
+                <h3><strong>Spike Night &amp; Shoe Drive</strong></h3>
+                <p>Starting this week, we will be conducting a used shoe drive where you can hand us your used pairs of shoes and spikes! The used shoes will be donated to the MORE Foundation Group (learn more <a href="https://www.google.com/url?q=https://www.morefoundationgroup.org/&amp;source=gmail-html&amp;ust=1678858425302000&amp;usg=AOvVaw3mfBRcBXXINBsfdXFfPWC9" rel="nofollow noreferrer" target="_blank">here</a>) to help those in need. Any spikes you donate will be given to athletes at Blacksburg Middle and High School, so your donations are directly benefiting the running community in Blacksburg.<strong> Please bring your old shoes and spikes to practice to donate!</strong></p>
+                <p>In conjunction with this, we will also be doing a spike night at RunAbout sports on <strong>Tuesday, March 14th, from 5-7 pm. </strong>We will have the store to ourselves for two hours, and we will receive 15% of the proceeds made during that night. This way you can donate your old running shoes and buy a new pair, which also benefits the club! It&#39;ll be a lot of fun and RunAbout sports is a great company that is a staple of the Blacksburg running community.</p>
+                <Gallery images={[
+                    { src: "https://i.imgur.com/oLmPfNe.jpg", alt: "Snowy practice 2." },
+                    { src: "https://i.imgur.com/bxu4dT6.jpg", alt: "Snowy practice 3." },
+                ]} />
+                <h3><strong>The Big Event</strong></h3>
+                <p>The Big Event is a student-run day of service that has grown into the second largest event of its kind in the nation. This year this will be on <strong>Saturday, April 1st</strong>, and our club will be participating! Our club will be assigned some form of community service, and as a team we will go out together and make a difference! We are hoping to have a lot of people for this event, so please <a href="https://www.google.com/url?q=https://forms.gle/7aNPYU5Yg4bPEKRg9&amp;source=gmail-html&amp;ust=1678858425302000&amp;usg=AOvVaw24h4jM-X_v1k8Ts4B-E6tA" rel="nofollow noreferrer" target="_blank">sign up</a> and invite your friends! To join our Big Event team, please fill out the form below, and in the team name please put &quot;Club XCTF&quot; to ensure you are a part of our team. Under the Team Captain question, please put &quot;No&quot; and not as an individual.</p>
+                <h3><strong>Pre-Meet Team Dinner</strong></h3>
+                <p>After practice this Thursday (3/16), we will be having a team dinner at West End dining hall on campus! We will all walk over after practice and it&#39;s gonna be a lot of fun, so look forward to that!</p>
+                <Image src="https://i.imgur.com/laIGSWz.jpg" alt="Wyatt staring into your soul using a spyglass made from his hands."></Image>
+                <h3><strong>How do I Join?</strong></h3>
+                <p>It&#39;s not too late to join! All membership requirements can be found <Link to={"/join"}>here</Link>. As the initial deadline has already passed to join, <strong>you must complete all of these items before you are able to attend practice or any club events.</strong></p>
+                <h3>Message from Phil:</h3>
+                <p>As always, thank you all so much for reading this in its entirety! &quot;Watching you all compete is a testament to the power of human potential. Your athletic abilities and skills are truly remarkable.&quot; - ChatGPT 2023. In more human terms I want you all to know that I am always proud to be your President. Racing season is upon us so let&#39;s go show all these other schools what we are made of!</p>
+                <p>Sincerely,</p>
+                <p>Phil</p>
+            </div>
+    },
+    {
         title: "Knock Knock, Who's There? It's your 2023-2024 Officers!",
         url: "knock-knock-whos-there-its-the-2023-2024-officers",
         year: "2023",
