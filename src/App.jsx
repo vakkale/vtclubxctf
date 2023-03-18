@@ -25,6 +25,7 @@ import Redirects from './helpers/Redirects';
 import Banner from './header/banner';
 import GivingDay from './about_pages/GivingDay';
 import RaceForms from './about_pages/RaceForms';
+import Parser from './records/Parser';
 
 export default function App() {
 
@@ -81,6 +82,7 @@ export default function App() {
           {/* <Redirects></Redirects> */}
           <Header></Header>
           <Banner></Banner>
+          {/* <Parser></Parser> */}
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/news/*" element={<News />}></Route>

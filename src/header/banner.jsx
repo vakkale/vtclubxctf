@@ -78,9 +78,23 @@ export default function Banner() {
         >
             <h1 className='banner-text'>{
 
-                !isMobile ? "Practice time has been moved to 6:00PM for everybody!" : "Practice now at 6PM!"
+                !isMobile ? "Hokie Invitational Info: " : "Hokie Invitational: "
 
             }</h1>
+            <a
+                href='https://drive.google.com/file/d/12rIdxYBLbXZ_dxs8BKslgH0WeCAxc_lo/view?usp=sharing'
+                target='_blank'
+                rel='noreferrer'
+                className='banner-link'>
+                <button className='banner-button'>Heat Sheet</button>
+            </a>
+            <a
+                href='http://results.tfmeetpro.com/SnapTiming/Hokie_Invitational_31823/'
+                target='_blank'
+                rel='noreferrer'
+                className='banner-link'>
+                <button className='banner-button'>Results</button>
+            </a>
             {/* {now > countDownStart ?
                 <a
                     href='https://givingday.vt.edu/amb/clubxctf'

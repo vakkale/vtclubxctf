@@ -57,9 +57,12 @@ export default function Parser() {
         });
     }
 
-    return (
+    /* return (
         { sheets }
-    );
+    ); */
+    
+    getSheetData();
+    console.log(sheets);
 
     // parse the sheet data
     function parseSheetData(data) {
