@@ -21,8 +21,45 @@ function Gallery({ images }) {
 }
 const articles = [
     {
+        title: "One Down, Four to Go",
+        url: "one-down-four-to-go",
+        year: "2023",
+        date: "3 - 20",
+        season: "Spring",
+        category: "Announcements",
+        image: "https://i.imgur.com/7qambKv.jpg",
+        content:
+            <div className="article-content">
+                <p>Listen up people! Below, you’ll find some <strong>crucial information</strong> regarding meets, volunteering opportunities, apparel updates, and most importantly <mark><strong>the start of Assassin!</strong></mark> There will also be a full meet recap coming on the website in the next few days so stay tuned for that but in the meantime we have a mini recap here. And as always any photos from the meet can be found in <a href="https://photos.app.goo.gl/XFMPNQgvbF6czWiT6" rel="nofollow noreferrer">our Google Photos Album</a>. One last thing: it's been brought to my attention that the meet schedule and socials schedule can't be accessed on mobile, this will be fixed this week.</p>
+                <h3><strong>Home Meet Recap</strong></h3>
+                <p>Congratulations to everyone that competed this past weekend! We had many club records, all-time performances, PRs, and fun races for everyone to enjoy! Despite the typical Blacksburg weather being randomly cold and windy, everyone showed up and showed out. I am so incredibly proud of you if you competed, no matter how you feel about how you did. Your support and dedication to this club is what makes it so special, and your effort doesn&#39;t go unnoticed.</p>
+                <Image src="https://i.imgur.com/Os1laba.jpg" alt="Home meet relay."></Image>
+                <h3><strong>Dr. Jack Toms Invitational Meet 3/24-3/25</strong></h3>
+                <p>Our lovely race coordinators Hannah and Roman would like to inform you that <strong>the deadline to drop out of the Dr. Jack Toms Invite is </strong><strong><mark>Tuesday morning at 8 am.</mark></strong><strong> </strong>If you are dropping, you must inform Hannah or Roman before that time. If you drop the meet afterward, you will be charged $15. If you are planning on attending the Friday events, rides will be coordinated as well. Running events on Friday have just been announced to start with the 3k steeplechase at 4:30 pm.</p>
+                <Image src="https://i.imgur.com/nuc8Vlq.jpg" alt="Home meet high jump."></Image>
+                <h3><strong>Assassin</strong></h3>
+                <p>This is the big one. It’s here and better than ever. Are you ready?? The Spring edition of Club XCTF assassin begins this week. <strong>Make sure to like Harris’s message in GroupMe if you want to play!</strong> There’s also information about the rules of the game on there. He even wrote code for it. The rules for Assassin can be found <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1IcguV4x5KCUdAfa3pgz4rXJ26-iHCmcXtdML9zKRedw/edit?usp%3Dsharing&amp;source=gmail-html&amp;ust=1679520741592000&amp;usg=AOvVaw098R5U-BdAyVCfdV9G-ln0" rel="nofollow noreferrer" target="_blank">here</a>.</p>
+                <h3><strong>Eligibility form</strong></h3>
+                <p>If you are even slightly interested in running in NIRCA Track Nationals on April 15th and 16th, <strong>you must sign the NIRCA eligibility form </strong>that Hannah is bringing to practice! All NIRCA athletes must sign this waiver and maintain a certain GPA in order to compete and this is signed by our university bursar&#39;s office. If you do not fill out this form, you cannot compete at nationals. </p>
+                <Image src="https://i.imgur.com/VgLeY2U.jpg" alt="Home meet hurdles."></Image>
+                <h3><strong>The Big Event</strong></h3>
+                <p>The Big Event is a student-run day of service that has grown into the second largest event of its kind in the nation. This year this will be on <strong>Saturday, April 1st</strong>, and our club will be participating! Our club will be assigned some form of community service, and as a team we will go out together and make a difference! We are hoping to have a lot of people for this event, so please <a href="https://www.google.com/url?q=https://forms.gle/7aNPYU5Yg4bPEKRg9&amp;source=gmail-html&amp;ust=1679520741592000&amp;usg=AOvVaw1GLaFei_Whopc5DPP3UJIY" rel="nofollow noreferrer" target="_blank">sign up</a> and invite your friends! To join our Big Event team, please fill out the form below, and in the team name <mark><strong>please put &quot;Club XCTF&quot; to ensure you are a part of our team.</strong></mark> Under the Team Captain question, please put &quot;No&quot; and not as an individual.</p>
+                <h3><strong>Volunteer Opportunity - Bear Tracks at Margaret Beeks Elementary</strong></h3>
+                <p>The Club XCTF team is partnering with Margaret Beeks Elementary in their Bear Tracks program! This is a before-school program from 8:40-9:15 am held by the MBE PTO, encouraging their kids to run! They are looking for volunteers to be pacers and supervisors for the kids, and the dates are listed in <a href="https://www.google.com/url?q=https://www.signupgenius.com/go/20f0e4da4af2ca7f94-bear1%23/&amp;source=gmail-html&amp;ust=1679520741592000&amp;usg=AOvVaw1jboVfKZU2uf7EVitAdkfb" rel="nofollow noreferrer" target="_blank">this survey</a>. If you are interested, please sign up! In your signup, please write down in the comments if you are interested in being a pacer or supervisor. Hope to see you there!</p>
+                <h3><strong>Nationals Shirt and Grad Cords</strong></h3>
+                <p>We have some more apparel opportunities! If you are interested in purchasing a shirt celebrating our trip to nationals this year, then please fill out <a href="https://www.google.com/url?q=https://forms.gle/quXsynH2KSw86mH57&amp;source=gmail-html&amp;ust=1679520741592000&amp;usg=AOvVaw3uqwWmnNWfs8tPkZnRPxAF" rel="nofollow noreferrer" target="_blank">this survey</a>! These shirts are $15 and you must pay Sam and fill out this form by March 24th or else we cannot order one for you. Furthermore, <strong>attention seniors</strong>, if you would like a Club XCTF graduation cord, please fill out <a href="https://www.google.com/url?q=https://forms.gle/mYhFNsXcBiExgL9h6&amp;source=gmail-html&amp;ust=1679520741592000&amp;usg=AOvVaw2117GwODUOBu709PTPE3_z" rel="nofollow noreferrer" target="_blank">this other survey</a> <strong><mark>by April 2nd for your free graduation cord!</mark></strong></p>
+                <h3><strong>Wyatt’s Corner</strong></h3>
+                <p>Thanks again for reading to the very bottom. I wonder how many people actually make it this far. Well, for this week of Wyatt&#39;s Fun Fact of the Week, we have animal group names. Did you know:</p>
+                <li>A group of flamingos is called a flamboyance,</li>
+                <li>A group of crows is called a murder,</li>
+                <li>A group of toads is called a knot, and</li>
+                <li>A group of porcupines is called a prickle.</li>
+                <p>I hope you enjoyed these fun facts. As someone studying science, I think it&#39;s important to not lose sight of the fun in life and have silly names. I hope you have a wonderful week and let me know if you know of any other good animal group names.</p>
+            </div>
+    },
+    {
         title: "Race Season ft. Snow",
-        url: "so-called-spring-weather",
+        url: "race-season-ft-snow",
         year: "2023",
         date: "3 - 13",
         season: "Spring",

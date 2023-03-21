@@ -19,19 +19,20 @@ export default function TrackAndField() {
         },
         {
             title: "Mar. 18 - Hokie Track Invitational",
-            location: "Blacksburg High School, Blacksburg, VA"
+            location: "Blacksburg High School, Blacksburg, VA",
+            url: "https://drive.google.com/file/d/1Oir8Pu32xVJq3xj3En1yeTC5OS0573eW/view?usp=sharing"
         },
         {
             title: "Mar. 25 - Dr. Jack M. Toms Alumni Invitational",
             location: "University of Lynchburg, Lynchburg, VA"
         },
         {
-            title: "Apr. 1 - MEET TBA",
-            location: "Location TBD"
+            title: "Apr. 8 - Wildcat Track Festival",
+            location: "Randolph College, Lynchburg, VA"
         },
         {
-            title: "Apr. 15/6 - NIRCA Track & Field Nationals",
-            location: "Location TBD"
+            title: "Apr. 15-6 - NIRCA Track & Field Nationals",
+            location: "Olivet College, Olivet, MI"
         },
         {
             title: "Apr. 22 - Wildcat Twilight",

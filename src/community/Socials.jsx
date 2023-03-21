@@ -16,24 +16,18 @@ export default function Socials() {
             location: "1PM at the Rec Fields"
         }, */
         {
-            title: "Feb. 25 - Breakzone Social",
-            location: "2PM - 4PM at the Breakzone (Squires)"
-        },
-        {
-            title: "Mar. 16 - Team Dinner",
-            location: "After Practice at D2"
-        },
-        {
             title: "Mar. 20 - Assassin Begins",
             location: "You're never safe..."
         },
         {
             title: "Mar. 29 - Chipotle Night",
-            location: "5PM - 9PM at North Main Chipotle"
+            location: "5PM - 9PM at North Main Chipotle",
+            url: "https://drive.google.com/file/d/1UubbkNtJXCchuDJw16TSI4SwEgpUWR69/view?usp=sharing"
         },
         {
-            title: "Apr. 8 - McAffee Knob Hike",
-            location: "McAffee Knob"
+            title: "Apr. 1 - The Big Event",
+            location: "Sign Up Here - Put 'Club XCTF' as your team name",
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSdbFVFewD_oxHEJYs55_o6Sp8gl8BkSaPyhU5Q9dLjktFAT2g/viewform"
         },
         {
             title: "Apr. 13 - Team Dinner",
@@ -41,7 +35,8 @@ export default function Socials() {
         },
         {
             title: "Apr 19 - Panda Express Night",
-            location: "5PM - 9PM at Prices Fork Panda Express"
+            location: "5PM - 9PM at Prices Fork Panda Express",
+            url: "https://drive.google.com/file/d/1Hj0-YCsi0pg2P8UsQ9NerONKwyRoxWRV/view?usp=sharing"
         },
         {
             title: "Apr. 29 - End of Year Banquet",
