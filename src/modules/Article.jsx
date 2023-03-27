@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useRef } from "react";
 
-export default function Article({ article, image }) {
+export default function Article({ article, image, size }) {
 
     const [loading, setLoading] = useState(true);
 
@@ -71,7 +71,11 @@ export default function Article({ article, image }) {
                     <img src={currentImage.current} style={{ width: '100%', objectFit: 'cover', objectPosition: 'center' }}></img>
                 </div>
             }
-            <div className="html-container">
+            <div
+
+                className="html-container"
+                style={{ padding: size == 'full' ? '0' : '2vw var(--bigbar) 5vw 2vw'}}
+            >
                 {currentArticle.current}
             </div>
         </div>

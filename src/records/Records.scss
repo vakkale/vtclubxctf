@@ -1,30 +1,48 @@
 .page {
-    max-width: 90%;
     flex-direction: column;
     height: fit-content;
 
     .accordion-title {
-        font-size: 2.5rem;
-        font-weight: 600;
-        padding: 0.5rem 0.2rem;
+
+        padding: 0.5rem 0.8rem;
         border: 1px solid #f2f2f2;
         width: 100%;
+        height: 6rem;
         box-sizing: border-box;
         user-select: none;
+        display: flex;
+        justify-content: space-between;
+        //center text
+        align-items: center;
 
-        //center left
+        // drop shadow, i dont really like it
+        /* box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+        margin: 0.2rem 0; */
+
         &:hover {
             cursor: pointer;
+            background-color: #f8f7f7;
         }
+
+        :nth-child(1) {
+            font-size: 1.5rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease-in-out;
+            font: 'akkurat';
+        }
+
+        :nth-child(2) {}
     }
 
     .accordion {
         height: fit-content;
+        padding: 0 0 0.8rem 0;
 
         .accordion-header {
 
             .accordion-header-item {
                 text-align: left;
+                background-color: rgb(255, 139, 67);
             }
         }
 
@@ -45,6 +63,66 @@
             .accordion-item-athlete {}
 
             .accordion-item-time {}
+        }
+    }
+
+    .title-buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        //includes padding in top and bottom sticky
+        top: 124px;
+        background-color: #fff;
+        z-index: 10;
+        border-bottom: #f2f2f2 solid 1px;
+
+        .title {
+            flex: 60%;
+            padding-left: 0.8rem;
+            font: 1.5rem 'akkurat';
+            color: var(--maroon);
+
+            ::before {
+                // 1px line on the left
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                height: 1px;
+                width: 200px;
+                background-color: #f2f2f2;
+
+            }
+        }
+
+        .expand-collapse {
+            height: 100%;
+
+            .expand-collapse-button {
+                box-sizing: border-box;
+                user-select: none;
+                height: 100%;
+                background-color: #fff;
+                border: none;
+                border-left: 1px solid #f2f2f2;
+                border-right: 1px solid #f2f2f2;
+                font-size: 1.2rem;
+                //left and right padding 10px
+                padding: 0 1rem;
+                transition: background-color 0.2s ease-in-out;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #f8f7f7;
+                }
+            }
+
+
         }
     }
 }

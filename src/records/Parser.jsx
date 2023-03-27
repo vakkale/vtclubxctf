@@ -34,6 +34,18 @@ export default function Parser() {
         data: []
     };
 
+    return new Promise(async (resolve, reject) => {
+        getSheetData().then(() => {
+            if (sheets) {
+                sheets.unshift(all_time_records);
+                resolve(sheets);
+            }
+            else {
+                reject("Error");
+            }
+        });
+    });
+
     // get the sheet data from the sheet id
     async function getSheetData() {
 
@@ -55,18 +67,6 @@ export default function Parser() {
             });
         });
     }
-
-    return new Promise(async (resolve, reject) => {
-        getSheetData().then(() => {
-            if (sheets) {
-                sheets.unshift(all_time_records);
-                resolve(sheets);
-            }
-            else {
-                reject("Error");
-            }
-        });
-    });
 
     // parse the sheet data
     function parseSheetData(data) {
