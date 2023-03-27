@@ -24,7 +24,8 @@ export default function TrackAndField() {
         },
         {
             title: "Mar. 25 - Dr. Jack M. Toms Alumni Invitational",
-            location: "University of Lynchburg, Lynchburg, VA"
+            location: "University of Lynchburg, Lynchburg, VA",
+            url: "https://drive.google.com/file/d/1ohJvxoUKM_4eNl4DJB5y0FHNSGVBuf3i/view?usp=share_link"
         },
         {
             title: "Apr. 8 - Wildcat Track Festival",
