@@ -100,7 +100,7 @@ export default function App() {
             <Route exact path="/sponsors" element={<Sponsors />}></Route>
             <Route exact path="/giving-day" element={<GivingDay />}></Route>
             <Route exact path="/racing-forms" element={<RaceForms />} />
-            {/* <Route exact path="/records/*" element={<Records />}></Route> */}
+            <Route exact path="/records/*" element={<Records />}></Route>
             <Route exact path="*" element={<Home />}></Route>
           </Routes>
           <Footer></Footer>

@@ -2,7 +2,6 @@ import db from "../data/database";
 import API_KEY from "../data/google_api_key";
 import axios from "axios";
 import { collection, getDocs } from "firebase/firestore/lite";
-import { useEffect } from "react";
 
 export default function Parser() {
 
@@ -57,31 +56,36 @@ export default function Parser() {
         });
     }
 
-    /* return (
-        { sheets }
-    ); */
-    
-    getSheetData();
-    console.log(sheets);
+    return new Promise(async (resolve, reject) => {
+        getSheetData().then(() => {
+            if (sheets) {
+                sheets.unshift(all_time_records);
+                resolve(sheets);
+            }
+            else {
+                reject("Error");
+            }
+        });
+    });
 
     // parse the sheet data
     function parseSheetData(data) {
         let parsedData = [];
-        //for every 13 rows, and every 6 columns, create a new event
+        // for every 13 rows, and every 6 columns, create a new event
         for (let i = 0; i < data.length; i += 13) {
             for (let j = 0; j < data[i].length; j += 6) {
-                //if the event does not have 10 cells below it, skip it
+                // if the event does not have 10 cells below it, skip it
                 if (!data[i + 11]) {
                     break;
                 }
-                //define the event
+                // define the event
                 let event = {
                     name: data[i][j],
                     records: [],
                 };
-                //for every 10 rows below the event name, create a new record
+                // for every 10 rows below the event name, create a new record
                 for (let k = i + 2; k < i + 12; k++) {
-                    //if the record is empty (no time), skip it
+                    // if the record is empty (no time), skip it
                     if (!data[k][j + 4]) {
                         break;
                     }
@@ -93,7 +97,7 @@ export default function Parser() {
                         time: data[k][j + 4]
                     };
                     event.records.push(record);
-                    //if number is 1, push to all time records including the event name
+                    // if number is 1 (it's the record), push to all time records including the event name
                     if (data[k][j] === "1") {
                         all_time_records.data.push({
                             name: data[i][j],

@@ -1,0 +1,50 @@
+.page {
+    max-width: 90%;
+    flex-direction: column;
+    height: fit-content;
+
+    .accordion-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding: 0.5rem 0.2rem;
+        border: 1px solid #f2f2f2;
+        width: 100%;
+        box-sizing: border-box;
+        user-select: none;
+
+        //center left
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .accordion {
+        height: fit-content;
+
+        .accordion-header {
+
+            .accordion-header-item {
+                text-align: left;
+            }
+        }
+
+        .accordion-item {
+            font-size: 1.2rem;
+
+            // even rows
+            &:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            .accordion-item-numer {}
+
+            .accordion-item-meet {}
+
+            .accordion-item-year {}
+
+            .accordion-item-athlete {}
+
+            .accordion-item-time {}
+        }
+    }
+}
