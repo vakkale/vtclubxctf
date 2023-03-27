@@ -21,6 +21,50 @@ function Gallery({ images }) {
 }
 const articles = [
     {
+        title: "Lynchburg Part 1",
+        url: "lynchburg-part-1",
+        year: "2023",
+        date: "3 - 27",
+        season: "Spring",
+        category: "Announcements",
+        image: "https://i.imgur.com/1WFl2uA.jpg",
+        content:
+            <div className="article-content">
+                <p>Good morning fellow tracksars, we got some info about upcoming events and a meet recap for you this week. Also have you ever wanted to see live* assassin updates as they come in? Well you can’t quite do that yet but I will update our new <Link to="/assassin">Assassin page</Link> periodically, so you can go check out who got eliminated as well as our new Assassin leaderboard to see who has the most <s>kills</s> eliminations!</p>
+                <h3><strong>Lynchburg Meet Recap + Randolph Meet Signup</strong></h3>
+                <p>This past weekend we traveled to Lynchburg University where we competed against a bunch of D1-D3 schools and did extremely well! All meet results can be found <a href="https://www.google.com/url?q=https://drive.google.com/file/d/1ohJvxoUKM_4eNl4DJB5y0FHNSGVBuf3i/view?usp%3Dshare_link&amp;source=gmail-html&amp;ust=1680036988450000&amp;usg=AOvVaw16sHsSsrkEUznwuT7t2x0L" rel="nofollow noreferrer" target="_blank">here</a>.. I am super proud of everyone who went out and competed! <strong>If you got a new PR at this meet, please fill out </strong><strong><a href="https://www.google.com/url?q=https://forms.gle/yCH4FzuzkMyQBFP18&amp;source=gmail-html&amp;ust=1680036988450000&amp;usg=AOvVaw2fyHSfUIrSf2FySnxsP3Ni" rel="nofollow noreferrer" target="_blank">this form</a></strong> so that we can recognize you for your achievement!</p>
+                <Image src="https://i.imgur.com/aZntB0c.jpg" alt="4x100 relay team posing for a photo."></Image>
+                <p>There were also 6 club records broken at this meet! Your new VT Club XCTF record holders are:</p>
+                <li>Chatham Campbell - 200m - 22.12s</li>
+                <li>Harris Naseh - 10,000m - 31:46.28</li>
+                <li>Jack Wilson - Discus - 38.14m</li>
+                <li>Jack Brown - Javelin - 44.26m</li>
+                <li>Nyle Sheriff - Hammer Throw - 37.12m</li>
+                <li>Jessica Williams - Long Jump - 5.47m</li>
+                <Gallery images={[
+                    { src: "https://i.imgur.com/nphqG23.jpg", alt: "Jessica Williams running a relay." },
+                    { src: "https://i.imgur.com/YS4oaqe.jpg", alt: "Nyle Sheriff competing in the hammer throw." },
+                ]} />
+                <p>Drivers who did not drive separately, please be sure to bring your gas receipt with the required info written on it to practice and give it to Sam or Evelyn. You must have filled your tank Friday night and then when you returned. </p>
+                <p>Remember that you have until <strong>Tuesday 3/28</strong> to <a href="https://www.google.com/url?q=https://forms.gle/6R1ZkaLNypTncUu16&amp;source=gmail-html&amp;ust=1680036988450000&amp;usg=AOvVaw28M1FYBNpzrqTo-O934LJ8" rel="nofollow noreferrer" target="_blank">sign up</a> for our meet at Randolph college on April 8th! This is our last meet before Nationals, and it is always a wonderful meet. The drop deadline for this meet is April 4th, if you drop after this date you will unfortunately be fined $15. </p>
+                <Image src="https://i.imgur.com/Qg5Dzen.jpg" alt="Sophie, Dani, and Molly posing for a pic at the Jack M. Toms Invitational"></Image>
+                <h3><strong>Volunteer Opportunity - Bear Tracks at Margaret Beeks Elementary</strong></h3>
+                <p>The Club XCTF team is partnering with Margaret Beeks Elementary in their Bear Tracks program! This is a before-school program from <strong>8:40-9:15 am</strong> held by the MBE PTO, encouraging their kids to run! They are looking for volunteers to be pacers and supervisors for the kids, and the dates are listed in the survey below. If you are interested, please sign up! In your signup, please write down in the comments if you are interested in being a pacer or supervisor.<strong>The first week of this event begins next week</strong>, so please <a href="https://www.google.com/url?q=https://www.signupgenius.com/go/20f0e4da4af2ca7f94-bear1%23/&amp;source=gmail-html&amp;ust=1680036988450000&amp;usg=AOvVaw1-hnQ0DROUd4DjTus2EwcO" rel="nofollow noreferrer" target="_blank">sign up</a> as soon as possible.</p>
+                <h3><strong>Chipotle Percentage Night</strong></h3>
+                <p>This <strong>Wednesday 3/29 from 5-9pm</strong>, we will be having a percentage night at Chipotle! We will all be heading over after practice, but if you want to go earlier please do and please invite your friends! </p>
+                <p>You can also use the code for online pick up if you want to swing by and quickly grab food while still supporting our club. We made over $300 from the Chipotle percentage night in the Fall, and we are hoping to get even more this Spring while also enjoying a team dinner! The flyer can be found <a href="https://www.google.com/url?q=https://drive.google.com/file/d/1UubbkNtJXCchuDJw16TSI4SwEgpUWR69/view?usp%3Dsharing&amp;source=gmail-html&amp;ust=1680036988450000&amp;usg=AOvVaw0MHAGbFQQlQrhe_6Yp0X4x" rel="nofollow noreferrer" target="_blank">here</a>.</p>
+                <Image src="https://i.imgur.com/UorKZOg.jpg" alt="Kalen Rita running the 4x400m."></Image>
+                <h3><strong>The Big Event</strong></h3>
+                <p>The Big Event is this <strong>Saturday Apr. 1</strong>, and is one of the biggest volunteer events we will be a part of! Phil will be attending a team captain meeting this week to learn more about the project we will help with as well as more specifics! We will send more info regarding what we will be doing once we receive it, so if you have signed up please be on the lookout for that coming soon! They extended the sign up deadline to today (Monday) at midnight, so if you have not signed up please do so <a href="https://www.google.com/url?q=https://forms.gle/7aNPYU5Yg4bPEKRg9&amp;source=gmail-html&amp;ust=1680036988450000&amp;usg=AOvVaw14Uu8pDD4jh4YRsKM6Xsui" rel="nofollow noreferrer" target="_blank">here</a>. (Team name is &quot;Club XCTF&quot;)</p>
+                <Image src="https://i.imgur.com/o0BSLB4.jpg" alt="Sophie, Molly, and Dani posing at the meet."></Image>
+                <h3><strong>Grad Cords</strong></h3>
+                <p><mark><strong>Attention seniors</strong></mark>, if you would like a Club XCTF graduation cord, please fill out <a href="https://www.google.com/url?q=https://forms.gle/mYhFNsXcBiExgL9h6&amp;source=gmail-html&amp;ust=1680036988450000&amp;usg=AOvVaw1Hn3xFMNe7bJU8D6SP6hmQ" rel="nofollow noreferrer" target="_blank">this other survey</a> by April 2nd for your free graduation cord!</p>
+                <h3><strong>Phil’s Corner</strong></h3>
+                <p>As we are getting deeper into racing season, I want to remind/encourage you all to keep taking care of yourselves, both physically and mentally! You are all brilliant scholars and athletes, but it is definitely not easy to be doing all that you do. Please take breaks for yourself and also don&#39;t forget to simply live! As always, all of our officers and I are here to support you not only as athletes but also as people. If there is ever anything we can do to support you on your journey, do not hesitate to reach out. Keep it up though, you are absolutely amazing!</p>
+                <Image src="https://i.imgur.com/20Bka6W.jpg" alt="The distance boys on Friday."></Image>
+            </div>
+    },
+    {
         title: "One Down, Four to Go",
         url: "one-down-four-to-go",
         year: "2023",

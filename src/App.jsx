@@ -25,7 +25,7 @@ import Redirects from './helpers/Redirects';
 import Banner from './header/banner';
 import GivingDay from './about_pages/GivingDay';
 import RaceForms from './about_pages/RaceForms';
-import Parser from './records/Parser';
+import Assassin from './about_pages/Assassin';
 
 export default function App() {
 
@@ -100,6 +100,7 @@ export default function App() {
             <Route exact path="/sponsors" element={<Sponsors />}></Route>
             <Route exact path="/giving-day" element={<GivingDay />}></Route>
             <Route exact path="/racing-forms" element={<RaceForms />} />
+            <Route exact path="/assassin" element={<Assassin />} />
             {/* <Route exact path="/records/*" element={<Records />}></Route> */}
             <Route exact path="*" element={<Home />}></Route>
           </Routes>
