@@ -16,7 +16,7 @@ export default function Assassin() {
         title: "Assassin 2023!🥄🥄"
     };
 
-    const updated = "March 27 5:40 PM";
+    const updated = "March 29 12:54 AM";
 
     const kills = [
         {
@@ -24,11 +24,19 @@ export default function Assassin() {
             kills: 3
         },
         {
-            name: "Emil Morin",
+            name: "💀Emil Morin",
             kills: 2
         },
         {
             name: "Eddie Tickle",
+            kills: 1
+        },
+        {
+            name: "Volkan Akkale",
+            kills: 1
+        },
+        {
+            name: "James Paylor",
             kills: 1
         },
         {
@@ -49,6 +57,12 @@ export default function Assassin() {
     const dead = [
         {
             name: "Nate Montgomery"
+        },
+        {
+            name: "Emil Morin"
+        },
+        {
+            name: "Tyler Houston"
         },
         {
             name: "Ellie Lo"
