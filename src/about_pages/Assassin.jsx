@@ -24,11 +24,19 @@ export default function Assassin() {
             kills: 3
         },
         {
+            name: "Wyatt Thomas",
+            kills: 2
+        },
+        {
             name: "💀Emil Morin",
             kills: 2
         },
         {
             name: "Eddie Tickle",
+            kills: 1
+        },
+        {
+            name: "Chinmaya Salinamakki",
             kills: 1
         },
         {
@@ -46,20 +54,22 @@ export default function Assassin() {
         {
             name: "Jillian Ylagan",
             kills: 1
-        },
-        {
-            name: "Wyatt Thomas",
-            kills: 1
         }
     ];
 
     //Nate Montgomery, Ellie Lo, Konnor Rafferty, Samuel Yakulis, Joe Gora, Nele Heide, Kevin Kiernan, Andrew Oliveri, Emmy Donlon
     const dead = [
         {
+            name: "Alyssa McCaffrey"
+        },
+        {
             name: "Nate Montgomery"
         },
         {
             name: "Emil Morin"
+        },
+        {
+            name: "Kalen Rita"
         },
         {
             name: "Tyler Houston"
