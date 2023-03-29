@@ -32,6 +32,10 @@ export default function Assassin() {
             kills: 2
         },
         {
+            name: "Philip Lopez",
+            kills: 1
+        },
+        {
             name: "Eddie Tickle",
             kills: 1
         },
@@ -61,6 +65,9 @@ export default function Assassin() {
     const dead = [
         {
             name: "Alyssa McCaffrey"
+        },
+        {
+            name: "Sarah Luedeke"
         },
         {
             name: "Nate Montgomery"
