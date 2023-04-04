@@ -16,35 +16,15 @@ export default function Assassin() {
         title: "Assassin 2023!🥄🥄"
     };
 
-    const updated = "March 29 12:54 AM";
+    const updated = "April 4 5:03 PM";
 
     const kills = [
         {
-            name: "💀Nate Montgomery",
-            kills: 3
-        },
-        {
             name: "Wyatt Thomas",
-            kills: 2
-        },
-        {
-            name: "💀Emil Morin",
-            kills: 2
-        },
-        {
-            name: "Philip Lopez",
-            kills: 1
+            kills: 6
         },
         {
             name: "Eddie Tickle",
-            kills: 1
-        },
-        {
-            name: "Chinmaya Salinamakki",
-            kills: 1
-        },
-        {
-            name: "Volkan Akkale",
             kills: 1
         },
         {
@@ -56,7 +36,11 @@ export default function Assassin() {
             kills: 1
         },
         {
-            name: "Jillian Ylagan",
+            name: "Justin Moses",
+            kills: 1
+        },
+        {
+            name: "Alec Venable",
             kills: 1
         }
     ];
@@ -64,46 +48,7 @@ export default function Assassin() {
     //Nate Montgomery, Ellie Lo, Konnor Rafferty, Samuel Yakulis, Joe Gora, Nele Heide, Kevin Kiernan, Andrew Oliveri, Emmy Donlon
     const dead = [
         {
-            name: "Alyssa McCaffrey"
-        },
-        {
-            name: "Sarah Luedeke"
-        },
-        {
-            name: "Nate Montgomery"
-        },
-        {
-            name: "Emil Morin"
-        },
-        {
-            name: "Kalen Rita"
-        },
-        {
-            name: "Tyler Houston"
-        },
-        {
-            name: "Ellie Lo"
-        },
-        {
-            name: "Konnor Rafferty"
-        },
-        {
-            name: "Samuel Yakulis"
-        },
-        {
-            name: "Joe Gora"
-        },
-        {
-            name: "Nele Heide"
-        },
-        {
-            name: "Kevin Kiernan"
-        },
-        {
-            name: "Andrew Oliveri"
-        },
-        {
-            name: "Emmy Donlon"
+            name: "The list is too long lol."
         }
     ];
 

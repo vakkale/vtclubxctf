@@ -21,6 +21,37 @@ function Gallery({ images }) {
 }
 const articles = [
     {
+        title: "The Biggest Event of All Time",
+        url: "the-biggest-event-of-all-time",
+        year: "2023",
+        date: "4 - 3",
+        season: "Spring",
+        category: "Announcements",
+        /* image: "https://i.imgur.com/bSfH7Wc.jpg", */
+        image: "https://i.imgur.com/bfFkkqh.jpg",
+        content:
+            <div className="article-content">
+                <p>Good morning (?) all. There’s information regarding Nationals below so pay attention. Also some cute pics from the Big Event.</p>
+                <h3><strong>NIRCA Track Nationals</strong></h3>
+                <p>That&#39;s right, it&#39;s time to sign up for NIRCA track nationals in Olivet, Michigan on April 15th and 16th! Nationals is an incredibly fun time with the club and one of the main things I look forward to each year. It&#39;s a two day meet, being on Saturday and Sunday, and we leave Friday morning. If you need an excused absence or need me to talk to your professor about moving an exam, please email Wyatt at <a href="mailto:wyatt@vt.edu" target="_blank" rel="noreferrer">wyatt@vt.edu</a>. The drop deadline for nationals is April 7th, and anyone who drops after that date will be <strong><mark>fined $50</mark></strong>. Again, I cannot stress how fun the meet is and if you&#39;re on the fence about going, I highly encourage you to <a href="https://www.google.com/url?q=https://forms.gle/9dQx9mJiZXy9vcHB9&amp;source=gmail-html&amp;ust=1680729584869000&amp;usg=AOvVaw1kcZ-zK9FWGB0KmVYF2poq" rel="nofollow noreferrer" target="_blank">sign up</a> <strong><mark>by April 5th</mark></strong>. </p>
+                <Image src="https://i.imgur.com/bSfH7Wc.jpg" alt="Big Event group pic."></Image>
+                <h3><strong>Prior Performance and Automarks</strong></h3>
+                <p>I understand that there may be a little confusion regarding prior performances and automarks. To begin, <strong><mark>there are no required times to compete at nationals</mark></strong>. There may be a few people that have competed in our meets and have hit a time that guarantees them to be in the fastest heat. These times are just for those that have hit them so they can be placed in the fastest heat. Secondly, you <strong><mark>must have competed in shot put, discus, triple jump, or steeplechase</mark></strong> in a previous meet before competing in the respective events at nationals. Any hurdle event can also count for steeple. If you have hit an automark or are competing in an event that requires proof and prior performance, please fill out <a href="https://www.google.com/url?q=http://goo.gl/forms/mTwTjKkoaw&amp;source=gmail-html&amp;ust=1680729584869000&amp;usg=AOvVaw1Wn_P7m5tSQGeNVobMU_Me" rel="nofollow noreferrer" target="_blank">this form</a> <strong><mark>by April 4th</mark></strong>.</p>
+                <Gallery images={[
+                    { src: "https://i.imgur.com/guGl84e.jpg", alt: "Roman raking leaves." },
+                    { src: "https://i.imgur.com/2QZPnEn.jpg", alt: "Volkan posing with the cutest dog of all time, Molly" }
+                ]}></Gallery>
+                <h3><strong>Volunteer Opportunity - Bear Tracks at Margaret Beeks Elementary</strong></h3>
+                <p>The Club XCTF team is partnering with Margaret Beeks Elementary in their Bear Tracks program! This is a before-school program from <strong>8:40-9:15 AM</strong> held by the MBE PTO, encouraging their kids to run! They are looking for volunteers to be pacers and supervisors for the kids, and the dates are listed in the survey below. If you are interested, please sign up! In your signup, please write down in the comments if you are interested in being a pacer or supervisor. <strong>The first week of this event begins this week</strong>, so please<a href="https://www.google.com/url?q=https://www.signupgenius.com/go/20f0e4da4af2ca7f94-bear1%23/&amp;source=gmail-html&amp;ust=1680729584869000&amp;usg=AOvVaw2f8BLWnU1sbOF2ito6cpOZ" rel="nofollow noreferrer" target="_blank"> sign up</a> as soon as possible.</p>
+                <h3><strong>Wildcat Track Festival</strong></h3>
+                <p>The Wildcat Track Festival is this Saturday, April 8th! If you need to drop from this meet after you&#39;ve signed up, please do so before April 4th or else you will be charged $15. </p>
+                <Image src="https://i.imgur.com/ESP8pPM.jpg" alt="Molly posing with leaves."></Image>
+                <h3><strong>Wyatt’s Corner</strong></h3>
+                <p>As this semester begins to wrap up, I just want to thank you all for the hard work you&#39;ve put into this club to make it what it is today. We couldn&#39;t be where we are without you (also clubs can&#39;t exist without members), but we genuinely appreciate all the hard work you do in all aspects of your student-athlete career. If we can ever support you in other ways, please don&#39;t hesitate to reach out to us.</p>
+                <p>Anyway, we have a non-animal-related fun fact today. Did you know that the letters on a keyboard are called uppercase and lowercase because the capital letters were placed on the higher shelf, or upper case, of the printing press stand, and the smaller letters were placed on the bottom shelf, or lower case. Etymology is fun sometimes.</p>
+            </div>
+    },
+    {
         title: "Lynchburg Part 1",
         url: "lynchburg-part-1",
         year: "2023",
