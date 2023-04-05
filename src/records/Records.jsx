@@ -69,7 +69,6 @@ export default function Records() {
     const path = location.pathname;
     const pathArray = path.split('/');
     const pageName = pathArray[pathArray.length - 1];
-    console.log(pageName);
 
     useEffect(() => {
         handlePageChange();
@@ -114,7 +113,7 @@ export default function Records() {
 
         // Get record data
         Parser().then(async (data) => {
-            setRecordData(data);
+            await setRecordData(data);
             console.log(recordData[0]);
         })
             .catch((err) => {
@@ -223,11 +222,32 @@ export default function Records() {
             );
         }
         else {
-            /* return (
+            return (
                 <div className="page">
-
+                    <table className='accordion'>
+                        <tr className="accordion-header">
+                            <th className="accordion-header-item" width="10%">Name</th>
+                            <th className="accordion-header-item" width="45%">Meet</th>
+                            <th className="accordion-header-item" >Year</th>
+                            <th className="accordion-header-item" width="30%">Athlete</th>
+                            <th className="accordion-header-item" >Time</th>
+                        </tr>
+                        {
+                            recordData.length > 0 &&
+                            recordData[0].data.map((record, index) => {
+                                return (
+                                    <tr className="accordion-item">
+                                        <td className="accordion-item-event">{record.name}</td>
+                                        <td className="accordion-item-meet">{record.meet}</td>
+                                        <td className="accordion-item-year">{record.year}</td>
+                                        <td className="accordion-item-athlete">{record.athlete}</td>
+                                        <td className="accordion-item-time">{record.time}</td>
+                                    </tr>
+                                )
+                            })}
+                    </table>
                 </div>
-            ); */
+            );
         }
     }
 
