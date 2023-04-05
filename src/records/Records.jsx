@@ -1,20 +1,42 @@
 import './Records.scss';
 import PageHeader from "../modules/PageHeader";
-import TopBar from "../modules/TopBar";
-import SideBar from "../modules/SideBar";
 import SideBarLite from '../modules/SideBarLite';
 import Article from '../modules/Article';
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import Parser from './Parser';
-import { async } from '@firebase/util';
+import Topbar2 from '../modules/Topbar2';
 
 export default function Records() {
     const page_props = {
         title: "Records",
         subtitle: "Competition",
         background: 'https://i.imgur.com/yRhfhOL.jpg',
-        yPos: "30%"
+        yPos: "30%",
+        topbar: {
+            items: [
+                {
+                    title: "Records",
+                    link: "/records"
+                },
+                {
+                    title: "M Track and Field",
+                    link: "/records/mens-track-and-field"
+                },
+                {
+                    title: "W Track and Field",
+                    link: "/records/womens-track-and-field"
+                },
+                {
+                    title: "M Cross Country",
+                    link: "/records/mens-cross-country"
+                },
+                {
+                    title: "W Cross Country",
+                    link: "/records/womens-cross-country"
+                }
+            ]
+        }
     };
 
     const item = {
@@ -41,12 +63,20 @@ export default function Records() {
     */
     const [page, setPage] = useState([]);
 
+    const [loading, setLoading] = useState(true);
+
     const location = useLocation();
     const path = location.pathname;
+    const pathArray = path.split('/');
+    const pageName = pathArray[pathArray.length - 1];
+    console.log(pageName);
 
     useEffect(() => {
-        const pathArray = path.split('/');
-        const pageName = pathArray[pathArray.length - 1];
+        handlePageChange();
+    }, [recordData, pageName]);
+
+    async function handlePageChange() {
+        setLoading(true);
         let pageIndex = 0;
         switch (pageName) {
             case 'records':
@@ -65,11 +95,13 @@ export default function Records() {
                 pageIndex = 4;
                 break;
             default:
-                pageIndex = 0;
+                pageIndex = 1;
                 break;
         }
         setPage(recordData[pageIndex]);
-    }, [recordData]);
+        await new Promise(resolve => setTimeout(resolve, 0)); // wait for state update to complete
+        setLoading(false);
+    }
 
     useEffect(() => {
         // Check if mobile
@@ -83,6 +115,7 @@ export default function Records() {
         // Get record data
         Parser().then(async (data) => {
             setRecordData(data);
+            console.log(recordData[0]);
         })
             .catch((err) => {
                 console.log(err);
@@ -174,19 +207,28 @@ export default function Records() {
 
 
     const PageContent = () => {
-        return (
-            <div className="page">
-                {<ExpandController />}
-                {
-                    recordData.length > 0 &&
-                    page.data.map((event, index) => {
-                        return (
-                            <Accordion key={index} event={event} />
-                        )
-                    })
-                }
-            </div>
-        );
+        if (pageName !== 'records') {
+            return (
+                <div className="page">
+                    {<ExpandController />}
+                    {
+                        recordData.length > 0 &&
+                        page.data.map((event, index) => {
+                            return (
+                                <Accordion key={index} event={event} />
+                            )
+                        })
+                    }
+                </div>
+            );
+        }
+        else {
+            /* return (
+                <div className="page">
+
+                </div>
+            ); */
+        }
     }
 
     return (
@@ -197,19 +239,18 @@ export default function Records() {
                 subtitle={page_props.subtitle}
                 yPos={page_props.yPos}
             />
-            <div className="topbar-container" id='topbar'></div>
+            <Topbar2 className="topbar" items={page_props.topbar} />
             <div className="bar-plus-content">
                 <div className="page-content">
                     <SideBarLite className="sidebar" item={item} schedule={schedule}></SideBarLite>
-                    {!page && <div className="loading">Loading...</div>}
-                    {page &&
-                        <Article className="article"
+                    {(page && !loading) &&
+                        < Article className="article"
                             article={<PageContent />}
                             size={"full"}
                             image={"https://i.imgur.com/aZntB0c.jpg"}
                         ></Article>}
                 </div>
-            </div>
+            </div >
         </>
     );
 }

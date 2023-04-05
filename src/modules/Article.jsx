@@ -72,7 +72,6 @@ export default function Article({ article, image, size }) {
                 </div>
             }
             <div
-
                 className="html-container"
                 style={{ padding: size == 'full' ? '0' : '2vw var(--bigbar) 5vw 2vw'}}
             >
