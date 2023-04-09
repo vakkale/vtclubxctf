@@ -100,6 +100,8 @@ export default function Records() {
         setPage(recordData[pageIndex]);
         await new Promise(resolve => setTimeout(resolve, 0)); // wait for state update to complete
         setLoading(false);
+        await new Promise(resolve => setTimeout(resolve, 0)); // wait for state update to complete
+        console.log(recordData[0]);
     }
 
     useEffect(() => {
@@ -114,7 +116,6 @@ export default function Records() {
         // Get record data
         Parser().then(async (data) => {
             await setRecordData(data);
-            console.log(recordData[0]);
         })
             .catch((err) => {
                 console.log(err);
@@ -249,6 +250,22 @@ export default function Records() {
                 </div>
             );
         }
+    }
+
+    async function recordsTable() {
+        //max of recordData[0].data[0].records.length and recordData[0].data[1].records.length
+        let rowcount = Math.max.apply(Math, recordData[0].data.map(function (o) { return o.records.length; }))
+        // each unique "name" in recordData[0].data[0].records.name and recordData[0].data[1].records.name
+        let events = [...new Set(recordData[0].data[0].data.map(item => item.name))];
+        console.log(events);
+        /* const cols = ['Event', 'Meet', 'Year', 'Athlete', 'Time'];
+
+        return (
+            <table className='accordion'>
+                <tr className="accordion-header">
+
+        );
+ */
     }
 
     return (
