@@ -39,16 +39,21 @@ export default function Parser() {
             {
                 gender: "W",
                 records: []
-            },
-            {
-                events: []
             }
         ]
     };
 
+    let events = [];
+
     return new Promise(async (resolve, reject) => {
         getSheetData().then(() => {
-            if (sheets) {
+            if (sheets && events) {
+                // merge the records
+                console.log("merge result: ", recordsMerge());
+                console.log("all time before: ", all_time_records);
+                console.log("length of events: ", events.length);
+                console.log("events: ", events);
+                /* console.log("merge result: ", recordsMerge()); */
                 sheets.unshift(all_time_records);
                 resolve(sheets);
             }
@@ -78,7 +83,61 @@ export default function Parser() {
                 let gender = currentSheet.title.substring(currentSheet.title.length - 2, currentSheet.title.length - 1);
                 currentSheet.data = parseSheetData(response.data.values, gender);
             });
+        }).then(() => {
+            return Promise.resolve();
+        }).catch((error) => {
+            console.log("Error: ", error);
+            return Promise.reject();
         });
+    }
+
+    function recordsMerge() {
+        let result = [];
+        // for each event
+        for (let i = 0; i < 31; i++) {
+            let row = [];
+            let mensRecord, womensRecord;
+            for (let j = 0; j < all_time_records.data[0].records.length; j++) {
+                if (all_time_records.data[0].records[j].name === events[i]) {
+                    mensRecord = all_time_records.data[0].records[j];
+                    break;
+                }
+            }
+            for (let j = 0; j < all_time_records.data[1].records.length; j++) {
+                if (all_time_records.data[1].records[j].name === events[i]) {
+                    womensRecord = all_time_records.data[1].records[j];
+                    break;
+                }
+            }
+            /* console.log("mens: ", mensRecord);
+            console.log("womens: ", womensRecord); */
+            if (mensRecord && womensRecord) {
+                row = [
+                    mensRecord.meet || "",
+                    mensRecord.year || "",
+                    mensRecord.athlete || "",
+                    mensRecord.time || "",
+                    events[i],
+                    womensRecord.meet || "",
+                    womensRecord.year || "",
+                    womensRecord.athlete || "",
+                    womensRecord.time || ""
+                ];
+                // push each one by one to row
+                /* row.push(mensRecord.meet || "");
+                row.push(mensRecord.year || "");
+                row.push(mensRecord.athlete || "");
+                row.push(mensRecord.time || "");
+                row.push(events[i]);
+                row.push(womensRecord.meet || "");
+                row.push(womensRecord.year || "");
+                row.push(womensRecord.athlete || "");
+                row.push(womensRecord.time || ""); */
+            }
+            result.push(row);
+        }
+
+        return result;
     }
 
     // parse the sheet data
@@ -98,12 +157,6 @@ export default function Parser() {
                     name: data[i][j],
                     records: [],
                 };
-                // if the event is not in the all events array, push it
-                if (!all_time_records.data[2].events.includes(data[i][j])) {
-                    // if the event is cross country, skip it
-                    /* if (data[i][j].includes("Cross Country")) { */
-                    all_time_records.data[2].events.push(data[i][j]);
-                }
                 // for every 10 rows below the event name, create a new record
                 for (let k = i + 2; k < i + 12; k++) {
                     // if the record is empty (no time), skip it
@@ -135,6 +188,10 @@ export default function Parser() {
                             athlete: data[k][j + 3],
                             time: data[k][j + 4]
                         });
+                        // if the event is not in the all events array, push it
+                        if (!events.includes(record_name)) {
+                            events.push(record_name);
+                        }
                     }
                 }
                 parsedData.push(event);

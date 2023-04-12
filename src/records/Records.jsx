@@ -101,7 +101,6 @@ export default function Records() {
         await new Promise(resolve => setTimeout(resolve, 0)); // wait for state update to complete
         setLoading(false);
         await new Promise(resolve => setTimeout(resolve, 0)); // wait for state update to complete
-        console.log(recordData[0]);
     }
 
     useEffect(() => {
@@ -116,6 +115,7 @@ export default function Records() {
         // Get record data
         Parser().then(async (data) => {
             await setRecordData(data);
+            /* console.log("Record Data from Records.jsx: ", data); */
         })
             .catch((err) => {
                 console.log(err);
@@ -226,46 +226,40 @@ export default function Records() {
             return (
                 <div className="page">
                     <table className='accordion'>
-                        <tr className="accordion-header">
-                            <th className="accordion-header-item" width="10%">Name</th>
-                            <th className="accordion-header-item" width="45%">Meet</th>
-                            <th className="accordion-header-item" >Year</th>
-                            <th className="accordion-header-item" width="30%">Athlete</th>
-                            <th className="accordion-header-item" >Time</th>
-                        </tr>
-                        {
+                        <thead>
+                            <tr className="accordion-header">
+                                <th className="accordion-header-item" width="10%">Name</th>
+                                <th className="accordion-header-item" width="45%">Meet</th>
+                                <th className="accordion-header-item" >Year</th>
+                                <th className="accordion-header-item" width="30%">Athlete</th>
+                                <th className="accordion-header-item" >Time</th>
+                            </tr>
+                        </thead>
+                        {/* {
                             recordData.length > 0 &&
-                            recordData[0].data.map((record, index) => {
+                            events_list.map((record, index) => {
                                 return (
-                                    <tr className="accordion-item">
-                                        <td className="accordion-item-event">{record.name}</td>
-                                        <td className="accordion-item-meet">{record.meet}</td>
-                                        <td className="accordion-item-year">{record.year}</td>
-                                        <td className="accordion-item-athlete">{record.athlete}</td>
-                                        <td className="accordion-item-time">{record.time}</td>
-                                    </tr>
+                                    <tbody>
+                                        <tr className="accordion-item">
+                                            <td className="accordion-item-meet">{m[m.indexOf(record)].meet}</td>
+                                            <td className="accordion-item-year">{m[index].year}</td>
+                                            <td className="accordion-item-athlete">{m[index].athlete}</td>
+                                            <td className="accordion-item-time">{m[index].time}</td>
+
+                                            <td className="accordion-item-number">{record}</td>
+
+                                            <td className="accordion-item-meet">{w[index].meet}</td>
+                                            <td className="accordion-item-year">{w[index].year}</td>
+                                            <td className="accordion-item-athlete">{w[index].athlete}</td>
+                                            <td className="accordion-item-time">{w[index].time}</td>
+                                        </tr>
+                                    </tbody>
                                 )
-                            })}
+                            })} */}
                     </table>
                 </div>
             );
         }
-    }
-
-    async function recordsTable() {
-        //max of recordData[0].data[0].records.length and recordData[0].data[1].records.length
-        let rowcount = Math.max.apply(Math, recordData[0].data.map(function (o) { return o.records.length; }))
-        // each unique "name" in recordData[0].data[0].records.name and recordData[0].data[1].records.name
-        let events = [...new Set(recordData[0].data[0].data.map(item => item.name))];
-        console.log(events);
-        /* const cols = ['Event', 'Meet', 'Year', 'Athlete', 'Time'];
-
-        return (
-            <table className='accordion'>
-                <tr className="accordion-header">
-
-        );
- */
     }
 
     return (
