@@ -29,7 +29,8 @@ export default function TrackAndField() {
         },
         {
             title: "Apr. 8 - Wildcat Track Festival",
-            location: "Randolph College, Lynchburg, VA"
+            location: "Randolph College, Lynchburg, VA",
+            url: "https://drive.google.com/file/d/1qLYDsT3Cvu48lIrLvHCSwm-EeQRzvEj4/view?usp=sharing"
         },
         {
             title: "Apr. 15-6 - NIRCA Track & Field Nationals",
