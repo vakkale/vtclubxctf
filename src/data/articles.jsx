@@ -21,13 +21,45 @@ function Gallery({ images }) {
 }
 const articles = [
     {
+        title: "Lynchburg Part 2",
+        url: "lynchburg-part-2",
+        year: "2023",
+        date: "4 - 10",
+        season: "Spring",
+        category: "Announcements",
+        image: "https://i.imgur.com/Cyxgo3W.jpg",
+        content:
+            <div className="article-content">
+                <p>Good morning (it’s never morning by the time I post these, sorry Phil…) and happy Nationals week to those competing there! To those who are not going, have no fear as we have other fun things planned this week too!</p>
+                <p>We will be having a <strong><mark>team dinner at D2 this Thursday (4/13) at 6:00 pm</mark></strong> before our Nationals crew heads out, and anyone is welcome to join! <strong><mark>We will be moving practice to 5:00pm that day</mark></strong> so that we can all head to D2 at 6:00pm for some gourmet sustenance. </p>
+                <Image src="https://i.imgur.com/FZxjzVo.jpg" alt="Andrew's first time using blocks."></Image>
+                <h3><strong>Wildcat Track Festival Recap</strong></h3>
+                <p>There’s some really cool photos from last weekend’s meet that Chatham and I took. You can find them on our <a href="https://www.google.com/url?q=https://photos.app.goo.gl/XFMPNQgvbF6czWiT6&amp;source=gmail-html&amp;ust=1681400948704000&amp;usg=AOvVaw3oVVlxCjlZlgkMlWG1pDDe" rel="nofollow noreferrer" target="_blank">Google Photos album</a> as always and I can’t wait to do even more at Nationals this weekend. We have some big things planned on the media side but for now enjoy the photos from last weekend.</p>
+                <h3><strong>NIRCA Track Nationals</strong></h3>
+                <p>So as you know we have Nationals in Michigan this weekend! We have the chance to do something really special this year, so for those competing there be sure to use this week to prepare mentally and physically! Trust in your training, and don&#39;t forget to have fun in all that you do! Hannah will be sending out an email later this week with all of the information, so please be on the lookout for that.</p>
+                <Image src="https://i.imgur.com/z4RFm2e.jpg" alt="The girls at Randolph."></Image>
+                <h3><strong>Wildcat Twilight Meet- Our Last Hurrah!</strong></h3>
+                <p>It&#39;s time to sign up for our last meet of the season, where we once again will be traveling to Randolph College in Lynchburg, VA for the Wildcat Twilight! This meet is special as the last events (4x4) will be during nightfall under the lights! And even better, we don&#39;t have to get up super early to leave for this meet!</p>
+                <p>Please fill <a href="https://www.google.com/url?q=https://forms.gle/9HHVxKS3FupAy5w58&amp;source=gmail-html&amp;ust=1681400948704000&amp;usg=AOvVaw0JEfuyfyRSM15uAHbsC2yL" rel="nofollow noreferrer" target="_blank">this</a> out by <strong><mark>Monday, April 17th</mark></strong>, and the drop deadline for this meet is April 19th.</p>
+                <h3><strong>Bear Tracks at Margaret Beeks Elementary</strong></h3>
+                <p>The first week of Bear Tracks went super well, so thank you to everyone who joined for that!  This is a before-school program from <strong><mark>8:40-9:15 am</mark></strong> held by Margaret Beeks Elementary schools, encouraging their kids to run! They are looking for volunteers to be pacers and supervisors for the kids, and the dates are listed in <a href="https://www.google.com/url?q=https://www.signupgenius.com/go/20f0e4da4af2ca7f94-bear1%23/&amp;source=gmail-html&amp;ust=1681400948704000&amp;usg=AOvVaw36bBOSmmHwj-U7GSokgiSY" rel="nofollow noreferrer" target="_blank">this survey</a>. There are still slots available for this Wednesday and Thursday as well as for future weeks, so if you are able to sign up please do!</p>
+                <Gallery images={[
+                    { src: "https://i.imgur.com/T1Aezwn.jpg", alt: "Nate looking cute af." },
+                    { src: "https://i.imgur.com/5TYaZft.jpg", alt: "Josh looking cute af." }
+                ]}></Gallery>
+                <h3><strong>Quick Administrative Update from Phil</strong></h3>
+                <p>We have 84 people traveling to Michigan this weekend which is the largest group this club has ever brought to Nationals before! This makes me extremely proud, and I cannot wait for you all to stunt on all these other schools by having the most fun while also competing the best! To everyone competing, you are going to have the full support of one of the largest teams in the country behind you while you compete!</p>
+                <p>We are all here to support each other, so don&#39;t be nervous but rather be confident in yourself and all the work you have put in! No matter the outcome, as long as you try your very best I will always be proud of you :)</p>
+                <Image src="https://i.imgur.com/unr5Ww8.jpg" alt="The boys at Randolph."></Image>
+            </div>
+    },
+    {
         title: "The Biggest Event of All Time",
         url: "the-biggest-event-of-all-time",
         year: "2023",
         date: "4 - 3",
         season: "Spring",
         category: "Announcements",
-        /* image: "https://i.imgur.com/bSfH7Wc.jpg", */
         image: "https://i.imgur.com/bfFkkqh.jpg",
         content:
             <div className="article-content">
