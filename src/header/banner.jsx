@@ -78,22 +78,29 @@ export default function Banner() {
         >
             <h1 className='banner-text'>{
 
-                !isMobile ? "Hokie Invitational Info: " : "Hokie Invitational: "
+                !isMobile ? "Nationals!!: " : "Nationals!!: "
 
             }</h1>
             <a
-                href='https://drive.google.com/file/d/12rIdxYBLbXZ_dxs8BKslgH0WeCAxc_lo/view?usp=sharing'
+                href='https://www.facebook.com/pg/clubrunning/videos/'
+                target='_blank'
+                rel='noreferrer'
+                className='banner-link'>
+                <button className='banner-button'>Livestream</button>
+            </a>
+            <a
+                href='https://drive.google.com/file/d/1x-MKGP_8Sret3-WMS6rkP5tkpwGTE0RA/view?usp=sharing'
                 target='_blank'
                 rel='noreferrer'
                 className='banner-link'>
                 <button className='banner-button'>Heat Sheet</button>
             </a>
             <a
-                href='http://results.tfmeetpro.com/SnapTiming/Hokie_Invitational_31823/'
+                href='https://docs.google.com/spreadsheets/d/e/2PACX-1vSBFayH1KNH2u2n0glm7JC3XEfGeAk0I2g9WLzjetYGReeuhBfqOm_cOujZJx0Dh00BfVTPhZAt4YOd/pubhtml?gid=11722187&single=true'
                 target='_blank'
                 rel='noreferrer'
                 className='banner-link'>
-                <button className='banner-button'>Results</button>
+                <button className='banner-button'>Schedule</button>
             </a>
             {/* {now > countDownStart ?
                 <a
