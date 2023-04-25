@@ -21,6 +21,52 @@ function Gallery({ images }) {
 }
 const articles = [
     {
+        title: "Lynchburg Part 3 A.K.A. Wildcat 'Twilight'",
+        url: "lynchburg-part-3",
+        year: "2023",
+        date: "4 - 25",
+        season: "Spring",
+        category: "Announcements",
+        image: "https://i.imgur.com/oBPnsIj.jpg",
+        content:
+            <div className="article-content">
+                <p>It’s almost the end of the year, and what a year it’s been… I have two more articles planned before the end of the year to post on the website, another one this week for the nationals recap and one after the banquet (maybe one more if I throw a Webdev Diaries in there) but until then, here’s some info from our future president Wyatt’s last email of the year and a meet recap from yours truly.</p>
+                <Image src="https://i.imgur.com/zM12PxJ.jpg" alt="One last 4x400."></Image>
+                <h3><strong>Wildcat “Twilight” Recap</strong></h3>
+                <p>You ever just drive 2 hours and warm up, get to the start line to race your first ever 3k steeple just so they can delay everything due to lightning? Well despite that, scrambling to move all of our wet stuff to hide in the vans, and periodic rain throughout the rest of the meet, we still went out with a bang. Five club records were broken as well as many PRs, and although there was no 5k under the moonlight, everyone had a great time.</p>
+                <p>Records:</p>
+                <li>Noah LeCain - 3k Steeple - 9:45.79</li>
+                <li>K Crawford, E Donlon, R Ophof, J Williams - 4x100m Relay - 50.62s</li>
+                <li>Jessica Williams - Triple Jump - 11.42m</li>
+                <li>Jenny Patel - Hammer Throw - 21.93m</li>
+                <li>Evan Grace - 5000m - 14:58.84</li>
+                <p>Now onto the real recap:</p>
+                <Image src="https://i.imgur.com/ZpYl7Pj.jpg" alt="Seniors at Wildcat Twilight."></Image>
+                <p>This one was bittersweet… Probably the first time I’ve cried at a track meet, and I wasn’t the only one. To our seniors: we will miss you. Whether you just joined this year or you’ve been with us for 4 years, through COVID, name changes, and two national championships, thank you for sticking with us through the highs and lows. You all have been so instrumental in getting the club to where it is. </p>
+                <p>As friends, mentors, and role models, your impact can’t be overstated. When I first joined the club last year, it was the seniors who took me under their wing and showed me all the club had to offer. I wouldn’t be here writing this if not for those acts of kindness from people like Jessie, Jared, and Maddie. Many of you probably don’t even know who I’m talking about, but I promise that you’ve felt the impact they and many others like them throughout the years have had on the club in some way. </p>
+                <p>Looking at this year’s graduating class, I see the same welcoming energy that made this place home for me, and I know you all have done that for all the newcomers this year. We wish you the best wherever life takes you and want you to know that you all will be missed dearly, and you’ll always have a home here…</p>
+                <p>With love, <br></br>Volkan</p>
+                <Image src="https://i.imgur.com/kTQDGTE.jpg" alt="Nick throwing up a VT in the middle of his 400m Hurdles."></Image>
+                <h3><strong>End of Year Banquet</strong></h3>
+                <p>It&#39;s one of the best socials of the year! We will be hosting the banquet <strong>Sunday, April 30th, from 5-8pm at the Blacksburg Community Center</strong>. The event is a potluck, so I encourage you to sign up to bring something! <strong>Please </strong><strong><a href="https://www.google.com/url?q=https://www.signupgenius.com/go/10C0D49A8A922A4FCC52-endofyear&amp;source=gmail-html&amp;ust=1682533887656000&amp;usg=AOvVaw3qkkKSlfGc-ug7lyg0owpa" rel="nofollow noreferrer" target="_blank">RSVP</a></strong> and inform us if you&#39;re bringing any dishes through the form. We plan on playing yard games, hanging out, and watching our end of year video, it&#39;s always a lot of fun! There are also paper plate awards, and we will see who is crowned Forever Freshman. Seniors, please sign up <strong><mark>ASAP</mark></strong>. For everyone else, the signup will close Wednesday.</p>
+                <Image src="https://i.imgur.com/1YWpbFY.jpg" alt="One lap to go..."></Image>
+                <h3><strong>Fun Meet</strong></h3>
+                <p>We will be hosting our annual fun meet this week on <strong><mark>Tuesday and Thursday, 4/25 and 4/27</mark></strong>. To provide clarification, <strong>this is something that happens during practice</strong>. There is no signup, it&#39;s just a fun meet. We will have events such as a literal hammer throw, a bear crawl, 200m racewalk, our always delightful chocolate milk mile, and much more (such as the 4x25m hurdles relay, why would Wyatt leave this out of the email??). Just show up to practice on these days and you&#39;re able to participate!</p>
+                <h3><strong>Final Feedback Survey</strong></h3>
+                <p>How did we do as officers? How was the club? Have anything to tell us? Please do! We would really appreciate it if you would fill out the <a href="https://www.google.com/url?q=https://forms.gle/JBYNsoFmynvexoXi9&amp;source=gmail-html&amp;ust=1682533887657000&amp;usg=AOvVaw0s-kaXctf_VGQfys0zUQhR" rel="nofollow noreferrer" target="_blank">final feedback survey</a> of the year. We read through every single submission and take your suggestions to heart, as we&#39;re always trying to improve as people and officers. If you have the time, please fill it out. We really appreciate all of your feedback.</p>
+                <Image src="https://i.imgur.com/YYJai0S.jpg" alt="Evan and Harris after the 5k."></Image>
+                <h3><strong>Bear Tracks at Margaret Beeks Elementary</strong></h3>
+                <p>Bear Tracks is still going strong! This is a before-school program from <strong>8:40-9:15 AM</strong> held by Margaret Beeks Elementary schools, encouraging their kids to run! They are looking for volunteers to be pacers and supervisors for the kids, and the dates are listed in <a href="https://www.google.com/url?q=https://www.signupgenius.com/go/20f0e4da4af2ca7f94-bear1%23/&amp;source=gmail-html&amp;ust=1682533887657000&amp;usg=AOvVaw0UnsSuWiNG5fzq1jI7REn0" rel="nofollow noreferrer" target="_blank">this sign up survey</a>. There are still slots available for this Wednesday and Thursday as well as for future weeks, so if you are able to sign up please do! </p>
+                <Image src="https://i.imgur.com/o5lv10i.jpg" alt="Charlotte cheering, she's very excited."></Image>
+                <p><strong>Wyatt’s Corner</strong></p>
+                <p>This is the last week of practice, so Friday is our last day. This has been such a crazy year, but thank you all for making it worth it. I am so excited to be your president next year and go on all the crazy adventures together. Whether you showed up to one practice or every single one, thank you for being a part of this team. You guys are my family, for as chaotic as it can be.</p>
+                <p>Wyatt&#39;s Fun Fact of the Week: Welcome to my last fun fact! Today (Editor’s note: yesterday), 33 years ago, the Hubble Space Telescope was launched into space. This revolutionized the field of astrophysics and has led to some of the most beautiful pictures being published. Someone also suggested that I include fun facts about myself, so I&#39;ll let you know that I first came to VT wanting to do astrophysics. I learned after my first year that astrophysics wasn&#39;t my thing (even though I was dead-set on it for three years), and instead, I switched to <i>experimental</i> condensed matter physics, focusing on sustainable nanotechnologies. It&#39;s okay to not know entirely what you want to do coming into college, and switching fields and exploring is totally normal. Just do whatever makes you happy and what you&#39;re passionate about. That is why I run.</p>
+                <p>Best regards,</p>
+                <p>Wyatt Thomas</p>
+                <Image src="https://i.imgur.com/gUfNG1l.jpg" alt="Forever Freshman candidate Joe Gora in the kick of the 4x400m."></Image>
+            </div>
+    },
+    {
         title: "Lynchburg Part 2",
         url: "lynchburg-part-2",
         year: "2023",
