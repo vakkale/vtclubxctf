@@ -6,63 +6,65 @@ const plansData = [
         yPos: "30%",
         plans: [
             {
-                title: "400m/800m",
-                url: "400m-800m",
+                title: "Low Mileage",
+                url: "low-mileage",
                 year: "2023",
-                season: "Spring",
-                sheetID: "1FV6qVtVy5rOh-iawzsS4IyULXGCHNOLHtIksZ4dSdYs",
+                season: "Summer",
+                sheetID: "1yOSbqWBCBkYcPCUyCW7ufxPNvFI_3rmXmuYNuRQOFtY",
                 sheets: [
                     {
-                        title: "January",
-                        url: "january",
+                        title: "May",
+                        url: "may",
                         range: "B2:H22"
                     },
                     {
-                        title: "February",
-                        url: "february",
+                        title: "June",
+                        url: "june",
                         range: "B2:H22"
                     },
                     {
-                        title: "March",
-                        url: "march",
-                        range: "B2:H22"
-                    },
-                    {
-                        title: "April",
-                        url: "april",
+                        title: "July",
+                        url: "july",
                         range: "B2:H26"
+                    },
+                    {
+                        title: "August",
+                        url: "august",
+                        range: "B2:H22"
                     }
                 ]
-            },
+            }
+            ,
             {
-                title: "800m/1500m",
-                url: "800m-1500m",
+                title: "High-Mileage",
+                url: "high-mileage",
                 year: "2023",
-                season: "Spring",
-                sheetID: "13Wd_zZtR7UlkWasPEM164y5jGeH1p3MjJ81RW9asC7o",
+                season: "Summer",
+                sheetID: "1rfIvWz_1tAy1OYz_3lUX16zLFb-okkWwGopwaa5EPTo",
                 sheets: [
                     {
-                        title: "January",
-                        url: "january",
+                        title: "May",
+                        url: "may",
                         range: "B2:H22"
                     },
                     {
-                        title: "February",
-                        url: "february",
+                        title: "June",
+                        url: "june",
                         range: "B2:H22"
                     },
                     {
-                        title: "March",
-                        url: "march",
-                        range: "B2:H22"
-                    },
-                    {
-                        title: "April",
-                        url: "april",
+                        title: "July",
+                        url: "july",
                         range: "B2:H26"
+                    },
+                    {
+                        title: "August",
+                        url: "august",
+                        range: "B2:H22"
                     }
                 ]
-            },
+            }
+            /* ,
             {
                 title: "1500m/5000m",
                 url: "1500m-5000m",
@@ -91,7 +93,7 @@ const plansData = [
                         range: "B2:H26"
                     }
                 ]
-            }
+            } */
         ]
     },
     {
@@ -101,34 +103,35 @@ const plansData = [
         yPos: "top",
         plans: [
             {
-                title: "Mid-Distance",
-                url: "mid-distance",
-                year: "2022",
-                season: "Winter",
-                sheetID: "19J0XpYchlep1UB3v8FfxtC2UvmOsylGCrZeV0kckZ7A",
+                title: "Summer Plan",
+                url: "summer-plan",
+                year: "2023",
+                season: "Summer",
+                sheetID: "1k2yvLXyfyXLmLhX5rE3K2lfyEubGBIRSeVqtoLX3mzQ",
                 sheets: [
                     {
-                        title: "January",
-                        url: "january",
+                        title: "May",
+                        url: "may",
                         range: "B2:H22"
                     },
                     {
-                        title: "February",
-                        url: "february",
+                        title: "June",
+                        url: "june",
                         range: "B2:H22"
                     },
                     {
-                        title: "March",
-                        url: "march",
-                        range: "B2:H22"
-                    },
-                    {
-                        title: "April",
-                        url: "april",
+                        title: "July",
+                        url: "july",
                         range: "B2:H26"
+                    },
+                    {
+                        title: "August",
+                        url: "sugust",
+                        range: "B2:H22"
                     }
                 ]
-            },
+            }
+            /* ,
             {
                 title: "Distance",
                 url: "distance",
@@ -157,7 +160,7 @@ const plansData = [
                         range: "B2:H26"
                     }
                 ]
-            }
+            } */
         ]
     },
     {
