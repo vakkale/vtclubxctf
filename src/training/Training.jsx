@@ -28,9 +28,13 @@ export default function Training() {
             : team.plans[0]
     );
 
+    // declare calendar variable. initially set to false
+    const [calendar, setCalendar] = useState(false);
+
     //set plan as the plan that matches the url
     useEffect(() => {
         try {
+            setCalendar(planData.find(team => team.url === teamName).plans.find(plan => plan.url === planName).calendar);
             setTeam(planData.find(team => team.url === teamName));
             setPlan(team.plans.find(plan => plan.url === planName));
             setSortedTeams(team);
@@ -63,7 +67,8 @@ export default function Training() {
             <div className="bar-plus-content">
                 <div className="page-content">
                     <SideBar className="sidebar" data={sortedTeams.plans} size="small"></SideBar>
-                    {plan ? <TrainingPlan className="plan" sheetID={plan.sheetID} sheets={plan.sheets}></TrainingPlan>
+                    {(plan && calendar) ? <TrainingPlan className="plan" sheetID={plan.sheetID} sheets={plan.sheets}></TrainingPlan>
+                        : (plan && !calendar) ? <Article className="article" article={plan.content} image={plan.image}></Article>
                         : <Article className="article" article={<></>} image={""}></Article>}
                 </div>
             </div>

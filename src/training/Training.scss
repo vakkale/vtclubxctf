@@ -17,7 +17,8 @@
         font-size: 2.1rem;
         display: flex;
         justify-content: center;
-        padding-top: 7px; /* TODO, center the text properly */
+        padding-top: 7px;
+        /* TODO, center the text properly */
     }
 
     .menuWrapper {
@@ -40,5 +41,39 @@
         flex: 85%;
         width: fit-content;
         height: calc(100vh - 110px);
+    }
+}
+
+.training-extras {
+    // no bullet points
+    list-style-type: none;
+
+    .extras-section {}
+}
+
+.tables {
+
+    .distance-table {
+        margin-bottom: 30px;
+
+        
+            tr {
+                &:first-child {
+                th {
+                    background-color: #971a43;
+                    text-align: left;
+                    color: #f3f3f3;
+                }
+            }
+        }
+
+        tr {
+
+            th {
+                background-color: #cfcfcf;
+                text-align: left;
+                color:black;
+            }
+        }
     }
 }
