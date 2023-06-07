@@ -715,8 +715,8 @@ const plansData = [
                 title: "Jumps",
                 url: "jumps",
                 year: "2023",
-                season: "Spring",
-                sheetID: "1mYsNVCgdb8GiXdYEHwrRXnvgmX2EFtubDZkHfGFWlgE",
+                season: "Summer",
+                sheetID: "17CEhrYZwJ_YuHPDeAHrSrJY97e5TExTElqa0AyKGp0A",
                 sheets: [
                     {
                         title: "January",
@@ -750,32 +750,22 @@ const plansData = [
                 title: "Throws",
                 url: "throws",
                 year: "2023",
-                season: "Spring",
-                sheetID: "1pR9nGo03EIzML0cBG5Sv8ISwoSXMguflXOS0P7qDePY",
+                season: "Summer",
+                sheetID: "159FwOZZM8uW5XfmGg3gvE3CO1o-0iLWgW3fBmm1XFbE",
                 sheets: [
                     {
-                        title: "January",
-                        url: "january",
+                        title: "June",
+                        url: "june",
                         range: "B2:H22"
                     },
                     {
-                        title: "February",
-                        url: "february",
-                        range: "B2:H22"
-                    },
-                    {
-                        title: "March",
-                        url: "march",
-                        range: "B2:H22"
-                    },
-                    {
-                        title: "April",
-                        url: "april",
+                        title: "July",
+                        url: "july",
                         range: "B2:H26"
                     },
                     {
-                        title: "May",
-                        url: "may",
+                        title: "August",
+                        url: "august",
                         range: "B2:H22"
                     }
                 ]
@@ -790,31 +780,26 @@ const plansData = [
         plans: [
             {
                 calendar: true,
-                title: "Spring Plan",
-                url: "spring-plan",
+                title: "Summer Plan",
+                url: "summer-plan",
                 year: "2023",
-                season: "Spring",
-                sheetID: "19gIRGSwiFBmrclFhZNBs51h8bYEx9J_5nh-GT3fLBl0",
+                season: "Summer",
+                sheetID: "1r4ANyYBYr2a82wER-HP-YPGUOuO4Ha3JuXCYLcUr-BA",
                 sheets: [
                     {
-                        title: "January",
-                        url: "january",
+                        title: "June",
+                        url: "june",
                         range: "B2:H22"
                     },
                     {
-                        title: "February",
-                        url: "february",
-                        range: "B2:H22"
-                    },
-                    {
-                        title: "March",
-                        url: "march",
-                        range: "B2:H22"
-                    },
-                    {
-                        title: "April",
-                        url: "april",
+                        title: "July",
+                        url: "july",
                         range: "B2:H26"
+                    },
+                    {
+                        title: "August",
+                        url: "august",
+                        range: "B2:H22"
                     }
                 ]
             }
