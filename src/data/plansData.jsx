@@ -719,28 +719,18 @@ const plansData = [
                 sheetID: "17CEhrYZwJ_YuHPDeAHrSrJY97e5TExTElqa0AyKGp0A",
                 sheets: [
                     {
-                        title: "January",
-                        url: "january",
+                        title: "June",
+                        url: "june",
                         range: "B2:H22"
                     },
                     {
-                        title: "February",
-                        url: "february",
-                        range: "B2:H22"
-                    },
-                    {
-                        title: "March",
-                        url: "march",
-                        range: "B2:H22"
-                    },
-                    {
-                        title: "April",
-                        url: "april",
+                        title: "July",
+                        url: "july",
                         range: "B2:H26"
                     },
                     {
-                        title: "May",
-                        url: "may",
+                        title: "August",
+                        url: "august",
                         range: "B2:H22"
                     }
                 ]
