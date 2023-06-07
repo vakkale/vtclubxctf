@@ -672,36 +672,6 @@ const plansData = [
                         </ul>
                     </div>
             }
-            /* ,
-            {
-                title: "Distance",
-                url: "distance",
-                year: "2022",
-                season: "Winter",
-                sheetID: "1Z2a7_1JlIbJI0kdOzvBE9sgp514Cr8ut8PDck7qSbPA",
-                sheets: [
-                    {
-                        title: "January",
-                        url: "january",
-                        range: "B2:H22"
-                    },
-                    {
-                        title: "February",
-                        url: "february",
-                        range: "B2:H22"
-                    },
-                    {
-                        title: "March",
-                        url: "march",
-                        range: "B2:H22"
-                    },
-                    {
-                        title: "April",
-                        url: "april",
-                        range: "B2:H26"
-                    }
-                ]
-            } */
         ]
     },
     {
@@ -792,6 +762,141 @@ const plansData = [
                         range: "B2:H22"
                     }
                 ]
+            },
+            {
+                calendar: false,
+                title: "Warmups",
+                url: "warmups",
+                season: "Extras",
+                content:
+                    <div className="article-content">
+                        <h3>Dynamic Warmup 1 (Short)</h3>
+                        <ul>
+                            <li>High Knees</li>
+                            <li>Butt Kicks</li>
+                            <li>A Skips</li>
+                            <li>B Skips</li>
+                            <li>Woodson's</li>
+                            <li>Swan Dives</li>
+                            <li>Swoops</li>
+                            <li>Frankensteins</li>
+                            <li>Cariocas</li>
+                            <li>2 Strides</li>
+                        </ul>
+                        <h3>Dynamic Warmup 2 (Mid)</h3>
+                        <ul>
+                            <li>High Knees</li>
+                            <li>Butt Kicks</li>
+                            <li>A Skips</li>
+                            <li>B Skips</li>
+                            <li>Open the Gate</li>
+                            <li>Close the Gate</li>
+                            <li>Front Lunges</li>
+                            <li>Swan Dives</li>
+                            <li>Swoops</li>
+                            <li>Frankensteins</li>
+                            <li>Knee Pulls</li>
+                            <li>Quad Pulls</li>
+                            <li>Heel to Pocket</li>
+                            <li>2 Strides</li>
+                        </ul>
+                        <h3>Dynamic Warmup 3 (Long)</h3>
+                        <ul>
+                            <li>Heel Walks</li>
+                            <li>Side Foot Walks</li>
+                            <li>March With Foot to Ankle</li>
+                            <li>March With Foot to Knee</li>
+                            <li>Knee Pulls</li>
+                            <li>Quad Pulls</li>
+                            <li>Heel to Pocket</li>
+                            <li>Front Lunges</li>
+                            <li>Side Lunges</li>
+                            <li>Open the Gate</li>
+                            <li>Close the Gate</li>
+                            <li>A Skips</li>
+                            <li>B Skips</li>
+                            <li>Swoops</li>
+                            <li>Swan Dives</li>
+                            <li>Frankensteins</li>
+                            <li>Woodsons</li>
+                            <li>2 Strides</li>
+                        </ul>
+                        <h3>Static Warmup</h3>
+                        <ul>
+                            <li>Ankle Rotations</li>
+                            <li>Knee Rotations</li>
+                            <li>Hip Rotations</li>
+                            <li>Arm Extentions</li>
+                            <li>Hurdle Trail Leg</li>
+                            <li>Side Lunges</li>
+                            <li>45° Side Lunges</li>
+                            <li>Front Lunge</li>
+                            <li>Front Lunge w/ Twist</li>
+                            <li>Run in Place</li>
+                        </ul>
+                        <h3>Ebbet Foot Drills</h3>
+                        <ul>
+                            <li>Walk on Outside of Foot</li>
+                            <li>Walk on Inside of Foot</li>
+                            <li>Feet Out, Heel to Big Toe Walks</li>
+                            <li>Feet In, Heel to Pinky Toe Walks</li>
+                            <li>Heel Walks</li>
+                            <li>Backwards Calf Raise Walks</li>
+                        </ul>
+                    </div>
+            },
+            {
+                calendar: false,
+                title: "Sample Lifting Schedule",
+                url: "sample-lifting-schedule",
+                season: "Extras",
+                content:
+                    <div className="article-content">
+                        <table>
+                            <tr>
+                                <td>Monday</td>
+                                <td>Tuesday</td>
+                                <td>Wednesday</td>
+                                <td>Thursday</td>
+                                <td>Friday </td>
+                            </tr>
+                            <tr>
+                                <td>Back Squats 1x4-8 @80%, 1x2-6 @85%, 1x1-4 @90%, 1x4-8 @82.5%, 1x2-6 @87.5%, 1x1-2 @92%</td>
+                                <td>Hang Clean 3x4 @60-70%</td>
+                                <td>Rest Day</td>
+                                <td>Front Squats 3x2-6 @80-90%</td>
+                                <td>Split-Clean 3x4 @50-60% </td>
+                            </tr>
+                            <tr>
+                                <td>Good Mornings 3x4-8</td>
+                                <td>Clean Pulls 3x3-6 @70-80%</td>
+                                <td></td>
+                                <td>Deadlifts 3x2-6</td>
+                                <td>Hang Snatch Pulls 3x3-6@60-70% </td>
+                            </tr>
+                            <tr>
+                                <td>Calf Raises 3x8-12</td>
+                                <td>Push Jerk 3x3-6 @70% of hang clean</td>
+                                <td></td>
+                                <td>Incline Press 3x6-10</td>
+                                <td>Dumbell Hang Cleans 3x3-6 </td>
+                            </tr>
+                            <tr>
+                                <td>Single Arm Dumbell Rows 3x6-8 (each arm)</td>
+                                <td>Wide Grip Pullups 3xFailure</td>
+                                <td></td>
+                                <td>Barbell Bent Over Rows 3x6-8</td>
+                                <td>Step Ups 3x8-12 </td>
+                            </tr>
+                            <tr>
+                                <td>Dumbell Shoulder Press 3x4-8</td>
+                                <td>Banded Hip Walks</td>
+                                <td></td>
+                                <td>Seated Military Press 3x2-6</td>
+                                <td>Bicep Focused Pullups 3xFailure</td>
+                            </tr>
+                        </table>
+                    </div>
             }
         ]
     }
