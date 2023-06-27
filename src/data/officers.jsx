@@ -1,17 +1,25 @@
 const Officers = [
-    {
+    /* {
         position: "President",
         name: "Phil Lopez",
         email: "lphilip01@vt.edu",
         image: "https://i.imgur.com/v2hYek9.jpg",
         bio: "Salutations friends. My name is Phil and I am a current Junior studying Aerospace Engineering here. I was born in North Carolina and have since lived in 5 different states all across the US. One of my biggest hobbies (other than running) is origami! I can make almost anything out of paper and it’s a ton of fun. My favorite part of the club is the close knit community that we build and seeing all the friendships that are made here. We have a ton of fun together and we definitely take the phrase “work hard, play hard” seriously. I can’t wait to meet all of you, and if you ever have any questions about anything please don’t hesitate to reach out!"
-    },
+    }, */
     {
-        position: "Vice President",
+        position: "President",
         name: "Wyatt Thomas",
         email: "wyatt@vt.edu",
         image: "https://i.imgur.com/vxSWd0H.jpg",
-        bio: "Hey there! My name is Wyatt and I’m the vice president of the club! A little bit about myself is that I’m a sophomore majoring in both physics and math and I’m a distance runner, so I love a good 5k and I have all the quirks that distance guys have. Being VP is a really fun and rewarding position, and I love getting to know everyone. Our club is such a fun, tight knit community that makes showing up every day worth it, from the painful workouts to our bumpin’ socials. Please feel free to email me if you have any questions and I can’t wait to see you out on the track!"
+        bio: "Hey there! My name is Wyatt and I’m the President of the club! A little bit about myself is that I’m a sophomore majoring in both physics and math and I’m a distance runner, so I love a good 5k and I have all the quirks that distance guys have. Being President is a really fun and rewarding position, and I love getting to know everyone. Our club is such a fun, tight knit community that makes showing up every day worth it, from the painful workouts to our bumpin’ socials. Please feel free to email me if you have any questions and I can’t wait to see you out on the track!"
+    },
+    {
+        position: "Vice President",
+        name: "Volkan Akkale",
+        email: "volkanakkale@vt.edu",
+        image: "https://i.imgur.com/LRQGJA6.jpg",
+        bio: "Hi y'all, my name is Volkan and I’m your Vice President this year. I was webmaster last year and I made this website so I hope you enjoy. If you're reading this in the hopefully short time between when I initially updated this page and when the rest of the officers are updated, then you might notice that the other officers are in fact not up to date. I will get them on there soon I promise. If you have any questions feel free to email myself or Wyatt. Can't wait to see you all back on the track in August!"
+        /*  My favorite thing about the club is the extremely welcoming and supportive community that inspired me to spend many sleepless nights building this website from the ground up. I hope you enjoy using it as much as I enjoyed making it! A little about me: I'm a junior from Virginia Beach, VA studying Computer Engineering. In terms of running, I mainly focus on the 800m, but this season I also plan to train for the 400. See you on the track! */
     },
     {
         position: "Race Coordinator",
@@ -54,13 +62,6 @@ const Officers = [
         email: "apdefosse@vt.edu",
         image: "https://i.imgur.com/XtL3P0D.jpg1",
         bio: "Hey everyone, my name is Adam DeFosse and I’m one of the sprint captains this year. I’m currently a junior majoring in Marketing. Some of my interests include gaming, reading, and spending time with friends. My favorite thing about the club has been all the new people I’ve gotten to meet over the past couple of years, and I look forward to building more friendships during the remainder of my time here at Tech."
-    },
-    {
-        position: "Webmaster",
-        name: "Volkan Akkale",
-        email: "volkanakkale@vt.edu",
-        image: "https://i.imgur.com/LRQGJA6.jpg",
-        bio: "Hi y'all, my name is Volkan and I’m your webmaster for the foreseeable future :P. My favorite thing about the club is the extremely welcoming and supportive community that inspired me to spend many sleepless nights building this website from the ground up. I hope you enjoy using it as much as I enjoyed making it! A little about me: I'm a junior from Virginia Beach, VA studying Computer Engineering. In terms of running, I mainly focus on the 800m, but this season I also plan to train for the 400. See you on the track!"
     },
     {
         position: "Throws Captain",
