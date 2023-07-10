@@ -115,4 +115,72 @@
             }
         }
     }
+
+    .footer-sponsors {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+
+        .sponsors-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: fit-content;
+            padding: 30px var(--bigbar) 30px var(--bigbar);
+            //no list markers
+            list-style-type: none;
+
+            .sponsor {
+                width: 200px;
+                max-height: 150px;
+                filter: grayscale(100%);
+                transition: filter 0.4s ease-in-out;
+
+                &:hover {
+                    filter: grayscale(0%);
+                }
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    text-decoration: none;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            
+            .sponsors-list {
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px 0;
+
+                //cycle through each sponsor and only show 1 at a time
+                .sponsor {
+                    display: none;
+                    margin: 10px 10px;
+                }
+
+                @for $i from 1 through 5 {
+                    .sponsor:nth-child(#{$i}) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }
