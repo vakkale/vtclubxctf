@@ -86,7 +86,7 @@ const Footer = () => {
           {sponsors.map((sponsor) => {
             return (
               <li key={sponsor.name} className="sponsor">
-                <a href={sponsor.url}>
+                <a href={sponsor.url} target={"_blank"} rel="noreferrer">
                   <img src={sponsor.logo} alt={`${sponsor.name} logo.`} />
                 </a>
               </li>

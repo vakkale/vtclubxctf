@@ -81,7 +81,7 @@ export default function App() {
           <ScrollToTop></ScrollToTop>
           {/* <Redirects></Redirects> */}
           <Header></Header>
-          {/* <Banner></Banner> */}
+          <Banner></Banner>
           {/* <Parser></Parser> */}
           <Routes>
             <Route exact path="/" element={<Home />}></Route>

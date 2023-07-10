@@ -1,20 +1,19 @@
-import { Link } from 'react-router-dom';
-import './banner.scss'
-import { useLocation } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import "./banner.scss";
+import { useLocation } from "react-router-dom";
 
 export default function Banner() {
+  //location
+  const location = useLocation();
 
-    //location
-    const location = useLocation();
+  //isMobile
+  const isMobile = window.innerWidth <= 1000;
 
-    //isMobile
-    const isMobile = window.innerWidth <= 1000;
+  /* const countDownEnd = new Date("Feb 16, 2023 12:00:00").getTime();
+    const now = new Date().getTime(); */
 
-    const countDownEnd = new Date("Feb 16, 2023 12:00:00").getTime();
-    const now = new Date().getTime();
-
-    //countdown timer
-    /* function BannerCountdown() {
+  //countdown timer
+  /* function BannerCountdown() {
 
         const x = setInterval(function () {
 
@@ -70,39 +69,30 @@ export default function Banner() {
         )
     } */
 
-    return (
-        <div className="banner"
-            style={{
-                marginTop: ((location.pathname === '/') && isMobile) ? '60px' : !isMobile ? '60px' : '0px',
-            }}
-        >
-            <h1 className='banner-text'>{
-
-                !isMobile ? "Nationals!!: " : "Nationals!!: "
-
-            }</h1>
-            <a
-                href='https://www.facebook.com/pg/clubrunning/videos/'
-                target='_blank'
-                rel='noreferrer'
-                className='banner-link'>
-                <button className='banner-button'>Livestream</button>
-            </a>
-            <a
-                href='https://drive.google.com/file/d/1x-MKGP_8Sret3-WMS6rkP5tkpwGTE0RA/view?usp=sharing'
-                target='_blank'
-                rel='noreferrer'
-                className='banner-link'>
-                <button className='banner-button'>Heat Sheet</button>
-            </a>
-            <a
-                href='https://docs.google.com/spreadsheets/d/e/2PACX-1vSBFayH1KNH2u2n0glm7JC3XEfGeAk0I2g9WLzjetYGReeuhBfqOm_cOujZJx0Dh00BfVTPhZAt4YOd/pubhtml?gid=11722187&single=true'
-                target='_blank'
-                rel='noreferrer'
-                className='banner-link'>
-                <button className='banner-button'>Schedule</button>
-            </a>
-            {/* {now > countDownStart ?
+  return (
+    <div
+      className="banner"
+      style={{
+        marginTop:
+          location.pathname === "/" && isMobile
+            ? "60px"
+            : !isMobile
+            ? "60px"
+            : "0px",
+        animation: !(location.pathname === "/")
+          ? "none"
+          : "slide-down 1s ease-in-out forwards",
+        animationDelay: location.pathname === "/" ? "3.2s" : "0s",
+      }}
+    >
+      <h1 className="banner-text">
+        {!isMobile ? "Summer checklist for prospective members: " : "Summer cheklist: "}
+      </h1>
+      {/* TIP: YOU CAN USE <LINK> AND <A> INTERCHANGABLY HERE, THEY HAVE THE SAME STYLING */}
+      <Link to="/join" className="banner-link">
+        <button className="banner-button">Click Here</button>
+      </Link>
+      {/* {now > countDownStart ?
                 <a
                     href='https://givingday.vt.edu/amb/clubxctf'
                     target='_blank'
@@ -118,6 +108,6 @@ export default function Banner() {
                 </button>
             </Link>
             <BannerCountdown /> */}
-        </div>
-    );
+    </div>
+  );
 }

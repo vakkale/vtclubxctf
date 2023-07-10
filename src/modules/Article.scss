@@ -9,6 +9,31 @@
   font-size: 1rem;
   line-height: 1.5;
 
+  .highlighted-message {
+    border: 1px solid #ef7f2f;
+    background-color: #fafafa;
+    padding: 10px 15px;
+    margin: 16px 0;
+
+    *:first-child {
+      padding-top: 0;
+      margin-top: 10px;
+    }
+
+    *:last-child {
+      padding-bottom: 0;
+      margin-bottom: 10px;
+    }
+
+    li {
+      padding: 5px 0;
+    }
+
+    h3 {
+      padding-bottom: 5px;
+    }
+  }
+
   p {
     padding: 9px 0;
   }
