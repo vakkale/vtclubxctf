@@ -18,18 +18,18 @@
         display: none;
     }
 
-    .featured-content {
+    .featured-content, .featured-item {
         padding: 4.2127435492vw 2.1063717746vw 4.2127435492vw 2.1063717746vw;
         border-bottom: 1px solid #f6f6f6;
         position: relative;
         justify-content: left;
 
 
-        .list-header {
+        .list-header, .featured-header {
             padding-bottom: 25px;
         }
 
-        .feature-title {
+        .feature-title, .featured-item-title {
             font-size: 2.5rem;
             font-family: 'ITCAvantGarde', sans-serif;
             font-weight: bold;
@@ -41,7 +41,7 @@
         }
 
         .list-header,
-        .feature-title, .route-link {
+        .feature-title, .route-link, .featured-item-title {
             translate: 0 30%;
             opacity: 0;
             animation: feature-load 1s ease-in-out forwards;
@@ -69,17 +69,18 @@
             .list-item-title {
                 font-family: 'ITCAvantGarde', sans-serif;
                 font-weight: bold;
+                color: black;
             }
         }
     }
 }
 
-.list-item-date {
+.list-item-date, .featured-item-date {
     font-size: 0.8rem;
     color: gray;
 }
 
-.list-item-category {
+.list-item-category, .featured-item-category {
     font-size: 0.8rem;
     letter-spacing: 1px;
     color: #971a43;
@@ -87,7 +88,7 @@
     padding-left: 5%;
 }
 
-.list-item>* {
+.list-item>*, .featured-item>* {
     pointer-events: none;
 }
 

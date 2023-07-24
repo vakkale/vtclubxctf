@@ -1,5 +1,5 @@
 import React from "react";
-import "./PageHeader.scss";
+import "../../modules/PageHeader.scss";
 
 type Props = {
   image: string;

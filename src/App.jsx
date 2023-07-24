@@ -26,6 +26,8 @@ import Banner from './header/banner';
 import GivingDay from './about_pages/GivingDay';
 import RaceForms from './about_pages/RaceForms';
 import Assassin from './about_pages/Assassin';
+import PageTest from './page/PageTest.tsx';
+import PageController from './page/PageContoller.tsx';
 
 export default function App() {
 
@@ -86,7 +88,6 @@ export default function App() {
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/news/*" element={<News />}></Route>
-            <Route exact path="/competition" element={<Home />}></Route>
             <Route exact path="/training/*" element={<Training />}></Route>
             <Route exact path="/contact" element={<Contact />}></Route>
             <Route exact path="/routes/*" element={<MapRoutes />}></Route>
@@ -102,6 +103,8 @@ export default function App() {
             <Route exact path="/racing-forms" element={<RaceForms />} />
             <Route exact path="/assassin" element={<Assassin />} />
             {/* <Route exact path="/records/*" element={<Records />}></Route> */}
+            {/* <Route exact path="/test/*" element={<PageTest />}></Route> */}
+            <Route exact path="/test/*" element={<PageController />}></Route>
             <Route exact path="*" element={<Home />}></Route>
           </Routes>
           <Footer></Footer>
