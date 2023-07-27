@@ -9,10 +9,11 @@ import { useLocation, useNavigate, Link } from "react-router-dom";
 import SideBar from "./components/SideBar.tsx";
 // @ts-ignore
 import PageHeader from "./components/PageHeader.tsx";
+import StandardContent from "../cms/StandardContent";
 // @ts-ignore
 import Article from "../modules/Article"; // FOR TESTING, REWRITE THIS COMPONENT
 
-interface PageProps {
+export interface PageProps {
   title: string; // Page title
   subtitle?: string; // Optional
   background: string; // Background image URL
@@ -71,7 +72,7 @@ const Page: FC<PageProps> = (props) => {
             subPages={props.subPages}
             customSidebarFeature={props.customSidebarFeature}
           ></SideBar>
-          <Article article={props.content} image={props.featuredImage}></Article>
+          <StandardContent content={props.content} image={props.featuredImage} editable={true}></StandardContent>
         </div>
       </div>
     </div>

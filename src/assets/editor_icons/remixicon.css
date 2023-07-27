@@ -1,0 +1,105 @@
+
+/*
+* https://remixicon.com
+* https://github.com/Remix-Design/RemixIcon
+* Copyright RemixIcon.com
+* Released under the Apache License Version 2.0
+*/
+
+@font-face {
+    font-family: "remixicon";
+    src: url('./remixicon.eot'); /* IE9*/
+    src: url('./remixicon.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url("remixicon.woff2") format("woff2"),
+    url("./remixicon.woff") format("woff"),
+    url('./remixicon.ttf') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    font-display: swap;
+}
+
+[class^="ri-"], [class*="ri-"] {
+    font-family: 'remixicon' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ri-lg { font-size: 1.3333em; line-height: 0.75em; vertical-align: -.0667em; }
+.ri-xl { font-size: 1.5em; line-height: 0.6666em; vertical-align: -.075em; }
+.ri-xxs { font-size: .5em; }
+.ri-xs { font-size: .75em; }
+.ri-sm { font-size: .875em }
+.ri-1x { font-size: 1em; }
+.ri-2x { font-size: 2em; }
+.ri-3x { font-size: 3em; }
+.ri-4x { font-size: 4em; }
+.ri-5x { font-size: 5em; }
+.ri-6x { font-size: 6em; }
+.ri-7x { font-size: 7em; }
+.ri-8x { font-size: 8em; }
+.ri-9x { font-size: 9em; }
+.ri-10x { font-size: 10em; }
+.ri-fw { text-align: center; width: 1.25em; }
+
+.ri-bold:before { content: "\ead1"; }
+.ri-italic:before { content: "\ee6b"; }
+.ri-heading:before { content: "\ee03"; }
+.ri-font-family:before { content: "\f390"; }
+.ri-underline:before { content: "\f244"; }
+.ri-strikethrough:before { content: "\f1ab"; }
+.ri-format-clear:before { content: "\ed96"; }
+.ri-font-color:before { content: "\ed8b"; }
+.ri-list-ordered-2:before { content: "\f39a"; }
+.ri-list-unordered:before { content: "\eebe"; }
+.ri-align-left:before { content: "\ea27"; }
+.ri-align-center:before { content: "\ea25"; }
+.ri-align-right:before { content: "\ea28"; }
+.ri-align-justify:before { content: "\ea26"; }
+.ri-attachment-2:before { content: "\ea84"; }
+.ri-link:before { content: "\eeb2"; }
+.ri-code-view:before { content: "\ebae"; }
+.ri-double-quotes-r:before { content: "\ec52"; }
+.ri-table-2:before { content: "\f1da"; }
+.ri-h-1:before { content: "\ede6"; }
+.ri-h-2:before { content: "\ede7"; }
+.ri-h-3:before { content: "\ede8"; }
+.ri-h-4:before { content: "\ede9"; }
+.ri-h-5:before { content: "\edea"; }
+.ri-h-6:before { content: "\edeb"; }
+.ri-insert-column-left:before { content: "\ee61"; }
+.ri-insert-column-right:before { content: "\ee62"; }
+.ri-insert-row-top:before { content: "\ee64"; }
+.ri-insert-row-bottom:before { content: "\ee63"; }
+.ri-delete-column:before { content: "\ec2b"; }
+.ri-delete-row:before { content: "\ec2c"; }
+.ri-draggable:before { content: "\f38f"; }
+.ri-merge-cells-horizontal:before { content: "\ef41"; }
+.ri-merge-cells-vertical:before { content: "\ef42"; }
+.ri-split-cells-horizontal:before { content: "\f17a"; }
+.ri-split-cells-vertical:before { content: "\f17b"; }
+.ri-node-tree:before { content: "\ef90"; }
+.ri-sort-asc:before { content: "\f15f"; }
+.ri-sort-desc:before { content: "\f160"; }
+.ri-number-1:before { content: "\efa0"; }
+.ri-number-2:before { content: "\efa1"; }
+.ri-number-3:before { content: "\efa2"; }
+.ri-number-4:before { content: "\efa3"; }
+.ri-number-5:before { content: "\efa4"; }
+.ri-number-6:before { content: "\efa5"; }
+.ri-number-7:before { content: "\efa6"; }
+.ri-number-8:before { content: "\efa7"; }
+.ri-number-9:before { content: "\efa8"; }
+.ri-number-0:before { content: "\ef9f"; }
+.ri-link-unlink:before { content: "\eeb1"; }
+.ri-font-size:before { content: "\ed8d"; }
+.ri-text:before { content: "\f201"; }
+.ri-subscript:before { content: "\f1ad"; }
+.ri-superscript:before { content: "\f1c1"; }
+.ri-draft-line:before { content: "\ec5c"; }
+.ri-folder-open-line:before { content: "\ed70"; }
+.ri-layout-3-line:before { content: "\ee81"; }
+.ri-edit-2-line:before { content: "\ec80"; }
+.ri-edit-box-line:before { content: "\ec82"; }
+.ri-image-2-line:before { content: "\ee45"; }
+.ri-image-add-line:before { content: "\ee47"; }
+.ri-image-edit-line:before { content: "\ee49"; }
+.ri-camera-line:before { content: "\eb31"; }

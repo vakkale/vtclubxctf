@@ -4,11 +4,9 @@ import { useState, useEffect } from 'react';
 import './App.scss';
 import Lines from './lines/lines.jsx';
 import Header from './header/header.jsx';
-import Home from './home/home.jsx';
 import Training from './training/Training.jsx';
 import News from './news/News';
 import loadImages from './helpers/loadImages';
-import Footer from './footer/Footer.jsx';
 import Contact from './contact/Contact';
 import MapRoutes from './routes/Routes';
 import Donate from './about_pages/Donate';
@@ -79,36 +77,8 @@ export default function App() {
     <div className="app">
       <Lines></Lines>
       {loading ? <LoadingScreen></LoadingScreen> :
-        <BrowserRouter>
-          <ScrollToTop></ScrollToTop>
-          {/* <Redirects></Redirects> */}
-          <Header></Header>
-          <Banner></Banner>
-          {/* <Parser></Parser> */}
-          <Routes>
-            <Route exact path="/" element={<Home />}></Route>
-            <Route exact path="/news/*" element={<News />}></Route>
-            <Route exact path="/training/*" element={<Training />}></Route>
-            <Route exact path="/contact" element={<Contact />}></Route>
-            <Route exact path="/routes/*" element={<MapRoutes />}></Route>
-            <Route exact path="/donate" element={<Donate />}></Route>
-            <Route exact path="/join" element={<Join />}></Route>
-            <Route exact path="/athletic-trainer" element={<AthleticTrainer />}></Route>
-            <Route exact path="/competition/track-and-field" element={<TrackAndField />}></Route>
-            <Route exact path="/competition/cross-country" element={<CrossCountry />}></Route>
-            <Route exact path="/community/socials" element={<Socials />}></Route>
-            <Route exact path="/community/traditions" element={<Traditions />}></Route>
-            <Route exact path="/sponsors" element={<Sponsors />}></Route>
-            <Route exact path="/giving-day" element={<GivingDay />}></Route>
-            <Route exact path="/racing-forms" element={<RaceForms />} />
-            <Route exact path="/assassin" element={<Assassin />} />
-            {/* <Route exact path="/records/*" element={<Records />}></Route> */}
-            {/* <Route exact path="/test/*" element={<PageTest />}></Route> */}
-            <Route exact path="/test/*" element={<PageController />}></Route>
-            <Route exact path="*" element={<Home />}></Route>
-          </Routes>
-          <Footer></Footer>
-        </BrowserRouter>
+        
+        <PageController></PageController>
       }
     </div>
   );

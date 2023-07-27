@@ -1,0 +1,35 @@
+.menu-bar {
+  background-color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 600px;
+
+  button {
+    all: unset;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    &.is-active {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  select {
+    all: unset;
+  }
+
+  button,
+  select {
+    font-family: "akkurat";
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+    cursor: pointer;
+  }
+}
