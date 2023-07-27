@@ -1,5 +1,6 @@
 .article-container,
 .editor-container {
+  position: relative;
   background-color: white;
   @media screen and (max-width: 1000px) {
     margin-top: 24px;

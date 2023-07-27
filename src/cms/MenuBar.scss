@@ -1,10 +1,15 @@
+.menu-wrapper {
+  position: sticky;
+  --transform-const: calc(-0.5 * 17vh);
+  top: calc(60px - var(--transform-const));
+  z-index: 11;
+}
+
 .menu-bar {
   background-color: white;
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
-  position: sticky;
-  top: 600px;
 
   button {
     all: unset;
