@@ -6,6 +6,7 @@ import youtube_logo from "./social-icons/youtube.svg";
 import { Link } from "react-router-dom";
 import runabout_logo from "../assets/sponsors/runabout.svg";
 import cellar_logo from "../assets/sponsors/cellar.svg";
+import boxing_logo from "../assets/sponsors/boxing.svg";
 
 const socialdata = [
   {
@@ -41,6 +42,11 @@ const sponsors = [
     url: "https://the-cellar.com//",
     logo: cellar_logo,
   },
+  {
+    name: "Blacksburg Boxing & Fitness",
+    url: "https://www.blacksburgboxingandfitness.com/",
+    logo: boxing_logo,
+  }
 ];
 
 /* TODO: Add orgs */

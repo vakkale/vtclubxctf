@@ -10,6 +10,7 @@ import DropCursor from "@tiptap/extension-dropcursor";
 import Image from "@tiptap/extension-image";
 import { EditorContent, useEditor } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
+import { PageProps } from "../page/Page";
 import MenuBar from "./MenuBar";
 // @ts-ignore
 import { CustomLink } from "./CustomLink";
@@ -40,12 +41,16 @@ export interface ArticleProps {
   editable?: boolean;
 }
 
+interface AdditionalProps {
+  pushUpdate(updatedProps: Partial<PageProps>): void;
+}
+
 /* const ImportantBlock = BlockQuote.extend({
   renderHTML({ HTMLAttributes }) {
     return ["blockquote", HTMLAttributes, ["strong", 0]];
  */
 
-const StandardContent: FC<ArticleProps> = (props) => {
+const StandardContent: FC<ArticleProps & AdditionalProps> = (props) => {
   // state for if content is loaded
   const [doneLoading, setDoneLoading] = useState(true);
   // state for if content is editable
@@ -55,6 +60,18 @@ const StandardContent: FC<ArticleProps> = (props) => {
   const currentArticle = useRef<JSX.Element>(<></>);
   // reference to the current page image
   const currentImage = useRef<string>("");
+
+  // Detect changes in inEditMode and update the page state accordingly
+  useEffect(() => {
+    if (!props.editable) {
+      // the current editor content
+      const currentContent = editor?.getJSON() as TiptapContent;
+      // If inEditMode is true, update the page state with current props
+      if (currentContent) {
+        props.pushUpdate({content: currentContent});
+      }
+    }
+  }, [props.editable]);
 
   useEffect(() => {
     currentArticle.current = (
