@@ -58,7 +58,9 @@ const ImagePrompt: React.FC<Props> = ({
         <ImageUploadArea
           file={file}
           onUrlChange={setImageUrl}
-          handleUploadError={() => {}}
+          handleUploadError={() => {
+            console.log("Error uploading image");
+          }}
         />
         <div className="other-fields">
           <textarea
