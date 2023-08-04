@@ -103,7 +103,18 @@ export default function App() {
       </div>
     );
   };
-
+  return (
+    <div className="app">
+      <PermissionsProvider>
+        <Lines></Lines>
+        {loading ? (
+          <LoadingScreen></LoadingScreen>
+        ) : (
+          <PageController></PageController>
+        )}
+      </PermissionsProvider>
+    </div>
+  );
   return (
     <div className="app">
       <PermissionsProvider>

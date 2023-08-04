@@ -19,6 +19,7 @@ const PageController: FC = (props) => {
   const [pages, setPages] = useState<PageProps[]>([]);
   const { hasPermissions } = usePermissions();
   const [inEditMode, setInEditMode] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
 
   const toggleEditing = () => {
     setInEditMode(!inEditMode);
@@ -51,35 +52,64 @@ const PageController: FC = (props) => {
       );
 
       setPages(pagesData);
+      setLoading(false);
     }
 
     getPages();
   }, []);
 
+  const LoadingScreen = () => {
+    return (
+      <div
+        className="page-loading-screen"
+        style={{
+          backgroundColor: "white",
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+        }}
+      >
+        <div className="spinner-container">
+          <div className="spinner-logo"></div>
+          <div className="spinner-line"></div>
+        </div>
+      </div>
+    );
+  };
+
   return (
-    <BrowserRouter>
-      <Header />
-      {hasPermissions && (
-        <EditModeBar toggleEditing={toggleEditing} inEditMode={inEditMode} />
-      )}
-      <Routes>
-        {pages.map((pageProps) => (
-          <Route
-            key={pageProps.url}
-            path={pageProps.url}
-            element={
-              <Page
-                {...pageProps}
-                inEditMode={inEditMode}
-                updatePage={updatePageData}
+    <>
+      {loading ? (
+        <LoadingScreen />
+      ) : (
+        <BrowserRouter>
+          <Header />
+          {hasPermissions && (
+            <EditModeBar
+              toggleEditing={toggleEditing}
+              inEditMode={inEditMode}
+            />
+          )}
+          <Routes>
+            {pages.map((pageProps) => (
+              <Route
+                key={pageProps.url}
+                path={pageProps.url}
+                element={
+                  <Page
+                    {...pageProps}
+                    inEditMode={inEditMode}
+                    updatePage={updatePageData}
+                  />
+                }
               />
-            }
-          />
-        ))}
-        <Route path="/" element={<Home />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+            ))}
+            <Route path="/" element={<Home />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      )}
+    </>
   );
 };
 

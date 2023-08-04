@@ -1,0 +1,143 @@
+.modal {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  animation: modalFadeOut 0.2s ease-in-out forwards;
+
+  &.visible {
+    animation: modalFadeIn 0.2s ease-in-out forwards;
+  }
+
+  .modal-content {
+    width: 50%;
+    height: 60%;
+    //center
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+
+    .image-upload-area {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex: 50%;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      border: 1px solid #e5e5e5;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+      border-radius: 10px 0 0 10px;
+
+      i {
+        font-size: 7rem;
+        color: rgb(104, 104, 104);
+        color: #e5e5e5;
+        margin-right: 1rem;
+        transition: all 0.1s ease-in-out;
+      }
+
+      &:hover {
+        filter: brightness(0.9);
+
+        i {
+          color: rgb(139, 139, 139);
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .other-fields {
+      max-width: 50%;
+      width: 50%;
+      padding: 1.5rem;
+      height: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      // space all children apart with margins
+      > * {
+        margin: 10px 0;
+        &:first-child {
+          margin-top: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        height: 100%;
+        resize: none;
+        font-family: "akkurat";
+        font-size: 1rem;
+        line-height: 1.5;
+        color: black;
+        padding: 5px;
+        border-radius: 7px;
+        border: 1px solid #e5e5e5;
+        transition: all 0.1s ease-in-out;
+
+        &:focus {
+          outline: none;
+          border: 1px solid #585858;
+        }
+      }
+
+      button {
+        flex: 25%;
+        all: unset;
+        background-color: VAR(--maroon);
+        color: white;
+        font-family: "akkurat";
+        font-size: 1rem;
+        padding: 10px;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+}
+
+//animation called onLoad
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

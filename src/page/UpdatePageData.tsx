@@ -49,7 +49,6 @@ const validateData = (data: Partial<PageProps>) => {
 
 // Function to update the Firestore document
 const updatePageData = async (updatedData: Partial<PageProps>) => {
-  console.log(db);
 
   if (!updatedData.url) {
     throw new Error("URL is required.");
@@ -61,8 +60,6 @@ const updatePageData = async (updatedData: Partial<PageProps>) => {
     updatedData.url.substring(1)
   );
 
-  console.log(docRef);
-
   /* doc(db, "pages", updatedData.url.substring(1)); */
   // Remove empty or undefined fields from the updatedData
   const parsedData = removeEmptyFields(updatedData);
@@ -72,8 +69,6 @@ const updatePageData = async (updatedData: Partial<PageProps>) => {
     // If validation fails, throw an exception or handle the error accordingly
     throw new Error("Invalid data.");
   }
-
-  console.log(parsedData);
 
   // Update the document with the parsedData
   try {

@@ -62,16 +62,16 @@ const StandardContent: FC<ArticleProps & AdditionalProps> = (props) => {
   const currentImage = useRef<string>("");
 
   // Detect changes in inEditMode and update the page state accordingly
-  useEffect(() => {
+  /* useEffect(() => {
     if (!props.editable) {
       // the current editor content
       const currentContent = editor?.getJSON() as TiptapContent;
       // If inEditMode is true, update the page state with current props
       if (currentContent) {
-        props.pushUpdate({content: currentContent});
+        props.pushUpdate({ content: currentContent });
       }
     }
-  }, [props.editable]);
+  }, [props.editable]); */
 
   useEffect(() => {
     currentArticle.current = (
@@ -80,12 +80,22 @@ const StandardContent: FC<ArticleProps & AdditionalProps> = (props) => {
     currentImage.current = props.image ? props.image : "";
   }, []);
 
+  useEffect(() => {
+    // the current editor content
+    const currentContent = editor?.getJSON() as TiptapContent;
+    // If inEditMode is true, update the page state with current props
+    if (currentContent) {
+      props.pushUpdate({ content: currentContent });
+    }
+  }, [props.editable]);
+
   const editor = useEditor({
     extensions: [
       Color.configure({ types: [TextStyle.name, ListItem.name] }),
       TextStyle,
       DropCursor,
       HardBreak,
+      Link,
       /* CustomLink, */
       Image.configure({
         HTMLAttributes: {
@@ -136,7 +146,12 @@ const StandardContent: FC<ArticleProps & AdditionalProps> = (props) => {
           </div>
         </div>
       ) : (
-        <div className="html-container">{currentArticle.current}</div>
+        <div className="html-container">
+          <div
+            className="article-content"
+            dangerouslySetInnerHTML={{ __html: editor?.getHTML() as string }}
+          ></div>
+        </div>
       )}
     </div>
   );

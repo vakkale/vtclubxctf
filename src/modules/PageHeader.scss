@@ -1,47 +1,82 @@
 .page-header {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    pointer-events: none;
-    overflow: hidden;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
 
-    @media screen and (max-width: 1000px) {
-        height: 40vh;
-        margin-top: 60px;
+  @media screen and (max-width: 1000px) {
+    height: 40vh;
+    margin-top: 60px;
+  }
+
+  .header-content {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    font-family: "ITCAvantGarde", sans-serif;
+    font-weight: bold;
+    // transition duration set inline in PageHeader.tsx
+    /* transition: filter 0.3s ease-in-out; */
+
+    .page-subtitle {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 2rem;
+      letter-spacing: 1px;
+      margin-bottom: 1.042390549vw;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      user-select: none;
+      transition: all 0.1s ease-in-out;
+    }
+
+    .page-title {
+      color: #fff;
+      font-size: 5rem;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      user-select: none;
+      transition: all 0.1s ease-in-out;
+    }
+
+    @media screen and (max-width: 768px) {
+      .page-subtitle {
+        font-size: 1.5rem;
+      }
+
+      .page-title {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &.editable {
+    pointer-events: all;
+
+    &:hover {
+      filter: brightness(0.8);
+      cursor: pointer;
     }
 
     .header-content {
-        width: 100%;
-        position: absolute;
-        top: 40%;
-        text-align: center;
-        font-family: 'ITCAvantGarde', sans-serif;
-        font-weight: bold;
-
-        .page-subtitle {
-            color: rgba(255, 255, 255, .8);
-            font-size: 2rem;
-            letter-spacing: 1px;
-            margin-bottom: 1.042390549vw;
+      .page-title {
+        &:hover {
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 5));
         }
+      }
 
-        .page-title {
-            color: #fff;
-            font-size: 5rem;
+      .page-subtitle {
+        &:hover {
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 5));
         }
-
-        @media screen and (max-width: 768px) {
-            .page-subtitle {
-                font-size: 1.5rem;
-            }
-
-            .page-title {
-                font-size: 2rem;
-            }
-        }
+      }
     }
+  }
 }

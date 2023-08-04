@@ -53,52 +53,44 @@ type PageComponentProps = PageProps & AdditionalProps;
 const Page: FC<PageComponentProps> = (props) => {
   const location = useLocation();
   const navigate = useNavigate();
-  useEffect(() => {
-    console.log("props: " + props);
-  }, [props]);
 
   //turn location into a string
   const locationString = location.pathname.toString();
   const sideBarSize = props.subPages ? "large" : "small";
 
   const [pageState, setPageState] = useState<PageComponentProps>(props);
+  const pageStateRef = useRef<PageComponentProps>(pageState);
 
   // Function to update the page state
   const updatePageState = (updatedProps: Partial<PageProps>) => {
-    console.log("pageState: " + pageState);
     // Merge the updated props with the existing props
     const updatedPage = { ...pageState, ...updatedProps };
-    console.log("updatedPage: " + updatedPage);
     setPageState(updatedPage); // Update the local state
   };
+
+  useEffect(() => {
+    if (!props.inEditMode) {
+      const { inEditMode, updatePage, ...pageProps } = pageState;
+      // if the page state is different from the props, update the props
+      if (pageStateRef.current !== pageState) {
+        props.updatePage(pageProps);
+        pageStateRef.current = pageState;
+      }
+    }
+  }, [pageState]);
 
   // Create a ref to store the previous value of inEditMode
   const prevInEditMode = useRef<boolean>(props.inEditMode);
 
-  // Detect changes in inEditMode and update the page state accordingly
-  useEffect(() => {
-    console.log("pageState in useEffect: " + pageState);
-    // Check if inEditMode goes from true to false
-    if (prevInEditMode.current && !props.inEditMode) {
-      // If inEditMode goes from true to false, update the page state with current props
-      const { inEditMode, updatePage, ...pageProps } = props;
-      console.log("PageProps in useEffect: " + pageProps);
-      props.updatePage(pageProps);
-      console.log("Pagestate in useEffect after updatePage(): " + pageState);
-    }
-    console.log("inEditMode: " + props.inEditMode);
-    // Update the previous value of inEditMode with the current value
-    prevInEditMode.current = props.inEditMode;
-  }, [props.inEditMode]);
-
   return (
     <div>
       <PageHeader
-        image={pageState.background}
+        background={pageState.background}
         title={pageState.title}
         subtitle={pageState.subtitle}
         yPos={pageState.yPos}
-        /* pushUpdate={updatePageState} */
+        editable={props.inEditMode}
+        pushUpdate={updatePageState}
       />
       <div className="topbar-container" id="topbar"></div>{" "}
       {/* FOR TESTING, REPLACE WITH ACTUAL TOPBAR COMPONENT */}
