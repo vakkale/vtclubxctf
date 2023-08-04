@@ -1,5 +1,6 @@
 import React, { FC, useEffect, useState } from "react";
 import { Link, NavigateFunction } from "react-router-dom";
+import "../../modules/SideBar.scss"
 
 // Define the props for the SubPage component
 interface SubPage {

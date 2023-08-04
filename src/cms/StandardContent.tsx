@@ -13,7 +13,7 @@ import StarterKit from "@tiptap/starter-kit";
 import { PageProps } from "../page/Page";
 import MenuBar from "./MenuBar";
 // @ts-ignore
-import { CustomLink } from "./CustomLink";
+/* import { CustomLink } from "./CustomLink"; */
 import React, { FC, useEffect, useState, useRef } from "react";
 
 export interface TiptapContent {

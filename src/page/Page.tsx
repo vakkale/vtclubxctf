@@ -11,6 +11,9 @@ import SideBar from "./components/SideBar.tsx";
 import PageHeader from "./components/PageHeader.tsx";
 import StandardContent from "../cms/StandardContent";
 import { TiptapContent } from "../cms/StandardContent";
+// these two disappeared for some reason in a commit, spent half an hour trying to figure out why the styling was all over the place
+import "../news/News.scss";
+import "../modules/TopBar.scss";
 
 export interface PageProps {
   title: string; // Page title
@@ -77,6 +80,7 @@ const Page: FC<PageComponentProps> = (props) => {
         pageStateRef.current = pageState;
       }
     }
+    //eslint-disable-next-line
   }, [pageState]);
 
   // Create a ref to store the previous value of inEditMode

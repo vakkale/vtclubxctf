@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+/* import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom"; */
 import { useState, useEffect } from "react";
 
 import {
@@ -8,11 +8,11 @@ import {
 import PageController from "./page/PageContoller.tsx";
 
 import "./App.scss";
-import Lines from "./lines/lines.jsx";
+import Lines from "./lines/lines.jsx"; /* 
 import Header from "./header/header.jsx";
 import Training from "./training/Training.jsx";
-import News from "./news/News";
-import loadImages from "./helpers/loadImages";
+import News from "./news/News"; */
+import loadImages from "./helpers/loadImages"; /* 
 import Footer from "./footer/Footer.jsx";
 import Home from "./home/home.jsx";
 import Contact from "./contact/Contact";
@@ -31,7 +31,7 @@ import Redirects from "./helpers/Redirects";
 import Banner from "./header/banner";
 import GivingDay from "./about_pages/GivingDay";
 import RaceForms from "./about_pages/RaceForms";
-import Assassin from "./about_pages/Assassin";
+import Assassin from "./about_pages/Assassin"; */
 
 export default function App() {
   const slider1 = "https://i.imgur.com/IbOEzu7.jpg";
@@ -111,67 +111,6 @@ export default function App() {
           <LoadingScreen></LoadingScreen>
         ) : (
           <PageController></PageController>
-        )}
-      </PermissionsProvider>
-    </div>
-  );
-  return (
-    <div className="app">
-      <PermissionsProvider>
-        <Lines></Lines>
-        {loading ? (
-          <LoadingScreen></LoadingScreen>
-        ) : (
-          <BrowserRouter>
-            <ScrollToTop></ScrollToTop>
-            {/* <Redirects></Redirects> */}
-            <Header></Header>
-            <Banner></Banner>
-            {/* <Parser></Parser> */}
-            <Routes>
-              <Route exact path="/" element={<Home />}></Route>
-              <Route exact path="/news/*" element={<News />}></Route>
-              <Route exact path="/training/*" element={<Training />}></Route>
-              <Route exact path="/contact" element={<Contact />}></Route>
-              <Route exact path="/routes/*" element={<MapRoutes />}></Route>
-              <Route exact path="/donate" element={<Donate />}></Route>
-              <Route exact path="/join" element={<Join />}></Route>
-              <Route
-                exact
-                path="/athletic-trainer"
-                element={<AthleticTrainer />}
-              ></Route>
-              <Route
-                exact
-                path="/competition/track-and-field"
-                element={<TrackAndField />}
-              ></Route>
-              <Route
-                exact
-                path="/competition/cross-country"
-                element={<CrossCountry />}
-              ></Route>
-              <Route
-                exact
-                path="/community/socials"
-                element={<Socials />}
-              ></Route>
-              <Route
-                exact
-                path="/community/traditions"
-                element={<Traditions />}
-              ></Route>
-              <Route exact path="/sponsors" element={<Sponsors />}></Route>
-              <Route exact path="/giving-day" element={<GivingDay />}></Route>
-              <Route exact path="/racing-forms" element={<RaceForms />} />
-              <Route exact path="/assassin" element={<Assassin />} />
-              {/* <Route exact path="/records/*" element={<Records />}></Route> */}
-              {/* <Route exact path="/test/*" element={<PageTest />}></Route> */}
-              <Route exact path="/test/*" element={<PageController />}></Route>
-              <Route exact path="*" element={<Home />}></Route>
-            </Routes>
-            <Footer></Footer>
-          </BrowserRouter>
         )}
       </PermissionsProvider>
     </div>

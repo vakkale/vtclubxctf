@@ -41,6 +41,7 @@ export const UploadImage: React.FC<UploadImageProps> = ({
 
   React.useEffect(() => {
     uploadImage();
+    //eslint-disable-next-line
   }, []);
 
   return null;
