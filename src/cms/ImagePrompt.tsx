@@ -22,6 +22,7 @@ const ImagePrompt: React.FC<Props> = ({
 }) => {
   const [imageUrl, setImageUrl] = React.useState<string | undefined>(url);
   const [isVisible, setIsVisible] = React.useState(true);
+  const [awaitingImage, setAwaitingImage] = React.useState(false);
 
   const handleSave = () => {
     if (imageUrl && imageUrl !== "") {
@@ -37,6 +38,10 @@ const ImagePrompt: React.FC<Props> = ({
       }
     }, 200);
   }, [isVisible]);
+
+  React.useEffect(() => {
+    console.log("awaitingImage: " + awaitingImage);
+  }, [awaitingImage]);
 
   const handleVisibilityChange = () => {
     setIsVisible(!isVisible);
@@ -61,11 +66,15 @@ const ImagePrompt: React.FC<Props> = ({
           handleUploadError={() => {
             console.log("Error uploading image");
           }}
+          onAwaitingImage={setAwaitingImage}
+          onImageLoad={() => {
+            setAwaitingImage(false);
+          }}
         />
         <div className="other-fields">
           <textarea
             placeholder="Enter image url..."
-            value={imageUrl}
+            /* value={imageUrl} */
             onChange={(event) => setImageUrl(event.target.value)}
           />
           <textarea
@@ -79,8 +88,11 @@ const ImagePrompt: React.FC<Props> = ({
             }
           />
           <button
+            className={`save-button ${awaitingImage ? "loading" : ""}`}
             onClick={() => {
-              handleSave();
+              if (!awaitingImage) {
+                handleSave();
+              }
             }}
           >
             Save Changes
@@ -97,12 +109,16 @@ interface ImageUploadAreaProps {
   file?: File;
   onUrlChange: (url: string) => void;
   handleUploadError: (error: any) => void;
+  onAwaitingImage: (awaitingImage: boolean) => void;
+  onImageLoad: (awaitingImage: boolean) => void;
 }
 
 export const ImageUploadArea: React.FC<ImageUploadAreaProps> = ({
   file,
   onUrlChange,
   handleUploadError,
+  onAwaitingImage,
+  onImageLoad,
 }) => {
   const [uploadedFile, setUploadedFile] = React.useState<File | undefined>(
     file
@@ -129,7 +145,9 @@ export const ImageUploadArea: React.FC<ImageUploadAreaProps> = ({
     }
   };
 
-  const handleFileChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = async (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
     const selectedFile = event.target.files && event.target.files[0];
 
     if (selectedFile) {
@@ -149,7 +167,13 @@ export const ImageUploadArea: React.FC<ImageUploadAreaProps> = ({
 
       if (allowedImageTypes.includes(selectedFile.type)) {
         setUploadedFile(selectedFile);
-        await uploadImageAndFetchUrl(selectedFile, onUrlChange, handleUploadError);
+        onAwaitingImage(true);
+        await uploadImageAndFetchUrl(
+          selectedFile,
+          onUrlChange,
+          handleUploadError
+        );
+        onImageLoad(false);
       } else {
         // Display an error message or take appropriate action
         console.log("Invalid image file type selected");
