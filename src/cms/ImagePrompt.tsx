@@ -2,6 +2,7 @@ import React from "react";
 import "./ImagePrompt.scss";
 import "../assets/editor_icons/remixicon.css";
 import { uploadImageAndFetchUrl } from "./ImgurService";
+import ReactDOM from "react-dom";
 
 interface Props {
   url?: string;
@@ -198,3 +199,10 @@ export const ImageUploadArea: React.FC<ImageUploadAreaProps> = ({
     </div>
   );
 };
+
+export function RenderImagePrompt(props: Props) {
+  return ReactDOM.createPortal(
+    <ImagePrompt {...props} />,
+    document.getElementById("modal-root")!
+  );
+}

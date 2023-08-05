@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import "./MenuBar.scss";
+import ImagePrompt, { RenderImagePrompt } from "./ImagePrompt";
 import "../assets/editor_icons/remixicon.css";
 
 interface MenuBarProps {
@@ -7,19 +8,10 @@ interface MenuBarProps {
 }
 
 const MenuBar: FC<MenuBarProps> = ({ editor }) => {
+  const [showImagePrompt, setShowImagePrompt] = React.useState<boolean>(false);
   if (!editor) {
     return null;
   }
-
-  const addImage = () => {
-    const url = window.prompt("URL");
-
-    if (url) {
-      editor.chain().focus().setImage({ src: url }).run();
-    }
-
-    editor.commands.focus();
-  };
 
   const handleLinking = () => {
     // If the link is already active, remove it
@@ -56,6 +48,18 @@ const MenuBar: FC<MenuBarProps> = ({ editor }) => {
 
   return (
     <div className="menu-bar">
+      {showImagePrompt && (
+        <RenderImagePrompt
+          setUrl={(url: string) => {
+            editor.chain().focus().setImage({ src: url }).run();
+            editor.commands.focus();
+          }}
+          onClose={() => {
+            setShowImagePrompt(false);
+          }}
+        />
+      )}
+
       <button
         onClick={() => editor.chain().focus().toggleBold().run()}
         disabled={!editor.can().chain().focus().toggleBold().run()}
@@ -164,7 +168,11 @@ const MenuBar: FC<MenuBarProps> = ({ editor }) => {
           <i className="ri-link"></i>
         )}
       </button>
-      <button onClick={addImage}>
+      <button
+        onClick={() => {
+          setShowImagePrompt(true);
+        }}
+      >
         <i className="ri-image-add-line"></i>
       </button>
       <button
