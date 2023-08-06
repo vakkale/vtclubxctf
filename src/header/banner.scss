@@ -5,7 +5,7 @@
     width: 100vw;
     z-index: 97;
     position: relative;
-    background-color: rgb(33, 33, 59);
+    background-color: rgb(209, 209, 209);
     color: white;
     font-size: 14px;
     //center the text
@@ -102,6 +102,40 @@
     }
 }
 
+.edit-banner {
+    background-color: #dddddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin-bottom: -50px;
+    height: 50px;
+
+    .banner-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #dddddd;
+        border: none;
+        color: #5e5e5e;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+
+        span {
+            padding-right: 5px;
+        }
+        
+
+        &:hover {
+            background-color: #ffffff;
+        }
+    }
+}
 
 @keyframes slide-down {
     0% {

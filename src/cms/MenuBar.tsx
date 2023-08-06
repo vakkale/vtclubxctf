@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import "./MenuBar.scss";
-import ImagePrompt, { RenderImagePrompt } from "./ImagePrompt";
+import { RenderImagePrompt } from "./ImagePrompt";
 import "../assets/editor_icons/remixicon.css";
 
 interface MenuBarProps {

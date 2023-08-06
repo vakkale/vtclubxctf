@@ -56,7 +56,7 @@ const ImagePrompt: React.FC<Props> = ({
       }}
     >
       <div
-        className="modal-content"
+        className="modal-content image-prompt"
         onClick={(event) => {
           event.stopPropagation();
         }}

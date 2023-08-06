@@ -1,5 +1,5 @@
 import React, { useState, useEffect, FC } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { collection, getDocs } from "firebase/firestore/lite";
 import { QueryDocumentSnapshot } from "firebase/firestore/lite";
 import EditModeBar from "../modules/EditModeBar";
@@ -13,17 +13,31 @@ import Home from "../home/home.jsx";
 // @ts-ignore
 import db from "../data/database";
 import Page, { PageProps } from "./Page";
-import updatePageData from "./UpdatePageData";
+import updatePageData, { createNewPage } from "./UpdatePageData";
 
 const PageController: FC = (props) => {
   const [pages, setPages] = useState<PageProps[]>([]);
   const { hasPermissions } = usePermissions();
   const [inEditMode, setInEditMode] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
+  const [navigateToNewPage, setNavigateToNewPage] = useState<boolean>(false);
+  const [newPage, setNewPage] = useState<PageProps | null>(null);
 
   const toggleEditing = () => {
     setInEditMode(!inEditMode);
   };
+
+  const handleNewPage = (page: PageProps) => {
+    createNewPage(page);
+    setPages([...pages, page]);
+    setNewPage(page);
+    setNavigateToNewPage(true);
+    setInEditMode(true);
+  };
+
+  useEffect(() => {
+    setNavigateToNewPage(false);
+  }, [navigateToNewPage]);
 
   useEffect(() => {
     async function getPages() {
@@ -82,12 +96,14 @@ const PageController: FC = (props) => {
       {loading ? (
         <LoadingScreen />
       ) : (
-        <BrowserRouter>
+        <BrowserRouter key={pages.length}>
+        {navigateToNewPage && <Navigate to={newPage?.url || "/"} />}
           <Header />
           {hasPermissions && (
             <EditModeBar
               toggleEditing={toggleEditing}
               inEditMode={inEditMode}
+              pushNewPage={handleNewPage}
             />
           )}
           <Routes>
@@ -97,6 +113,7 @@ const PageController: FC = (props) => {
                 path={pageProps.url}
                 element={
                   <Page
+                    key={pageProps.url}
                     {...pageProps}
                     inEditMode={inEditMode}
                     updatePage={updatePageData}

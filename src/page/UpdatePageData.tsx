@@ -23,7 +23,7 @@ const removeEmptyFields = <T extends object>(obj: T): T => {
 };
 
 // Helper function to validate the data against the PageProps interface
-const validateData = (data: Partial<PageProps>) => {
+export const validateData = (data: Partial<PageProps>) => {
   // Check if required fields have valid values
   if (!data.title) {
     throw new Error("Title is required.");
@@ -79,3 +79,27 @@ const updatePageData = async (updatedData: Partial<PageProps>) => {
 };
 
 export default updatePageData;
+
+export const createNewPage = async (newPage: PageProps) => {
+  const docRef: DocumentReference = await doc(
+    collection(db, "pages"),
+    newPage.url.substring(1)
+  );
+
+  // Remove empty or undefined fields from the updatedData
+  const parsedData = removeEmptyFields(newPage);
+
+  // Validate the data against the PageProps interface
+  if (!validateData(parsedData)) {
+    // If validation fails, throw an exception or handle the error accordingly
+    throw new Error("Invalid data.");
+  }
+
+  // Update the document with the parsedData
+  try {
+    await setDoc(docRef, parsedData);
+    console.log("Document updated successfully!");
+  } catch (error) {
+    console.error("Error updating document:", error);
+  }
+}

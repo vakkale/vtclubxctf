@@ -19,8 +19,8 @@
   }
 
   .modal-content {
-    width: 50%;
-    height: 60%;
+    max-height: 90vh;
+    height: fit-content;
     //center
     display: flex;
     justify-content: center;
@@ -28,6 +28,11 @@
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+
+    &.image-prompt {
+      height: 60%;
+      width: 50%;
+    }
 
     .image-upload-area {
       width: 100%;
