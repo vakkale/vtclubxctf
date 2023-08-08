@@ -107,7 +107,8 @@ const Page: FC<PageComponentProps> = (props) => {
             sideBarText={pageState.sideBarText}
             subPages={pageState.subPages}
             customSidebarFeature={pageState.customSidebarFeature}
-            /* pushUpdate={updatePageState} */
+            pushUpdate={updatePageState}
+            editable={props.inEditMode}
           ></SideBar>
           <StandardContent
             content={pageState.content}

@@ -46,6 +46,11 @@ export const validateData = (data: Partial<PageProps>) => {
   return true;
 };
 
+function parseUrl(url: string) {
+  const newUrl = url.substring(1).replace(/\//g, "_");
+  return newUrl;
+}
+
 // Function to update the Firestore document
 const updatePageData = async (updatedData: Partial<PageProps>) => {
 
@@ -56,7 +61,7 @@ const updatePageData = async (updatedData: Partial<PageProps>) => {
 
   const docRef: DocumentReference = await doc(
     collection(db, "pages"),
-    updatedData.url.substring(1)
+    parseUrl(updatedData.url)
   );
 
   /* doc(db, "pages", updatedData.url.substring(1)); */
@@ -83,7 +88,7 @@ export default updatePageData;
 export const createNewPage = async (newPage: PageProps) => {
   const docRef: DocumentReference = await doc(
     collection(db, "pages"),
-    newPage.url.substring(1)
+    parseUrl(newPage.url)
   );
 
   // Remove empty or undefined fields from the updatedData

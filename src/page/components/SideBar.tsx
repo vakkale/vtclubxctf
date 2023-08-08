@@ -1,6 +1,8 @@
 import React, { FC, useEffect, useState } from "react";
 import { Link, NavigateFunction } from "react-router-dom";
-import "../../modules/SideBar.scss"
+import "../../modules/SideBar.scss";
+import { PageProps } from "../Page";
+import "../../assets/editor_icons/remixicon.css";
 
 // Define the props for the SubPage component
 interface SubPage {
@@ -54,6 +56,18 @@ const FeaturedItem: FC<FeaturedItemProps> = ({ title, date, category }) => {
   );
 };
 
+const NewSubpageListItem: FC = () => {
+  // Render the list item with the specified title, date, and category
+  return (
+    <li className="list-item">
+      <div className="list-item-new-page">
+        <span className="list-item-new-page-icon"><i className="ri-node-tree"></i></span>
+        <span className="list-item-new-page-text">New Sub-Page</span>
+      </div>
+    </li>
+  );
+};
+
 // Define the props for the SideBar component
 interface SideBarProps {
   location: string;
@@ -65,6 +79,8 @@ interface SideBarProps {
     title: string;
     subtitle?: string;
   };
+  pushUpdate?: (updatedProps: Partial<PageProps>) => void;
+  editable?: boolean;
 }
 
 // Define the SideBar component
@@ -75,6 +91,8 @@ const SideBar: FC<SideBarProps> = ({
   sideBarText,
   subPages,
   customSidebarFeature,
+  pushUpdate,
+  editable,
 }) => {
   const [currentPage, setCurrentPage] = useState(subPages && subPages[0]);
 
@@ -93,23 +111,17 @@ const SideBar: FC<SideBarProps> = ({
       className="sidebar-container"
       id="sidebar"
       style={{
-        flex: size === "large" ? "calc(100% * (1 / 3))" : "25%",
+        /* flex: size === "small" ? "25%" : "calc(100% * (1 / 3))", */
+        flex: "33%",
+        // TODO: Add a ternary operator to set the flex value to 25% if the size prop is "small" and 33% otherwise
       }}
     >
       {subPages && subPages.length > 0 && (
-        <>
-          <FeaturedItem
-            title={currentPage?.title || ""}
-            date={currentPage?.date || ""}
-            category={currentPage?.category || ""}
-          ></FeaturedItem>
-          <ul className="content-list">
-            {subPages &&
-              subPages.map((subPage) => (
-                <ListItem key={subPage.url} {...subPage} />
-              ))}
-          </ul>
-        </>
+        <FeaturedItem
+          title={currentPage?.title || ""}
+          date={currentPage?.date || ""}
+          category={currentPage?.category || ""}
+        ></FeaturedItem>
       )}
       {(!subPages || subPages.length === 0) && customSidebarFeature && (
         <FeaturedItem
@@ -120,6 +132,13 @@ const SideBar: FC<SideBarProps> = ({
       {(!subPages || subPages.length === 0) && !customSidebarFeature && (
         <div className="sidebar-text">{sideBarText}</div>
       )}
+      <ul className="content-list">
+        {subPages &&
+          subPages.map((subPage) => (
+            <ListItem key={subPage.url} {...subPage} />
+          ))}
+        {editable ? <NewSubpageListItem /> : null}
+      </ul>
     </div>
   );
 };
