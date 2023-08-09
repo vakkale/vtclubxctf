@@ -8,8 +8,6 @@ import {
 import db from "../data/database";
 import { PageProps } from "./Page";
 
-
-
 // Helper function to remove empty or undefined fields from an object
 const removeEmptyFields = <T extends object>(obj: T): T => {
   const parsedObj = {} as T;
@@ -46,6 +44,11 @@ export const validateData = (data: Partial<PageProps>) => {
   return true;
 };
 
+/* 
+  Helper function to parse the URL and remove the leading slash
+  and replace the remaining slashes with underscores
+  because Firestore doesn't allow slashes in document names
+*/
 function parseUrl(url: string) {
   const newUrl = url.substring(1).replace(/\//g, "_");
   return newUrl;
@@ -53,7 +56,6 @@ function parseUrl(url: string) {
 
 // Function to update the Firestore document
 const updatePageData = async (updatedData: Partial<PageProps>) => {
-
   if (!updatedData.url) {
     throw new Error("URL is required.");
   }
@@ -64,7 +66,6 @@ const updatePageData = async (updatedData: Partial<PageProps>) => {
     parseUrl(updatedData.url)
   );
 
-  /* doc(db, "pages", updatedData.url.substring(1)); */
   // Remove empty or undefined fields from the updatedData
   const parsedData = removeEmptyFields(updatedData);
 
@@ -107,4 +108,4 @@ export const createNewPage = async (newPage: PageProps) => {
   } catch (error) {
     console.error("Error updating document:", error);
   }
-}
+};
