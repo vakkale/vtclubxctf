@@ -60,6 +60,7 @@ const PageController: FC = (props) => {
             customSidebarFeature: pageData.customSidebarFeature,
             subPages: pageData.subPages,
             meta: pageData.meta,
+            pageType: pageData.pageType,
           };
           return page;
         }
@@ -97,7 +98,7 @@ const PageController: FC = (props) => {
         <LoadingScreen />
       ) : (
         <BrowserRouter key={pages.length}>
-        {navigateToNewPage && <Navigate to={newPage?.url || "/"} />}
+          {navigateToNewPage && <Navigate to={newPage?.url || "/"} />}
           <Header />
           {hasPermissions && (
             <EditModeBar

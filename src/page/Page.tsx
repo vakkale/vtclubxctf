@@ -14,6 +14,14 @@ import { TiptapContent } from "../cms/StandardContent";
 // these two disappeared for some reason in a commit, spent half an hour trying to figure out why the styling was all over the place
 import "../news/News.scss";
 import "../modules/TopBar.scss";
+import OfficerCardContent from "./components/OfficerCards";
+
+/* export enum PageType {
+  STANDARD,
+  NEWS,
+  OFFICERS,
+  CALENDAR,
+} */
 
 export interface PageProps {
   title: string; // Page title
@@ -21,6 +29,7 @@ export interface PageProps {
   background: string; // Background image URL
   yPos?: string; // Optional (background image position)
   hasSubPages?: boolean; // Optional
+  pageType?: string; // Optional
   content: string | TiptapContent; // Page content (markdown format)
   featuredImage?: string; // Optional
   url: string; // Page URL (used for routing, relative to the root)
@@ -100,22 +109,31 @@ const Page: FC<PageComponentProps> = (props) => {
       {/* FOR TESTING, REPLACE WITH ACTUAL TOPBAR COMPONENT */}
       <div className="bar-plus-content">
         <div className="page-content">
-          <SideBar
-            location={locationString}
-            navigate={navigate}
-            size={sideBarSize}
-            sideBarText={pageState.sideBarText}
-            subPages={pageState.subPages}
-            customSidebarFeature={pageState.customSidebarFeature}
-            pushUpdate={updatePageState}
-            editable={props.inEditMode}
-          ></SideBar>
-          <StandardContent
-            content={pageState.content}
-            image={pageState.featuredImage}
-            editable={props.inEditMode}
-            pushUpdate={updatePageState}
-          ></StandardContent>
+          {props.pageType !== "contact" && (
+            <>
+              <SideBar
+                location={locationString}
+                navigate={navigate}
+                size={sideBarSize}
+                sideBarText={pageState.sideBarText}
+                subPages={pageState.subPages}
+                customSidebarFeature={pageState.customSidebarFeature}
+                pushUpdate={updatePageState}
+                editable={props.inEditMode}
+              ></SideBar>
+              <StandardContent
+                content={pageState.content}
+                image={pageState.featuredImage}
+                editable={props.inEditMode}
+                pushUpdate={updatePageState}
+              ></StandardContent>
+            </>
+          )}
+          {props.pageType === "contact" && (
+            <OfficerCardContent
+              editing={props.inEditMode}
+            />
+          )}
         </div>
       </div>
     </div>

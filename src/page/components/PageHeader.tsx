@@ -16,7 +16,8 @@ interface AdditionalProps {
 
 const PageHeader: React.FC<Props & AdditionalProps> = (props) => {
   const [headerState, setHeaderState] = React.useState<Props>(props);
-  const [elementSelected, setElementSelected] = React.useState<string>("background");
+  const [elementSelected, setElementSelected] =
+    React.useState<string>("background");
   const [dragging, setDragging] = React.useState(false);
   const [dragStartY, setDragStartY] = React.useState(0);
   const [hasMouseMoved, setHasMouseMoved] = React.useState<boolean>(false);
@@ -76,10 +77,6 @@ const PageHeader: React.FC<Props & AdditionalProps> = (props) => {
     setShowImagePrompt(false);
   };
 
-  React.useEffect(() => {
-    console.log("setShowImagePrompt: " + showImagePrompt);
-  }, [showImagePrompt]);
-
   const handleUrlChange = (url: string) => {
     setHeaderState({ ...headerState, background: url });
     props.pushUpdate({ background: url });
@@ -87,7 +84,9 @@ const PageHeader: React.FC<Props & AdditionalProps> = (props) => {
 
   return (
     <>
-      {showImagePrompt && <ImagePrompt setUrl={handleUrlChange} onClose={handleModalClose}/>}
+      {showImagePrompt && (
+        <ImagePrompt setUrl={handleUrlChange} onClose={handleModalClose} />
+      )}
       <div
         key={headerState.background}
         className={`page-header ${props.editable ? "editable" : ""}`}
