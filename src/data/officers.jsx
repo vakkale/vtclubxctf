@@ -11,16 +11,15 @@ const Officers = [
         position: "President",
         name: "Wyatt Thomas",
         email: "wyatt@vt.edu",
-        image: "https://i.imgur.com/5B4zeiMl.jpg",
-        bio: "Hey there! My name is Wyatt and I’m the President of the club! A little bit about myself is that I’m a sophomore majoring in both physics and math and I’m a distance runner, so I love a good 5k and I have all the quirks that distance guys have. Being President is a really fun and rewarding position, and I love getting to know everyone. Our club is such a fun, tight knit community that makes showing up every day worth it, from the painful workouts to our bumpin’ socials. Please feel free to email me if you have any questions and I can’t wait to see you out on the track!"
+        image: "https://i.imgur.com/chY7M8B.jpg",
+        bio: "Hey there! My name is Wyatt and I am honored to be the President of the Club XCTF team this year! A little bit about myself is that I’m a junior double majoring in physics and math, and I’m a long distance runner. I race the 5k, 1500, and 8k, and I’ve got all the quirks that distance runners have. I’m also a big fan of bad jokes. I love this club so much and I’ve met so many great people here that have become lifelong friends. I can’t wait until club starts again so I can see my friends and meet new people. I’m really excited for this upcoming year and we have a lot of fun things planned. If you have any questions, please feel free to reach out! I will happily answer any and all. I’m looking forward to meeting and training with all of you!"
     },
     {
         position: "Vice President",
         name: "Volkan Akkale",
         email: "volkanakkale@vt.edu",
         image: "https://i.imgur.com/LRQGJA6.jpg",
-        bio: "Hi y'all, my name is Volkan and I’m your Vice President this year. I was webmaster last year and I made this website so I hope you enjoy. If you're reading this in the hopefully short time between when I initially updated this page and when the rest of the officers are updated, then you might notice that the other officers are in fact not up to date. I will get them on there soon I promise. If you have any questions feel free to email myself or Wyatt. Can't wait to see you all back on the track in August!"
-        /*  My favorite thing about the club is the extremely welcoming and supportive community that inspired me to spend many sleepless nights building this website from the ground up. I hope you enjoy using it as much as I enjoyed making it! A little about me: I'm a junior from Virginia Beach, VA studying Computer Engineering. In terms of running, I mainly focus on the 800m, but this season I also plan to train for the 400. See you on the track! */
+        bio: "Hi y'all, my name is Volkan and I’m your Vice President this year. I was webmaster last year and I made this website so I hope you enjoy. We're in the middle of a complete rewrite of the website to allow for editing from within the website itself. Exciting times. I run the 800m usually but I've also recently joined the hurdler gang. If you have any questions feel free to email myself or Wyatt. Can't wait to see you all back on the track in August!"
     },
     {
         position: "Race Coordinator",

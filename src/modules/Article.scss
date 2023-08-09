@@ -140,9 +140,16 @@
     height: auto;
     max-width: 45%;
     flex: 1 1 45%;
+    margin: 30px auto;
 
     &:only-child {
       max-width: 70%;
+    }
+
+    &.sponsor-image {
+      margin: 0 auto;
+      box-shadow: none;
+      max-height: 300px;
     }
 
     @media screen and (max-width: 1000px) {
@@ -161,6 +168,11 @@
 
       &:only-child {
         max-width: 90%;
+      }
+
+      &.sponsor-image {
+        max-height: 200px;
+        display: flex;
       }
     }
   }

@@ -2,6 +2,9 @@ import PageHeader from "../modules/PageHeader";
 import SideBarLite from "../modules/SideBarLite";
 import Article from "../modules/Article";
 import { Link } from "react-router-dom";
+import boxing from '../assets/sponsors/boxing.svg';
+import cellar from '../assets/sponsors/cellar.svg';
+import runabout from '../assets/sponsors/runabout.svg';
 
 export default function Sponsors() {
     const background = 'https://i.imgur.com/HyUw2BJ.jpg';
@@ -19,11 +22,15 @@ export default function Sponsors() {
             <h3>Our current sponsors:</h3>
             <a href="https://runaboutsports.com/" rel="noreferrer"
                 target="_blank">
-                <img src="https://i.imgur.com/XNwGjqn.png" alt="Runabout Sports logo." ></img>
+                <img className="sponsor-image" src={runabout} alt="Runabout Sports logo." ></img>
             </a>
             <a href="https://the-cellar.com/" rel="noreferrer"
                 target="_blank">
-                <img src="https://i.imgur.com/WmLaOZq.png" alt="The Cellar logo." ></img>
+                <img className="sponsor-image" src={cellar} alt="The Cellar logo." ></img>
+            </a>
+            <a href="https://www.blacksburgboxingandfitness.com/" rel="noreferrer"
+                target="_blank">
+                <img className="sponsor-image" src={boxing} alt="The Cellar logo." ></img>
             </a>
         </div >
 
