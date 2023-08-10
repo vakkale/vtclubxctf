@@ -6,21 +6,29 @@ import {
   doc,
   setDoc,
   collection,
-  DocumentReference,
-  getDoc,
   getDocs,
   QueryDocumentSnapshot,
 } from "firebase/firestore/lite";
+import { Image, ImageProps } from "../../modules/Image";
+import {
+  EditableSingleLineTextElement,
+  EditableMultiLineTextElement,
+} from "../../cms/TextEditors";
 
 type Officer = {
-  image: string;
+  image: ImageProps;
   name: string;
   position: string;
   email: string;
   bio: string;
-  yPos?: string;
-  xPos?: string;
+  order: number;
+  id: string;
+  /* 
+    These aren't actually part of the officer object, but they are added to the officer object in the OfficerCard component and they have to be declared here so that we can remove them before saving the officer to the database    
+  */
   pushUpdate?: (updatedOfficer: Officer) => void;
+  updateOfficerState?: (updatedOfficer: Officer) => void;
+  editable?: boolean;
 };
 
 interface Props {
@@ -30,6 +38,8 @@ interface Props {
 
 const OfficerCardContent: React.FC<Props> = (props) => {
   const [officers, setOfficers] = useState<Officer[]>([]);
+  const editingRef = React.useRef<boolean>(false);
+  const officersRef = React.useRef<Officer[]>([]);
 
   // Get officers from database
   useEffect(() => {
@@ -45,13 +55,14 @@ const OfficerCardContent: React.FC<Props> = (props) => {
             position: officerData.position,
             email: officerData.email,
             bio: officerData.bio,
-            yPos: officerData.yPos,
-            xPos: officerData.xPos,
+            order: officerData.order,
+            id: doc.id,
           };
           return officer;
         }
       );
       setOfficers(officer_data);
+      officersRef.current = officer_data;
     }
     getOfficers();
   }, []);
@@ -65,60 +76,112 @@ const OfficerCardContent: React.FC<Props> = (props) => {
 
   // Update the officers in the database when the officers state changes
   useEffect(() => {
-    if (!props.editing) {
-      UpdateOfficers(officers);
+    if (editingRef.current && !props.editing) {
+      const officersToSave = officers.map((officer) => {
+        const officerToSave = { ...officer };
+        delete officerToSave.pushUpdate;
+        delete officerToSave.updateOfficerState;
+        delete officerToSave.editable;
+        return officerToSave;
+      });
+
+      UpdateOfficers(officersToSave, () => {
+        officersRef.current = officersToSave;
+      });
     }
-  }, [officers, props.editing]);
+    if (props.editing === true || props.editing === false) {
+      editingRef.current = props.editing;
+    }
+  }, [props.editing, officers]);
+
+  function UpdateOfficers(officers: Officer[], callback: () => void) {
+    officers.forEach((officer, index) => {
+      const officerRef = doc(db, "officers", officer.id);
+      console.log("Updating officer: ", officer);
+      setDoc(officerRef, officer).then(() => {
+        if (index === officers.length - 1) {
+          callback(); // Call the callback when all updates are complete
+        }
+      });
+    });
+  }
 
   function updateOfficerState(updatedOfficer: Officer) {
     const updatedOfficers = officers.map((officer) => {
-      if (officer.name === updatedOfficer.name) {
+      if (officer.id === updatedOfficer.id) {
         return updatedOfficer;
       } else {
         return { updateOfficerState, ...officer };
       }
     });
+
+    console.log("updated officersss: ", updatedOfficers);
     setOfficers(updatedOfficers);
+    console.log("officers: ", officers);
   }
+
+  const AddOfficerCard = () => {
+    return (
+      <div
+        className="add-officer-card"
+        onClick={() => {
+          setOfficers([
+            ...officers,
+            {
+              image: {
+                src: "",
+                xPos: "50%",
+                yPos: "50%",
+              },
+              name: "New Officer",
+              position: "Position",
+              email: "example@vt.edu",
+              bio: "Bio goes here...",
+              order: officers.length + 1,
+              id: (Math.random() * 1000000).toString().split(".")[0],
+            },
+          ]);
+        }}
+        style={{
+          order: officers.length + 1,
+        }}
+      >
+        + Add Officer
+      </div>
+    );
+  };
+
+  const RearrangeOfficerCards = () => {
+    return <div className="rearrange-officer-cards">Rearrange Cards</div>;
+  };
 
   return (
     <div className="officer-cards-container">
       {officers &&
         officers.map((officer: any) => (
           <OfficerCard
-            key={officer.name}
+            key={officer.id}
             image={officer.image}
             name={officer.name}
             position={officer.position}
             email={officer.email}
             bio={officer.bio}
-            yPos={officer.yPos}
-            xPos={officer.xPos}
+            order={officer.order}
+            id={officer.id}
             editable={props.editing}
             pushUpdate={updateOfficerState}
           />
         ))}
-      {props.editing && (
-        <div
-          className="add-officer-card"
-          onClick={() => {
-            setOfficers([
-              ...officers,
-              {
-                image: "https://i.imgur.com/ftjzYaB.jpg",
-                name: "asdasd",
-                position: "asdas",
-                email: "sadsadsad",
-                bio: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                yPos: "center",
-                xPos: "center",
-              },
-            ]);
-          }}
-        >
-          Add Officer
-        </div>
-      )}{" "}
+      {props.editing && <AddOfficerCard />}{" "}
+      {/* <div
+        className="officer-cards-edit-options officer-card"
+        style={{
+          order: officers.length + 1,
+        }}
+      >
+        <AddOfficerCard />
+        <RearrangeOfficerCards />
+      </div> */}
     </div>
   );
 };
@@ -131,112 +194,112 @@ export const OfficerCard: React.FC<
   }
 > = (props) => {
   const [state, setState] = React.useState<Officer>(props);
-  const [dragging, setDragging] = React.useState(false);
-  const [dragStartY, setDragStartY] = React.useState(0);
-  const [dragStartX, setDragStartX] = React.useState(0);
-  const [hasMouseMoved, setHasMouseMoved] = React.useState<boolean>(false);
 
-  const handleMouseDown = (event: React.MouseEvent<HTMLDivElement>) => {
-    if (props.editable) {
-      setDragging(true);
-      setDragStartY(event.clientY);
-      setDragStartX(event.clientX);
-      setHasMouseMoved(false);
-    }
-  };
+  function updateOfficer(updatedOfficer: Partial<Officer>) {
+    const updatedOfficerState = { ...state, ...updatedOfficer };
+    setState(updatedOfficerState);
+  }
 
-  const handleMouseUp = () => {
-    if (props.editable) {
-      setDragging(false);
-      if (!hasMouseMoved) {
-        // Show image prompt only if no mouse movement
-        handleImageChange();
-      } else {
-        props.pushUpdate({ ...state, yPos: state.yPos, xPos: state.xPos });
-      }
-      setHasMouseMoved(false); // Reset hasMouseMoved
-    }
-  };
-
-  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-    if (props.editable) {
-      if (dragging) {
-        const deltaY = dragStartY - event.clientY;
-        const deltaX = dragStartX - event.clientX;
-        // Calculate new yPos value based on deltaY and update the state
-        // Update the yPos value in your state or prop here
-        var newYPos = deltaY + parseInt(state.yPos ? state.yPos : "center");
-        var newXPos = deltaX + parseInt(state.xPos ? state.xPos : "center");
-        if (newYPos > 100) {
-          newYPos = 100;
-        } else if (newYPos < 0) {
-          newYPos = 0;
-        }
-        if (newXPos > 100) {
-          newXPos = 100;
-        } else if (newXPos < 0) {
-          newXPos = 0;
-        }
-        setState({
-          ...state,
-          yPos: newYPos.toString() + "%",
-          xPos: newXPos.toString() + "%",
-        });
-        setDragStartY(event.clientY);
-        setDragStartX(event.clientX);
-        setHasMouseMoved(true); // Indicate that there was mouse movement
-      }
-    }
-  };
-
-  const handleImageChange = () => {
-    /* if (props.editable) {
-      setShowImagePrompt(true);
-    } */
-  };
+  React.useEffect(() => {
+    props.pushUpdate(state);
+  }, [state]);
 
   return (
-    <div className="officer-card">
-      <div
-        className="card-top"
-        style={{
-          backgroundImage: `url(${props.image})`,
-          backgroundPosition: `${state.xPos ? state.xPos : "center"} 
-          ${state.yPos ? state.yPos : "center"}`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          height: "400px",
-        }}
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        onMouseMove={handleMouseMove}
-      >
+    <div
+      className="officer-card"
+      style={{
+        order: props.order,
+      }}
+    >
+      <div className="card-top">
+        <Image
+          key={props.id}
+          type="background"
+          image={props.image}
+          editable={props.editable}
+          pushUpdate={(updatedImage) => {
+            updateOfficer({ image: updatedImage });
+          }}
+          style={{ height: "400px" }}
+        />
         <div className="officer-name-pos">
-          <div className="officer-name">{props.name}</div>
-          <div className="officer-position">{props.position}</div>
+          <EditableSingleLineTextElement
+            className="officer-name"
+            key={`${props.id}name`}
+            text={props.name}
+            editable={props.editable}
+            pushUpdate={(updatedText) => {
+              updateOfficer({ name: updatedText });
+            }}
+          />
+          <EditableSingleLineTextElement
+            className="officer-position"
+            key={`${props.id}position`}
+            text={props.position}
+            editable={props.editable}
+            pushUpdate={(updatedText) => {
+              updateOfficer({ position: updatedText });
+            }}
+          />
         </div>
       </div>
+
       <div className="card-bottom">
-        <p className="officer-bio">{props.bio}</p>
+        <EditableMultiLineTextElement
+          className="officer-bio"
+          key={`${props.id}bio`}
+          text={props.bio}
+          editable={props.editable}
+          pushUpdate={(updatedText) => {
+            updateOfficer({ bio: updatedText });
+          }}
+        />
       </div>
       <div className="officer-email">
-        <a href={`mailto:${props.email}`}>{props.email}</a>
+        <a
+          href={`mailto:${props.email}`}
+          {
+            // dont mailto if editing
+            ...(props.editable && {
+              onClick: (e) => {
+                e.preventDefault();
+              },
+            })
+          }
+        >
+          <EditableSingleLineTextElement
+            className=""
+            key={`${props.id}email`}
+            style={{
+              color: "white",
+              textDecoration: "underline",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              height: "100%",
+              width: "100%",
+            }}
+            text={props.email}
+            editable={props.editable}
+            pushUpdate={(updatedText) => {
+              updateOfficer({ email: updatedText });
+            }}
+          />
+        </a>
       </div>
     </div>
   );
 };
 
-function UpdateOfficers(officers: Officer[]) {
-  officers.forEach((officer) => {
-    const officerRef = doc(db, "officers", officer.name);
-    //remove anytrhing that is not a string
-    for (const key in officer) {
-      // @ts-ignore
-      if (typeof officer[key] !== "string") {
-        // @ts-ignore
-        delete officer[key];
+function UpdateOfficers(officers: Officer[], callback: () => void) {
+  officers.forEach((officer, index) => {
+    const officerRef = doc(db, "officers", officer.id);
+    console.log("Updating officer: ", officer);
+    setDoc(officerRef, officer).then(() => {
+      if (index === officers.length - 1) {
+        callback(); // Call the callback when all updates are complete
       }
-    }
-    setDoc(officerRef, officer);
+    });
   });
 }
