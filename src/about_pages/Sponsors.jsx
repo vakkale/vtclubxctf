@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import boxing from '../assets/sponsors/boxing.svg';
 import cellar from '../assets/sponsors/cellar.svg';
 import runabout from '../assets/sponsors/runabout.svg';
+import crimpers from '../assets/sponsors/crimpers.svg';
 
 export default function Sponsors() {
     const background = 'https://i.imgur.com/HyUw2BJ.jpg';
@@ -30,7 +31,11 @@ export default function Sponsors() {
             </a>
             <a href="https://www.blacksburgboxingandfitness.com/" rel="noreferrer"
                 target="_blank">
-                <img className="sponsor-image" src={boxing} alt="The Cellar logo." ></img>
+                <img className="sponsor-image" src={boxing} alt="Blacksburg Boxing & Fitness logo." ></img>
+            </a>
+            <a href="https://www.crimpersclimbing.com/" rel="noreferrer"
+                target="_blank">
+                <img className="sponsor-image" src={crimpers} alt="Crimper's Climbing Gym logo." ></img>
             </a>
         </div >
 

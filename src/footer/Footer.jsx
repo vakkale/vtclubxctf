@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import runabout_logo from "../assets/sponsors/runabout.svg";
 import cellar_logo from "../assets/sponsors/cellar.svg";
 import boxing_logo from "../assets/sponsors/boxing.svg";
+import crimpers_logo from "../assets/sponsors/crimpers.svg";
 
 const socialdata = [
   {
@@ -46,7 +47,12 @@ const sponsors = [
     name: "Blacksburg Boxing & Fitness",
     url: "https://www.blacksburgboxingandfitness.com/",
     logo: boxing_logo,
-  }
+  },
+  {
+    name: "Crimper's Climbing Gym",
+    url: "https://www.crimpersclimbing.com/",
+    logo: crimpers_logo,
+  },
 ];
 
 /* TODO: Add orgs */
