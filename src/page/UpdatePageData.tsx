@@ -3,10 +3,16 @@ import {
   setDoc,
   collection,
   DocumentReference,
+  CollectionReference,
+  getDocs,
+  getDoc,
+  QueryDocumentSnapshot,
+  query,
+  where
 } from "firebase/firestore/lite";
 // @ts-ignore
 import db from "../data/database";
-import { PageProps } from "./Page";
+import { PageProps, SubPage, SubPageContent } from "./Page";
 
 // Helper function to remove empty or undefined fields from an object
 const removeEmptyFields = <T extends object>(obj: T): T => {
@@ -50,8 +56,11 @@ export const validateData = (data: Partial<PageProps>) => {
   because Firestore doesn't allow slashes in document names
 */
 function parseUrl(url: string) {
-  const newUrl = url.substring(1).replace(/\//g, "_");
-  return newUrl;
+  if (url.charAt(0) !== "/") {
+    return url.replace(/\//g, "_");
+  } else {
+    return url.substring(1).replace(/\//g, "_");
+  }
 }
 
 // Function to update the Firestore document
@@ -61,7 +70,7 @@ const updatePageData = async (updatedData: Partial<PageProps>) => {
   }
   // Assuming you have already initialized Firestore
 
-  const docRef: DocumentReference = await doc(
+  const docRef: DocumentReference = doc(
     collection(db, "pages"),
     parseUrl(updatedData.url)
   );
@@ -87,7 +96,7 @@ const updatePageData = async (updatedData: Partial<PageProps>) => {
 export default updatePageData;
 
 export const createNewPage = async (newPage: PageProps) => {
-  const docRef: DocumentReference = await doc(
+  const docRef: DocumentReference = doc(
     collection(db, "pages"),
     parseUrl(newPage.url)
   );
@@ -109,3 +118,84 @@ export const createNewPage = async (newPage: PageProps) => {
     console.error("Error updating document:", error);
   }
 };
+
+/* 
+  Helper function to get the subpages from a collection reference
+*/
+export async function getSubpagesFromCollectionRef(ref: CollectionReference) {
+  const subpageRef = await getDocs(ref);
+  var subpages: SubPage[] = [];
+  subpageRef.docs.map((doc: QueryDocumentSnapshot) => {
+    const subpageData = doc.data();
+    const subpage: SubPage = {
+      title: subpageData.title,
+      url: subpageData.url,
+      contentReference: subpageData.contentReference,
+    };
+    subpages.push(subpage);
+  });
+  return subpages;
+}
+
+export async function getContentFromDocRef(docRef: DocumentReference) {
+  const doc = await getDoc(docRef);
+  const contentData = doc.data();
+  if (contentData && contentData.content) {
+    const content: SubPageContent = {
+      featuredImage: contentData.featuredImage || "",
+      content: contentData.content,
+    };
+    return content;
+  } else {
+    throw new Error("No content found");
+  }
+}
+
+export function getSubpageCollectionFromUrl(parentUrl: string) {
+  return collection(db, `pages/${parseUrl(parentUrl)}/subpages`);
+}
+
+export async function addNewSubpageToCollection(
+  ref: CollectionReference,
+  subpage: SubPage
+) {
+  const docRef = doc(ref, parseUrl(subpage.url));
+  const parsedSubpage = removeEmptyFields(subpage);
+  try {
+    await setDoc(docRef, parsedSubpage);
+    console.log("Document updated successfully!");
+  } catch (error) {
+    console.error("Error updating document:", error);
+  }
+}
+
+export async function updateSubpageContent(
+  docRef: DocumentReference,
+  updatedSubpageContent: SubPageContent
+) {
+  try {
+    await setDoc(docRef, updatedSubpageContent);
+    console.log("Document updated successfully!");
+  } catch (error) {
+    console.error("Error updating document:", error);
+  }
+}
+
+/* export async function updateSubpages(
+  parentUrl: string,
+  updatedSubpages: SubPage[]
+) {
+  // update the subpages collection
+  const subpageCollectionRef = getSubpageCollectionFromUrl(parentUrl);
+  updatedSubpages.map((subpage) => {
+    const docRef = doc(subpageCollectionRef, parseUrl(subpage.url));
+    const parsedSubpage = removeEmptyFields(subpage);
+    try {
+      updateSubpageContent(parsedSubpage.contentReference, parsedSubpage.content);
+      setDoc(docRef, parsedSubpage);
+      console.log("Document updated successfully!");
+    } catch (error) {
+      console.error("Error updating document:", error);
+    }
+  });
+} */

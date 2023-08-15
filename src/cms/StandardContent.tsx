@@ -43,6 +43,7 @@ export interface ArticleProps {
 
 interface AdditionalProps {
   pushUpdate(updatedProps: Partial<PageProps>): void;
+  loading?: boolean;
 }
 
 /* const ImportantBlock = BlockQuote.extend({
@@ -51,8 +52,6 @@ interface AdditionalProps {
  */
 
 const StandardContent: FC<ArticleProps & AdditionalProps> = (props) => {
-  // state for if content is loaded
-  const [doneLoading, setDoneLoading] = useState(true);
   // state for if content is editable
   /* const [editable, setEditable] = useState(false); // change this when auth is implemented */
 
@@ -118,8 +117,8 @@ const StandardContent: FC<ArticleProps & AdditionalProps> = (props) => {
 
   return (
     <div className="article-container">
-      <div className={`loading-overlay ${!doneLoading ? "loading" : "loaded"}`}>
-        {!doneLoading && (
+      <div className={`loading-overlay ${props.loading ? "loading" : "loaded"}`}>
+        {props.loading && (
           <div className="loading-spinner">{/* Spinner goes here */}</div>
         )}
       </div>

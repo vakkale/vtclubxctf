@@ -1,19 +1,8 @@
 import React, { FC, useEffect, useState } from "react";
 import { Link, NavigateFunction } from "react-router-dom";
 import "../../modules/SideBar.scss";
-import { PageProps } from "../Page";
+import { PageProps, SubPage } from "../Page";
 import "../../assets/editor_icons/remixicon.css";
-
-// Define the props for the SubPage component
-interface SubPage {
-  title: string;
-  content: string;
-  tags?: string[];
-  url: string;
-  featuredImage?: string;
-  date?: string;
-  category?: string;
-}
 
 // Define the props for the ListItem component
 interface ListItemProps {

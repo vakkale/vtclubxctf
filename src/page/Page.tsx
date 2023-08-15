@@ -4,7 +4,14 @@ It is used to set the page title, subtitle, content, sub-content, etc.
 */
 
 import React, { FC, useState, useEffect, useRef } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import {
+  Route,
+  useLocation,
+  useNavigate,
+  Outlet,
+  useParams,
+  Routes,
+} from "react-router-dom";
 // @ts-ignore
 import SideBar from "./components/SideBar.tsx";
 // @ts-ignore
@@ -15,14 +22,10 @@ import { TiptapContent } from "../cms/StandardContent";
 import "../news/News.scss";
 import "../modules/TopBar.scss";
 import OfficerCardContent from "./components/OfficerCards";
-
-/* export enum PageType {
-  STANDARD,
-  NEWS,
-  OFFICERS,
-  CALENDAR,
-} */
-
+// @ts-ignore
+import db from "../data/database.jsx";
+import { collection, getDoc } from "firebase/firestore";
+import { DocumentReference } from "firebase/firestore/lite";
 export interface PageProps {
   title: string; // Page title
   subtitle?: string; // Optional
@@ -38,23 +41,27 @@ export interface PageProps {
     title: string; // Custom sidebar title
     subtitle?: string; // Optional
   };
-  subPages?: {
-    title: string; // Sub-content title
-    content: string; // Sub-content (markdown format)
-    tags?: string[]; // Optional
-    url: string; // Sub-content URL (used for routing, relative to the main page)
-    featuredImage?: string; // Optional
-    date?: string; // Optional
-    category?: string; // Optional
-  }[];
+  subPageCollection?: string; // Optional, only used if there are sub-pages
   meta?: {
     description: string; // Page description (for SEO)
     keywords: string[]; // Page keywords (for SEO)
     author: string; // Page author (for SEO)
     updatedAt: string; // Page last update date (for SEO)
   };
+  subPages?: SubPage[]; // Optional, only used if there are sub-pages
 }
 
+export interface SubPage {
+  title: string; // Sub-content title
+  url: string; // Sub-content URL (used for routing, relative to the main page)
+  date?: string; // Optional
+  category?: string; // Optional
+  contentReference: DocumentReference; // firestore document reference to the sub-page content
+}
+export interface SubPageContent {
+  content: TiptapContent;
+  featuredImage?: string;
+}
 interface AdditionalProps {
   inEditMode: boolean;
   updatePage: (updatedPage: PageProps) => void;
@@ -68,10 +75,12 @@ const Page: FC<PageComponentProps> = (props) => {
 
   //turn location into a string
   const locationString = location.pathname.toString();
+  const currentSubpageUrl = useParams().subpageId;
   const sideBarSize = props.subPages ? "large" : "small";
 
   const [pageState, setPageState] = useState<PageComponentProps>(props);
   const pageStateRef = useRef<PageComponentProps>(pageState);
+  const [loading, setLoading] = useState(false);
 
   // Function to update the page state
   const updatePageState = (updatedProps: Partial<PageProps>) => {
@@ -91,9 +100,6 @@ const Page: FC<PageComponentProps> = (props) => {
     }
     //eslint-disable-next-line
   }, [pageState]);
-
-  // Create a ref to store the previous value of inEditMode
-  const prevInEditMode = useRef<boolean>(props.inEditMode);
 
   return (
     <div>
@@ -126,13 +132,12 @@ const Page: FC<PageComponentProps> = (props) => {
                 image={pageState.featuredImage}
                 editable={props.inEditMode}
                 pushUpdate={updatePageState}
+                loading={loading}
               ></StandardContent>
             </>
           )}
           {props.pageType === "contact" && (
-            <OfficerCardContent
-              editing={props.inEditMode}
-            />
+            <OfficerCardContent editing={props.inEditMode} />
           )}
         </div>
       </div>

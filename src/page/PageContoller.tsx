@@ -1,6 +1,10 @@
 import React, { useState, useEffect, FC } from "react";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { collection, getDocs } from "firebase/firestore/lite";
+import { BrowserRouter, Routes, Navigate, Route } from "react-router-dom";
+import {
+  CollectionReference,
+  collection,
+  getDocs,
+} from "firebase/firestore/lite";
 import { QueryDocumentSnapshot } from "firebase/firestore/lite";
 import EditModeBar from "../modules/EditModeBar";
 import { usePermissions } from "../helpers/PermissionsProvider";
@@ -12,7 +16,7 @@ import Footer from "../footer/Footer.jsx";
 import Home from "../home/home.jsx";
 // @ts-ignore
 import db from "../data/database";
-import Page, { PageProps } from "./Page";
+import Page, { PageProps, SubPage, SubPageContent } from "./Page";
 import updatePageData, { createNewPage } from "./UpdatePageData";
 
 const PageController: FC = (props) => {
@@ -111,7 +115,7 @@ const PageController: FC = (props) => {
             {pages.map((pageProps) => (
               <Route
                 key={pageProps.url}
-                path={pageProps.url}
+                path={`${pageProps.url}/:subpageId?`}
                 element={
                   <Page
                     key={pageProps.url}
