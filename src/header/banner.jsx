@@ -86,7 +86,7 @@ export default function Banner() {
       }}
     >
       <h1 className="banner-text">
-        {!isMobile ? "Summer checklist for prospective members: " : "Summer checklist: "}
+        {!isMobile ? "Welcome Week information!" : "Welcome Week info!"}
       </h1>
       {/* TIP: YOU CAN USE <LINK> AND <A> INTERCHANGABLY HERE, THEY HAVE THE SAME STYLING */}
       <Link to="/join" className="banner-link">

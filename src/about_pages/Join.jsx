@@ -14,30 +14,27 @@ export default function Join() {
   const pageContent = (
     <div className="article-content">
       <div className="highlighted-message">
-        <h3>Summer checklist for prospective members:</h3>
-        <ol>
-          <li>There's nothing you have to do.</li>
-          <li>Enjoy your summer.</li>
-          <li>See you in Blacksburg!</li>
-          <li>
-            If you're so excited that you can't wait until then, you can check
-            out our training plans and follow along with us!
-          </li>
-          <li>
-            There are no tryouts or cuts, everyone is welcome to join.{" "}
-            <b>You don't need to fill out any forms until practice starts!!!</b>
-          </li>
-        </ol>
-        <p>Some dates to keep in mind:</p>
+        <h3>Welcome back Hokies!</h3>
+        <p>
+          Current and prospective members, here's all you need to know leading
+          up to the first day of practice:
+        </p>
         <ul>
           <li>
-            <b>Friday, Aug 18</b> - Come see us at RecFest.
+            <b>Friday, Aug 18</b> - Come see us at RecFest @ the Rec Sports
+            Field House (the Bubble) from 6:30-9:00 pm. You can meet us and the
+            other sport clubs at VT, play games, and even receive a free t-shirt
+            if you're one of the first 2,000 students to show up!
           </li>
           <li>
-            <b>Sunday, Aug 20</b> - Welcome Week Run.
+            <b>Sunday, Aug 20</b> - Welcome Week Run @ the Rec Fields at 9:00
+            am. Come run with us and meet the team! We'll be running 3-5 miles
+            at a conversational pace.
           </li>
           <li>
-            <b>Monday, Aug 28</b> - First practice of the semester.
+            <b>Monday, Aug 28</b> - First practice of the semester @ the
+            Johnson-Miller Track Complex at 6:00 pm. Can't wait to see you
+            there!
           </li>
         </ul>
       </div>
