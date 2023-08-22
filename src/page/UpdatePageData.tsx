@@ -8,7 +8,7 @@ import {
   getDoc,
   QueryDocumentSnapshot,
   query,
-  where
+  where,
 } from "firebase/firestore/lite";
 // @ts-ignore
 import db from "../data/database";
@@ -41,7 +41,7 @@ export const validateData = (data: Partial<PageProps>) => {
   if (!data.url) {
     throw new Error("URL is required.");
   }
-  if (!data.sideBarText && !data.customSidebarFeature && !data.subPages) {
+  if (!data.sideBarText && !data.customSidebarFeature ) {
     throw new Error(
       "SideBarText, customSidebarFeature, or subPages is required."
     );
@@ -84,6 +84,8 @@ const updatePageData = async (updatedData: Partial<PageProps>) => {
     throw new Error("Invalid data.");
   }
 
+  console.log("parsedData: ", parsedData);
+
   // Update the document with the parsedData
   try {
     await setDoc(docRef, parsedData);
@@ -125,11 +127,14 @@ export const createNewPage = async (newPage: PageProps) => {
 export async function getSubpagesFromCollectionRef(ref: CollectionReference) {
   const subpageRef = await getDocs(ref);
   var subpages: SubPage[] = [];
+  // TODO: make it only return the first 10 subpages
   subpageRef.docs.map((doc: QueryDocumentSnapshot) => {
     const subpageData = doc.data();
     const subpage: SubPage = {
       title: subpageData.title,
       url: subpageData.url,
+      date: subpageData.date,
+      category: subpageData.category,
       contentReference: subpageData.contentReference,
     };
     subpages.push(subpage);
@@ -153,6 +158,10 @@ export async function getContentFromDocRef(docRef: DocumentReference) {
 
 export function getSubpageCollectionFromUrl(parentUrl: string) {
   return collection(db, `pages/${parseUrl(parentUrl)}/subpages`);
+}
+
+export function getSubpageContentCollectionFromUrl(parentUrl: string) {
+  return collection(db, `pages/${parseUrl(parentUrl)}/subpageContents`);
 }
 
 export async function addNewSubpageToCollection(
@@ -181,21 +190,24 @@ export async function updateSubpageContent(
   }
 }
 
-/* export async function updateSubpages(
+export async function updateSubpages(
   parentUrl: string,
-  updatedSubpages: SubPage[]
+  updatedSubpages: SubPage[],
+  updatedSubpageContent: SubPageContent[]
 ) {
-  // update the subpages collection
   const subpageCollectionRef = getSubpageCollectionFromUrl(parentUrl);
-  updatedSubpages.map((subpage) => {
-    const docRef = doc(subpageCollectionRef, parseUrl(subpage.url));
-    const parsedSubpage = removeEmptyFields(subpage);
-    try {
-      updateSubpageContent(parsedSubpage.contentReference, parsedSubpage.content);
-      setDoc(docRef, parsedSubpage);
-      console.log("Document updated successfully!");
-    } catch (error) {
-      console.error("Error updating document:", error);
+  const contentCollectionRef = getSubpageContentCollectionFromUrl(parentUrl);
+
+  updatedSubpages.map((subpage, index) => {
+    if (subpage.contentReference) {
+      updateSubpageContent(
+        subpage.contentReference,
+        updatedSubpageContent[index]
+      );
+    } else {
+      let contentDocRef = doc(contentCollectionRef, `/${subpage.title}`);
+      updateSubpageContent(contentDocRef, updatedSubpageContent[index]);
     }
+    addNewSubpageToCollection(subpageCollectionRef, subpage);
   });
-} */
+}

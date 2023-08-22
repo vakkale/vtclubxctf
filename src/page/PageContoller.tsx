@@ -17,7 +17,7 @@ import Home from "../home/home.jsx";
 // @ts-ignore
 import db from "../data/database";
 import Page, { PageProps, SubPage, SubPageContent } from "./Page";
-import updatePageData, { createNewPage } from "./UpdatePageData";
+import updatePageData, { createNewPage, updateSubpages, getSubpagesFromCollectionRef } from "./UpdatePageData";
 
 const PageController: FC = (props) => {
   const [pages, setPages] = useState<PageProps[]>([]);
@@ -62,7 +62,6 @@ const PageController: FC = (props) => {
             url: pageData.url,
             sideBarText: pageData.sideBarText,
             customSidebarFeature: pageData.customSidebarFeature,
-            subPages: pageData.subPages,
             meta: pageData.meta,
             pageType: pageData.pageType,
           };
@@ -115,7 +114,7 @@ const PageController: FC = (props) => {
             {pages.map((pageProps) => (
               <Route
                 key={pageProps.url}
-                path={`${pageProps.url}/:subpageId?`}
+                path={`${pageProps.url}/:subpageUrl?`}
                 element={
                   <Page
                     key={pageProps.url}

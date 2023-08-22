@@ -10,7 +10,7 @@ import DropCursor from "@tiptap/extension-dropcursor";
 import Image from "@tiptap/extension-image";
 import { EditorContent, useEditor } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
-import { PageProps } from "../page/Page";
+import { PageProps, SubPageContent } from "../page/Page";
 import MenuBar from "./MenuBar";
 // @ts-ignore
 /* import { CustomLink } from "./CustomLink"; */
@@ -43,7 +43,9 @@ export interface ArticleProps {
 
 interface AdditionalProps {
   pushUpdate(updatedProps: Partial<PageProps>): void;
+  pushSubpageContentUpdate(updatedContent: Partial<SubPageContent>): void;
   loading?: boolean;
+  currentSubpageUrl?: string;
 }
 
 /* const ImportantBlock = BlockQuote.extend({
@@ -86,7 +88,10 @@ const StandardContent: FC<ArticleProps & AdditionalProps> = (props) => {
     if (currentContent) {
       props.pushUpdate({ content: currentContent });
     }
-  }, [props.editable]);
+    if (editor && props.currentSubpageUrl) {
+      editor.commands.setContent(props.content);
+    }
+  }, [props.editable, props.currentSubpageUrl]);
 
   const editor = useEditor({
     extensions: [
@@ -117,7 +122,9 @@ const StandardContent: FC<ArticleProps & AdditionalProps> = (props) => {
 
   return (
     <div className="article-container">
-      <div className={`loading-overlay ${props.loading ? "loading" : "loaded"}`}>
+      <div
+        className={`loading-overlay ${props.loading ? "loading" : "loaded"}`}
+      >
         {props.loading && (
           <div className="loading-spinner">{/* Spinner goes here */}</div>
         )}

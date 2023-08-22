@@ -4,14 +4,7 @@ It is used to set the page title, subtitle, content, sub-content, etc.
 */
 
 import React, { FC, useState, useEffect, useRef } from "react";
-import {
-  Route,
-  useLocation,
-  useNavigate,
-  Outlet,
-  useParams,
-  Routes,
-} from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 // @ts-ignore
 import SideBar from "./components/SideBar.tsx";
 // @ts-ignore
@@ -24,8 +17,17 @@ import "../modules/TopBar.scss";
 import OfficerCardContent from "./components/OfficerCards";
 // @ts-ignore
 import db from "../data/database.jsx";
-import { collection, getDoc } from "firebase/firestore";
-import { DocumentReference } from "firebase/firestore/lite";
+import {
+  CollectionReference,
+  DocumentReference,
+  collection,
+  doc,
+} from "firebase/firestore/lite";
+import {
+  getContentFromDocRef,
+  getSubpagesFromCollectionRef,
+  updateSubpages,
+} from "./UpdatePageData";
 export interface PageProps {
   title: string; // Page title
   subtitle?: string; // Optional
@@ -48,7 +50,7 @@ export interface PageProps {
     author: string; // Page author (for SEO)
     updatedAt: string; // Page last update date (for SEO)
   };
-  subPages?: SubPage[]; // Optional, only used if there are sub-pages
+  /* subPages?: SubPage[]; // Optional, only used if there are sub-pages */
 }
 
 export interface SubPage {
@@ -56,10 +58,11 @@ export interface SubPage {
   url: string; // Sub-content URL (used for routing, relative to the main page)
   date?: string; // Optional
   category?: string; // Optional
-  contentReference: DocumentReference; // firestore document reference to the sub-page content
+  contentReference?: DocumentReference; // firestore document reference to the sub-page content
+  content?: SubPageContent;
 }
 export interface SubPageContent {
-  content: TiptapContent;
+  content: string | TiptapContent;
   featuredImage?: string;
 }
 interface AdditionalProps {
@@ -72,22 +75,101 @@ type PageComponentProps = PageProps & AdditionalProps;
 const Page: FC<PageComponentProps> = (props) => {
   const location = useLocation();
   const navigate = useNavigate();
+  const subPageUrl = useParams().subpageUrl;
+  const [prevSubPageUrl, setPrevSubPageUrl] = useState<string | undefined>(
+    undefined
+  );
 
   //turn location into a string
   const locationString = location.pathname.toString();
-  const currentSubpageUrl = useParams().subpageId;
-  const sideBarSize = props.subPages ? "large" : "small";
 
   const [pageState, setPageState] = useState<PageComponentProps>(props);
+  const [currentPageContent, setCurrentPageContent] = useState<SubPageContent>({
+    content: pageState.content,
+    featuredImage: pageState.featuredImage,
+  });
+  const [subpages, setSubpages] = useState<SubPage[]>([]);
   const pageStateRef = useRef<PageComponentProps>(pageState);
   const [loading, setLoading] = useState(false);
+  const sideBarSize = subpages ? "large" : "small";
 
   // Function to update the page state
   const updatePageState = (updatedProps: Partial<PageProps>) => {
+    /*  if (subPageUrl.current) { */
     // Merge the updated props with the existing props
     const updatedPage = { ...pageState, ...updatedProps };
     setPageState(updatedPage); // Update the local state
   };
+
+  useEffect(() => {
+    console.log(subPageUrl);
+    if (subPageUrl) {
+      /* setLoading(true); */
+      const subPage = subpages?.find((subPage) => subPage.url === subPageUrl);
+      if (subPage) {
+        if (subPage.content) {
+          setCurrentPageContent(subPage.content);
+          return;
+        }
+        const subPageContentRef = subPage.contentReference;
+        if (subPageContentRef) {
+          const subPageContent = getContentFromDocRef(subPageContentRef);
+          subPageContent.then((content) => {
+            subPage.content = content;
+            setCurrentPageContent(content);
+          });
+          /* setLoading(false); */
+        }
+      }
+    }
+  }, [subPageUrl]);
+
+  function createNewSubpage(
+    newTitle: string,
+    newUrl: string,
+    newDate?: string,
+    newCategory?: string
+  ) {
+    const newSubpage: SubPage = {
+      title: newTitle,
+      url: newUrl,
+      date: newDate,
+      category: newCategory,
+      contentReference: doc(
+        db,
+        `pages/${pageState.url}/subpageContents/${newUrl}`
+      ),
+      content: {
+        content: {
+          type: "doc",
+          content: [
+            {
+              type: "paragraph",
+              content: [
+                {
+                  type: "text",
+                  text: "New subpage content",
+                },
+              ],
+            },
+          ],
+        },
+        featuredImage: "",
+      },
+    };
+    setSubpages([...subpages, newSubpage]);
+  }
+
+  function updateLocalSubpageContent(updatedContent: SubPageContent) {
+    /* if () {  */
+    const updatedSubpages = subpages.map((subpage) => {
+      if (subpage.url === subPageUrl) {
+        subpage.content = updatedContent;
+      }
+      return subpage;
+    });
+    setSubpages(updatedSubpages);
+  }
 
   useEffect(() => {
     if (!props.inEditMode) {
@@ -100,6 +182,16 @@ const Page: FC<PageComponentProps> = (props) => {
     }
     //eslint-disable-next-line
   }, [pageState]);
+
+  useEffect(() => {
+    getSubpages();
+  }, []);
+
+  async function getSubpages() {
+    const colRef = collection(db, `pages/${pageState.url}/subpages`);
+    const subpages = await getSubpagesFromCollectionRef(colRef);
+    setSubpages(subpages);
+  }
 
   return (
     <div>
@@ -122,16 +214,21 @@ const Page: FC<PageComponentProps> = (props) => {
                 navigate={navigate}
                 size={sideBarSize}
                 sideBarText={pageState.sideBarText}
-                subPages={pageState.subPages}
+                subPages={subpages}
+                rootUrl={pageState.url}
                 customSidebarFeature={pageState.customSidebarFeature}
                 pushUpdate={updatePageState}
+                createNewSubpage={createNewSubpage}
                 editable={props.inEditMode}
               ></SideBar>
               <StandardContent
-                content={pageState.content}
+                /* content={pageState.content} */
+                content={currentPageContent.content}
+                currentSubpageUrl={subPageUrl}
                 image={pageState.featuredImage}
                 editable={props.inEditMode}
                 pushUpdate={updatePageState}
+                pushSubpageContentUpdate={updateLocalSubpageContent}
                 loading={loading}
               ></StandardContent>
             </>
