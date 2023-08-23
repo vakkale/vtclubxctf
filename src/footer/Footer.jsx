@@ -8,6 +8,8 @@ import runabout_logo from "../assets/sponsors/runabout.svg";
 import cellar_logo from "../assets/sponsors/cellar.svg";
 import boxing_logo from "../assets/sponsors/boxing.svg";
 import crimpers_logo from "../assets/sponsors/crimpers.svg";
+import bollos_logo from "../assets/sponsors/bollos.svg";
+import gillies_logo from "../assets/sponsors/gillies.svg";
 
 const socialdata = [
   {
@@ -53,6 +55,16 @@ const sponsors = [
     url: "https://www.crimpersclimbing.com/",
     logo: crimpers_logo,
   },
+  {
+    name: "Gillie's Restaurant",
+    url: "https://gilliesrestaurant.com/",
+    logo: gillies_logo,
+  },
+  {
+    name: "Bollo's Cafe & Bakery",
+    url: "https://www.instagram.com/bolloscafe/",
+    logo: bollos_logo,
+  }
 ];
 
 /* TODO: Add orgs */
