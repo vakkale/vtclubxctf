@@ -86,12 +86,12 @@ export default function Banner() {
       }}
     >
       <h1 className="banner-text">
-        {!isMobile ? "Welcome Week information!" : "Welcome Week info!"}
+        {!isMobile ? "Practice starts Mon. 8/26 6PM @ Johnson-Miller Track Complex!" : "Practice starts Mon. 8/26 6PM @ Johnson-Miller Track Complex!"}
       </h1>
       {/* TIP: YOU CAN USE <LINK> AND <A> INTERCHANGABLY HERE, THEY HAVE THE SAME STYLING */}
-      <Link to="/join" className="banner-link">
+      {/* <Link to="/join" className="banner-link">
         <button className="banner-button">Click Here</button>
-      </Link>
+      </Link> */}
       {/* {now > countDownStart ?
                 <a
                     href='https://givingday.vt.edu/amb/clubxctf'

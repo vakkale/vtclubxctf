@@ -6,11 +6,11 @@ export default function CrossCountry() {
     const background = 'https://i.imgur.com/3HLHrbP.jpg';
 
     const item = {
-        date: "2022 Meet Schedule",
-        title: "Meet Results"
+        date: "Fall 2023",
+        title: "Meet Schedule"
     };
 
-    const schedule = [
+    /* const schedule = [
         {
             title: "2022 NIRCA National Championship",
             url: "https://drive.google.com/file/d/1AdYu8RHwKqs0aGWytA673h1twPjUoOGu/view?usp=sharing"
@@ -30,6 +30,29 @@ export default function CrossCountry() {
         {
             title: "Cavalier Invitational",
             url: "https://drive.google.com/file/d/1ptyWQmHvHT-l8y0cvAq6e2CJXw5LjDRR/view?usp=sharing"
+        }
+    ]; */
+
+    const schedule = [
+        {
+            title: "Sept. 16 - Cavalier Invitational",
+            location: "Panorama Farms: Charlottesville, VA",
+        },
+        {
+            title: "Sept. 30 - Charlotte McAlpine Trail Race",
+            location: "McAlpine Creek Park: Charlotte, NC",
+        },
+        {
+            title: "Oct. 14 - Hokie Invitational",
+            location: "Blacksburg High School: Blacksburg, VA",
+        },
+        {
+            title: "Oct. 21 - NIRCA Mid-Atlantic Regionals",
+            location: "Lehigh University: Bethlehem, PA",
+        },
+        {
+            title: "Nov. 11 - NIRCA National Championship",
+            location: "Blue River Cross Country Course: Shelbyville, IN"
         }
     ];
 

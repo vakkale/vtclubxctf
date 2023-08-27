@@ -1,14 +1,13 @@
 import PageHeader from "../modules/PageHeader";
 import SideBarLite from "../modules/SideBarLite";
 import Article from "../modules/Article";
-import { Link } from "react-router-dom";
 
 export default function TrackAndField() {
     const background = 'https://i.imgur.com/7h1tvnX.jpg';
 
     const item = {
         date: "Spring 2023",
-        title: "Meet Schedule"
+        title: "Meet Results"
     };
 
     const schedule = [
@@ -34,11 +33,13 @@ export default function TrackAndField() {
         },
         {
             title: "Apr. 15-6 - NIRCA Track & Field Nationals",
-            location: "Olivet College, Olivet, MI"
+            location: "Olivet College, Olivet, MI",
+            url: "http://milesplit.live/meets/541522"
         },
         {
             title: "Apr. 22 - Wildcat Twilight",
-            location: "Randolph College, Lynchburg, VA"
+            location: "Randolph College, Lynchburg, VA",
+            url: "https://www.tfrrs.org/results/75515/WildCat_Twilight"
         }
     ];
 

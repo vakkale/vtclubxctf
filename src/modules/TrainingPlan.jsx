@@ -12,7 +12,7 @@ export default function TrainingPlan({ sheetID, sheets }) {
 
     function getMonthFromString(mon) {
         //not my code but very clever, sets the month in plain english to a number
-        var d = Date.parse(mon + "1, 2022");
+        var d = Date.parse(mon + "1, 2023");
         if (!isNaN(d)) {
             return new Date(d).getMonth() + 1;
         }

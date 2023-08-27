@@ -8,6 +8,7 @@ import runabout from "../assets/sponsors/runabout.svg";
 import crimpers from "../assets/sponsors/crimpers.svg";
 import gillies from "../assets/sponsors/gillies.svg";
 import bollos from "../assets/sponsors/bollos.svg";
+import adjustnrv from "../assets/sponsors/adjustnrv.svg";
 
 export default function Sponsors() {
   const background = "https://i.imgur.com/HyUw2BJ.jpg";
@@ -37,11 +38,11 @@ export default function Sponsors() {
             alt="Runabout Sports logo."
           ></img>
         </a>
-        <a href="https://the-cellar.com/" rel="noreferrer" target="_blank">
+        <a href="https://www.adjustnrv.com/" rel="noreferrer" target="_blank">
           <img
             className="sponsor-image"
-            src={cellar}
-            alt="The Cellar logo."
+            src={adjustnrv}
+            alt="Adjust NRV logo."
           ></img>
         </a>
         <a

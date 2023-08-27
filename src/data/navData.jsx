@@ -23,7 +23,7 @@ const navData = [
         submenus: [
             {
                 name: "sprint",
-                url: "/training/sprint/summer-plan",
+                url: "/training/sprint/fall-plan",
                 image: 'https://i.imgur.com/zsLMckC.jpg'
             },
             {
@@ -32,7 +32,7 @@ const navData = [
                 submenus: [
                     {
                         name: "Women's Distance",
-                        url: "/training/womens-distance/summer-plan",
+                        url: "/training/womens-distance/fall-plan",
                     },
                     {
                         name: "Men's Distance",

@@ -14,29 +14,7 @@ export default function Join() {
   const pageContent = (
     <div className="article-content">
       <div className="highlighted-message">
-        <h3>Welcome back Hokies!</h3>
-        <p>
-          Current and prospective members, here's all you need to know leading
-          up to the first day of practice:
-        </p>
-        <ul>
-          <li>
-            <b>Friday, Aug 18</b> - Come see us at RecFest @ the Rec Sports
-            Field House (the Bubble) from 6:30-9:00 pm. You can meet us and the
-            other sport clubs at VT, play games, and even receive a free t-shirt
-            if you're one of the first 2,000 students to show up!
-          </li>
-          <li>
-            <b>Sunday, Aug 20</b> - Welcome Week Run @ the Rec Fields at 9:00
-            am. Come run with us and meet the team! We'll be running 3-5 miles
-            at a conversational pace.
-          </li>
-          <li>
-            <b>Monday, Aug 28</b> - First practice of the semester @ the
-            Johnson-Miller Track Complex at 6:00 pm. Can't wait to see you
-            there!
-          </li>
-        </ul>
+        <h3>Practice starts MONDAY 8/28 @ The Johnson-Miller Track Complex!</h3>
       </div>
       <h3>Want to join the best?</h3>
       <p>
@@ -50,7 +28,7 @@ export default function Join() {
       <h3>As easy as 1-2-3!</h3>
       <p>
         There are 3 steps to becoming a member of the club. All items are due by{" "}
-        <span style={{ fontWeight: "bold" }}>TBA.</span>
+        <span style={{ fontWeight: "bold" }}>Sept. 8.</span>
       </p>
       <ol>
         <li>
@@ -145,7 +123,7 @@ export default function Join() {
         <li>
           Complete the{" "}
           <a
-            href="https://forms.gle/Np5kHqx8YQR6HUmw9"
+            href="https://forms.gle/4muhebpaA2ZkBEVn6"
             target="_blank"
             rel="noreferrer"
           >

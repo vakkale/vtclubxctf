@@ -10,6 +10,7 @@ import boxing_logo from "../assets/sponsors/boxing.svg";
 import crimpers_logo from "../assets/sponsors/crimpers.svg";
 import bollos_logo from "../assets/sponsors/bollos.svg";
 import gillies_logo from "../assets/sponsors/gillies.svg";
+import adjustnrv_logo from "../assets/sponsors/adjustnrv.svg";
 
 const socialdata = [
   {
@@ -41,9 +42,9 @@ const sponsors = [
     logo: runabout_logo,
   },
   {
-    name: "The Cellar",
-    url: "https://the-cellar.com//",
-    logo: cellar_logo,
+    name: "Adjust NRV",
+    url: "https://www.adjustnrv.com/",
+    logo: adjustnrv_logo,
   },
   {
     name: "Blacksburg Boxing & Fitness",
