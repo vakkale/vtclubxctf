@@ -13,9 +13,9 @@ export default function Join() {
 
   const pageContent = (
     <div className="article-content">
-      <div className="highlighted-message">
+      {/* <div className="highlighted-message">
         <h3>Practice starts MONDAY 8/28 @ The Johnson-Miller Track Complex!</h3>
-      </div>
+      </div> */}
       <h3>Want to join the best?</h3>
       <p>
         Want to run distance, sprint, jump, or throw? Well you came to the right
