@@ -11,36 +11,38 @@ export default function Socials() {
     };
 
     const schedule = [
-        /* {
-            title: "Feb. 18 - Soccer Social",
-            location: "1PM at the Rec Fields"
-        }, */
         {
-            title: "Mar. 20 - Assassin Begins",
-            location: "You're never safe..."
+            title: "Sep. 12 - Ribbon Making Night",
+            location: "TBA, Check GroupMe for Details"
         },
         {
-            title: "Mar. 29 - Chipotle Night",
-            location: "5PM - 9PM at North Main Chipotle",
-            url: "https://drive.google.com/file/d/1UubbkNtJXCchuDJw16TSI4SwEgpUWR69/view?usp=sharing"
+            title: "Sep. 23 - Fall Cookout",
+            location: "5:00 - 9:00 pm at Blacksburg Municipal Park",
         },
         {
-            title: "Apr. 1 - The Big Event",
-            location: "Sign Up Here - Put 'Club XCTF' as your team name",
-            url: "https://docs.google.com/forms/d/e/1FAIpQLSdbFVFewD_oxHEJYs55_o6Sp8gl8BkSaPyhU5Q9dLjktFAT2g/viewform"
+            title: "Oct. 4 - Mezeh Percentage Night",
+            location: "5:00 - 9:00 pm at Mezeh on UCB",
+            url: "https://drive.google.com/file/d/1rHcl7OzlgL8fgArRf-6wLA7s74Ygiz5Q/view?usp=sharing"
         },
         {
-            title: "Apr. 13 - Team Dinner",
-            location: "After Practice at D2"
+            title: "Oct. 6 - Fall Break Hike",
+            location: "To Be Announced"
         },
         {
-            title: "Apr 19 - Panda Express Night",
-            location: "5PM - 9PM at Prices Fork Panda Express",
-            url: "https://drive.google.com/file/d/1Hj0-YCsi0pg2P8UsQ9NerONKwyRoxWRV/view?usp=sharing"
+            title: "Oct. 28 - BreakZone Social",
+            location: "To Be Announced"
         },
         {
-            title: "Apr. 29 - End of Year Banquet",
-            location: "TBA"
+            title: "Nov. 4 - Boxing Social",
+            location: "Blacksburg Boxing and Fitness",
+        },
+        {
+            title: "Nov. 16 - Friendsgiving",
+            location: "To Be Announced"
+        },
+        {
+            title: "Dec. 2 - Winter Formal",
+            location: "To Be Announced"
         }
     ];
 

@@ -32,6 +32,16 @@ export default function Join() {
       </p>
       <ol>
         <li>
+          Complete the{" "}
+          <a
+            href="https://forms.gle/4muhebpaA2ZkBEVn6"
+            target="_blank"
+            rel="noreferrer"
+          >
+            membership survey.
+          </a>
+        </li>
+        <li>
           <ul>
             Complete your IMLeague forms.{" "}
             <span style={{ fontWeight: "bold" }}>
@@ -119,16 +129,6 @@ export default function Join() {
               race with us you will not regret it!
             </li>
           </ul>
-        </li>
-        <li>
-          Complete the{" "}
-          <a
-            href="https://forms.gle/4muhebpaA2ZkBEVn6"
-            target="_blank"
-            rel="noreferrer"
-          >
-            membership survey.
-          </a>
         </li>
       </ol>
       <p>
