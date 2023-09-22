@@ -19,6 +19,140 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "Cavalier Invitational Recap",
+    url: "cavalier-invitational-recap",
+    year: "2023",
+    date: "9 - 22",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/wdg9OFg.jpg",
+    content: (
+      <div class="article-content">
+        <img src="https://i.imgur.com/sWZbSMF.jpg" />
+        <h3>
+            <strong>Cavalier Invitational Recap</strong>
+        </h3>
+        <p>
+            First off, congratulations to all our runners who competed this past
+            weekend! Our women's team placed second with 49 points and our men
+            won with a ridiculous&nbsp;19. I hope you had a fun time and are
+            excited for our next meet in two weeks! Secondly, our throwers had a
+            throw-off this Saturday and some biiig marks were made.{" "}
+        </p>
+        <p>
+            Somehow Ben got on the lead car and recorded some pretty cool videos
+            on a Go-Pro
+        </p>
+        <p>
+            Be sure to congratulate the throwers during practice or salute them
+            if you're running around the track. Lastly, thank you to those who
+            volunteered for the Hokie Half on Sunday.{" "}
+          And congrats to our club runners who ran the Hokie Half this past
+          Sunday!
+        </p>
+        <img src="https://i.imgur.com/W6lm9LT.jpg" />
+        <h3>
+          <strong>Charlotte McAlpine Race Signups</strong>
+        </h3>
+        <p>
+          It's already time to sign up for the next one! We will be traveling to
+          Charlotte, North Carolina, and racing at the delightfully flat
+          McAlpine Creek course. This is a really fun race! You can access the
+          signup{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.gle/XNSfdzxS5gHdsCP5A"
+          >
+            here
+          </a>
+          .{" "}
+        </p>
+        <p>
+          The last day to register will be{" "}
+          <strong>Friday, September 22nd</strong>. As a note, we will be taking
+          vans instead of personal vehicles this time. We are also aware there
+          is a home football game this day, yet the time was just posted and it
+          is at 8 pm! Hope to see y'all there.
+        </p>
+        <h3>
+            <strong>Apparel</strong>
+        </h3>
+        <p>
+            We are selling apparel and singlets! Apparel is not required and it
+            is a fun way to show your club spirit! If you plan on racing,
+            singlets are required. The link to order apparel can be found{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.gle/s3vw3rhdtssdH4Rs7"
+          >here.
+          </a>
+            {" "}
+            If you plan on getting apparel, please fill out the survey{" "}
+            <strong>by September 22nd</strong>. If you buy something, please
+            bring cash to practice to pay!
+        </p>
+        <img src="https://i.imgur.com/S4mleTo.jpg" />
+        <h3>
+          <strong>Fall Cookout</strong>
+        </h3>
+        <p>
+          It's time for our annual Fall Cookout social! We will be meeting at
+          the{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://maps.app.goo.gl/XfbKjpCc4BurtzQcA"
+          >
+            Blacksburg Municipal Park
+          </a>
+          &nbsp;on Saturday, September 23rd, from 12 pm to 3 pm. If you are
+          attending, regardless of whether you are bringing food, please RSVP{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://www.signupgenius.com/go/10C0D49A8A922A4FCC52-44198682-fall"
+          >
+            here
+          </a>
+          . This event is a potluck, so please try to bring/make stuff if you
+          can!&nbsp;
+        </p>
+        <p>
+          Freshmen, try to bring large bagged&nbsp;snacks if possible (I love
+          hint&nbsp;of lime chips). We'll be outside so be sure to bring any
+          games if you have any! If you need a ride, talk to one of your
+          upperclassmen friends or ask around. You can also take MSN&nbsp;which
+          leaves from Squires every 30 minutes. This event is always super fun
+          and I heavily encourage you to show up!
+        </p>
+        <h3>Google Photos Link</h3>
+        <p>
+          Make sure to check out This is sort of fluid but for now, the photos
+          from this semester can be found at{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://photos.app.goo.gl/dkNL4vxsXZCzeZn99"
+          >
+            this Google Photos album
+          </a>
+          . In the past, we've had issues with there being too many photos in
+          one album so by the end of the semester it would take a long time to
+          scroll all the way down to the most recent photos.{" "}
+        </p>
+        <p>
+          An idea I had is we could have separate albums for practice, socials,
+          and each of the meets and have a page on the website that lists each
+          album so you can go directly where you want and don't have to scroll
+          through 7,000 photos to see the ones you want.
+        </p>
+        <h3>Have a good Week!</h3>
+      </div>
+    ),
+  },
+  {
     title: "Welcome Back!",
     url: "welcome-back",
     year: "2023",
