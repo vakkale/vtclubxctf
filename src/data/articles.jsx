@@ -19,6 +19,111 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "Well Rested Hokies Prepare for Charlotte McAlpine",
+    url: "well-rested-hokies-prepare-for-charlotte-mcalpine",
+    year: "2023",
+    date: "9 - 26",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/9TxkeVO.jpg",
+    content: (
+      <div class="article-content">
+        <h3>
+          <strong>Charlotte McAlpine Race </strong>
+        </h3>
+        <p>
+          The Charlotte Race is<strong> this Saturday!</strong> Get excited,
+          this is a really fun race and our only 5K of the season. If you are
+          racing, you will be receiving more information about transportation
+          later this week. Make sure to get a good night's sleep, it will be a
+          pretty early morning as we're meeting at the McComas parking lot at{" "}
+          <strong>4:15 am</strong>. There is a football game on Saturday night
+          as well! It will be a long, fun-filled day.
+        </p>
+        <h3>
+          <strong>Eligibility Forms</strong>
+        </h3>
+        <p>
+          <strong>This message is important for racers.&nbsp;</strong>If you are
+          interested in racing Regionals on Saturday, October 21st, you must
+          sign the eligibility form at practice<strong>. </strong>This is a form
+          required by NIRCA to ensure everyone is a full-time student.
+          <strong>&nbsp;</strong>This is NOT a binding&nbsp;document, but you
+          MUST sign it if you do plan on going. If you are interested at all in
+          going to Regionals at all, you must sign the form. You will be able to
+          sign the form until October 5th. If you have any questions, feel free
+          to ask Roman or any other officer.
+        </p>
+        <img src="https://i.imgur.com/fkQN63o.jpg" />
+        <h3>
+          <strong>Singlets</strong>
+        </h3>
+        <p>
+          If you have not had a chance to purchase a singlet yet, no worries! We
+          will be selling our singlets again this week during practice for $40.
+          We can only accept cash or checks made out to{" "}
+          <em>Treasurer at Virginia Tech</em>. If you are planning on racing at
+          all this semester, you must have a singlet. If you are only planning
+          on competing in the Spring, you can wait to purchase one next
+          semester.&nbsp;Feel free to talk to Molly or the other officers with
+          questions regarding singlets.
+        </p>
+        <img src="https://i.imgur.com/sR4hU0X.jpg" />
+        <h3>
+          <strong>Fall Cookout</strong>
+        </h3>
+        <p>
+          It was so nice to see everyone at the Fall Cookout! Hope you all had a
+          great time. It was nice catching up with everyone while eating some
+          good food and playing some fun games.
+        </p>
+        <h3>
+          <strong>Feedback Survey</strong>
+        </h3>
+        <p>
+          How are we doing? Are you enjoying Wyatt's jokes? How are the meets
+          and practice coming along? Let us know through{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.gle/6vgotSWo8rTNHuNz6"
+          >
+            this form
+          </a>
+          . This survey is completely anonymous and we really appreciate any
+          words that you have for us! We read each and every response, so please
+          take 5 minutes to complete it! We really do appreciate it.&nbsp;
+        </p>
+        <img src="https://i.imgur.com/r69W1if.jpg" />
+        <h3>
+          <strong>Assassin</strong>
+        </h3>
+        <p>
+          It's finally that time of the year. Assassin begins next week, are you
+          ready to hunt and be hunted? Harris will be sending a GroupMe
+          announcement for the signup this week. Stay on the lookout for that
+          message and be sure not to leak your schedule to anyone. Trust no one.
+        </p>
+        <img src="https://i.imgur.com/tmvBXhY.jpg" />
+        <h3>Google Photos Link</h3>
+        <p>
+          Wanna see photos of you and your friends at practice? Want to see a
+          photo of you racing? Be sure to look at{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://photos.app.goo.gl/dkNL4vxsXZCzeZn99"
+          >
+            this Google Photos album
+          </a>
+          .
+        </p>
+        <h3>Have a great Week!</h3>
+        <img src="https://i.imgur.com/ejyo3SD.jpg" />
+      </div>
+    ),
+  },
+  {
     title: "Cavalier Invitational Recap",
     url: "cavalier-invitational-recap",
     year: "2023",
@@ -30,25 +135,24 @@ const articles = [
       <div class="article-content">
         <img src="https://i.imgur.com/sWZbSMF.jpg" />
         <h3>
-            <strong>Cavalier Invitational Recap</strong>
+          <strong>Cavalier Invitational Recap</strong>
         </h3>
         <p>
-            First off, congratulations to all our runners who competed this past
-            weekend! Our women's team placed second with 49 points and our men
-            won with a ridiculous&nbsp;19. I hope you had a fun time and are
-            excited for our next meet in two weeks! Secondly, our throwers had a
-            throw-off this Saturday and some biiig marks were made.{" "}
+          First off, congratulations to all our runners who competed this past
+          weekend! Our women's team placed second with 49 points and our men won
+          with a ridiculous&nbsp;19. I hope you had a fun time and are excited
+          for our next meet in two weeks! Secondly, our throwers had a throw-off
+          this Saturday and some biiig marks were made.{" "}
         </p>
         <p>
-            Somehow Ben got on the lead car and recorded some pretty cool videos
-            on a Go-Pro
+          Somehow Ben got on the lead car and recorded some pretty cool videos
+          on a Go-Pro
         </p>
         <p>
-            Be sure to congratulate the throwers during practice or salute them
-            if you're running around the track. Lastly, thank you to those who
-            volunteered for the Hokie Half on Sunday.{" "}
-          And congrats to our club runners who ran the Hokie Half this past
-          Sunday!
+          Be sure to congratulate the throwers during practice or salute them if
+          you're running around the track. Lastly, thank you to those who
+          volunteered for the Hokie Half on Sunday. And congrats to our club
+          runners who ran the Hokie Half this past Sunday!
         </p>
         <img src="https://i.imgur.com/W6lm9LT.jpg" />
         <h3>
@@ -76,22 +180,22 @@ const articles = [
           is at 8 pm! Hope to see y'all there.
         </p>
         <h3>
-            <strong>Apparel</strong>
+          <strong>Apparel</strong>
         </h3>
         <p>
-            We are selling apparel and singlets! Apparel is not required and it
-            is a fun way to show your club spirit! If you plan on racing,
-            singlets are required. The link to order apparel can be found{" "}
+          We are selling apparel and singlets! Apparel is not required and it is
+          a fun way to show your club spirit! If you plan on racing, singlets
+          are required. The link to order apparel can be found{" "}
           <a
             target="_blank"
             rel="noopener noreferrer nofollow"
             href="https://forms.gle/s3vw3rhdtssdH4Rs7"
-          >here.
-          </a>
-            {" "}
-            If you plan on getting apparel, please fill out the survey{" "}
-            <strong>by September 22nd</strong>. If you buy something, please
-            bring cash to practice to pay!
+          >
+            here.
+          </a>{" "}
+          If you plan on getting apparel, please fill out the survey{" "}
+          <strong>by September 22nd</strong>. If you buy something, please bring
+          cash to practice to pay!
         </p>
         <img src="https://i.imgur.com/S4mleTo.jpg" />
         <h3>
