@@ -8,7 +8,8 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useState } from 'react';
 
 export default function News() {
-    const background = 'https://i.imgur.com/RItaeRr.jpg';
+    /* const background = 'https://i.imgur.com/RItaeRr.jpg'; */
+    const background = 'https://i.imgur.com/DHmAx07.jpg';
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -48,7 +49,7 @@ export default function News() {
 
     return (
         <>
-            <PageHeader image={background} title={"News"} subtitle={"VT Club XCTF"} yPos={"top"} />
+            <PageHeader image={background} title={"News"} subtitle={"VT Club XCTF"} yPos={"20%"} />
             <TopBar articles={articleData} filters={filters} onSort={handleSortedArticles}></TopBar>
             <div className="bar-plus-content">
                 <div className="page-content">
