@@ -19,6 +19,136 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "Can I Pickaxe You a Question?",
+    url: "can-i-pickaxe-you-a-question",
+    year: "2023",
+    date: "10 - 3",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/tAayNAN.jpg",
+    content: (
+      <div class="article-content">
+        <h3>
+          <strong>Charlotte Meet Recap</strong>
+        </h3>
+        <p>
+          Congrats to everyone who raced this past weekend! While it was a
+          (very) early morning, both our Men's and Women's teams came out on
+          top! The men scored 23 points and the women scored a whopping 27
+          points. Amazing scores for some amazing 5ks! Congrats to everyone who
+          got a PR!
+        </p>
+        <img src="https://i.imgur.com/hxckAUc.jpg" />
+        <h3>
+          <strong>Home Meet Sign-Up</strong>
+        </h3>
+        <p>
+            Its time to sign up for our next meet! We will be hosting our annual
+            Hokie Invitational on Saturday, October 14th, at Blacksburg High
+            School. Because this venue is only a five&nbsp;minute&nbsp;drive
+            from campus, you can wake up at a reasonable time. You can access
+            the link{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.gle/NyuY7cVduutievqQ8"
+          >here
+          </a>.
+          <strong> Signups will close on Friday, October 6th.</strong>&nbsp;
+        </p>
+        <p>
+            Please make sure you have made your NIRCA account, done IMLeagues,
+            and paid dues beforehand. If you're not planning on racing and you
+            are interested in volunteering for this meet, make sure to sign up{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.gle/TuYFpEfD14d7xosn8"
+          >here
+          </a>
+            . Volunteers are very important for this meet so if you are
+            available, I highly encourage you to help out! It's super fun, and
+            just a few hours.
+        </p>
+        <img src="https://i.imgur.com/zHTwXmi.jpg" />
+        <h3>
+          <strong>Team Hike </strong>
+        </h3>
+        <p>
+          If you love to hike and if you are not going home for fall break, then
+          you should join us for our annual Fall hike! We will be hiking
+          Sawtooth Ridge in Roanoke this Friday.
+            If you are interested in attending, please sign up{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.gle/T5rhqJexxntQgfxq7"
+          >here
+          </a>
+            . We will be leaving Blacksburg at 10:15 am for this two-hour hike.
+            This is a really fun opportunity to meet some new people on the team
+            and see some pretty sites.
+        </p>
+        <img src="https://i.imgur.com/aJOsoXe.jpg" />
+        <h3>
+          <strong>Tuesday 7 a.m. lift </strong>
+        </h3>
+        <p>
+          That's right! We are bringing back our 7 a.m. lifts. Yes, it is early
+          BUT it is a great way to strength train and it is a lot of fun! It is
+          in the Rec Sports Field House (the big bubble). Hope to see y'all
+          there :&#41;.
+        </p>
+        <img src="https://i.imgur.com/z3TeUgF.jpg" />
+        <h3>
+          <strong>Mezeh Percentage Night on Wednesday 10/4</strong>
+        </h3>
+        <p>
+          Do you like a nice meal after a great run? YES! Then you are in the
+          right place. We will be having a percentage night at Mezeh (
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://www.google.com/maps/place/616+University+City+Blvd,+Blacksburg,+VA+24060/@37.2325749,-80.4350097,17z/data=!3m1!4b1!4m6!3m5!1s0x884d956a80e1958d:0xd1473c7ccfff4ca0!8m2!3d37.2325707!4d-80.4324348!16s%2Fg%2F11f12zv2yv?entry=ttu"
+          >
+            616 University City Blvd, Blacksburg, VA 24060
+          </a>
+          ) this Wednesday. The promotion runs from 5 pm to 10 pm but many of us
+          will be heading over after practice (so you can definitely catch a
+          ride). We will be getting 25% of the proceeds made, so make sure to
+          come out and don't forget to mention that you are with club XCTF.
+        </p>
+        <h3>
+          <strong>No Practice on Friday 10/6</strong>
+        </h3>
+        <p>
+          Happy (almost) fall break! We will not have practice this Friday due
+          to fall break. I hope you all have a nice day off. And please REST!!
+          You deserve it.
+        </p>
+        <img src="https://i.imgur.com/DHmAx07.jpg" />
+        <h3>
+          <strong>Eligibility Forms</strong>
+        </h3>
+        <p>
+          <strong>This message is VERY important for racers.&nbsp;{" "}
+            If you are interested in racing Regionals on Saturday, October 21st,
+            you must sign the eligibility form at practice.&nbsp;</strong>
+            This is a form required by NIRCA to ensure everyone is a full-time
+            student.
+          <strong>&nbsp;</strong>
+            This is NOT a binding&nbsp;document, but you MUST sign it if you do
+            plan on going. If you are interested at all in going to Regionals at
+            all, you must sign the form. You will be able to sign the form until
+            October 4th. If you have any questions, just ask Wyatt, Roman, or
+            Volkan at practice.
+        </p>
+        <h3>Have a great Week!</h3>
+        <img src="https://i.imgur.com/ttGen9o.jpg" />
+      </div>
+    ),
+  },
+  {
     title: "Well Rested Hokies Prepare for Charlotte McAlpine",
     url: "well-rested-hokies-prepare-for-charlotte-mcalpine",
     year: "2023",
