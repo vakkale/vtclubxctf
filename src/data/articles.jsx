@@ -19,6 +19,104 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "Happy Fall 'Break!'",
+    url: "happy-fall-break",
+    year: "2023",
+    date: "10 - 9",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/LAOiWQN.jpg",
+    content: (
+      <div class="article-content">
+        <p>
+          Happy Spooky Season! We have a really exciting week coming up. We have
+          our team lift on Tuesday morning (YAY) and our home meet, the{" "}
+          <em>Hokie Invitational</em>, on Saturday! Thankfully, the Homecoming
+          game vs. Wake Forest is at 3:30 so we'll have plenty of time to get
+          ready for the game. Hope everyone has a great week of class and
+          practice as we head into the second half of the semester!
+        </p>
+        <img src="https://i.imgur.com/bNoPxua.jpg" />
+        <h3>
+          <strong>Home Meet &amp; Volunteering </strong>
+        </h3>
+        <p>
+          The home meet this Saturday is at Blacksburg High School. The ladies'
+          race starts at 9:00 am and the gentlemen will be racing at 10:00 am.
+          Be on the lookout for an email from Roman regarding racing details.
+        </p>
+        <p>
+            If you're not planning on racing and are interested in volunteering
+            for this meet, make sure to{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.gle/izfgasc3Fja3FTVWA"
+          >
+            sign up
+          </a>
+          . Volunteers are very important for this meet so if you are available,
+          I highly encourage you to help out! It's super fun, and takes just a
+          few hours.
+        </p>
+        <img src="https://i.imgur.com/V614gI6.jpg" />
+        <h3>
+          <strong>Regionals Sign Up</strong>
+        </h3>
+        <p>
+          <strong>
+            If you are interested in going to Regionals, please read this
+            section in its entirety as there is a lot of important information.
+          </strong>
+        </p>
+        <p>
+          Woah... do you hear that? That... That's right, it's the sound of your
+          Mid-Atlantic defending champions coming to reclaim their first place
+          trophy. We also definitely had the most fun. NIRCA Regionals will be
+          held on Saturday, October 21st at Lehigh University in Bethlehem,
+          Pennsylvania. <strong>Signups close this Friday, October 13th</strong>
+          . Please note this is an overnight meet and we will be staying at a
+          hotel. Because hotel rooms are expensive, if you sign up and later
+          decide to drop the meet,{" "}
+          <strong>you must let us know by Saturday, October 14th</strong>.
+          Otherwise, you will be charged a $20 fine. We will be leaving for
+          Lehigh on Friday between 12-2pm, so if you have class and need an
+          excused absence, you must email or message Volkan with information on
+          your class and the professor. You will only get an excused absence if
+          you have done all the signup requirements. You can signup for the meet{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.gle/PFpv88WHiEnSwAoX6"
+          >
+            here
+          </a>
+          .<strong> </strong>
+        </p>
+        <h3>
+          <strong>Tuesday 7 a.m. lift </strong>
+        </h3>
+        <p>
+          That's right! We are bringing back our 7 a.m. lifts. Yes, it is early
+          BUT it is a great way to strength train and it is a lot of fun! It is
+          in the Rec Sports Field House (the big bubble). Hope to see y'all
+          there :).
+        </p>
+        <img src="https://i.imgur.com/HJnrQeP.jpg" />
+        <h3>
+          <strong>Team Hike </strong>
+        </h3>
+        <p>
+          Thanks to everyone who joined us on our team hike! We hope that you
+          had fun. We got to see some pretty sights and spend time with the best
+          teammates ever.
+        </p>
+        <h3>Have a great Week! </h3>
+        <p></p>
+      </div>
+    ),
+  },
+  {
     title: "Can I Pickaxe You a Question?",
     url: "can-i-pickaxe-you-a-question",
     year: "2023",
@@ -43,32 +141,33 @@ const articles = [
           <strong>Home Meet Sign-Up</strong>
         </h3>
         <p>
-            Its time to sign up for our next meet! We will be hosting our annual
-            Hokie Invitational on Saturday, October 14th, at Blacksburg High
-            School. Because this venue is only a five&nbsp;minute&nbsp;drive
-            from campus, you can wake up at a reasonable time. You can access
-            the link{" "}
+          Its time to sign up for our next meet! We will be hosting our annual
+          Hokie Invitational on Saturday, October 14th, at Blacksburg High
+          School. Because this venue is only a five&nbsp;minute&nbsp;drive from
+          campus, you can wake up at a reasonable time. You can access the link{" "}
           <a
             target="_blank"
             rel="noopener noreferrer nofollow"
             href="https://forms.gle/NyuY7cVduutievqQ8"
-          >here
-          </a>.
-          <strong> Signups will close on Friday, October 6th.</strong>&nbsp;
+          >
+            here
+          </a>
+          .<strong> Signups will close on Friday, October 6th.</strong>&nbsp;
         </p>
         <p>
-            Please make sure you have made your NIRCA account, done IMLeagues,
-            and paid dues beforehand. If you're not planning on racing and you
-            are interested in volunteering for this meet, make sure to sign up{" "}
+          Please make sure you have made your NIRCA account, done IMLeagues, and
+          paid dues beforehand. If you're not planning on racing and you are
+          interested in volunteering for this meet, make sure to sign up{" "}
           <a
             target="_blank"
             rel="noopener noreferrer nofollow"
             href="https://forms.gle/TuYFpEfD14d7xosn8"
-          >here
+          >
+            here
           </a>
-            . Volunteers are very important for this meet so if you are
-            available, I highly encourage you to help out! It's super fun, and
-            just a few hours.
+          . Volunteers are very important for this meet so if you are available,
+          I highly encourage you to help out! It's super fun, and just a few
+          hours.
         </p>
         <img src="https://i.imgur.com/zHTwXmi.jpg" />
         <h3>
@@ -77,17 +176,18 @@ const articles = [
         <p>
           If you love to hike and if you are not going home for fall break, then
           you should join us for our annual Fall hike! We will be hiking
-          Sawtooth Ridge in Roanoke this Friday.
-            If you are interested in attending, please sign up{" "}
+          Sawtooth Ridge in Roanoke this Friday. If you are interested in
+          attending, please sign up{" "}
           <a
             target="_blank"
             rel="noopener noreferrer nofollow"
             href="https://forms.gle/T5rhqJexxntQgfxq7"
-          >here
+          >
+            here
           </a>
-            . We will be leaving Blacksburg at 10:15 am for this two-hour hike.
-            This is a really fun opportunity to meet some new people on the team
-            and see some pretty sites.
+          . We will be leaving Blacksburg at 10:15 am for this two-hour hike.
+          This is a really fun opportunity to meet some new people on the team
+          and see some pretty sites.
         </p>
         <img src="https://i.imgur.com/aJOsoXe.jpg" />
         <h3>
@@ -131,17 +231,19 @@ const articles = [
           <strong>Eligibility Forms</strong>
         </h3>
         <p>
-          <strong>This message is VERY important for racers.&nbsp;{" "}
-            If you are interested in racing Regionals on Saturday, October 21st,
-            you must sign the eligibility form at practice.&nbsp;</strong>
-            This is a form required by NIRCA to ensure everyone is a full-time
-            student.
+          <strong>
+            This message is VERY important for racers.&nbsp; If you are
+            interested in racing Regionals on Saturday, October 21st, you must
+            sign the eligibility form at practice.&nbsp;
+          </strong>
+          This is a form required by NIRCA to ensure everyone is a full-time
+          student.
           <strong>&nbsp;</strong>
-            This is NOT a binding&nbsp;document, but you MUST sign it if you do
-            plan on going. If you are interested at all in going to Regionals at
-            all, you must sign the form. You will be able to sign the form until
-            October 4th. If you have any questions, just ask Wyatt, Roman, or
-            Volkan at practice.
+          This is NOT a binding&nbsp;document, but you MUST sign it if you do
+          plan on going. If you are interested at all in going to Regionals at
+          all, you must sign the form. You will be able to sign the form until
+          October 4th. If you have any questions, just ask Wyatt, Roman, or
+          Volkan at practice.
         </p>
         <h3>Have a great Week!</h3>
         <img src="https://i.imgur.com/ttGen9o.jpg" />
