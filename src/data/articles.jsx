@@ -19,6 +19,208 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "Dub Train Continues",
+    url: "dub-train-continues",
+    year: "2023",
+    date: "10 - 23",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/gRvXLGo.jpg",
+    content: (
+      <div class="article-content">
+        <p>
+          Good morning all you beautiful athletes! Hope you had a restful
+          weekend following our MASSIVE DUBS at the regionals meet. Before we
+          get started, remember that practice is at 5 pm now and also note that
+          we will move the time once again to 4 pm after daylight savings in two
+          weeks. Now time for the recap:
+        </p>
+        <img src="https://i.imgur.com/2laAeN9.jpg" />
+        <h3>
+          <strong>Regionals Recap </strong>
+        </h3>
+        <p>
+          We had such an eventful weekend. At NIRCA Mid-Atlantic Regionals, the
+          women's team placed 2nd with 54 points and great performances all
+          around, and the men's team placed 1st with a dominant performance by
+          racking up 17 points. Your throwers also persevered with the presence
+          of wind and had a great time at their throw-off. Continue to support
+          your teammates because we can only get so far on our own. And a
+          special shout-out to our men's and women's podium finishers:
+        </p>
+        <p>
+          <strong>Men's podium finishers:</strong>
+        </p>
+        <ul>
+          <li>
+            <p>Samuel Yakulis - 25:52.3</p>
+          </li>
+          <li>
+            <p>Noah LeCain - 26:01.5</p>
+          </li>
+          <li>
+            <p>Alec Venable - 26:03.1</p>
+          </li>
+          <li>
+            <p>Harris Naseh - 26:21.5</p>
+          </li>
+          <li>
+            <p>Matthew Miller - 26:33.6</p>
+          </li>
+          <li>
+            <p>Jonathan Goerlich - 26:35.0</p>
+          </li>
+          <li>
+            <p>Wyatt Thomas - 26:36.9</p>
+          </li>
+        </ul>
+        <p>
+          <strong>Women's podium finishers:</strong>
+        </p>
+        <ul>
+          <li>
+            <p>Anna Rigby - 22:44.4</p>
+          </li>
+          <li>
+            <p>Jocelyn Hurst - 23:21.1</p>
+          </li>
+          <li>
+            <p>Abby Norton - 23:29.6</p>
+          </li>
+        </ul>
+        <h3>
+          <strong>No Practice on Thursday</strong>
+        </h3>
+        <p>
+          No praccy because we have the football game. Go out and support your
+          Hokies at Lane Stadium. Hope to see you there!
+        </p>
+        <img src="https://i.imgur.com/jTSIeOU.jpg" />
+        <h3>
+          <strong>Feedback Survey #2 </strong>
+        </h3>
+        <p>
+          It's time for our second feedback survey! You can access the form
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.gle/YUHxkk5CQTsxK5JG8"
+          >
+            here
+          </a>
+          . We read through all of these to gauge how the meets, socials, and
+          practices are going, and we want to hear your input! The officer board
+          reads every entry, so please take the time to fill it out! It's just a
+          quick, five-minute anonymous survey asking your thoughts on how things
+          have been going this month. We really appreciate it!
+        </p>
+        <img src="https://i.imgur.com/6iQzRhD.jpg" />
+        <h3>
+          <strong>Semester Shirts </strong>
+        </h3>
+        <p>
+          That's right! Semester shirts are here! You can grab yours at
+          practice. If you are not able to grab your shirt this week, make sure
+          to reach out to Molly.
+        </p>
+        <img src="https://i.imgur.com/YgDAja7.jpg" />
+        <h3>
+          <strong>Breakzone Social</strong>
+        </h3>
+        <p>
+            Do you like to play ping-pong? Do you think that you can beat the
+            officers in bowling? Do you like Mario Kart? We will be having our
+            Breakzone social this Saturday 24! It will be a lot of fun. We have
+            rented out the entire Breakzone, so it will be just club people.
+            Hope to see y'all there.
+        </p>
+        <img src="https://i.imgur.com/VFVGRYr.jpg" />
+        <h3>
+          <strong>Tuesday 7 a.m. lift </strong>
+        </h3>
+        <p>
+          Do you like waking up early to lift with the best people ever? Do you
+          love to strength train? Then you should join us for our morning lift!
+          It is at 7 a.m. on Tuesdays in the Rec Sports Field House (the big
+          bubble). Hope to see y'all there :).
+        </p>
+        <img src="https://i.imgur.com/DoSQbTV.jpg" />
+        <h3>Have a great Week!</h3>
+      </div>
+    ),
+  },
+  {
+    title: "Home Meet Dubs",
+    url: "home-meet-dubs",
+    year: "2023",
+    date: "10 - 16",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/5hGjkrT.jpg",
+    content: (
+      <div class="article-content">
+        <p>
+          Hey runners, Happy Regionals week!! Who's excited!? If you are joining
+          us at Regionals in lovely Bethlehem, PA, be sure to be on the lookout
+          for an email from Roman and Wyatt with more details.
+        </p>
+        <img src="https://i.imgur.com/lDGiqHw.jpg" />
+        <h3>
+          <strong>Home Meet Recap </strong>
+        </h3>
+        <p>
+          Congrats on another win! This was yet another great home meet. Both
+          our Men's and Women's teams got first place. Despite a bit of liquid
+          sunshine, everyone did a great job. Thank you to everyone who helped
+          volunteer, you are truly appreciated and we couldn't have done this
+          without you.
+        </p>
+        <img src="https://i.imgur.com/StIUP4x.jpg" />
+        <h3>
+          <strong>Practice is moving to 5 pm </strong>
+        </h3>
+        <p>
+          Starting today, practice will now begin at 5 pm to account for the
+          loss of daylight. We will still be meeting Monday through Friday at
+          the Miller-Johnson Outdoor Track, but just an hour earlier now.
+          Hopefully, you are still able to come out and join us each day!
+        </p>
+        <img src="https://i.imgur.com/fMU8DJB.jpg" />
+        <h3>
+          <strong>Semester Shirts</strong>
+        </h3>
+        <p>
+          That's right! The moment you all have been waiting for... semester
+          shirts are here! If you have paid your dues and filled out the
+          membership survey, then you can get a shirt! Shirts will be handed out
+          at practice this week Be sure to grab yours!
+        </p>
+        <img src="https://i.imgur.com/AvbgNwd.jpg" />
+        <h3>
+          <strong>Regionals </strong>
+        </h3>
+        <p>
+          Happy Mid-Atlantic Regions week! Regionals is on Saturday the 21st at
+          Leigh University. If you signed up for regions, be sure to be on the
+          lookout for an email about rooming and van lists. If you are not
+          racing in regionals, be sure to wish those who are good luck.
+        </p>
+        <img src="https://i.imgur.com/7mVMdpT.jpg" />
+        <h3>
+          <strong>Tuesday 7 a.m. lift </strong>
+        </h3>
+        <p>
+          Do you like waking up early to lift with the best people ever? Then
+          you should join us for our morning lift! It is at 7 a.m. on Tuesdays
+          in the Rec Sports Field House (the big bubble). Hope to see y'all
+          there :).
+        </p>
+        <h3>Have a great Week!</h3>
+        <p></p>
+      </div>
+    ),
+  },
+  {
     title: "Happy Fall 'Break!'",
     url: "happy-fall-break",
     year: "2023",
@@ -46,8 +248,8 @@ const articles = [
           Be on the lookout for an email from Roman regarding racing details.
         </p>
         <p>
-            If you're not planning on racing and are interested in volunteering
-            for this meet, make sure to{" "}
+          If you're not planning on racing and are interested in volunteering
+          for this meet, make sure to{" "}
           <a
             target="_blank"
             rel="noopener noreferrer nofollow"

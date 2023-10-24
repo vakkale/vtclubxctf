@@ -3,7 +3,8 @@ import SideBarLite from "../modules/SideBarLite";
 import Article from "../modules/Article";
 
 export default function CrossCountry() {
-    const background = 'https://i.imgur.com/3HLHrbP.jpg';
+    //const background = 'https://i.imgur.com/3HLHrbP.jpg';
+    const background = 'https://i.imgur.com/1oHONQD.jpg';
 
     const item = {
         date: "Fall 2023",
