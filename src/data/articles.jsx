@@ -19,6 +19,104 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "Almost Nationals",
+    url: "almost-nationals",
+    year: "2023",
+    date: "10 - 30",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/c2zg3L4.jpg",
+    content: (
+      <div class="article-content">
+        <p>
+          Good morning amazing people of Club Cross Country and Track and Field!
+          If you have not already, read Wyatt's email, there is some important
+          information in there about signing up for nationals! Hope everyone had
+          a good Halloweekend and see y'all at practice this week!
+        </p>
+        <h3>
+          <strong>NIRCA Cross Country Sign Ups</strong>
+        </h3>
+        <p>
+          <strong>
+            If you are interested in attending NIRCA Nationals, please read this
+            section in its entirety.{" "}
+          </strong>
+          That's right, it's time for NIRCA Nats! The splendor, the drama, the
+          excitement of traveling to.... Indiana? That's right, we're headed
+          back to&nbsp;
+          <strong>
+            Shelbyville, Indiana for NIRCA Nats to race on Saturday, November
+            11th. We will be leaving Friday, November 10th at 10/11 am
+          </strong>
+          . Please note that we are leaving during class time&nbsp;on Friday, so
+          if you have a class you must be excused from, it is your
+          responsibility to email/message Volkan in order to get that
+          situated.&nbsp;
+          <strong>Signups close this Friday, November 3rd.&nbsp;</strong>This is
+          a 7-hour drive, which isn't too bad. If you went to regionals with us,
+          the process will be the exact same. Because meets are expensive, if
+          you sign up and later decide to drop,&nbsp;
+          <strong>
+            you must tell us by November 4th or you will be fined $35
+          </strong>
+          . If you have any questions about the meet process or any details,
+          please just ask! You can sign up for the meet&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.gle/vhYKuNY1ykwkckup8"
+          >
+            here
+          </a>
+          .
+        </p>
+        <img src="https://i.imgur.com/m4c6iJ8.jpg" />
+        <h3>
+          <strong>Halloween Costume Contest </strong>
+        </h3>
+        <p>
+          Wanna show us your Halloween costume? Do you think you can scare us?
+          Well, we'll be hosting a small Halloween costume contest at practice
+          on Tuesday, October 31st, and ranking our favorite costumes! We'll be
+          giving the winners some additional VT Club XCTF merch we have lying
+          around. We cannot wait to see y'all's costumes.
+        </p>
+        <img src="https://i.imgur.com/zpo9rLU.jpg" />
+        <h3>
+          <strong>Movie Night Social on Friday (11/3)</strong>
+        </h3>
+        <p>
+          Want to watch a movie with the best people ever on campus? I know that
+          the answer is yes. We will be watching a movie this Friday night in
+          Durham Hall, room 217 at 7:30 p.m. We'll be voting on which movie to
+          watch in the GroupMe, so be on the lookout for that survey soon. I
+          highly recommend you come on out! It will be a lot of fun.
+        </p>
+        <h3>
+          <strong>Semester Shirts </strong>
+        </h3>
+        <p>
+          That's right! Semester shirts are here! You can grab yours at
+          practice. If you are not able to grab your shirt this week, make sure
+          to reach out to Molly.
+        </p>
+        <img src="https://i.imgur.com/CCaC6wy.jpg" />
+        <h3>
+          <strong>Tuesday 7 a.m. lift </strong>
+        </h3>
+        <p>
+          Do you like waking up early to lift with the best people ever? Do you
+          love to strength train? Then you should join us for our morning lift!
+          It is at 7 a.m. on Tuesdays in the Rec Sports Field House (the big
+          bubble). Hope to see y'all there :).
+        </p>
+        <img src="https://i.imgur.com/z81voEx.jpg" />
+        <h3>Have a great Week!</h3>
+      </div>
+    ),
+  },
+  {
     title: "Dub Train Continues",
     url: "dub-train-continues",
     year: "2023",
@@ -128,11 +226,11 @@ const articles = [
           <strong>Breakzone Social</strong>
         </h3>
         <p>
-            Do you like to play ping-pong? Do you think that you can beat the
-            officers in bowling? Do you like Mario Kart? We will be having our
-            Breakzone social this Saturday 24! It will be a lot of fun. We have
-            rented out the entire Breakzone, so it will be just club people.
-            Hope to see y'all there.
+          Do you like to play ping-pong? Do you think that you can beat the
+          officers in bowling? Do you like Mario Kart? We will be having our
+          Breakzone social this Saturday 24! It will be a lot of fun. We have
+          rented out the entire Breakzone, so it will be just club people. Hope
+          to see y'all there.
         </p>
         <img src="https://i.imgur.com/VFVGRYr.jpg" />
         <h3>
