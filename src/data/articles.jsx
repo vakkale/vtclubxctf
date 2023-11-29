@@ -19,6 +19,87 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "Last Week of Practice!",
+    url: "last-week-of-practice",
+    year: "2023",
+    date: "11 - 29",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/XLhUOp6.jpg",
+    content: (
+      <div class="article-content">
+        <p>
+          Happy Last Week of Practice! We have loved running with you this
+          semester. Make sure to read Wyatt's email. This is the last website
+          update of the semester :(. Congrats on making it through!
+        </p>
+        <img src="https://i.imgur.com/SOvmDN9.jpg" />
+        <h3>
+          <strong>Feedback Survey</strong>
+        </h3>
+        <p>
+          As the semester winds to an end, I'd love to get your thoughts on how
+          the club did this year. You can access our final feedback survey&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdGjRmmlg3103bnaEO3nHz0rXW-ZdjqV3oQ0ZfNnmGXN_rHFw/viewform?usp=sf_link"
+          >
+            here
+          </a>
+          &nbsp;. The format is different from the rest, and only takes a minute
+          or two to complete. As always, the survey is anonymous but you may
+          include your name at the bottom if you'd like. I really can't stress
+          how much we appreciate your feedback, because we try to take all input
+          into consideration and we want to make this club as enjoyable as
+          possible for you.
+        </p>
+        <img src="https://i.imgur.com/tjF0OHq.jpg" />
+        <h3>
+          <strong>Officer Intrest Meeting</strong>
+        </h3>
+        <p>
+          Interested in running for an officer position next school year? Well,
+          come join us in Wallace 340 at 2:45 pm on Sunday, December 3rd for an
+          officer interest meeting. Each officer will have some slides prepared
+          to discuss what they do, and we'll have a Q&amp;A session so you can
+          ask any questions you have. Even if you're just thinking about running
+          for a position, I highly recommend you stop by as you can learn a lot
+          of information about what each officer does. Being an officer is a
+          great way to be more involved in the club, as they are the reason why
+          this club functions as well as it does. We have positions ranging from
+          event captains to apparel officer or race coordinator.&nbsp;
+        </p>
+        <img src="https://i.imgur.com/Gc0cXOn.jpg" />
+        <h3>
+          <strong>Winter Formal </strong>
+        </h3>
+        <p>
+          It's time for our final social of the year: our Winter Formal! Our
+          dance will be on Saturday, December 2nd from 4-8 pm at the Blacksburg
+          Community Center. You can access the signup&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSehlz3dtthQPeXyqSg53qKrVFNADtfWRvSgKm5t1kjZ_2zU-g/viewform?usp=sf_link"
+          >
+            here
+          </a>
+          . Please sign up by end of day Tuesday. There is no dress code nor an
+          entrance fee. You can find more details in the&nbsp;signup regarding
+          plus ones, paper plate&nbsp;awards, and more. If you are interested in
+          helping, please message Harris over GroupMe as we'd really appreciate
+          as many hands as we can get. I really encourage you to sign up because
+          this is one of my favorite events that we host! We'll have karaoke, a
+          makeshift photobooth, some food, dances, and more.
+        </p>
+        <p></p>
+        <img src="https://i.imgur.com/d3FNSTd.jpg" />
+        <h3>Have a great Week!</h3>
+      </div>
+    ),
+  },
+  {
     title: "Almost Nationals",
     url: "almost-nationals",
     year: "2023",
