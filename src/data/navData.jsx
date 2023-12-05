@@ -23,7 +23,7 @@ const navData = [
         submenus: [
             {
                 name: "sprint",
-                url: "/training/sprint/fall-plan",
+                url: "/training/sprint/winter-plan",
                 image: 'https://i.imgur.com/zsLMckC.jpg'
             },
             {
@@ -32,11 +32,11 @@ const navData = [
                 submenus: [
                     {
                         name: "Women's Distance",
-                        url: "/training/womens-distance/fall-plan",
+                        url: "/training/womens-distance/winter-plan",
                     },
                     {
                         name: "Men's Distance",
-                        url: "/training/mens-distance/low-mileage",
+                        url: "/training/mens-distance/400m-800m",
                     }
                 ]
             },

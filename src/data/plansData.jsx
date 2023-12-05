@@ -49,6 +49,19 @@ const fall23SheetsNoDec = [
   },
 ];
 
+const winter23sheets = [
+  {
+    title: "December",
+    url: "december",
+    range: "B2:H26",
+  },
+  {
+    title: "January",
+    url: "january",
+    range: "B2:H22",
+  }
+];
+
 const plansData = [
   {
     team: "Men's Distance",
@@ -58,21 +71,30 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "Low Mileage",
-        url: "low-mileage",
+        title: "400m/800m",
+        url: "400m-800m",
         year: "2023",
-        season: "Fall",
-        sheetID: "1TflXQmEWMP2h2gqb9OVa_7At4kEMgGgsMCXgJOFhsf4",
-        sheets: fall23SheetsNoDec,
+        season: "Winter",
+        sheetID: "16QaNynbo3hXnuxki2EWPmMKEDuh9-ulSaQLCi8hKlB4",
+        sheets: winter23sheets,
       },
       {
         calendar: true,
-        title: "High-Mileage",
-        url: "high-mileage",
+        title: "800m/1500m",
+        url: "800m-1500m",
         year: "2023",
-        season: "Fall",
-        sheetID: "18o6tmUju5AA6nFDtckbiWJ0-yBO4-jO_n2hYdyTS_k0",
-        sheets: fall23SheetsNoDec,
+        season: "Winter",
+        sheetID: "1xjOkMxHXVrf9GF7Ck81GWRtCNGeO8LYmOs7w0SKqZYE",
+        sheets: winter23sheets,
+      },
+      {
+        calendar: true,
+        title: "1500m/5000m",
+        url: "1500m-5000m",
+        year: "2023",
+        season: "Winter",
+        sheetID: "1_CHO3mTmBQVl0kya1-TyTavlP7jWERX1zDHbHk3FnVI",
+        sheets: winter23sheets,
       },
       {
         calendar: false,
@@ -546,12 +568,12 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "Fall Plan",
-        url: "fall-plan",
+        title: "Winter Plan",
+        url: "winter-plan",
         year: "2023",
-        season: "Fall",
-        sheetID: "1f1q0lKdxV5nrEVzVUbsMYrvEP4zpHOIoMfaXyQ4OAkM",
-        sheets: fall23SheetsNoDec
+        season: "Winter",
+        sheetID: "1fcqbhVV6IOuMA8Xz3hH2R8TYCAizDnOKEuNw4f-CsVA",
+        sheets: winter23sheets
       },
       {
         calendar: false,
@@ -693,18 +715,18 @@ const plansData = [
         title: "Jumps",
         url: "jumps",
         year: "2023",
-        season: "Fall",
-        sheetID: "1Y-VcjxnwkHZN-k6yl5INdgc3d_sB_icp0IPRlzZhPRo",
-        sheets: fall23Sheets,
+        season: "Winter",
+        sheetID: "1RCB5XE_AjOJBhsnsSb9N7_mhgU8zJYIVDJhXXR6PiL4",
+        sheets: winter23sheets,
       },
       {
         calendar: true,
         title: "Throws",
         url: "throws",
         year: "2023",
-        season: "Fall",
-        sheetID: "1NSg1aLpStqWAlMOB2NS3lg0Prsq7PDKF4L-14t_0OAA",
-        sheets: fall23Sheets,
+        season: "Winter",
+        sheetID: "1NqhMyFHn-Pi96LVSg_HeOQpGTfiZ9EPbfQDHazZZdDk",
+        sheets: winter23sheets,
       },
     ],
   },
@@ -716,12 +738,12 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "Fall Plan",
-        url: "fall-plan",
+        title: "Winter Plan",
+        url: "winter-plan",
         year: "2023",
-        season: "Fall",
-        sheetID: "1GStUKxkqgFJya5XluoF-pDM_XNcp0H0cMO-r9iEbA20",
-        sheets: fall23Sheets,
+        season: "Winter",
+        sheetID: "1e0psHM_IKKplFlVnZeLH68HDNH80qWU-BJZ0zYWlFWQ",
+        sheets: winter23sheets,
       },
       {
         calendar: false,
