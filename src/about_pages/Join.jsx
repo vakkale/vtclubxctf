@@ -28,13 +28,13 @@ export default function Join() {
       <h3>As easy as 1-2-3!</h3>
       <p>
         There are 3 steps to becoming a member of the club. All items are due by{" "}
-        <span style={{ fontWeight: "bold" }}>Sept. 8.</span>
+        <span style={{ fontWeight: "bold" }}>Jan. 26.</span>
       </p>
       <ol>
         <li>
           Complete the{" "}
           <a
-            href="https://forms.gle/4muhebpaA2ZkBEVn6"
+            href="https://forms.gle/p8xssbL7kjKdTCg89"
             target="_blank"
             rel="noreferrer"
           >

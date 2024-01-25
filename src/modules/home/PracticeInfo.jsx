@@ -14,11 +14,11 @@ export default function GeneralInfo() {
         },
         {
             icon: "schedule",
-            description: "Distance: 4:00PM"
+            description: "Distance: 4:30PM"
         },
         {
             icon: "schedule",
-            description: "Sprints/Field: 4:00PM"
+            description: "Sprints/Field: 4:30PM"
         },
         {
             icon: "schedule",
