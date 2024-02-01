@@ -62,6 +62,34 @@ const winter23sheets = [
   }
 ];
 
+const spring24Sheets = [
+  /* {
+    title: "January",
+    url: "january",
+    range: "B2:H22",
+  }, */
+  {
+    title: "February",
+    url: "february",
+    range: "B2:H22",
+  },
+  {
+    title: "March",
+    url: "march",
+    range: "B2:H22",
+  },
+  {
+    title: "April",
+    url: "april",
+    range: "B2:H22",
+  },
+  /* {
+    title: "May",
+    url: "may",
+    range: "B2:H22",
+  } */
+];
+
 const plansData = [
   {
     team: "Men's Distance",
@@ -71,30 +99,21 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "400m/800m",
-        url: "400m-800m",
-        year: "2023",
-        season: "Winter",
-        sheetID: "16QaNynbo3hXnuxki2EWPmMKEDuh9-ulSaQLCi8hKlB4",
-        sheets: winter23sheets,
-      },
-      {
-        calendar: true,
         title: "800m/1500m",
         url: "800m-1500m",
-        year: "2023",
-        season: "Winter",
-        sheetID: "1xjOkMxHXVrf9GF7Ck81GWRtCNGeO8LYmOs7w0SKqZYE",
-        sheets: winter23sheets,
+        year: "2024",
+        season: "Spring",
+        sheetID: "1KP_wB0pFZbtrouB3c-bI9yvWE_2jjF9CBOdvnTpTZuc",
+        sheets: spring24Sheets,
       },
       {
         calendar: true,
         title: "1500m/5000m",
         url: "1500m-5000m",
-        year: "2023",
-        season: "Winter",
-        sheetID: "1_CHO3mTmBQVl0kya1-TyTavlP7jWERX1zDHbHk3FnVI",
-        sheets: winter23sheets,
+        year: "2024",
+        season: "Spring",
+        sheetID: "1BEQLcvcOjiv27Nv6VzFJLSpsEDjqxrLJF98IYjrk-gE",
+        sheets: spring24Sheets,
       },
       {
         calendar: false,
@@ -568,12 +587,21 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "Winter Plan",
-        url: "winter-plan",
-        year: "2023",
-        season: "Winter",
-        sheetID: "1fcqbhVV6IOuMA8Xz3hH2R8TYCAizDnOKEuNw4f-CsVA",
-        sheets: winter23sheets
+        title: "800m/1500m",
+        url: "800m-1500m",
+        year: "2024",
+        season: "Spring",
+        sheetID: "1gMFPAhaFxmOj35I_rjNi1UyXHcmyYAkP1lHaftNxY9k",
+        sheets: spring24Sheets
+      },
+      {
+        calendar: true,
+        title: "1500m/5000m",
+        url: "1500m-5000m",
+        year: "2024",
+        season: "Spring",
+        sheetID: "1eP19rwxLs8BAjkC2TAkgnuVzRqn3PWy355-4mGBJST0",
+        sheets: spring24Sheets
       },
       {
         calendar: false,
@@ -714,10 +742,10 @@ const plansData = [
         calendar: true,
         title: "Jumps",
         url: "jumps",
-        year: "2023",
-        season: "Winter",
-        sheetID: "1RCB5XE_AjOJBhsnsSb9N7_mhgU8zJYIVDJhXXR6PiL4",
-        sheets: winter23sheets,
+        year: "2024",
+        season: "Spring",
+        sheetID: "1IQ0EOGSYmY5eB9lb6acf8POrfVHshxR7OAMhUojW8JA",
+        sheets: spring24Sheets,
       },
       {
         calendar: true,
@@ -736,7 +764,8 @@ const plansData = [
     image: "https://i.imgur.com/WbyiBeI.jpg",
     yPos: "top",
     plans: [
-      {
+      /* TODO: UNCOMMENT THIS AS SOON AS WE HAVE THE NEW PLAN FOR FEB */
+      /* {
         calendar: true,
         title: "Winter Plan",
         url: "winter-plan",
@@ -744,7 +773,7 @@ const plansData = [
         season: "Winter",
         sheetID: "1e0psHM_IKKplFlVnZeLH68HDNH80qWU-BJZ0zYWlFWQ",
         sheets: winter23sheets,
-      },
+      }, */
       {
         calendar: false,
         title: "Warmups",
