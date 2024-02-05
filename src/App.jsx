@@ -112,8 +112,8 @@ export default function App() {
           <LoadingScreen></LoadingScreen>
         ) : (
           <BrowserRouter>
+            <Redirects></Redirects>
             <ScrollToTop></ScrollToTop>
-            {/* <Redirects></Redirects> */}
             <Header></Header>
             {/* <Banner></Banner> */}
             {/* <Parser></Parser> */}
