@@ -59,7 +59,7 @@ const winter23sheets = [
     title: "January",
     url: "january",
     range: "B2:H22",
-  }
+  },
 ];
 
 const spring24Sheets = [
@@ -103,7 +103,7 @@ const plansData = [
         url: "800m-1500m",
         year: "2024",
         season: "Spring",
-        sheetID: "1KP_wB0pFZbtrouB3c-bI9yvWE_2jjF9CBOdvnTpTZuc",
+        sheetID: "1zL2V7r_klfJxLjtbGjCqtZJQcakVIUOBKsQAWYYf1tk",
         sheets: spring24Sheets,
       },
       {
@@ -112,7 +112,7 @@ const plansData = [
         url: "1500m-5000m",
         year: "2024",
         season: "Spring",
-        sheetID: "1BEQLcvcOjiv27Nv6VzFJLSpsEDjqxrLJF98IYjrk-gE",
+        sheetID: "1-sAbXAJN4QEmITACQL2y8ZEThHiHCLdTap1BaM6CzuM",
         sheets: spring24Sheets,
       },
       {
@@ -591,8 +591,8 @@ const plansData = [
         url: "800m-1500m",
         year: "2024",
         season: "Spring",
-        sheetID: "1gMFPAhaFxmOj35I_rjNi1UyXHcmyYAkP1lHaftNxY9k",
-        sheets: spring24Sheets
+        sheetID: "1-_d4sJli8UDZyEQJM5I1m9gV2FhkrjL7scN0fTjk5yk",
+        sheets: spring24Sheets,
       },
       {
         calendar: true,
@@ -600,8 +600,8 @@ const plansData = [
         url: "1500m-5000m",
         year: "2024",
         season: "Spring",
-        sheetID: "1eP19rwxLs8BAjkC2TAkgnuVzRqn3PWy355-4mGBJST0",
-        sheets: spring24Sheets
+        sheetID: "1dxI_EjjgeFznmZ6ayUCtIUwxnHr3mO2hkKagSxXHOhw",
+        sheets: spring24Sheets,
       },
       {
         calendar: false,
@@ -744,10 +744,245 @@ const plansData = [
         url: "jumps",
         year: "2024",
         season: "Spring",
-        sheetID: "1IQ0EOGSYmY5eB9lb6acf8POrfVHshxR7OAMhUojW8JA",
+        sheetID: "1qYtmuYkbifM8SUD8gbrp9R2jtBmavu7VP6tmD-OWsXQ",
         sheets: spring24Sheets,
       },
       {
+        calendar: false,
+        title: "Throws",
+        url: "throws",
+        year: "2024",
+        season: "Spring",
+        content: (
+          <div class="article-content">
+            <h3>
+              <span>
+                <strong>Shot Put:</strong>
+              </span>
+            </h3>
+            <p>
+              Developing Technical understanding should be a priority and then
+              once you understand how the changes you make are affecting your
+              throws you can translate these improvements into added
+              distance.&nbsp;&nbsp;
+            </p>
+            <ul>
+              <li>
+                <p>
+                  <span>The Stand Throw</span>
+                </p>
+                <ul>
+                  <li>
+                    <p>
+                      The most basic way to throw the shot put is from the
+                      standing throw or ‘power’ position.&nbsp;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      No matter if you want to rotate, glide, shuffle, or just
+                      throw out of power, understanding how to efficiently
+                      translate force through your lower body and into the
+                      release is essential.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.youtube.com/watch?v=wM6SAweFLcg&amp;ab_channel=ThrowsUniversity"
+                      >
+                        https://www.youtube.com/watch?v=wM6SAweFLcg&amp;ab_channel=ThrowsUniversity
+                      </a>
+                      &nbsp;&nbsp;
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <p>
+                  <span>Gliding or Shuffling</span>
+                </p>
+                <ul>
+                  <li>
+                    <p>
+                      Anyone interested in the glide or shuffle techniques
+                      should understand how to transfer force linearly as
+                      opposed to radially.&nbsp;&nbsp;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      The most important part of these techniques is to get out
+                      of the back of the circle explosively. Going from a static
+                      start to full speed is difficult given the size of the
+                      circle. Working on explosivity will help greatly. One way
+                      to do this in the circle is by doing the A Drill&nbsp;
+                    </p>
+                    <ul>
+                      <li>
+                        <p>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            href="https://www.youtube.com/watch?v=BGgwlLoiJKY&amp;ab_channel=ThrowsUniversity"
+                          >
+                            https://www.youtube.com/watch?v=BGgwlLoiJKY&amp;ab_channel=ThrowsUniversity
+                          </a>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            href="https://www.youtube.com/watch?v=mFltJ9ckiiQ&amp;ab_channel=ThrowsUniversity"
+                          >
+                            https://www.youtube.com/watch?v=mFltJ9ckiiQ&amp;ab_channel=ThrowsUniversity
+                          </a>
+                          &nbsp;&nbsp;
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <p>
+                  <span>Spinning&nbsp;</span>
+                </p>
+                <ul>
+                  <li>
+                    <p>
+                      Rotational throwers need to have a good sense of
+                      coordination as they take on the most technically
+                      complicated way to throw the shot put. Bio-mechanically
+                      speaking, the most efficient way to transfer force from
+                      the key throwing muscle groups into the shot put given the
+                      size of the throwing circle is to spin.&nbsp;&nbsp;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Spin progression series are often more complex, but each
+                      step is key to a full throw.&nbsp;&nbsp;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.youtube.com/watch?v=7P3r4EK7tn0&amp;ab_channel=JohnBowman"
+                      >
+                        https://www.youtube.com/watch?v=7P3r4EK7tn0&amp;ab_channel=JohnBowman
+                      </a>
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p></p>
+            <h3>
+              <span>
+                <strong>Discus:</strong>&nbsp;
+              </span>
+            </h3>
+            <p>
+              <span>
+                Unlike with shot put, there is really only one technique which
+                is considered mainstream for the discus: spinning. However, it
+                is possible to throw out of a stand or power position
+                too.&nbsp;&nbsp;
+              </span>
+            </p>
+            <ul>
+              <li>
+                <p>
+                  <span>Tutorials&nbsp;</span>
+                </p>
+                <ul>
+                  <li>
+                    <p>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.youtube.com/watch?v=_MEPoC0qq7U&amp;t=415s&amp;ab_channel=JohnBowman"
+                      >
+                        https://www.youtube.com/watch?v=_MEPoC0qq7U&amp;t=415s&amp;ab_channel=JohnBowman
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.youtube.com/watch?v=5atxdHaE-T8&amp;ab_channel=JohnBowman"
+                      >
+                        https://www.youtube.com/watch?v=5atxdHaE-T8&amp;ab_channel=JohnBowman
+                      </a>
+                      &nbsp;&nbsp;
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p>
+              <span>
+                As you get more comfortable with the base positions, you should
+                begin filming your throws and comparing them side by side with
+                some of the world’s best. My personal favorite technical model
+                to follow is Valarie Allman, with Gerd Kanter being a close
+                second.
+              </span>
+            </p>
+            <p></p>
+            <h3>
+              <span>
+                <strong>BE AN ATHLETE:</strong>
+              </span>
+            </h3>
+            <p>
+              <span>
+                If you want to get better at throwing you also have to become a
+                better athlete. Make sure to include a dynamic warm up before
+                each training session, work on plyometrics, and balance to
+                ensure that the technical changes can be applied. As an athlete
+                you are only as strong as your weakest link, for most throwers
+                that is their endurance capacity or their core strength. Train
+                your core, and make sure you do some Zone 2 Cardio throughout
+                the season so that we can start sending the implements
+                far.&nbsp;&nbsp;
+              </span>
+            </p>
+            <p></p>
+            <h3>
+              <span>
+                <strong>Getting Help</strong>:
+              </span>
+            </h3>
+            <p>
+              <span>
+                When it comes to all aspects of throwing, the number one way to
+                make improvements is to ask questions. If you have any questions
+                about some of the terms/exercises in the videos linked above
+                please reach out to me. Or if you want me to help break down a
+                video of yourself or someone else, I’d be more than happy to
+                point out ways that you can make improvements that are more
+                specific to your style.
+              </span>
+            </p>
+          </div>
+        ),
+      },
+      {
+        /* {
         calendar: true,
         title: "Throws",
         url: "throws",
@@ -755,6 +990,7 @@ const plansData = [
         season: "Winter",
         sheetID: "1NqhMyFHn-Pi96LVSg_HeOQpGTfiZ9EPbfQDHazZZdDk",
         sheets: winter23sheets,
+      }, */
       },
     ],
   },
@@ -764,16 +1000,15 @@ const plansData = [
     image: "https://i.imgur.com/WbyiBeI.jpg",
     yPos: "top",
     plans: [
-      /* TODO: UNCOMMENT THIS AS SOON AS WE HAVE THE NEW PLAN FOR FEB */
-      /* {
+      {
         calendar: true,
-        title: "Winter Plan",
-        url: "winter-plan",
-        year: "2023",
-        season: "Winter",
-        sheetID: "1e0psHM_IKKplFlVnZeLH68HDNH80qWU-BJZ0zYWlFWQ",
-        sheets: winter23sheets,
-      }, */
+        title: "Spring Plan",
+        url: "spring-plan",
+        year: "2024",
+        season: "Spring",
+        sheetID: "1CnAaRaoDZf3JW-UGPmgv2hSzYJVknfyUmN4I-FQSHuE",
+        sheets: spring24Sheets,
+      },
       {
         calendar: false,
         title: "Warmups",
