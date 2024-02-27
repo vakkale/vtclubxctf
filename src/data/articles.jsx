@@ -19,6 +19,229 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "We're so back!",
+    url: "welcome-back-spring-24",
+    year: "2024",
+    date: "2 - 27",
+    season: "Spring",
+    category: "Announcements",
+    image: "https://imgur.com/QjJYRzZ.jpg",
+    content: (
+      <div class="article-content">
+        <h3>Its been.. ⌚👀 a few days since the last update..</h3>
+        <p>
+          But we're back in full force! Welcome back to the weekly newsletters
+          ladies and gentlemen. I've recently been informed that some people's
+          parents read this so Mr. and Mrs. Tara's Parents if you're out there,
+          thank you for taking the time to read the articles, it means a lot.
+        </p>
+        <p>
+          We have a very special soccer social recap for you at the end,
+          courtesy of our Social Coordinator Harris Naseh, but first lets go
+          over what's coming up for club this week right before we head to
+          Spring Break.
+        </p>
+        <img src="https://imgur.com/pJag0g8.jpg" />
+        <h3>
+          <strong>Hokie Invitational Signup</strong>
+        </h3>
+        <p>
+          That's right! It's already time to sign up for the first track meet of
+          the season. We will be hosting our home meet, the Hokie Invitational,
+          on Saturday, March 16th, at Blacksburg High School. This is a great
+          way to open up the season, and it's always a fun time (weather
+          permitting).
+        </p>
+        <p>
+          In order to compete,
+          <strong>
+            you must have paid your $100 dues, filled out the membership survey,
+            and completed IMLeagues
+          </strong>
+          (more info on the
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://vtclubxctf.org/join"
+          >
+            join page
+          </a>
+          ). You will not be allowed to compete if you haven't done any of these
+          items. <strong>Signups are due March 6th.</strong> You can access the
+          signup
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.office.com/r/zKmsjQbkZx"
+          >
+            here
+          </a>
+          .
+        </p>
+        <h3>Hokie Invitational Volunteering</h3>
+        <p>
+          Still want to show up to our home meet but are unable to race? Well,
+          look no further, as we need volunteers to help us run this show! If
+          you are interested in volunteering for the home on Saturday, March
+          16th, then access the signup{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.office.com/r/2fMSNp8eBE"
+          >here
+          </a>
+          . If you need a ride to the meet, please message either Wyatt or
+          Roman. We really really appreciate the help.
+        </p>
+        <img src="https://imgur.com/ndGBPmQ.jpg" />
+        <h3>Practice is still on for Friday (3/1)</h3>
+        <p>
+          Can you believe that March is just around the corner? We will still be
+          having practice on Friday, March 1st, so if you're still in town then
+          come and join us!
+        </p>
+        <h3>A message from Wyatt</h3>
+        <p>
+          It's kind of crazy that our first meet is in just a couple of weeks.
+          I'll be fulfilling my presidential duty and racing the 100 right after
+          I race the 5000. I have no idea what I can run in a 100. Oh, did I
+          mention that I'll also be wearing khakis? I also don't know how to use
+          blocks. That'll be a fun time.
+        </p>
+        <p>
+          Your fun fact this week is going to be about very long sports
+          competitions. The longest-ever recorded soccer game lasted three hours
+          and 23 minutes, way back in 1946. This game had to be spread across
+          two days because it got too dark and floodlights apparently weren't a
+          thing yet.
+        </p>
+        <p>
+          The longest baseball game lasted 26 innings in 1920. That's crazy. I
+          hope you survive this week! You can do this. If you need to chat about
+          anything or have any ideas for club, just let me know!
+        </p>
+        <img src="https://imgur.com/F2ecKyh.jpg" />
+        <h3>
+          And now for what you've all been waiting for...
+          <br />
+          The soccer social recap
+        </h3>
+        <p>
+          It was a cold and rainy day in Blacksburg. Club members of all
+          disciplines came together to determine the owner of the 2024 Club XCTF
+          soccer title. The Sprints &amp; Field squad was looking to defend
+          their title while the distance team came in with a chip on their
+          shoulder after a humiliating loss last year.
+        </p>
+        <p>
+          Distance came in rocking the classic Hokie orange and Sprints &amp;
+          Field wore the VT Maroon. Captaining the two sides was Harris Naseh
+          for distance and Joe Gora for sprint/field. Ben Darden put his
+          loyalties aside and refereed what would be an intense game. The rules
+          were simple, 11 v 11 playing 4 quarters of 10 minutes each.
+        </p>
+        <img src="https://imgur.com/eNYQZMN.jpg" />
+        <p>
+          From the beginning whistle Sprints &amp; Field were on the front foot
+          with chance after chance barely allowing the ball onto their side of
+          the field. The pressure was too high for Distance as Liam Haley broke
+          through their defense and put his name on the scoring sheet. Sprint
+          &amp; Field fans were buzzing, and it seemed like the Distance team
+          was in for a long day.
+        </p>
+        <img src="https://imgur.com/Ytz8s5C.jpg" />
+        <p>
+          As the remaining minutes of the first quarter went by the Distance
+          lads seemed to get going as they were mounting their attack. Just as
+          the dying seconds of the first quarter were coming to an end Daniel
+          Murray of Distance equalized to bring some life back into the team.
+        </p>
+        <p>
+          Amid a storm that saw hail and wind tear at the field nonstop, the
+          2024 Club XCTF soccer title drama played out with a passion and
+          intensity that will go down in Blacksburg's sports history books. Even
+          if the skies above were turbulent, the competition between Distance
+          and Track &amp; Field on the ground was nothing short of spectacular.
+        </p>
+        <img src="https://imgur.com/Jab4GGW.jpg" />
+        <p>
+          Sprints &amp; Field took the lead with a second goal that was
+          decisively scored by Liam Haley, who once again scored with the
+          elegance of an experienced striker. His skill on the field was
+          evident, as he made the score 2-1 and electrified the Maroon
+          supporters.
+        </p>
+        <p>
+          However, the Distance team refused to let their spirits be dampened by
+          the weather or the scoreboard. Samuel Yakulis, in a moment that seemed
+          to defy the gravity of his experience, scored his first-ever goal,
+          equalizing for Distance and sending a clear message: they were not
+          going down without a fight.
+        </p>
+        <p>
+          The conditions on the field were brutal, but both teams soldiered on,
+          their determination unwavering in the face of nature's fury. Sprints
+          &amp; Field, in a move of strategic brilliance, brought on James
+          Paylor as goalkeeper.
+        </p>
+        <img src="https://imgur.com/yVnyxpz.jpg" />
+        <p>
+          His introduction was a game-changer; Paylor, standing like a brick
+          wall between the posts, thwarted attempt after attempt from the
+          Distance attackers. Yet, the resilience of the Distance team shone
+          brightly against the adversity, as Jadon Peterson broke through to
+          score the third for Distance, putting them ahead for the first time in
+          the match.
+        </p>
+        <p>
+          The pendulum swung once more when Liam Haley, in a display of sheer
+          will and skill, completed his hat trick, drawing Track &amp; Field
+          level and pushing the game into the realm of legends.
+        </p>
+        <p>
+          Overtime loomed with the golden goal rule in play, a crucible moment
+          where heroes are forged, and tales of glory are born. It was a
+          do-or-die situation, with Distance eyeing their first title and
+          Sprints &amp; Field aiming for a historic repeat.
+        </p>
+        <img src="https://imgur.com/rrmNHO9.jpg" />
+        <p>
+          The physical toll was evident as players from both sides laid
+          everything on the line. Harris Naseh and Chatham Campbell, in acts of
+          bravery, returned to the pitch despite painful setbacks, embodying the
+          spirit of their teams.
+        </p>
+        <p>
+          As fatigue began to gnaw at the players, and a stalemate persisted, an
+          unexpected twist saw Andrew Bennett, a longtime critic of Daniel
+          Murray, subbed on for Murray, only to be sidelined for lack of proper
+          footwear and Murray made his return to the field.
+        </p>
+        <img src="https://imgur.com/NI3fqjy.jpg" />
+        <p>
+          Fate had its script, and Murray, returning to the pitch, would become
+          the architect of Distance's triumph, scoring the golden goal that
+          crowned them champions.
+        </p>
+        <p>
+          The joy that the distance runners were experiencing was evident, in
+          sharp contrast to the disappointment that the Sprints &amp; Field team
+          was experiencing when their heroic efforts came up short. Ultimately,
+          the chilly and wet Blacksburg day witnessed a feat of soccer that
+          defied the elements and destiny, with Distance winning their first
+          Club XCTF soccer championship in a match that will live in memory
+          forever.
+        </p>
+        <p>
+          Final score: 4-3 Distance win.
+          <br />
+          MVP: James Paylor
+        </p>
+        <img src="https://imgur.com/rGMuwvC.jpg" />
+      </div>
+    ),
+  },
+  {
     title: "Last Week of Practice!",
     url: "last-week-of-practice",
     year: "2023",
