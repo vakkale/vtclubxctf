@@ -19,7 +19,7 @@ function Gallery({ images }) {
 }
 const articles = [
   {
-    title: "We're so back!",
+    title: "We're so back",
     url: "welcome-back-spring-24",
     year: "2024",
     date: "2 - 27",
