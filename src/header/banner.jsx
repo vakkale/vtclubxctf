@@ -86,12 +86,18 @@ export default function Banner() {
       }}
     >
       <h1 className="banner-text">
-        {!isMobile ? "Practice starts Mon. 8/26 6PM @ Johnson-Miller Track Complex!" : "Practice starts Mon. 8/26 6PM @ Johnson-Miller Track Complex!"}
+        {!isMobile ? "Hokie Track Invitational Schedule/Results: " : "Hokie Track Invitational Schedule/Results: "}
       </h1>
       {/* TIP: YOU CAN USE <LINK> AND <A> INTERCHANGABLY HERE, THEY HAVE THE SAME STYLING */}
       {/* <Link to="/join" className="banner-link">
         <button className="banner-button">Click Here</button>
       </Link> */}
+      <a href="http://results.tfmeetpro.com/Laurence_Loesel/Hokie_Track_Invitational_31624/"
+        target="_blank"
+        rel="noreferrer"
+        className="banner-link">
+        <button className="banner-button">Here</button>
+      </a>
       {/* {now > countDownStart ?
                 <a
                     href='https://givingday.vt.edu/amb/clubxctf'
