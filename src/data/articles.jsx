@@ -40,7 +40,7 @@ const articles = [
         <p>
           Round of applause for everyone who competed last weekend at the Hokie
           Track Invitational and for our volunteers! The weather was much better
-          than last year (thank goodness). For the complete results, click
+          than last year (thank goodness). For the complete results, click&nbsp;
           <a
             target="_blank"
             rel="noopener noreferrer nofollow"
@@ -175,9 +175,9 @@ const articles = [
             rel="noopener noreferrer nofollow"
             href="https://fantasy.espn.com/games/tournament-challenge-bracket-women-2024/group?id=147d727e-76d7-46d2-9700-6b7c8378e1f3&amp;joinKey=827be68c-c094-3e1d-90be-0b842d7ff4d2&amp;joining=true"
           >
-            <span>women's bracket pool </span>
+            <span>women's bracket pool</span>
           </a>
-          <span>and the </span>
+          <span>&nbsp;and the </span>
           <a
             target="_blank"
             rel="noopener noreferrer nofollow"
@@ -189,7 +189,7 @@ const articles = [
         </p>
         <img src="https://i.imgur.com/M9FtSS7.jpg" />
         <h3>
-          <span>Assassin Has Begun!</span>
+          <span>🥄 Assassin Has Begun!</span>
         </h3>
         <p>
           <span>
@@ -204,7 +204,7 @@ const articles = [
             <span>this document</span>
           </a>
           <span>
-            if you need to remind yourself of the rules. If you have any
+            &nbsp;if you need to remind yourself of the rules. If you have any
             questions, reach out to Kevin or Harris. Stay safe and be careful
             who you trust…
           </span>
