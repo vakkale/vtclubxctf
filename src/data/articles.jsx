@@ -19,6 +19,226 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "Festive First Meet & Spring Socials",
+    url: "festive-first-meet-spring-socials",
+    year: "2024",
+    date: "3 - 20",
+    season: "Spring",
+    category: "Announcements",
+    image: "https://i.imgur.com/vEGwXA3.jpg",
+    content: (
+      <div class="article-content">
+        <div class="highlighted-message">
+          <p>
+            Live from Bollo's, this is your new Webmaster! This is my first time
+            writing an article for the website, so please let me know if you
+            have any suggestions or advice. I hope you enjoy!
+          </p>
+        </div>
+        <img src="https://i.imgur.com/7I8oFlF.jpg" />
+        <h3>🍀🏆 First meet of the season = DONE!</h3>
+        <p>
+          Round of applause for everyone who competed last weekend at the Hokie
+          Track Invitational and for our volunteers! The weather was much better
+          than last year (thank goodness). For the complete results, click
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="http://results.tfmeetpro.com/Laurence_Loesel/Hokie_Track_Invitational_31624/"
+          >
+            here
+          </a>
+          .
+        </p>
+        <p>There are several new club records to report:</p>
+        <ul>
+          <li>
+            <p>
+              <span>Anna Rigby, Women’s 5000m: 17:44</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>Shannon Fisher, Women’s Shot Put: 9.82m</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>Leanne Villante, Women’s Discus: 35.20m</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>Zangar</span>
+              <span> </span>
+              <span>Smith, Men’s Discus: 41.04m</span>
+            </p>
+          </li>
+        </ul>
+        <p>
+          <span>
+            In an extremely unpredictable turn of events, both our women and
+            men’s teams won! The women’s team scored 387 points, followed by UGA
+          </span>
+          <span> </span>
+          <span>
+            with 78 points and UNC Charlotte with 4 points. The men’s team
+            scored 464 points, UGA scored 47 points, and the Georgia Knights
+            scored 27 points.
+          </span>
+        </p>
+        <p>
+          <span>Check out our </span>
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://virginiatech.sharepoint.com/sites/VTClubXCTF/Photos/Forms/AllItems.aspx?id=%2Fsites%2FVTClubXCTF%2FPhotos%2F2023%2D2024&amp;p=true&amp;ga=1"
+          >
+            <span>OneDrive album</span>
+          </a>
+          <span> for photos from our meets and social! </span>
+        </p>
+        <img src="https://i.imgur.com/azhQXfw.jpg" />
+        <h3>
+          <span>✅ Prior Performance/Automark Form for Nationals</span>
+        </h3>
+        <p>
+          <span>
+            The following events require a performance before Nationals:
+          </span>
+        </p>
+        <ul>
+          <li>
+            <p>
+              <span>Shot put&nbsp;</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>Discus</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>Triple jump</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>
+                Steeplechase (any hurdle event counts as a prior performance)
+              </span>
+            </p>
+          </li>
+        </ul>
+        <p>
+          <span>The link to the form can be found </span>
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd4_BNDuERMnPOG86UQqNl12X-yRd_8rDLFU5WvovEBdxu7qw/viewform?c=0&amp;w=1"
+          >
+            <span>here</span>
+          </a>
+          <span> and must be completed by March 29.</span>
+        </p>
+        <img src="https://i.imgur.com/hALGMs5.jpg" />
+        <h3>
+          <span>📚 NIRCA Eligibility Waiver</span>
+        </h3>
+        <p>
+          <span>
+            If you are interested in attending Nationals, fill out the NIRCA
+            Eligibility Waiver at practice! NIRCA requires athletes to be in
+            good academic standing, so this form serves as proof that you are a
+            competent student AND athlete. You should have completed the form by
+            now, so please speak to Roman if you still need to sign it! It is
+            not a binding document. Signing it is not a commitment to compete.
+          </span>
+        </p>
+        <img src="https://i.imgur.com/wBfQPjP.jpg" />
+        <h3>
+          <span>🏀 March Madness Begins!</span>
+        </h3>
+        <p>
+          <span>
+            We are having our first-ever club March Madness bracket pool
+            contest! Making your picks based on mascots or team colors is
+            completely valid, and often leads to high rates of success. We are
+            using the ESPN website/app for the brackets and you can complete
+            both brackets now. The deadline to complete your brackets are this
+            Thursday and Friday at 11:30 AM for the men’s and women’s tournament
+            respectively. Hit these links for the{" "}
+          </span>
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://fantasy.espn.com/games/tournament-challenge-bracket-women-2024/group?id=147d727e-76d7-46d2-9700-6b7c8378e1f3&amp;joinKey=827be68c-c094-3e1d-90be-0b842d7ff4d2&amp;joining=true"
+          >
+            <span>women's bracket pool </span>
+          </a>
+          <span>and the </span>
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://fantasy.espn.com/games/tournament-challenge-bracket-2024/group?id=bb504ab3-bbe3-4c75-8320-75305b2d5154"
+          >
+            <span>men's bracket pool</span>
+          </a>
+          <span>. </span>
+        </p>
+        <img src="https://i.imgur.com/M9FtSS7.jpg" />
+        <h3>
+          <span>Assassin Has Begun!</span>
+        </h3>
+        <p>
+          <span>
+            Targets have been sent to those who signed up to participate, and
+            Harris gave spoons to these individuals at practice. Take a look at{" "}
+          </span>
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://docs.google.com/document/d/1pX7szwqWGRaGjy4Tsi7t7KlSglFbFOoz245GPfVeByY/edit"
+          >
+            <span>this document</span>
+          </a>
+          <span>
+            if you need to remind yourself of the rules. If you have any
+            questions, reach out to Kevin or Harris. Stay safe and be careful
+            who you trust…
+          </span>
+        </p>
+        <img src="https://i.imgur.com/aFRg9uS.jpg" />
+        <h3>
+          <span>💙🐶 Bluey Watch Party &amp; Crafts Social</span>
+        </h3>
+        <p>
+          <span>
+            On Friday, March 29, we will watch Bluey together as we make
+            bracelets and posters for Nationals. We have not decided on a time
+            for this social, and we want your input! Please fill out{" "}
+          </span>
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfEFHF_KBq-iyOSECiBXF2RP1dumaVCK-OCfV-_E8XO00t_jA/viewform"
+          >
+            <span>this form</span>
+          </a>
+          <span> so we can choose a time that you all are available.</span>
+        </p>
+        <p>
+          <span>
+            Rest up for our meet this weekend! Best of luck to everyone who
+            plans to compete!
+          </span>
+        </p>
+        <img src="https://i.imgur.com/rJWZ3a8.jpg" />
+      </div>
+    ),
+  },
+  {
     title: "We're so back",
     url: "welcome-back-spring-24",
     year: "2024",
@@ -88,7 +308,8 @@ const articles = [
             target="_blank"
             rel="noopener noreferrer nofollow"
             href="https://forms.office.com/r/2fMSNp8eBE"
-          >here
+          >
+            here
           </a>
           . If you need a ride to the meet, please message either Wyatt or
           Roman. We really really appreciate the help.
