@@ -37,7 +37,7 @@ export default function SideBarLite({ item, schedule, records }) {
                         {records &&
                             <div className='schedule'>
                                 <span className='meet'>All-time records can be found <a
-                                    href="https://docs.google.com/spreadsheets/d/1zZUx2uUMNxXSfT_NWlqtQy-4GPsGB0dLrmT53pfjcoo/edit?usp=sharing"
+                                    href="https://docs.google.com/spreadsheets/d/1XZuBcySO-EjvlqbeP2af8TAGS6w_v97xLn420QLyHs8/edit?usp=sharing"
                                     rel="noreferrer"
                                     target="_blank"
                                 >here.</a></span>

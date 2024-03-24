@@ -19,11 +19,18 @@ export default function TrackAndField() {
     {
       title: "Mar 16 - Hokie Invite",
       location: "Blacksburg High School, Blacksburg, VA",
+      url: "http://results.tfmeetpro.com/Laurence_Loesel/Hokie_Track_Invitational_31624/"
     },
     {
         title: "Mar 22-23 - Dr. Jack M. Toms Invitational",
         location: "University of Lynchburg, Lynchburg, VA",
+        url: "https://www.tfrrs.org/results/76010/Dr_Jack_M_Toms_Alumni_Invitational"
     },
+    {
+      title: "Mar 22-23 - Doc Jopson Track & Field Invitational",
+      location: "Bridgewater College, Bridgewater, VA",
+      url: "https://www.tfrrs.org/results/81513/Doc_Jopson_Track__Field_Invitational"
+  },
     {
         title: "Apr 4-6 - NIRCA Track & Field Nationals",
         location: "Sports Backers Stadium, Richmond, VA",
