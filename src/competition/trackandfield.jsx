@@ -24,7 +24,7 @@ export default function TrackAndField() {
     {
         title: "Mar 22-23 - Dr. Jack M. Toms Invitational",
         location: "University of Lynchburg, Lynchburg, VA",
-        url: "https://www.tfrrs.org/results/76010/Dr_Jack_M_Toms_Alumni_Invitational"
+        url: "https://www.tfrrs.org/results/82086/Dr_Jack_M_Toms_Alumni_Invitational"
     },
     {
       title: "Mar 22-23 - Doc Jopson Track & Field Invitational",
