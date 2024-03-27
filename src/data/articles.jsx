@@ -19,6 +19,188 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "12 Hour Track Meets are BACK!",
+    url: "12-hour-track-meets-are-back",
+    year: "2024",
+    date: "3 - 26",
+    season: "Spring",
+    category: "Announcements",
+    image: "https://i.imgur.com/pgToJtl.jpg",
+    content: (
+      <div class="article-content">
+  <p>
+    Congratulations to our athletes who competed at Bridgewater and Lynchburg this past weekend!
+  </p>
+  <p>For Doc Jopson Track &amp; Field Invitational results, click&nbsp;<a
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      href="https://va.milesplit.com/meets/586718-doc-jopson-track-and-field-invitational-2024/results/1010648/raw"
+      >here</a>.
+  </p>
+  <p>
+    For the Dr. Jack M Toms Invitational results, click&nbsp;
+    <a
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      href="https://va.milesplit.com/meets/586725-dr-jack-m-toms-invitational-2024/results/1010636/raw"
+      >here</a>.&nbsp;
+  </p>
+  <p>
+    We have more club records to report (all field events!):
+  </p>
+  <ul>
+    <li>
+      <p>
+        Shannon Fisher, Women’s Discus: 33.09m
+      </p>
+    </li>
+    <li>
+      <p>
+        Shannon Fisher, Women’s Javelin: 25.34m
+      </p>
+    </li>
+    <li>
+      <p>
+        Jenny Patel, Women’s Hammer: 27.08m
+      </p>
+    </li>
+    <li>
+      <p>Tyler Copeland, Men’s Discus: 39.31m
+      </p>
+    </li>
+    <li>
+      <p>
+        Dillon Luke, Men’s Javelin: 52.43m
+      </p>
+    </li>
+    <li>
+      <p>Chris Helmsen, Men’s Hammer: 42.71m
+      </p>
+    </li>
+  </ul>
+  <p>
+    <a
+      target="_blank"
+      rel="noopener noreferrer nofollow" href="https://virginiatech.sharepoint.com/sites/VTClubXCTF/Photos/Forms/AllItems.aspx?id=%2Fsites%2FVTClubXCTF%2FPhotos%2F2023%2D2024&amp;p=true&amp;ga=1">OneDrive album</a>
+      &nbsp;for photos from meets and socials!
+  </p>
+  <img src="https://i.imgur.com/TAnt4f2.jpg" />
+  <h3>👌 Sign Up for Nationals</h3>
+  <p>
+    For three? Join us in Richmond for NIRCA Track &amp; Field Nationals on
+      April 6 and 7! We will leave around 5pm on April 5 and stay overnight for
+      two nights. To be eligible for competition, you must have completed your
+      IMLeagues forms, membership survey, NIRCA waiver, and paid your $100
+      racing dues. You can only compete if you have done all of these items.
+      Click&nbsp;
+      <a
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      href="https://forms.gle/h7g9FjZMBfPUV4F78"
+      >here</a>&nbsp;for the sign up form, which closes on Thursday, March 28.&nbsp;
+  </p>
+  <img src="https://i.imgur.com/89w0tW2.jpg" />
+  <h3>✅ Prior Performance/Automark Form for Nationals
+  </h3>
+  <p>The following events require a performance before Nationals:
+  </p>
+  <ul>
+    <li>
+        <p>Shot put&nbsp;</p>
+      </li>
+      <li>
+        <p>Discus</p>
+      </li>
+      <li>
+        <p>Triple jump</p>
+      </li>
+      <li>
+        <p>
+          Steeplechase (any hurdle event counts as a prior performance)
+        </p>
+      </li>
+  </ul>
+  <p>
+    The link to the form can be found&nbsp;
+    <a
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSd4_BNDuERMnPOG86UQqNl12X-yRd_8rDLFU5WvovEBdxu7qw/viewform?c=0&amp;w=1"
+      >here</a>&nbsp;
+      and must be completed by March 29.
+  </p>
+  <img src="https://i.imgur.com/yz4nE7U.jpg" />
+  <h3>🐻🐾 Bear Tracks Sign Up</h3>
+  <p>
+    Do you want to help elementary school students, earn volunteer hours, and
+      run around a teeny tiny track? We are helping with the running program at
+      Margaret Beeks Elementary School for the second year in a row! Please
+      consider helping out on Wednesday or Thursday mornings. Click&nbsp;<a
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      href="https://www.signupgenius.com/go/10C0F49A9A628A1FAC61-48740769-bear#/"
+      >here</a>&nbsp;to sign up!&nbsp;<br />
+  </p>
+  <img src="https://i.imgur.com/sAyyAoV.jpg" />
+  <h3>🌯 Chipotle Percentage Night</h3>
+  <p>
+    Are you sick of Tazon? Of course you are! Switch up your dinner routine
+      and join us at the Chipotle on Main Street from 5pm to 9pm on Wednesday,
+      March 27 to raise funds for our club. If you are ordering in person,
+      please show the percentage night flyer attached in Volkan’s email when you
+      are checking out. If you are ordering online, use the code
+      TJ62T3T.&nbsp;
+  </p>
+  <img src="https://i.imgur.com/kjGpQmK.jpg" />
+  <h3>💙🐶 Bluey Social</h3>
+  <p>
+    The people have spoken! We will watch Bluey, make posters, and do crafts
+      in Torgersen Hall 1060 at 7pm after practice on Friday, March 29. Message
+      any officer or DM our Instagram account (
+        <a
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        href="https://www.instagram.com/vt_clubxctf/"
+        >@vt_clubxctf
+        </a>) to suggest any
+      specific episodes.
+  </p>
+  <img src="https://i.imgur.com/UVe3BwW.jpg" />
+  <h3>
+    <strong>🥄&nbsp;</strong>Assassin Update
+  </h3>
+  <p>
+    If you haven’t found your target yet, you have until this Sunday at
+      11:59pm, or else you will be eliminated! If you have any questions, please
+      ask Kevin or Harris. Here is the leaderboard so far:
+  </p>
+  <ul>
+    <li>
+      <p>Tyler Houston: 3</p>
+    </li>
+    <li>
+      <p>Jonathan Goerlich: 3</p>
+    </li>
+    <li>
+      <p>Nathan Montgomery: 2</p>
+    </li>
+    <li>
+      <p>Danielle Metzger: 1</p>
+    </li>
+    <li>
+      <p>Nele Heide: 1</p>
+    </li>
+    <li>
+      <p>Stuart Vailes: 1</p>
+    </li>
+  </ul>
+  <img src="https://i.imgur.com/QBGKj1y.jpg" />
+  <p>
+    Enjoy your week off of racing! See you all in Cassel next season…
+      💔🏀
+  </p>
+</div>)},
+  {
     title: "Festive First Meet & Spring Socials",
     url: "festive-first-meet-spring-socials",
     year: "2024",
