@@ -19,6 +19,204 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "The Most Wonderful Time of the Year! (NIRCA Nationals)",
+    url: "the-most-wonderful-time-of-the-year",
+    year: "2024",
+    date: "4 - 1",
+    season: "Spring",
+    category: "Announcements",
+    image: "https://i.imgur.com/jpKZTKx.jpg",
+    content: (
+      <div class="article-content">
+        <p>
+          NIRCA Track &amp; Field (and half marathon) Nationals are almost here!
+          Ellie & Roman will send an email later this week with detailed information.
+          We are bringing a record number of people to the two-day meet! Get
+          excited to race, cheer, and most importantly, have a lot of fun this
+          weekend.
+        </p>
+        <p>
+          We will be leaving in two groups at 4:30pm and 5:00pm on Friday, April
+          5. If you need an excused letter for Friday, let Volkan know by the
+          end of the day Tuesday.
+        </p>
+        <img src="https://i.imgur.com/7BJXdox.jpg" />
+        <h3>🐻🐾 Bear Tracks Sign Up</h3>
+        <p>
+          Bear Tracks starts this <strong>Wednesday at 8:40am-9:15am</strong>.
+          Don't miss out on this really cool opportunity to connect&nbsp;with
+          the community and get some volunteer hours. You'll get to run around
+          with and race elementary schoolers on their tiny track. If you need
+          volunteer hours, this is a great way to get them, and we can sign off
+          on any document you need showing you did your hours. If you have any
+          free time in the morning on Wednesdays or Thursdays, please sign up on
+          the form&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="x_OWAAutoLink"
+            href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.signupgenius.com%2Fgo%2F10C0F49A9A628A1FAC61-48740769-bear&amp;data=05%7C02%7Ctarablue%40vt.edu%7Cad2863203a42401a2c5f08dc525f578c%7C6095688410ad40fa863d4f32c1e3a37a%7C0%7C0%7C638475816676784785%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=ecjrP2PNLpAs3ZBIWp9qZ6vG%2Fep4LflOyiKefMN8kVs%3D&amp;reserved=0"
+          >
+            here
+          </a>
+          .&nbsp;
+          <u>
+            <i>This week's theme is color run</i>
+          </u>
+          , so wear your favorite color while you volunteer!
+        </p>
+        <h3>
+          <strong>💙💛Blacksburg High School Meet Volunteering - 4/13</strong>
+        </h3>
+        <p>
+          There is another great volunteer opportunity on
+          <strong>Saturday, April 13 at Blacksburg High School</strong>. They
+          are hosting a home meet that weekend and need volunteers. BHS helps us
+          every year with our two home meets, and this is our opportunity to
+          give back. This is the same day as the 3.2 for 32 run on campus so if
+          you are running in the morning, you can come right after and still
+          volunteer! The signup can be found&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="x_OWAAutoLink"
+            href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSe67YXLHpdLIP4XQ6X1fHgjTi4Vm5PycaxNCU7y7EY7ahwJZA%2Fviewform%3Fvc%3D0%26c%3D0%26w%3D1%26flr%3D0&amp;data=05%7C02%7Ctarablue%40vt.edu%7Cad2863203a42401a2c5f08dc525f578c%7C6095688410ad40fa863d4f32c1e3a37a%7C0%7C0%7C638475816676797584%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=GwMRchUs9rLnO%2B7pIQMuzhXTUs136v%2FaAf0uUzHsUvs%3D&amp;reserved=0"
+          >
+            here
+          </a>
+          &nbsp;- please consider volunteering if you can.
+        </p>
+        <h3>🍦🥗 Practice Moved &amp; DWednesday - 4/3</h3>
+        <p>
+          Are you hungry? I know I am. Come out to DWednesday™ after practice on
+          April 3 to get some grub with the team.
+          <strong>We will be moving practice to 5pm on Wednesday</strong>
+          &nbsp;to make sure we have enough time to eat before D2 closes. See
+          you there!
+        </p>
+        <h3>
+          <strong>🚫 No Practice Friday - 4/5</strong>
+        </h3>
+        <p>
+          We are going to Nationals. Have you heard? There will be no practice
+          on Friday. Don't be late to your vans. And if you're not coming with
+          us this weekend, I hope you have a great weekend and make sure to
+          cheer on your teammates on social media. We will have a livestream of
+          the meet and keep our Instagram story updated with podium finishes and
+          other shenanigans.
+        </p>
+        <h3>
+          <strong>🕵️ Scavenger Hunt - 4/14</strong>
+        </h3>
+        <p>
+          Puzzle Master Wyatt is curating the scavenger hunt of all time for us
+          to participate in on <strong>Sunday, April 14</strong>. Bring out your
+          trench coats and magnifying glasses... put on your detective hats...
+          polish your pipes... you get the idea. More details to come next week
+          but it'll be a lot of fun so I hope to see you there!
+        </p>
+        <h3>
+          <strong>🗓️ April Club XCTF Calendar</strong>
+        </h3>
+        <p>
+          "Wow, that's a lot of events to keep track of," I hear you saying.
+          Well do not fret, for we have just the solution.&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="x_OWAAutoLink"
+            href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1vto6MZSd89d8Oco3nE2SiZ6kNOBus_CQIX0S4OomjXE%2Fedit%3Fusp%3Dsharing&amp;data=05%7C02%7Ctarablue%40vt.edu%7Cad2863203a42401a2c5f08dc525f578c%7C6095688410ad40fa863d4f32c1e3a37a%7C0%7C0%7C638475816676805960%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=tiQ%2FJEduUfXkn0P7vnjzcbZBt7XWd8hqsKBXXEDYB0w%3D&amp;reserved=0"
+          >
+            Here
+          </a>
+          &nbsp;is the club events calendar for the month of April. This is the
+          last calendar for the year - I guess time flies when you're having
+          fun.
+        </p>
+        <h3>
+          <strong>🥄 </strong>Assassin Update
+        </h3>
+        <p>
+          We're in the final stretch now... only seven people remain in the race
+          for Assassin Champion. About half of the people who were still in
+          yesterday have perished to the kill deadline - better luck next time.
+          Who will win? Who will take home the coveted paper plate award? Here's
+          the leaderboard as it stands but remember it's not about who has the
+          most kills, but about who's remaining at the end. Good luck!
+        </p>
+        <ul>
+          <li>
+            <p>Tyler Houston: 5</p>
+          </li>
+          <li>
+            <p>Nathan Montgomery: 4</p>
+          </li>
+          <li>
+            <p>Danielle Metzger: 1</p>
+          </li>
+          <li>
+            <p>Volkan Akkale: 1</p>
+          </li>
+          <li>
+            <p>Jackson McGrath: 1</p>
+          </li>
+          <li>
+            <p>Joe Gora: 1</p>
+          </li>
+          <li>
+            <p>Andrew Olivieri: 1</p>
+          </li>
+        </ul>
+        <h3>
+          <strong>🚐 Van Draft - 4/2</strong>
+        </h3>
+        <p>
+          The long-awaited Van Draft™&nbsp;is finally here. This is an
+          opportunity for the van drivers to choose their vans. With 121
+          athletes traveling and 21 van drivers, we will have 5 rounds of picks
+          and follow a&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="x_OWAAutoLink"
+            href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.profootballnetwork.com%2Fwhat-is-a-snake-draft-rules-how-it-works-strategies-and-more%2F&amp;data=05%7C02%7Ctarablue%40vt.edu%7Cad2863203a42401a2c5f08dc525f578c%7C6095688410ad40fa863d4f32c1e3a37a%7C0%7C0%7C638475816676813847%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=cg9YfA3Q858NCce%2FC3lJ9GtkJpejnixvcG8S%2F%2FJr5c0%3D&amp;reserved=0"
+          >
+            snake draft
+          </a>
+          &nbsp;format. The draft will take place in
+          <strong>Wallace 340 at 8:00pm on Tuesday, April 2</strong>. By random
+          number generator, Tyler Houston &amp; Christian Crawley's van has been
+          chosen to make the first overall pick. The remaining 10 driver pairs
+          have also been assigned a slot from 2-11. The pairs will make two
+          picks per round, and we will alternate order of picking per the rules
+          of the snake draft.
+        </p>
+        <p>
+          Following the conclusion of the initial drafts, there will be time
+          given to each van to consult among themselves and offer trades to
+          other vans. After a maximum of 30 minutes of deliberation, we will
+          deem all vans final and share the results on GroupMe. Do not fear if
+          you are not a van driver, because as soon as you are drafted to a van,
+          you are able to participate in discussion within your new van about
+          future picks as well as potential trades.
+        </p>
+        <p>
+          This is the first time we're trying this as a team, so if you have any
+          questions don't hesitate to email Wyatt (
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="mailto:wyatt@vt.edu"
+          >
+            wyatt@vt.edu
+          </a>
+          ). Hope to see you all there and good luck!
+        </p>
+        <img src="https://i.imgur.com/RYF2OUJ.jpg" />
+      </div>
+    ),
+  },
+  {
     title: "12 Hour Track Meets are BACK!",
     url: "12-hour-track-meets-are-back",
     year: "2024",
@@ -28,178 +226,188 @@ const articles = [
     image: "https://i.imgur.com/pgToJtl.jpg",
     content: (
       <div class="article-content">
-  <p>
-    Congratulations to our athletes who competed at Bridgewater and Lynchburg this past weekend!
-  </p>
-  <p>For Doc Jopson Track &amp; Field Invitational results, click&nbsp;<a
-      target="_blank"
-      rel="noopener noreferrer nofollow"
-      href="https://va.milesplit.com/meets/586718-doc-jopson-track-and-field-invitational-2024/results/1010648/raw"
-      >here</a>.
-  </p>
-  <p>
-    For the Dr. Jack M Toms Invitational results, click&nbsp;
-    <a
-      target="_blank"
-      rel="noopener noreferrer nofollow"
-      href="https://va.milesplit.com/meets/586725-dr-jack-m-toms-invitational-2024/results/1010636/raw"
-      >here</a>.&nbsp;
-  </p>
-  <p>
-    We have more club records to report (all field events!):
-  </p>
-  <ul>
-    <li>
-      <p>
-        Shannon Fisher, Women’s Discus: 33.09m
-      </p>
-    </li>
-    <li>
-      <p>
-        Shannon Fisher, Women’s Javelin: 25.34m
-      </p>
-    </li>
-    <li>
-      <p>
-        Jenny Patel, Women’s Hammer: 27.08m
-      </p>
-    </li>
-    <li>
-      <p>Tyler Copeland, Men’s Discus: 39.31m
-      </p>
-    </li>
-    <li>
-      <p>
-        Dillon Luke, Men’s Javelin: 52.43m
-      </p>
-    </li>
-    <li>
-      <p>Chris Helmsen, Men’s Hammer: 42.71m
-      </p>
-    </li>
-  </ul>
-  <p>
-    <a
-      target="_blank"
-      rel="noopener noreferrer nofollow" href="https://virginiatech.sharepoint.com/sites/VTClubXCTF/Photos/Forms/AllItems.aspx?id=%2Fsites%2FVTClubXCTF%2FPhotos%2F2023%2D2024&amp;p=true&amp;ga=1">OneDrive album</a>
-      &nbsp;for photos from meets and socials!
-  </p>
-  <img src="https://i.imgur.com/TAnt4f2.jpg" />
-  <h3>👌 Sign Up for Nationals</h3>
-  <p>
-    For three? Join us in Richmond for NIRCA Track &amp; Field Nationals on
-      April 6 and 7! We will leave around 5pm on April 5 and stay overnight for
-      two nights. To be eligible for competition, you must have completed your
-      IMLeagues forms, membership survey, NIRCA waiver, and paid your $100
-      racing dues. You can only compete if you have done all of these items.
-      Click&nbsp;
-      <a
-      target="_blank"
-      rel="noopener noreferrer nofollow"
-      href="https://forms.gle/h7g9FjZMBfPUV4F78"
-      >here</a>&nbsp;for the sign up form, which closes on Thursday, March 28.&nbsp;
-  </p>
-  <img src="https://i.imgur.com/89w0tW2.jpg" />
-  <h3>✅ Prior Performance/Automark Form for Nationals
-  </h3>
-  <p>The following events require a performance before Nationals:
-  </p>
-  <ul>
-    <li>
-        <p>Shot put&nbsp;</p>
-      </li>
-      <li>
-        <p>Discus</p>
-      </li>
-      <li>
-        <p>Triple jump</p>
-      </li>
-      <li>
         <p>
-          Steeplechase (any hurdle event counts as a prior performance)
+          Congratulations to our athletes who competed at Bridgewater and
+          Lynchburg this past weekend!
         </p>
-      </li>
-  </ul>
-  <p>
-    The link to the form can be found&nbsp;
-    <a
-      target="_blank"
-      rel="noopener noreferrer nofollow"
-      href="https://docs.google.com/forms/d/e/1FAIpQLSd4_BNDuERMnPOG86UQqNl12X-yRd_8rDLFU5WvovEBdxu7qw/viewform?c=0&amp;w=1"
-      >here</a>&nbsp;
-      and must be completed by March 29.
-  </p>
-  <img src="https://i.imgur.com/yz4nE7U.jpg" />
-  <h3>🐻🐾 Bear Tracks Sign Up</h3>
-  <p>
-    Do you want to help elementary school students, earn volunteer hours, and
-      run around a teeny tiny track? We are helping with the running program at
-      Margaret Beeks Elementary School for the second year in a row! Please
-      consider helping out on Wednesday or Thursday mornings. Click&nbsp;<a
-      target="_blank"
-      rel="noopener noreferrer nofollow"
-      href="https://www.signupgenius.com/go/10C0F49A9A628A1FAC61-48740769-bear#/"
-      >here</a>&nbsp;to sign up!&nbsp;<br />
-  </p>
-  <img src="https://i.imgur.com/sAyyAoV.jpg" />
-  <h3>🌯 Chipotle Percentage Night</h3>
-  <p>
-    Are you sick of Tazon? Of course you are! Switch up your dinner routine
-      and join us at the Chipotle on Main Street from 5pm to 9pm on Wednesday,
-      March 27 to raise funds for our club. If you are ordering in person,
-      please show the percentage night flyer attached in Volkan’s email when you
-      are checking out. If you are ordering online, use the code
-      TJ62T3T.&nbsp;
-  </p>
-  <img src="https://i.imgur.com/kjGpQmK.jpg" />
-  <h3>💙🐶 Bluey Social</h3>
-  <p>
-    The people have spoken! We will watch Bluey, make posters, and do crafts
-      in Torgersen Hall 1060 at 7pm after practice on Friday, March 29. Message
-      any officer or DM our Instagram account (
-        <a
-        target="_blank"
-        rel="noopener noreferrer nofollow"
-        href="https://www.instagram.com/vt_clubxctf/"
-        >@vt_clubxctf
-        </a>) to suggest any
-      specific episodes.
-  </p>
-  <img src="https://i.imgur.com/UVe3BwW.jpg" />
-  <h3>
-    <strong>🥄&nbsp;</strong>Assassin Update
-  </h3>
-  <p>
-    If you haven’t found your target yet, you have until this Sunday at
-      11:59pm, or else you will be eliminated! If you have any questions, please
-      ask Kevin or Harris. Here is the leaderboard so far:
-  </p>
-  <ul>
-    <li>
-      <p>Tyler Houston: 3</p>
-    </li>
-    <li>
-      <p>Jonathan Goerlich: 3</p>
-    </li>
-    <li>
-      <p>Nathan Montgomery: 2</p>
-    </li>
-    <li>
-      <p>Danielle Metzger: 1</p>
-    </li>
-    <li>
-      <p>Nele Heide: 1</p>
-    </li>
-    <li>
-      <p>Stuart Vailes: 1</p>
-    </li>
-  </ul>
-  <img src="https://i.imgur.com/QBGKj1y.jpg" />
-  <p>
-    Enjoy your week off of racing! See you all in Cassel next season…
-      💔🏀
-  </p>
-</div>)},
+        <p>
+          For Doc Jopson Track &amp; Field Invitational results, click&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://va.milesplit.com/meets/586718-doc-jopson-track-and-field-invitational-2024/results/1010648/raw"
+          >
+            here
+          </a>
+          .
+        </p>
+        <p>
+          For the Dr. Jack M Toms Invitational results, click&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://va.milesplit.com/meets/586725-dr-jack-m-toms-invitational-2024/results/1010636/raw"
+          >
+            here
+          </a>
+          .&nbsp;
+        </p>
+        <p>We have more club records to report (all field events!):</p>
+        <ul>
+          <li>
+            <p>Shannon Fisher, Women’s Discus: 33.09m</p>
+          </li>
+          <li>
+            <p>Shannon Fisher, Women’s Javelin: 25.34m</p>
+          </li>
+          <li>
+            <p>Jenny Patel, Women’s Hammer: 27.08m</p>
+          </li>
+          <li>
+            <p>Tyler Copeland, Men’s Discus: 39.31m</p>
+          </li>
+          <li>
+            <p>Dillon Luke, Men’s Javelin: 52.43m</p>
+          </li>
+          <li>
+            <p>Chris Helmsen, Men’s Hammer: 42.71m</p>
+          </li>
+        </ul>
+        <p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://virginiatech.sharepoint.com/sites/VTClubXCTF/Photos/Forms/AllItems.aspx?id=%2Fsites%2FVTClubXCTF%2FPhotos%2F2023%2D2024&amp;p=true&amp;ga=1"
+          >
+            OneDrive album
+          </a>
+          &nbsp;for photos from meets and socials!
+        </p>
+        <img src="https://i.imgur.com/TAnt4f2.jpg" />
+        <h3>👌 Sign Up for Nationals</h3>
+        <p>
+          For three? Join us in Richmond for NIRCA Track &amp; Field Nationals
+          on April 6 and 7! We will leave around 5pm on April 5 and stay
+          overnight for two nights. To be eligible for competition, you must
+          have completed your IMLeagues forms, membership survey, NIRCA waiver,
+          and paid your $100 racing dues. You can only compete if you have done
+          all of these items. Click&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.gle/h7g9FjZMBfPUV4F78"
+          >
+            here
+          </a>
+          &nbsp;for the sign up form, which closes on Thursday, March 28.&nbsp;
+        </p>
+        <img src="https://i.imgur.com/89w0tW2.jpg" />
+        <h3>✅ Prior Performance/Automark Form for Nationals</h3>
+        <p>The following events require a performance before Nationals:</p>
+        <ul>
+          <li>
+            <p>Shot put&nbsp;</p>
+          </li>
+          <li>
+            <p>Discus</p>
+          </li>
+          <li>
+            <p>Triple jump</p>
+          </li>
+          <li>
+            <p>Steeplechase (any hurdle event counts as a prior performance)</p>
+          </li>
+        </ul>
+        <p>
+          The link to the form can be found&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd4_BNDuERMnPOG86UQqNl12X-yRd_8rDLFU5WvovEBdxu7qw/viewform?c=0&amp;w=1"
+          >
+            here
+          </a>
+          &nbsp; and must be completed by March 29.
+        </p>
+        <img src="https://i.imgur.com/yz4nE7U.jpg" />
+        <h3>🐻🐾 Bear Tracks Sign Up</h3>
+        <p>
+          Do you want to help elementary school students, earn volunteer hours,
+          and run around a teeny tiny track? We are helping with the running
+          program at Margaret Beeks Elementary School for the second year in a
+          row! Please consider helping out on Wednesday or Thursday mornings.
+          Click&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://www.signupgenius.com/go/10C0F49A9A628A1FAC61-48740769-bear#/"
+          >
+            here
+          </a>
+          &nbsp;to sign up!&nbsp;
+          <br />
+        </p>
+        <img src="https://i.imgur.com/sAyyAoV.jpg" />
+        <h3>🌯 Chipotle Percentage Night</h3>
+        <p>
+          Are you sick of Tazon? Of course you are! Switch up your dinner
+          routine and join us at the Chipotle on Main Street from 5pm to 9pm on
+          Wednesday, March 27 to raise funds for our club. If you are ordering
+          in person, please show the percentage night flyer attached in Volkan’s
+          email when you are checking out. If you are ordering online, use the
+          code TJ62T3T.&nbsp;
+        </p>
+        <img src="https://i.imgur.com/kjGpQmK.jpg" />
+        <h3>💙🐶 Bluey Social</h3>
+        <p>
+          The people have spoken! We will watch Bluey, make posters, and do
+          crafts in Torgersen Hall 1060 at 7pm after practice on Friday, March
+          29. Message any officer or DM our Instagram account (
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://www.instagram.com/vt_clubxctf/"
+          >
+            @vt_clubxctf
+          </a>
+          ) to suggest any specific episodes.
+        </p>
+        <img src="https://i.imgur.com/UVe3BwW.jpg" />
+        <h3>
+          <strong>🥄&nbsp;</strong>Assassin Update
+        </h3>
+        <p>
+          If you haven’t found your target yet, you have until this Sunday at
+          11:59pm, or else you will be eliminated! If you have any questions,
+          please ask Kevin or Harris. Here is the leaderboard so far:
+        </p>
+        <ul>
+          <li>
+            <p>Tyler Houston: 3</p>
+          </li>
+          <li>
+            <p>Jonathan Goerlich: 3</p>
+          </li>
+          <li>
+            <p>Nathan Montgomery: 2</p>
+          </li>
+          <li>
+            <p>Danielle Metzger: 1</p>
+          </li>
+          <li>
+            <p>Nele Heide: 1</p>
+          </li>
+          <li>
+            <p>Stuart Vailes: 1</p>
+          </li>
+        </ul>
+        <img src="https://i.imgur.com/QBGKj1y.jpg" />
+        <p>
+          Enjoy your week off of racing! See you all in Cassel next season… 💔🏀
+        </p>
+      </div>
+    ),
+  },
   {
     title: "Festive First Meet & Spring Socials",
     url: "festive-first-meet-spring-socials",

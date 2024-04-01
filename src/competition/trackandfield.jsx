@@ -6,7 +6,7 @@ export default function TrackAndField() {
   const background = "https://i.imgur.com/7h1tvnX.jpg";
 
   const item = {
-    date: "Spring 2023",
+    date: "Spring 2024",
     title: "Meet Results",
   };
 
