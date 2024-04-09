@@ -19,6 +19,152 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "A Much Shorter Drive to Olivet",
+    url: "a-much-shorter-drive-to-olivet",
+    year: "2024",
+    date: "4 - 9",
+    season: "Spring",
+    category: "Announcements",
+    image: "https://i.imgur.com/rdLKoez.jpg",
+    content: (
+      <div class="article-content">
+        <p>
+          Some may say that we had a successful weekend. Our women's team placed
+          3rd and our men's team placed 2nd at NIRCA Track &amp; Field Nationals
+          in Richmond! For the first time in the history of the universe, a
+          track meet ended ahead of schedule.
+        </p>
+        <img src="https://i.imgur.com/jERmYQX.jpg" />
+        <p>
+          Congratulations to everyone that competed! I hope that your legs are
+          tired from racing and your voices are tired from cheering. Does anyone
+          know where I can find photos? Never mind, I just found it right&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://virginiatech.sharepoint.com/sites/VTClubXCTF/Photos/Forms/AllItems.aspx?id=%2Fsites%2FVTClubXCTF%2FPhotos%2F2023%2D2024&amp;p=true&amp;ga=1"
+          >
+            here
+          </a>
+          . If you earned a PR or club record, please fill out&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://docs.google.com/document/d/1xhKa4OfgWl1IrF61QXOsxDka3m9VyROMgIERUucdJTg/edit"
+          >
+            this document
+          </a>
+          &nbsp;so we can recognize you! The clubs records (so far, according to the document) are as follows:
+        </p>
+        <ul>
+    <li><p>Samuel Yakulis, 3000mSC, 9:28.97 (NIRCA meet record)</p></li>
+    <li><p>Shannon Fisher, Shot Put, 9.93m</p></li>
+    <li><p>Tara Blue, Half Marathon, 1:29:26</p></li>
+    <li><p>Anna Rigby, 5000m, 17:20.06</p></li>
+    <li><p>Chris Nunn, 5000m, 14:51.26</p></li>
+</ul>
+        <img src="https://i.imgur.com/O5wDKNA.jpg" />
+        <p>
+          Special shout out to Bella, Christian, and Tyler for competing in the Iron Mann
+          challenge! Congrats to Christian for his first Iron Mann completion and to Bella for
+          being the first woman in club history to achieve this feat! They pictured below next to
+          Colin Mann, the first Iron Mann and the namesake of the challenge.
+        </p>
+        <img src="https://i.imgur.com/pXNpKcs.jpg" />
+        <h3>
+          <strong>💙💛 </strong>
+          <strong>Blacksburg High School Meet Volunteering - 4/13</strong>
+        </h3>
+        <p>
+          There is another great volunteer opportunity on&nbsp;
+          <strong>Saturday, April 13 at Blacksburg High&nbsp;School</strong>.
+          They are hosting a home meet that weekend and need volunteers. BHS
+          helps us every year with our two home meets, and this is our
+          opportunity to give back. This is the same day as the 3.2 for 32 run
+          on campus so if you are running in the morning, you can come right
+          after and still volunteer! The signup can be found&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSe67YXLHpdLIP4XQ6X1fHgjTi4Vm5PycaxNCU7y7EY7ahwJZA%2Fviewform%3Fvc%3D0%26c%3D0%26w%3D1%26flr%3D0&amp;data=05%7C02%7Ctarablue%40vt.edu%7Ca4ea1e6ab5404b10db8a08dc57dcc78a%7C6095688410ad40fa863d4f32c1e3a37a%7C0%7C0%7C638481852955474527%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=EfRFhsIZwmojOsTqV1opjEq9WUVThmfu9hsTfx0OrDs%3D&amp;reserved=0"
+          >
+            here
+          </a>
+          &nbsp;- please consider volunteering if you can. They literally cannot
+          host this meet without our help.
+        </p>
+        <p></p>
+        <h3>
+          <strong>🙀 WildCat Invitational - 4/20</strong>
+        </h3>
+        <p>
+          While Nationals may be over, our track season surely isn't! We'll be
+          traveling to Randolph College for their WildCat Invitational on
+          Saturday, April 20th (with Javelin on 4/19). Yeah, this is the meet
+          that formerly was our Twilight meet (and then got changed, and then
+          rain made it a twilight meet anyway). You can sign up&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSfcHJkSuuprMsgjtjEEbB0pqI3QeIazvT31o26jbi3h77SeZg%2Fviewform%3Fusp%3Dsf_link&amp;data=05%7C02%7Ctarablue%40vt.edu%7Ca4ea1e6ab5404b10db8a08dc57dcc78a%7C6095688410ad40fa863d4f32c1e3a37a%7C0%7C0%7C638481852955481637%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=sC04HXJWBVOwmt5lCkvb7pHVN%2FTECgEQz5K%2B%2BbCRpRw%3D&amp;reserved=0"
+          >
+            here.
+          </a>
+          I think you know the drill by this point. Dues, IMLeagues, membership
+          survey. Please fill out this form by{" "}
+          <strong>Friday, April 12th.</strong>
+        </p>
+        <p></p>
+        <h3>
+          🐻🐾 <strong>Bear Tracks Signup</strong>
+        </h3>
+        <p>
+          Hey what's that? A really cool opportunity to connect&nbsp;with the
+          community and get some volunteer hours? Yes it is! For the second year
+          in a row, we're helping Margaret Beeks Elementary School with their
+          running program. This is super fun and you'll get to run around with
+          and race elementary schoolers in their tiny track. If you need
+          volunteer hours, this is a great way to get them, and we can sign off
+          on any document you need showing you did your hours. If you have any
+          free time in the morning on Wednesdays or Thursdays, please sign up on
+          the form&nbsp;
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.signupgenius.com%2Fgo%2F10C0F49A9A628A1FAC61-48740769-bear&amp;data=05%7C02%7Ctarablue%40vt.edu%7Ca4ea1e6ab5404b10db8a08dc57dcc78a%7C6095688410ad40fa863d4f32c1e3a37a%7C0%7C0%7C638481852955488733%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=1LoCj6MFihKC3Rni4Vc%2FDFevk0C5soKUZoftAuCWZgc%3D&amp;reserved=0"
+          >
+            here
+          </a>
+          . This week's theme is pajamas!
+        </p>
+        <p></p>
+        <h3>
+          <strong>🕵️ </strong>
+          <strong>Scavenger Hunt - 4/14</strong>
+        </h3>
+        <p>
+          Puzzle Master Wyatt is curating the scavenger hunt of all time for us
+          to participate in on&nbsp;<strong>Sunday, April 14</strong>. Bring out
+          your trench coats and magnifying glasses... put on your detective
+          hats... polish your pipes... you get the idea. Your teams are your
+          vans for nationals! If you didn't go to nationals, feel free to join
+          any team you'd like. More info coming out at the end of the week.
+        </p>
+        <p></p>
+        <h3>
+          <strong>🏀 </strong>March Madness Update
+        </h3>
+        <p>March Madness has ended, so we can crown our bracket winners!</p>
+        <p>Men’s Bracket Champion 🏆: Phil Lopez and Jenny Patel (tied!)</p>
+        <p>
+          Women’s Bracket Champion 🏆: Kevin Kiernan (this could be rigged
+          because he coordinated this event.)
+        </p>
+        <img src="https://i.imgur.com/GaHS3dt.jpg" />
+      </div>
+    ),
+  },
+  {
     title: "The Most Wonderful Time of the Year! (NIRCA Nationals)",
     url: "the-most-wonderful-time-of-the-year",
     year: "2024",
@@ -30,10 +176,10 @@ const articles = [
       <div class="article-content">
         <p>
           NIRCA Track &amp; Field (and half marathon) Nationals are almost here!
-          Ellie & Roman will send an email later this week with detailed information.
-          We are bringing a record number of people to the two-day meet! Get
-          excited to race, cheer, and most importantly, have a lot of fun this
-          weekend.
+          Ellie & Roman will send an email later this week with detailed
+          information. We are bringing a record number of people to the two-day
+          meet! Get excited to race, cheer, and most importantly, have a lot of
+          fun this weekend.
         </p>
         <p>
           We will be leaving in two groups at 4:30pm and 5:00pm on Friday, April
