@@ -32,6 +32,7 @@ import Banner from "./header/banner";
 import GivingDay from "./about_pages/GivingDay";
 import RaceForms from "./about_pages/RaceForms";
 import Assassin from "./about_pages/Assassin";
+import SecretPage from "./about_pages/SecretPage";
 
 export default function App() {
   const slider1 = "https://i.imgur.com/IbOEzu7.jpg";
@@ -154,6 +155,7 @@ export default function App() {
               <Route exact path="/giving-day" element={<GivingDay />}></Route>
               <Route exact path="/racing-forms" element={<RaceForms />} />
               <Route exact path="/assassin" element={<Assassin />} />
+              <Route exact path="/shhhhhhh" element={<SecretPage />}></Route>
               {/* <Route exact path="/records/*" element={<Records />}></Route> */}
               {/* <Route exact path="/test/*" element={<PageTest />}></Route> */}
               <Route exact path="/test/*" element={<PageController />}></Route>

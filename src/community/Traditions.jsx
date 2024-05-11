@@ -1,6 +1,8 @@
 import PageHeader from "../modules/PageHeader";
 import SideBarLite from "../modules/SideBarLite";
 import Article from "../modules/Article";
+import SecretPage from "../about_pages/SecretPage";
+import { Link } from "react-router-dom";
 
 export default function Traditions() {
     const background = 'https://i.imgur.com/8gvaz8A.jpg';
@@ -26,7 +28,13 @@ export default function Traditions() {
             <div className="img-container">
                 <img src="https://i.imgur.com/drSMxaK.jpg" alt="Resident sleep champion Patrick Ream engaging in the ritual of sleeping through the 9 hour van ride to Olivet, MI." />
             </div>
-            <p>Resident sleep champion Patrick Ream engaging in the ritual of sleeping through the 9 hour van ride to Olivet, MI.</p>
+            <p>Resident sleep champion Patrick Ream engaging in the ritual of sleeping through the 9 hour van ride to&nbsp;
+                <Link
+                    to="/shhhhhhh"
+                    style={{
+                        textDecoration: 'underline'
+                    }}
+            >Olivet, MI</Link>.</p>
         </div >
 
     return (
