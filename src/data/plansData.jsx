@@ -90,6 +90,34 @@ const spring24Sheets = [
   } */
 ];
 
+const summer24sheets = [
+  {
+    title: "May",
+    url: "may",
+    range: "B2:H22",
+  },
+  {
+    title: "June",
+    url: "june",
+    range: "B2:H26",
+  },
+  {
+    title: "July",
+    url: "july",
+    range: "B2:H22",
+  },
+  {
+    title: "August",
+    url: "august",
+    range: "B2:H22",
+  },
+  {
+    title: "September",
+    url: "september",
+    range: "B2:H22",
+  }
+]
+
 const plansData = [
   {
     team: "Men's Distance",
@@ -99,21 +127,12 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "800m/1500m",
-        url: "800m-1500m",
+        title: "Summer Plan",
+        url: "summer",
         year: "2024",
-        season: "Spring",
-        sheetID: "1zL2V7r_klfJxLjtbGjCqtZJQcakVIUOBKsQAWYYf1tk",
-        sheets: spring24Sheets,
-      },
-      {
-        calendar: true,
-        title: "1500m/5000m",
-        url: "1500m-5000m",
-        year: "2024",
-        season: "Spring",
-        sheetID: "1-sAbXAJN4QEmITACQL2y8ZEThHiHCLdTap1BaM6CzuM",
-        sheets: spring24Sheets,
+        season: "Summer",
+        sheetID: "1mQbbB2b56Toi2eMH16BQM7PtymVwiE__8XXekq5SG5U",
+        sheets: summer24sheets,
       },
       {
         calendar: false,
@@ -587,21 +606,12 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "800m/1500m",
-        url: "800m-1500m",
+        title: "Summer Plan",
+        url: "summer",
         year: "2024",
-        season: "Spring",
-        sheetID: "1-_d4sJli8UDZyEQJM5I1m9gV2FhkrjL7scN0fTjk5yk",
-        sheets: spring24Sheets,
-      },
-      {
-        calendar: true,
-        title: "1500m/5000m",
-        url: "1500m-5000m",
-        year: "2024",
-        season: "Spring",
-        sheetID: "1dxI_EjjgeFznmZ6ayUCtIUwxnHr3mO2hkKagSxXHOhw",
-        sheets: spring24Sheets,
+        season: "Summer",
+        sheetID: "1sxrdti04ByHqEHC-MDHu4sIB5CaVuMvI7oa_3eD-2bU",
+        sheets: summer24sheets,
       },
       {
         calendar: false,
@@ -743,16 +753,16 @@ const plansData = [
         title: "Jumps",
         url: "jumps",
         year: "2024",
-        season: "Spring",
-        sheetID: "1qYtmuYkbifM8SUD8gbrp9R2jtBmavu7VP6tmD-OWsXQ",
-        sheets: spring24Sheets,
+        season: "Summer",
+        sheetID: "1hkyicpKSVDiT9BjXqvK8GBObpJ0u6S4OhwJWxdIn2KQ",
+        sheets: summer24sheets,
       },
       {
         calendar: false,
         title: "Throws",
         url: "throws",
         year: "2024",
-        season: "Spring",
+        season: "Summer",
         content: (
           <div class="article-content">
             <h3>
@@ -1002,12 +1012,12 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "Spring Plan",
-        url: "spring-plan",
+        title: "Summer Plan",
+        url: "summer",
         year: "2024",
-        season: "Spring",
-        sheetID: "1CnAaRaoDZf3JW-UGPmgv2hSzYJVknfyUmN4I-FQSHuE",
-        sheets: spring24Sheets,
+        season: "Summer",
+        sheetID: "1cN61bZL9q0V40jn107uo6zo4T4x7QQbqOCg64HPSCgY",
+        sheets: summer24sheets,
       },
       {
         calendar: false,

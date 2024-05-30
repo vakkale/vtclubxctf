@@ -36,7 +36,7 @@ const navData = [
                     },
                     {
                         name: "Men's Distance",
-                        url: "/training/mens-distance/800m-1500m",
+                        url: "/training/mens-distance/summer",
                     }
                 ]
             },
