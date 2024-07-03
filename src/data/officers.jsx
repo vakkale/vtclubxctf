@@ -9,18 +9,18 @@ const Officers = [
     }, */
     {
         position: "President",
+        name: "Volkan Akkale",
+        email: "volkanakkale@vt.edu",
+        image: "https://i.imgur.com/LRQGJA6.jpg",
+        bio: "Hi y'all, my name is Volkan and I’m honored to be your President this year. I'm a computer engineering major in my final year here at Tech and I'm a mid distance runner. I run the 800m usually but I've also recently joined the hurdlers and you might even see me throwing shot put in the Spring home meet. I was webmaster two years ago and I made this website so I hope you enjoy. If you have any questions feel free to email me. Can't wait to see you all back on the track in August!"
+    },/* 
+    {
+        position: "President",
         name: "Wyatt Thomas",
         email: "wyatt@vt.edu",
         image: "https://i.imgur.com/chY7M8B.jpg",
         bio: "Hey there! My name is Wyatt and I am honored to be the President of the Club XCTF team this year! A little bit about myself is that I’m a junior double majoring in physics and math, and I’m a long distance runner. I race the 5k, 1500, and 8k, and I’ve got all the quirks that distance runners have. I’m also a big fan of bad jokes. I love this club so much and I’ve met so many great people here that have become lifelong friends. I can’t wait until club starts again so I can see my friends and meet new people. I’m really excited for this upcoming year and we have a lot of fun things planned. If you have any questions, please feel free to reach out! I will happily answer any and all. I’m looking forward to meeting and training with all of you!"
-    },
-    {
-        position: "Vice President",
-        name: "Volkan Akkale",
-        email: "volkanakkale@vt.edu",
-        image: "https://i.imgur.com/LRQGJA6.jpg",
-        bio: "Hi y'all, my name is Volkan and I’m your Vice President this year. I was webmaster last year and I made this website so I hope you enjoy. We're in the middle of a complete rewrite of the website to allow for editing from within the website itself. Exciting times. I run the 800m usually but I've also recently joined the hurdler gang. If you have any questions feel free to email myself or Wyatt. Can't wait to see you all back on the track in August!"
-    },
+    }, */
     {
         position: "Race Coordinator",
         name: "Roman Ciulla",
