@@ -28,13 +28,13 @@ export default function Join() {
       <h3>As easy as 1-2-3!</h3>
       <p>
         There are 3 steps to becoming a member of the club. All items are due by{" "}
-        <span style={{ fontWeight: "bold" }}>Jan. 26.</span>
+        <span style={{ fontWeight: "bold" }}>Friday, Sept. 13.</span>
       </p>
       <ol>
         <li>
           Complete the{" "}
           <a
-            href="https://forms.gle/p8xssbL7kjKdTCg89"
+            href="https://forms.office.com/r/Xgm9Cn9FEP"
             target="_blank"
             rel="noreferrer"
           >
@@ -44,10 +44,6 @@ export default function Join() {
         <li>
           <ul>
             Complete your IMLeague forms.{" "}
-            <span style={{ fontWeight: "bold" }}>
-              If you have completed IMleague forms in the Fall, you do not have
-              to do them again!{" "}
-            </span>
             <li>
               Go to{" "}
               <a
@@ -88,6 +84,9 @@ export default function Join() {
               done with forms!
             </li>
             <li>
+              For medical forms, if you have had previous injuries, please explain in detail (specific body part, length of injury, etc.)
+            </li>
+            <li>
               <span style={{ fontWeight: "bold" }}>
                 You DO NOT have to pay the $10 intramural fee on IMLeagues
               </span>
@@ -98,10 +97,7 @@ export default function Join() {
           <ul>
             Pay Dues. Dues are $100 for racers and $30 for non-racers. <br></br>
             Dues can be paid using cash or check (made out to “Treasurer of
-            Virginia Tech”) and should be turned in at Mccomas, room 142 (big
-            wooden doors) right inside the main entrance. The Mccomas office is
-            open from 8:00am-5:00pm, so you must go during that time. Here is
-            what each gets you:
+            Virginia Tech”) and should be paid at War Memorial Hall.
             <li>
               <span style={{ fontWeight: "bold" }}>Non-Racing: </span>You get
               access to all team equipment (blocks, throwing implements, etc)
