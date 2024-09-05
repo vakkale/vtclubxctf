@@ -1,4 +1,4 @@
-const fall23Sheets = [
+const fall24sheets = [
   {
     title: "August",
     url: "august",
@@ -22,98 +22,6 @@ const fall23Sheets = [
   {
     title: "December",
     url: "december",
-    range: "B2:H26",
-  },
-];
-
-const fall23SheetsNoDec = [
-  {
-    title: "August",
-    url: "august",
-    range: "B2:H22",
-  },
-  {
-    title: "September",
-    url: "september",
-    range: "B2:H22",
-  },
-  {
-    title: "October",
-    url: "october",
-    range: "B2:H22",
-  },
-  {
-    title: "November",
-    url: "november",
-    range: "B2:H22",
-  },
-];
-
-const winter23sheets = [
-  {
-    title: "December",
-    url: "december",
-    range: "B2:H26",
-  },
-  {
-    title: "January",
-    url: "january",
-    range: "B2:H22",
-  },
-];
-
-const spring24Sheets = [
-  /* {
-    title: "January",
-    url: "january",
-    range: "B2:H22",
-  }, */
-  {
-    title: "February",
-    url: "february",
-    range: "B2:H22",
-  },
-  {
-    title: "March",
-    url: "march",
-    range: "B2:H22",
-  },
-  {
-    title: "April",
-    url: "april",
-    range: "B2:H22",
-  },
-  /* {
-    title: "May",
-    url: "may",
-    range: "B2:H22",
-  } */
-];
-
-const summer24sheets = [
-  {
-    title: "May",
-    url: "may",
-    range: "B2:H22",
-  },
-  {
-    title: "June",
-    url: "june",
-    range: "B2:H26",
-  },
-  {
-    title: "July",
-    url: "july",
-    range: "B2:H22",
-  },
-  {
-    title: "August",
-    url: "august",
-    range: "B2:H22",
-  },
-  {
-    title: "September",
-    url: "september",
     range: "B2:H22",
   }
 ]
@@ -127,12 +35,12 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "Summer Plan",
-        url: "summer",
+        title: "Fall Plan",
+        url: "fall",
         year: "2024",
-        season: "Summer",
+        season: "Fall",
         sheetID: "1mQbbB2b56Toi2eMH16BQM7PtymVwiE__8XXekq5SG5U",
-        sheets: summer24sheets,
+        sheets: fall24sheets,
       },
       {
         calendar: false,
@@ -606,12 +514,12 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "Summer Plan",
-        url: "summer",
+        title: "Fall Plan",
+        url: "fall",
         year: "2024",
-        season: "Summer",
-        sheetID: "1sxrdti04ByHqEHC-MDHu4sIB5CaVuMvI7oa_3eD-2bU",
-        sheets: summer24sheets,
+        season: "Fall",
+        sheetID: "1AA9FWpvcEDaef5AqaF-IfAak6hdsp4jRJPZValfldqI",
+        sheets: fall24sheets,
       },
       {
         calendar: false,
@@ -753,16 +661,16 @@ const plansData = [
         title: "Jumps",
         url: "jumps",
         year: "2024",
-        season: "Summer",
+        season: "Fall",
         sheetID: "1hkyicpKSVDiT9BjXqvK8GBObpJ0u6S4OhwJWxdIn2KQ",
-        sheets: summer24sheets,
+        sheets: fall24sheets,
       },
       {
         calendar: false,
         title: "Throws",
         url: "throws",
         year: "2024",
-        season: "Summer",
+        season: "Fall",
         content: (
           <div class="article-content">
             <h3>
@@ -1013,11 +921,11 @@ const plansData = [
       {
         calendar: true,
         title: "Summer Plan",
-        url: "summer",
+        url: "fall",
         year: "2024",
-        season: "Summer",
+        season: "Fall",
         sheetID: "1cN61bZL9q0V40jn107uo6zo4T4x7QQbqOCg64HPSCgY",
-        sheets: summer24sheets,
+        sheets: fall24sheets,
       },
       {
         calendar: false,

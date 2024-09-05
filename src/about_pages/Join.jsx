@@ -88,8 +88,8 @@ export default function Join() {
             </li>
             <li>
               <span style={{ fontWeight: "bold" }}>
-                You DO NOT have to pay the $10 intramural fee on IMLeagues
-              </span>
+                You DO NOT have to pay the $25 intramural fee on IMLeagues
+              </span>  
             </li>
           </ul>
         </li>
@@ -97,7 +97,16 @@ export default function Join() {
           <ul>
             Pay Dues. Dues are $100 for racers and $30 for non-racers. <br></br>
             Dues can be paid using cash or check (made out to “Treasurer of
-            Virginia Tech”) and should be paid at War Memorial Hall.
+            Virginia Tech”) and should be paid at the Sport Clubs Office in War Memorial Hall (on your left past where you scan).
+            <br></br>
+            <p>Sport Clubs Office dues payment hours:</p>
+            <ul>
+              <li>Monday: 2:30 - 5:30 pm</li>
+              <li>Tuesday: 8:30 - 11:30 am</li>
+              <li>Wednesday: 8:30 - 11:30 am</li>
+              <li>Thursday: 2:30 - 5:30 pm</li>
+              <li>Friday: 9:30 - 11:30 am</li>
+            </ul>
             <li>
               <span style={{ fontWeight: "bold" }}>Non-Racing: </span>You get
               access to all team equipment (blocks, throwing implements, etc)
@@ -114,13 +123,10 @@ export default function Join() {
             <li>
               <span style={{ fontWeight: "bold" }}>Racing: </span>All of the
               above plus more! This includes all race entry fees, travel costs,
-              hotel costs and more for 4-5 meets per season. Our official race
+              hotel costs and more for 5 meets per season. Our official race
               schedule will be released soon, but a sneak preview includes a
-              home meet on March 18th here in Blacksburg as well as NIRCA
-              Nationals April 1-2nd! Our men's team is on a title defense run as
-              they won Nationals last year, and our ladies are eager to claim
-              their first National title! Anyone is welcome to compete and there
-              are no time requirements to compete. This is the best way to get
+              home meet on Sept 28th here in Blacksburg as well as NIRCA
+              Nationals in Hershey, PA on November 9th! We're looking to win our first national title on both mens' and womens' sides! Anyone is welcome to compete and there are no time requirements to compete. This is the best way to get
               the most out of the club, and we promise that if you choose to
               race with us you will not regret it!
             </li>
