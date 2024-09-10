@@ -19,6 +19,350 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "Welcome To Club XCTF! 🎉",
+    url: "welcome-to-club-xctf-fall-2024",
+    year: "2024",
+    date: "9 - 10",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/GqXmXlx.jpeg",
+    content: (
+      <div class="article-content">
+        <p>
+          Welcome back, everyone! If you are reading this, you survived the
+          first week of practice. Once you have completed your membership
+          survey, IMLeagues forms, and paid your dues, it is smooth sailing from
+          here!
+        </p>
+        <h3>
+          <strong>💬 Join Our Group Me(s)</strong>
+        </h3>
+        <p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://groupme.com/join_group/75589174/gJRxhuYw"
+          >
+            Announcements Chat
+          </a>
+          : This is used for time-sensitive announcements that can’t wait for
+          the weekly email, like race sign up reminders and weather related
+          practice cancellations.
+        </p>
+        <p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://groupme.com/join_group/67837472/orELO6Nz"
+          >
+            General Chat
+          </a>
+          : A place for everyone to chat with each other regardless of what
+          practice group they’re a part of.
+        </p>
+        <p>
+          Practice group-specific chats: Your captains will add you to these.
+          Come to practice and ask to be added if you aren’t in it already. This
+          is for communication within groups.
+        </p>
+        <h3>
+          <strong>👀 Where Do We Meet?</strong>
+        </h3>
+        <p>
+          We have practice every weekday at 6pm at the Johnson-Miller Track
+          Complex unless there is a university holiday. You can park in front of
+          the track (unless there’s a game happening) or at the Chicken Hill
+          lot. We understand that you are all busy college students, so
+          everything we do from practice to socials to meets is optional, but we
+          would still love to see you come out as often as you can!
+        </p>
+        <h3>
+          <strong>🏃 Membership Requirements</strong>
+        </h3>
+        <p>
+          Here are the three items you must complete in order to be an official
+          member of the club.
+          <strong>
+            These must be completed by this Friday, September 13th
+          </strong>
+          .
+        </p>
+        <ol>
+          <li>
+            <p>
+              <span>Complete the </span>
+              <a
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                href="https://forms.office.com/r/Xgm9Cn9FEP"
+              >
+                membership survey
+              </a>
+              <span>.</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>Fill out your </span>
+              <a
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                href="https://connect.recsports.vt.edu/IMLeague"
+              >
+                IMLeagues forms
+              </a>
+              <span>
+                . Remember, you do not have to pay the $25 intramurals fee.
+                Detailed instructions for what to click can be found on the join
+                page of our website{" "}
+              </span>
+              <Link to="/join">here</Link>
+              <span>.</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>
+                Pay your dues! Dues are $30 if you are not competing this
+                semester and $100 if you are.{" "}
+                <mark>
+                  Dues must be paid by cash or check only (checks made out to
+                  “Treasurer at Virginia Tech”)!
+                </mark>{" "}
+                Dues cover your travel and lodging expenses as well as entry
+                fees for 5 meets each semester.
+              </span>
+            </p>
+          </li>
+        </ol>
+        <div className="highlighted-message">
+          <p>
+            <span>
+              The location to pay dues has changed! Dues are now paid at the
+              Sport Clubs office in War Memorial Gym. The office is on your left
+              just past where you swipe to get in.{" "}
+              <mark>
+                They are only accepting dues payments at specific hours.
+              </mark>{" "}
+              The hours for this week are as follows:
+            </span>
+          </p>
+          <ul>
+            <li>
+              <p>
+                <span>Monday: 2:30 - 5:30 pm</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>Tuesday: 8:30 - 11:30 am</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>Wednesday: 8:30 - 11:30 am</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>Thursday: 2:30 - 5:30 pm</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>Friday: 9:30 - 11:30 am</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <p>
+          <span>
+            Again, everything must be completed by this Friday, September 13.
+          </span>
+        </p>
+        <h3>
+          <span>
+            <strong>⚔️ Our First Race at UVA (9/21)</strong>
+          </span>
+        </h3>
+        <p>
+          <span>
+            It’s only the second week of practice but we’re already signing up
+            for the first meet. We are super excited to beat UVA in their home
+            turf as we’ve done many, many, times before and you won’t want to
+            miss this season opener tradition, so make sure to sign up{" "}
+          </span>
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.office.com/pages/responsepage.aspx?id=hGiVYK0Q-kCGPU8yweOjenEZl5cstKNHpCUuyeCYfnpUOEhOMldJUkY0QkdHMjkyNzNYTDJaT0dBRi4u&amp;route=shorturl"
+          >
+            here
+          </a>
+          <span> by this Friday, September 13th!</span>
+        </p>
+        <p>
+          <span>
+            <mark>
+            REMINDER: THERE ARE NO TRYOUTS OR CUTS. YOU CAN RACE BY SIMPLY
+            SIGNING UP AND COMPLETING THE MEMBERSHIP REQUIREMENTS FOR RACING.
+            </mark>
+          </span>
+        </p>
+        <p>
+          <span>
+            The following is a message from our Race Coordinator, Ellie:
+          </span>
+        </p>
+        <p>
+          <span>
+            If you have not raced with us before, I NEED you to fill out{" "}
+          </span>
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.office.com/r/Ju2siwufps"
+          >
+            this
+          </a>
+          <span>
+            {" "}
+            form (also found in step 1 below) by
+            <strong>Tuesday, September 10</strong>. This is so I can create your
+            NIRCA account so that you can eventually be registered to
+            race.&nbsp;
+          </span>
+        </p>
+        <p>
+          <span>Here's what you need to do:</span>
+        </p>
+        <ol>
+          <li>
+            <p>
+              <span>Fill out </span>
+              <a
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                href="https://forms.office.com/r/Ju2siwufps"
+              >
+                this
+              </a>
+              <span>
+                {" "}
+                form by 9/10/2024 (I will create your account with this info).
+              </span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>
+                Verify your account via the email NIRCA will send you.
+              </span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>
+                NIRCA will send you an email to fill out a waiver. Try to do
+                this ASAP!
+              </span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>
+                Once you fill out the waiver, I can then register you for the
+                race.
+              </span>
+            </p>
+          </li>
+        </ol>
+        <p>
+          <span>
+            If you are hesitant about whether or not you want to race, we
+            encourage you to watch{" "}
+          </span>
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://www.youtube.com/watch?v=MlY38bTQTvA"
+          >
+            this video
+          </a>
+          <span>
+            {" "}
+            from one of our alumni. We think it’ll give you a good idea of what
+            our competitions look like. We are taking applications for
+            inflatable dinosaurs too, as Tyler graduated that year and we’ve had
+            no one step up to take his place.
+          </span>
+        </p>
+        <img src="https://i.imgur.com/RhZIges.jpeg" />
+        <h3>
+          <span>
+            <strong>🌯 🥑 Chipotle Percentage Night (9/10)</strong>
+          </span>
+        </h3>
+        <p>
+          <span>
+            It’s time for our first team dinner of the season! We will be going
+            to Chipotle on Main Street after practice. 25% of the proceeds
+            support the club and help us keep dues low. You must show them{" "}
+            <a href="https://virginiatech.sharepoint.com/:b:/s/VTClubXCTF/EQhdL0HxVz9MkttXXJJUWNABqWjyX82SEqliP1Fo7nS5gQ?e=8JuJAq">
+              this flyer
+            </a>{" "}
+            or tell them you're with VT Club XCTF for us to get the percentage
+            from your order. Hope to see you all there!
+          </span>
+        </p>
+        <h3>
+          <span>
+            <strong>⚽️ Rec Field Social (9/14)</strong>
+          </span>
+        </h3>
+        <p>
+          <span>
+            Come out to the Rec Fields this
+            <strong>Saturday, September 14 at noon</strong> to play games! We’ll
+            have spikeball, football, frisbees, soccer, etc. If you have
+            anything else you’d like to play, please bring it! This is yet
+            another great opportunity to meet your teammates.
+          </span>
+        </p>
+        <h3>
+          <span>
+            <strong>🏋️ Team Lifts on Thursdays</strong>
+          </span>
+        </h3>
+        <p>
+          <span>
+            New this year, we’ll be having a team-wide lifting session after
+            practice on Thursdays at the Bubble right next to practice! We had
+            our first session last week and it was a big success. Not only will
+            you become a stronger and better athlete, but this is the perfect
+            opportunity to meet the rest of your team besides your training
+            group.
+          </span>
+        </p>
+        <p>
+          <span>Take a look at our </span>
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://www.youtube.com/watch?v=xjr1MT0Jg8g"
+          >
+            recap video
+          </a>
+          <span>
+            from last year. If you like what you see, we’ve got a lot more on
+            the way. Here’s to a great year, everyone!
+          </span>
+        </p>
+        <img src="https://i.imgur.com/qTpbRUt.jpeg" />
+      </div>
+    ),
+  },
+  {
     title: "A Much Shorter Drive to Olivet",
     url: "a-much-shorter-drive-to-olivet",
     year: "2024",
@@ -54,21 +398,33 @@ const articles = [
           >
             this document
           </a>
-          &nbsp;so we can recognize you! The clubs records (so far, according to the document) are as follows:
+          &nbsp;so we can recognize you! The clubs records (so far, according to
+          the document) are as follows:
         </p>
         <ul>
-    <li><p>Samuel Yakulis, 3000mSC, 9:28.97 (NIRCA meet record)</p></li>
-    <li><p>Shannon Fisher, Shot Put, 9.93m</p></li>
-    <li><p>Tara Blue, Half Marathon, 1:29:26</p></li>
-    <li><p>Anna Rigby, 5000m, 17:20.06</p></li>
-    <li><p>Chris Nunn, 5000m, 14:51.26</p></li>
-</ul>
+          <li>
+            <p>Samuel Yakulis, 3000mSC, 9:28.97 (NIRCA meet record)</p>
+          </li>
+          <li>
+            <p>Shannon Fisher, Shot Put, 9.93m</p>
+          </li>
+          <li>
+            <p>Tara Blue, Half Marathon, 1:29:26</p>
+          </li>
+          <li>
+            <p>Anna Rigby, 5000m, 17:20.06</p>
+          </li>
+          <li>
+            <p>Chris Nunn, 5000m, 14:51.26</p>
+          </li>
+        </ul>
         <img src="https://i.imgur.com/O5wDKNA.jpg" />
         <p>
-          Special shout out to Bella, Christian, and Tyler for competing in the Iron Mann
-          challenge! Congrats to Christian for his first Iron Mann completion and to Bella for
-          being the first woman in club history to achieve this feat! They pictured below next to
-          Colin Mann, the first Iron Mann and the namesake of the challenge.
+          Special shout out to Bella, Christian, and Tyler for competing in the
+          Iron Mann challenge! Congrats to Christian for his first Iron Mann
+          completion and to Bella for being the first woman in club history to
+          achieve this feat! They pictured below next to Colin Mann, the first
+          Iron Mann and the namesake of the challenge.
         </p>
         <img src="https://i.imgur.com/pXNpKcs.jpg" />
         <h3>
