@@ -918,152 +918,33 @@ const plansData = [
     image: "https://i.imgur.com/WbyiBeI.jpg",
     yPos: "top",
     plans: [
-      {
-        calendar: true,
-        title: "Summer Plan",
-        url: "fall",
-        year: "2024",
-        season: "Fall",
-        sheetID: "1cN61bZL9q0V40jn107uo6zo4T4x7QQbqOCg64HPSCgY",
-        sheets: fall24sheets,
-      },
+      // {
+      //   calendar: true,
+      //   title: "Summer Plan",
+      //   url: "fall",
+      //   year: "2024",
+      //   season: "Fall",
+      //   sheetID: "1cN61bZL9q0V40jn107uo6zo4T4x7QQbqOCg64HPSCgY",
+      //   sheets: fall24sheets,
+      // },
       {
         calendar: false,
         title: "Warmups",
         url: "warmups",
         season: "Extras",
         content: (
-          <div className="article-content">
-            <h3>Dynamic Warmup 1 (Short)</h3>
-            <ul>
-              <li>High Knees</li>
-              <li>Butt Kicks</li>
-              <li>A Skips</li>
-              <li>B Skips</li>
-              <li>Woodson's</li>
-              <li>Swan Dives</li>
-              <li>Swoops</li>
-              <li>Frankensteins</li>
-              <li>Cariocas</li>
-              <li>2 Strides</li>
-            </ul>
-            <h3>Dynamic Warmup 2 (Mid)</h3>
-            <ul>
-              <li>High Knees</li>
-              <li>Butt Kicks</li>
-              <li>A Skips</li>
-              <li>B Skips</li>
-              <li>Open the Gate</li>
-              <li>Close the Gate</li>
-              <li>Front Lunges</li>
-              <li>Swan Dives</li>
-              <li>Swoops</li>
-              <li>Frankensteins</li>
-              <li>Knee Pulls</li>
-              <li>Quad Pulls</li>
-              <li>Heel to Pocket</li>
-              <li>2 Strides</li>
-            </ul>
-            <h3>Dynamic Warmup 3 (Long)</h3>
-            <ul>
-              <li>Heel Walks</li>
-              <li>Side Foot Walks</li>
-              <li>March With Foot to Ankle</li>
-              <li>March With Foot to Knee</li>
-              <li>Knee Pulls</li>
-              <li>Quad Pulls</li>
-              <li>Heel to Pocket</li>
-              <li>Front Lunges</li>
-              <li>Side Lunges</li>
-              <li>Open the Gate</li>
-              <li>Close the Gate</li>
-              <li>A Skips</li>
-              <li>B Skips</li>
-              <li>Swoops</li>
-              <li>Swan Dives</li>
-              <li>Frankensteins</li>
-              <li>Woodsons</li>
-              <li>2 Strides</li>
-            </ul>
-            <h3>Static Warmup</h3>
-            <ul>
-              <li>Ankle Rotations</li>
-              <li>Knee Rotations</li>
-              <li>Hip Rotations</li>
-              <li>Arm Extentions</li>
-              <li>Hurdle Trail Leg</li>
-              <li>Side Lunges</li>
-              <li>45° Side Lunges</li>
-              <li>Front Lunge</li>
-              <li>Front Lunge w/ Twist</li>
-              <li>Run in Place</li>
-            </ul>
-            <h3>Ebbet Foot Drills</h3>
-            <ul>
-              <li>Walk on Outside of Foot</li>
-              <li>Walk on Inside of Foot</li>
-              <li>Feet Out, Heel to Big Toe Walks</li>
-              <li>Feet In, Heel to Pinky Toe Walks</li>
-              <li>Heel Walks</li>
-              <li>Backwards Calf Raise Walks</li>
-            </ul>
+          <div className="article-content"><h3><span><strong>Base everyday warmup:</strong></span></h3><ul><li><p>Jog a lap</p></li><li><p>20 squats</p></li><li><p>20 lunges</p></li><li><p>10 cycles of hip rotations</p></li><li><p>10 Iron Cross</p></li><li><p>10 scorpion</p></li><li><p>10 leg swings front-back + side to side</p></li></ul><p></p><h3><span><strong>Additions:</strong></span></h3><p><span><strong>Speed:</strong></span></p><ul><li><p><span>Lunge holds</span></p></li></ul><ul><li><p><span>Buildups with spikes</span></p></li></ul><ul><li><p><span>Lunge switch jumps</span></p></li></ul><ul><li><p><span>Hip openers</span></p></li></ul><p><span><strong>Endurance work:</strong></span></p><ul><li><p><span>Just base warmup</span></p></li></ul><p></p><h3><span><strong>Drills (every day):</strong></span></h3><ul><li><p><span>Knee pulls</span></p></li></ul><ul><li><p><span>Heel walk</span></p></li></ul><ul><li><p><span>Toe walk</span></p></li></ul><ul><li><p><span>Dives</span></p></li></ul><ul><li><p><span>Side lunges</span></p></li></ul><ul><li><p><span>Frankenstein</span></p></li></ul><ul><li><p><span>Butt kicks</span></p></li></ul><ul><li><p><span>High knees</span></p></li></ul><ul><li><p><span>A-skip</span></p></li></ul><ul><li><p><span>B-skip</span></p></li></ul><ul><li><p><span>Straight leg</span></p></li></ul><ul><li><p><span>Backwards run</span></p></li></ul><ul><li><p><span>Carioca</span></p></li></ul><ul><li><p><span>Side shuffle</span></p></li></ul><ul><li><p><span>Accelerations</span></p></li></ul><ul><li><p><span>Hurtle mobility?</span></p></li></ul><p></p><p><span><strong>Optional drills (more complex to do correctly, might not be worth the effort):&nbsp;</strong></span></p><ul><li><p><span>Ankle/shin/knee dribble</span></p></li></ul><p></p>
           </div>
         ),
       },
       {
         calendar: false,
-        title: "Sample Lifting Schedule",
-        url: "sample-lifting-schedule",
+        title: "Weights",
+        url: "weights",
         season: "Extras",
         content: (
           <div className="article-content">
-            <table>
-              <tr>
-                <td>Monday</td>
-                <td>Tuesday</td>
-                <td>Wednesday</td>
-                <td>Thursday</td>
-                <td>Friday </td>
-              </tr>
-              <tr>
-                <td>
-                  Back Squats 1x4-8 @80%, 1x2-6 @85%, 1x1-4 @90%, 1x4-8 @82.5%,
-                  1x2-6 @87.5%, 1x1-2 @92%
-                </td>
-                <td>Hang Clean 3x4 @60-70%</td>
-                <td>Rest Day</td>
-                <td>Front Squats 3x2-6 @80-90%</td>
-                <td>Split-Clean 3x4 @50-60% </td>
-              </tr>
-              <tr>
-                <td>Good Mornings 3x4-8</td>
-                <td>Clean Pulls 3x3-6 @70-80%</td>
-                <td></td>
-                <td>Deadlifts 3x2-6</td>
-                <td>Hang Snatch Pulls 3x3-6@60-70% </td>
-              </tr>
-              <tr>
-                <td>Calf Raises 3x8-12</td>
-                <td>Push Jerk 3x3-6 @70% of hang clean</td>
-                <td></td>
-                <td>Incline Press 3x6-10</td>
-                <td>Dumbell Hang Cleans 3x3-6 </td>
-              </tr>
-              <tr>
-                <td>Single Arm Dumbell Rows 3x6-8 (each arm)</td>
-                <td>Wide Grip Pullups 3xFailure</td>
-                <td></td>
-                <td>Barbell Bent Over Rows 3x6-8</td>
-                <td>Step Ups 3x8-12 </td>
-              </tr>
-              <tr>
-                <td>Dumbell Shoulder Press 3x4-8</td>
-                <td>Banded Hip Walks</td>
-                <td></td>
-                <td>Seated Military Press 3x2-6</td>
-                <td>Bicep Focused Pullups 3xFailure</td>
-              </tr>
-            </table>
+            <blockquote><p><span><em>Perfectly ok to just do the Thursday team lift, other days are a plan if you want more.</em></span><em>&nbsp;</em></p></blockquote><h3><span><strong>Monday:&nbsp;</strong></span></h3><ul><li><p><span>Barbell Squats 3x10 (progressive overload)&nbsp;</span></p></li><li><p><span>RDL 3x10&nbsp;</span></p></li><li><p><span>Hip thrusts 3x5&nbsp;</span></p></li></ul><h3><span><strong>Tuesday:&nbsp;</strong></span></h3><ul><li><p><span>Bench 3x10 (progressive overload)&nbsp;</span></p></li></ul><ul><li><p><span>BOR 3x10&nbsp;</span></p></li></ul><ul><li><p><span>Military Press 5x5&nbsp;</span></p></li></ul><h3><span>Wednesday:</span></h3><ul><li><p><span>Lat raises 3x12&nbsp;</span></p></li></ul><ul><li><p><span>Running arms 3x30sec&nbsp;</span></p></li></ul><ul><li><p><span>Pull-ups 3x3 (or however many you can do. If you can’t do a pullup, jump up and lower yourself as slowly as possible)&nbsp;</span></p></li></ul><ul><li><p><span>Push-ups 3x10 (or however many you can do)&nbsp;</span></p></li></ul><h3><span>Thursday (Team):&nbsp;</span></h3><ul><li><p><span>Hang power cleans 5x2&nbsp;</span></p></li></ul><ul><li><p><span>Half Squat 5x2&nbsp;</span></p></li></ul><ul><li><p><span>TB deadlift 5x5&nbsp;</span></p></li></ul><h3><span>Friday:</span></h3><ul><li><p><span>Rest or upper body work <strong>(do not go overboard, ask Will or Chatham if you have questions)</strong>&nbsp;</span></p></li></ul>
           </div>
         ),
       },
