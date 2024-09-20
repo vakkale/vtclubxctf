@@ -19,6 +19,126 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "Almost Race Day! 🏃‍♂️🏃‍♀️",
+    url: "almost-race-day-uva-2024",
+    year: "2024",
+    date: "9 - 16",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/ld9f6ld.jpeg",
+    content: (
+      <div class="article-content">
+        <p>
+          It’s race week! We have our first meet of the season at UVA this
+          Saturday. With that being said, the sign up for our second meet (our
+          home meet) is already here. The best place to get up-to-date
+          information is through GroupMe. Please join these group chats if you
+          haven’t already, and ask your captains at practice to get added to the
+          training group-specific chats.&nbsp;
+        </p>
+        <img src="https://i.imgur.com/r38WxM5.jpeg" />
+        <h3>
+          <strong>⚔️ UVA Meet and Singlet Requirement (9/21)</strong>
+        </h3>
+        <p>
+          You will get an email from our wonderful race coordinator Ellie later
+          this week with specific information for the UVA meet. To compete in
+          NIRCA meets, you are required to wear a VT singlet. We have specially
+          licensed singlets that we purchase every year and sell for $40 (we
+          make no profit from this!)
+        </p>
+        <p>
+          You can purchase a singlet during practice from our apparel officer
+          Molly. We only accept cash or check (made out to “Treasurer at
+          Virginia Tech”). You only have to purchase a singlet once and you can
+          use it to race each semester. If you are only planning on racing in
+          the Spring, you can wait till then to purchase one.&nbsp;
+        </p>
+        <h3>🏠 Hokie Invite (Home Meet) Sign Up &amp; Volunteering (9/28)</h3>
+        <p>
+          We will be hosting our annual Hokie Invite race on Saturday, September
+          28th at Blacksburg High School. You can set your alarms at a
+          reasonable time for this one since it’s just a short drive from
+          campus. The sign up can be found{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://forms.office.com/pages/responsepage.aspx?id=hGiVYK0Q-kCGPU8yweOjesWALSeB089Pmst0CjSf87dUODA5MlU3NkxDUVZTUVFNRzJLMkE4VEpRTyQlQCN0PWcu&amp;route=shorturl"
+          >here
+          </a>{" "}
+          and closes on Saturday, September 21st. As with all races, make sure
+          to set up your NIRCA account, complete your IMLeagues forms, and pay
+          your $100 racing dues.&nbsp;
+        </p>
+        <p>
+          If you do not plan on racing this meet, please consider signing up to
+          volunteer. We need volunteers to help marshal the course and make sure
+          the event runs smoothly. We couldn’t do this without your help!
+        </p>
+        <h3>🦃 Hokie Half Volunteering (9/28 &amp; 9/29)&nbsp;</h3>
+        <p>
+          It’s time for our biggest volunteer opportunity of the year! The Hokie
+          Half Marathon is on Sunday, September 29th and they need our help. The
+          event is run by our biggest sponsor, Runabout Sports, and their
+          support helps us keep dues the lowest among all sport clubs at VT. You
+          will get a free Hokie Half volunteer shirt for helping, so make sure
+          to sign up soon to be guaranteed a shirt your size! Please complete{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://www.signupgenius.com/go/10C0F49A9A628A1FAC61-51465156-hokie#/"
+          >
+            the sign up form
+          </a>{" "}
+          by this Thursday, September 19th.
+        </p>
+        <h3>🧑&zwj;🍳 Fall Cookout (9/22)</h3>
+        <p>
+          It's time for our annual Fall Cookout! We will be meeting at the
+          Blacksburg Municipal Park on Sunday, September 22nd from 12pm to 3pm.
+          If you are attending, regardless of whether you are bringing food,
+          please RSVP{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://www.signupgenius.com/go/10C0948ABA92AA0FBC52-51458886-fall?useFullSite=true"
+          >
+            here
+          </a>
+          .&nbsp;
+        </p>
+        <p>
+          This event is a potluck, so please try to bring/make food if you can!
+          We'll be outside, so be sure to bring any games! If you need a ride,
+          talk to one of your upperclassmen friends or ask around. You can also
+          take NMP which leaves from the Maroon Bay every 30 minutes.
+        </p>
+        <h3>🐾 Bear Tracks</h3>
+        <p>
+          Bear Tracks is back! Every year, we partner with Margaret Beeks
+          Elementary School to help out with their Bear Tracks program. From
+          8:45am to 9:15am on Thursdays and Fridays, you can come out to the
+          elementary school and run around with kindergartners through 5th
+          graders. This week’s theme is “Rainbow Track” so make sure to wear
+          your favorite color.
+        </p>
+        <h3>🏋️ Team Lifts on Thursdays&nbsp;</h3>
+        <p>
+          Just like last week, we’ll be having a team-wide lifting session after
+          practice on Thursday at the Bubble right next to practice! Not only
+          will you become a stronger and better athlete, but this is the perfect
+          opportunity to meet the rest of your team besides your training
+          group.&nbsp;
+        </p>
+        <p>
+          We appreciate your help and support! Have a great week and a speedy
+          race!
+        </p>
+        <img src="https://i.imgur.com/X9Q2AvN.jpeg" />
+      </div>
+    ),
+  },
+  {
     title: "Welcome To Club XCTF! 🎉",
     url: "welcome-to-club-xctf-fall-2024",
     year: "2024",
@@ -204,8 +324,8 @@ const articles = [
         <p>
           <span>
             <mark>
-            REMINDER: THERE ARE NO TRYOUTS OR CUTS. YOU CAN RACE BY SIMPLY
-            SIGNING UP AND COMPLETING THE MEMBERSHIP REQUIREMENTS FOR RACING.
+              REMINDER: THERE ARE NO TRYOUTS OR CUTS. YOU CAN RACE BY SIMPLY
+              SIGNING UP AND COMPLETING THE MEMBERSHIP REQUIREMENTS FOR RACING.
             </mark>
           </span>
         </p>

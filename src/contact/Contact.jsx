@@ -4,7 +4,7 @@ import officers from "../data/officers";
 
 export default function Contact() {
 
-    const image = "https://i.imgur.com/ftjzYaB.jpg";
+    const image = "https://i.imgur.com/IW4buZJ.jpeg";
 
     const OffcierCards = ({ officer }) => {
         return (

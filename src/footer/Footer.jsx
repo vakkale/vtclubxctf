@@ -11,6 +11,7 @@ import crimpers_logo from "../assets/sponsors/crimpers.svg";
 import bollos_logo from "../assets/sponsors/bollos.svg";
 import gillies_logo from "../assets/sponsors/gillies.svg";
 import adjustnrv_logo from "../assets/sponsors/adjustnrv.svg";
+import counts_pharmacy_logo from "../assets/sponsors/counts_pharmacy.svg";
 
 const socialdata = [
   {
@@ -47,9 +48,14 @@ const sponsors = [
     logo: adjustnrv_logo,
   },
   {
-    name: "Blacksburg Boxing & Fitness",
-    url: "https://www.blacksburgboxingandfitness.com/",
-    logo: boxing_logo,
+    name: "Counts Family Pharmacy",
+    url: "https://www.msblacksburg.com/",
+    logo: counts_pharmacy_logo,
+  },
+  {
+    name: "Cellar Restaurant - Blacksburg",
+    url: "https://the-cellar.com/",
+    logo: cellar_logo,
   },
   {
     name: "Crimper's Climbing Gym",
