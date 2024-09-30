@@ -12,6 +12,7 @@ import bollos_logo from "../assets/sponsors/bollos.svg";
 import gillies_logo from "../assets/sponsors/gillies.svg";
 import adjustnrv_logo from "../assets/sponsors/adjustnrv.svg";
 import counts_pharmacy_logo from "../assets/sponsors/counts_pharmacy.svg";
+import yoga_logo from "../assets/sponsors/in_balance_yoga.svg";
 
 const socialdata = [
   {
@@ -53,9 +54,9 @@ const sponsors = [
     logo: counts_pharmacy_logo,
   },
   {
-    name: "Cellar Restaurant - Blacksburg",
-    url: "https://the-cellar.com/",
-    logo: cellar_logo,
+    name: "In Balance Yoga",
+    url: "https://www.inbalanceyogastudio.com/",
+    logo: yoga_logo,
   },
   {
     name: "Crimper's Climbing Gym",

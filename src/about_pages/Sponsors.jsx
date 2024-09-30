@@ -10,6 +10,7 @@ import gillies from "../assets/sponsors/gillies.svg";
 import bollos from "../assets/sponsors/bollos.svg";
 import adjustnrv from "../assets/sponsors/adjustnrv.svg";
 import counts_pharmacy from "../assets/sponsors/counts_pharmacy.svg";
+import in_balance_yoga from "../assets/sponsors/in_balance_yoga.svg";
 
 export default function Sponsors() {
   const background = "https://i.imgur.com/HyUw2BJ.jpg";
@@ -57,11 +58,11 @@ export default function Sponsors() {
             alt="Counts Family Pharmacy logo."
           ></img>
         </a>
-        <a href="https://the-cellar.com/" rel="noreferrer" target="_blank">
+        <a href="https://www.inbalanceyogastudio.com" rel="noreferrer" target="_blank">
           <img
             className="sponsor-image"
-            src={cellar}
-            alt="Cellar Restaurant logo."
+            src={in_balance_yoga}
+            alt="In Balance Yoga logo."
           ></img>
         </a>
         <a

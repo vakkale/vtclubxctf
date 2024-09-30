@@ -19,6 +19,140 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "The Calm After the Storm",
+    url: "the-calm-after-the-storm-hokie-half-2024",
+    year: "2024",
+    date: "9 - 30",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/bNRg7uG.jpeg",
+    content: (
+      <div class="article-content">
+        <img src="https://i.imgur.com/YYjjgMJ.jpeg" />
+        <p>
+          If you volunteered for the home meet, the Hokie Half, or both, THANK
+          YOU! We are incredibly grateful for your time and help. You helped
+          these events run smoothly.
+        </p>
+        <p>
+          If you borrowed a vest, please return it to Volkan at practice by
+          Wednesday at the latest.&nbsp;
+        </p>
+        <p>
+          Congratulations to both our Men’s and Women’s teams for an incredible
+          race weekend. We had a 1st place sweep at the home meet with 20 points
+          for the Women’s team and 18 points for the Men’s team. We can’t wait
+          to race at VCU next weekend!
+        </p>
+        <p>
+          Lastly, congratulations to everyone that ran the Hokie Half last
+          weekend, with a special shoutout to our very own Colin Volpe for
+          winning the race!
+        </p>
+        <h3>🍽️ D2sday &amp; Practice at 5:00pm for Tuesday ONLY (10/1)</h3>
+        <p>
+          First on-campus team dinner of the year is here. We’ll be heading over
+          to D2 after practice this Tuesday, October 1 for a feast of champions.
+          Practice is at 5:00pm for this day only so that we still have plenty
+          of time to get food before they stop serving. Practice will be moved
+          earlier to account for shorter days permanently at a later date that
+          is to be announced.&nbsp;
+        </p>
+        <h3>🐏 VCU Meet (10/5)</h3>
+        <p>
+          Our last meet before regionals is this weekend in Mechanicsville, VA!
+          We will be racing at Pole Green cross country course hosted by VCU.
+          You will receive an email later this week with further information
+          from our wonderful race coordinator Ellie, so stay tuned!
+        </p>
+        <h3>🐾 Bear Tracks</h3>
+        <p>
+          It's the second to last week of Bear Tracks! From 8:45 to 9:15am on
+          Thursday and Friday, you can come out to the elementary school and run
+          around with kindergartners through 5th graders. This week’s theme is
+          “Wacky Track” - there will be obstacles on the track!
+        </p>
+        <h3>👕 Last Two Days to Buy Apparel!</h3>
+        <p>
+          Want to represent the club around campus and back home? We have swag
+          for you! You can buy officially licensed Nike VT Club XCTF merch from
+          us through this form. All selections must be made and paid for by
+          October 2 at practice to our treasurer Evelyn. As with all things, we
+          accept cash or check only. Checks must be made out to “Treasurer at
+          Virginia Tech.”&nbsp;&nbsp;
+        </p>
+        <h3>🥄 Assassin Starts Next Week&nbsp;</h3>
+        <p>
+          We play this game every semester! Participants are given a target and
+          a plastic spoon. You must find and touch your target with the spoon in
+          order to “assassinate” them and move on to the next week. Once you
+          kill your target, their target is now your target until there is only
+          one remaining. Look out for Kevin’s message on GroupMe later today
+          with full rules and instructions on how to sign up. May the best
+          assassin win!
+        </p>
+        <h3>🎽 Singlet Requirement for Racing&nbsp;</h3>
+        <p>
+          To compete in NIRCA meets (all our meets are), you are required to
+          wear a VT singlet. We have specially licensed singlets that we
+          purchase every year and sell for $40.
+        </p>
+        <p>
+          You can purchase a singlet during practice from our apparel officer
+          Molly. We only accept cash or check (made out to “Treasurer at
+          Virginia Tech”). You only have to purchase a singlet once, and you can
+          reuse it every other year you compete with club.
+        </p>
+        <p>
+          If you are only planning on racing in the Spring, you can wait until
+          then to purchase one.&nbsp;
+        </p>
+        <h3>📸 Photo Album&nbsp;</h3>
+        <p>
+          You can find the photos from last weekend’s race and any other club
+          event{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://virginiatech.sharepoint.com/:f:/s/VTClubXCTF/EiFSRjLeEyJIiO5pu6v5NJMB8t-Aiuxm2V2-ws9XEsWnig?e=BdQxdM&amp;xsdata=MDV8MDJ8dGFyYWJsdWVAdnQuZWR1fDk2MTMzNzk2ZjY4MTQ5ZjI1Njg1MDhkY2UxN2Y5ZmE4fDYwOTU2ODg0MTBhZDQwZmE4NjNkNGYzMmMxZTNhMzdhfDB8MHw2Mzg2MzMxODU0NjkzMDgzNTh8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fDB8fHw%3d&amp;sdata=OU9zSDRMbTI1ampWamUvRFVLUWxkYm1kOFY0S1FtdElkRERhL2ppT0dlMD0%3d"
+          >
+            here
+          </a>
+          . This album will have all the photos from this year, so be sure to
+          check it out after each event!
+        </p>
+        <p>For the best way to view photos:&nbsp;</p>
+        <p>1. Click on the link to get access.&nbsp;</p>
+        <p>
+          2. Download the OneDrive app or go to OneDrive on your computer.&nbsp;
+        </p>
+        <p>3. Find the VT Club XCTF Photo album.&nbsp;</p>
+        <p>
+          4. On the top right, you can select to view the photos as tiles,
+          instead of a list. This will give you the best experience looking
+          through photos. The app tends to load significantly quicker than the
+          website.&nbsp;
+        </p>
+        <h3>
+          <strong>🏋️ </strong>Team Lifts on Thursdays
+        </h3>
+        <p>
+          Team lift is at the Bubble right next to practice! Not only will you
+          become a stronger athlete, but this is the perfect opportunity to meet
+          the rest of your team besides your training group.&nbsp;
+        </p>
+        <p>
+          As always, the best place to get up-to-date information related to
+          anything club is through GroupMe. Please join these group chats if you
+          haven’t already, and ask your captains at practice to get added to the
+          training group-specific chats.
+        </p>
+        <p>Good luck at Pole Green! Have a great week!</p>
+        <img src="https://i.imgur.com/OPm2x7N.jpeg" />
+      </div>
+    ),
+  },
+  {
     title: "Almost Race Day! 🏃‍♂️🏃‍♀️",
     url: "almost-race-day-uva-2024",
     year: "2024",
@@ -64,7 +198,8 @@ const articles = [
             target="_blank"
             rel="noopener noreferrer nofollow"
             href="https://forms.office.com/pages/responsepage.aspx?id=hGiVYK0Q-kCGPU8yweOjesWALSeB089Pmst0CjSf87dUODA5MlU3NkxDUVZTUVFNRzJLMkE4VEpRTyQlQCN0PWcu&amp;route=shorturl"
-          >here
+          >
+            here
           </a>{" "}
           and closes on Saturday, September 21st. As with all races, make sure
           to set up your NIRCA account, complete your IMLeagues forms, and pay
