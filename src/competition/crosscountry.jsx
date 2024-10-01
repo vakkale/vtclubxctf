@@ -36,24 +36,26 @@ export default function CrossCountry() {
 
     const schedule = [
         {
-            title: "Sept. 16 - Cavalier Invitational",
+            title: "Sept. 21 - Cavalier Invitational",
             location: "Panorama Farms: Charlottesville, VA",
+            url: "http://results.tfmeetpro.com/Laurence_Loesel/Cavalier_Invitational_92124/"
         },
         {
-            title: "Sept. 30 - Charlotte McAlpine Trail Race",
-            location: "McAlpine Creek Park: Charlotte, NC",
-        },
-        {
-            title: "Oct. 14 - Hokie Invitational",
+            title: "Sept. 28 - Hokie Invite",
             location: "Blacksburg High School: Blacksburg, VA",
+            url: "http://results.tfmeetpro.com/Laurence_Loesel/Hokie_Invitational_92824/"
         },
         {
-            title: "Oct. 21 - NIRCA Mid-Atlantic Regionals",
+            title: "Oct. 5 - VCU Invite",
+            location: "Pole Green Park: Mechanicsville, VA",
+        },
+        {
+            title: "Oct. 19 - NIRCA Mid-Atlantic Regionals",
             location: "Lehigh University: Bethlehem, PA",
         },
         {
-            title: "Nov. 11 - NIRCA National Championship",
-            location: "Blue River Cross Country Course: Shelbyville, IN"
+            title: "Nov. 9 - NIRCA National Championship",
+            location: "Hershey Parkview Cross Country Course: Hershey, PA"
         }
     ];
 
