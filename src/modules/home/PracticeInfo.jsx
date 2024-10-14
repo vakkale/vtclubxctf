@@ -14,15 +14,15 @@ export default function GeneralInfo() {
         },
         {
             icon: "schedule",
-            description: "Distance: 6:00PM"
+            description: "Distance: 5:30PM"
         },
         {
             icon: "schedule",
-            description: "Sprints/Field: 6:00PM"
+            description: "Sprints/Field: 5:30PM"
         },
         {
             icon: "schedule",
-            description: "Lifting Timeslot: Tuesdays 7:00-8:00AM @ Rec Field House"
+            description: "Lifting Timeslot: Thursdays 7:00-8:00PM @ Rec Field House"
         }
     ];
 
