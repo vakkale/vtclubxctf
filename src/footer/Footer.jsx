@@ -13,6 +13,7 @@ import gillies_logo from "../assets/sponsors/gillies.svg";
 import adjustnrv_logo from "../assets/sponsors/adjustnrv.svg";
 import counts_pharmacy_logo from "../assets/sponsors/counts_pharmacy.svg";
 import yoga_logo from "../assets/sponsors/in_balance_yoga.svg";
+import core_pyhsical_therapy_logo from "../assets/sponsors/core_physical_therapy.svg";
 
 const socialdata = [
   {
@@ -72,7 +73,12 @@ const sponsors = [
     name: "Bollo's Cafe & Bakery",
     url: "https://www.instagram.com/bolloscafe/",
     logo: bollos_logo,
-  }
+  },
+  {
+    name: "Core Physical Therapy",
+    url: "https://www.coreptblacksburg.com/",
+    logo: core_pyhsical_therapy_logo,
+  },
 ];
 
 /* TODO: Add orgs */

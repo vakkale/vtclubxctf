@@ -48,6 +48,7 @@ export default function CrossCountry() {
         {
             title: "Oct. 5 - VCU Invite",
             location: "Pole Green Park: Mechanicsville, VA",
+            url: "http://results.tfmeetpro.com/Laurence_Loesel/VCU_Run_with_the_Rams_Invitational_10524/"
         },
         {
             title: "Oct. 19 - NIRCA Mid-Atlantic Regionals",

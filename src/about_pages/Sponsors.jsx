@@ -11,6 +11,7 @@ import bollos from "../assets/sponsors/bollos.svg";
 import adjustnrv from "../assets/sponsors/adjustnrv.svg";
 import counts_pharmacy from "../assets/sponsors/counts_pharmacy.svg";
 import in_balance_yoga from "../assets/sponsors/in_balance_yoga.svg";
+import core_pysical_therapy from "../assets/sponsors/core_physical_therapy.svg";
 
 export default function Sponsors() {
   const background = "https://i.imgur.com/HyUw2BJ.jpg";
@@ -98,6 +99,17 @@ export default function Sponsors() {
             alt="Bollo's Cafe & Bakery logo."
           ></img>
         </a>
+        <a
+          href="https://www.coreptblacksburg.com/"
+          rel="noreferrer"
+          target="_blank"
+          >
+          <img
+            className="sponsor-image"
+            src={core_pysical_therapy}
+            alt="Core Physical Therapy logo."
+          ></img>
+          </a>
       </ul>
     </div>
   );
