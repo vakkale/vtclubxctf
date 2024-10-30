@@ -53,6 +53,7 @@ export default function CrossCountry() {
         {
             title: "Oct. 19 - NIRCA Mid-Atlantic Regionals",
             location: "Lehigh University: Bethlehem, PA",
+            url: "https://runsignup.com/Race/Results/154924#resultSetId-501335;perpage:100"
         },
         {
             title: "Nov. 9 - NIRCA National Championship",

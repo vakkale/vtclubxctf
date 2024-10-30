@@ -19,6 +19,591 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "Happy Bye Week!",
+    url: "happy-bye-week-2024",
+    year: "2024",
+    date: "10 - 28",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/ygbBVlr.jpeg",
+    content: (
+      <div class="article-content">
+        <p>
+          Happy Halloweek! We are enjoying our Bye Week and locking in for
+          Nationals. 🔒
+        </p>
+        <img src="https://i.imgur.com/nop058P.jpeg" />
+        <h3>🐼 Panda Express Percentage Night (10/28)</h3>
+        <p>
+          We will be heading over to Panda Express on Prices Fork after practice
+          on Monday, October 28 for a fundraiser percentage night! 20% of the
+          proceeds go to the club, so make sure to show the attached flyer or
+          simply tell the cashier that you’re with the team. If you can’t make
+          it after practice, the deal is in place from 10:30am to 9:30pm, so you
+          can go at any point in the day!
+        </p>
+        <h3>🕟 Practice Time Moving to 4:30 (11/4)</h3>
+        <p>
+          Unfortunately, fall brings shorter days and the end of Daylight
+          Savings Time, meaning practice will move to 4:30 pm starting Monday,
+          November 4 to prevent us from running in the dark.
+        </p>
+        <h3>👔 Semester Shirts Are Here!&nbsp;</h3>
+        <p>
+          If you paid your dues by September 13 and filled out the membership
+          survey, we have a shirt for you! You can pick it up at practice and
+          wear it every day for the rest of eternity to show all your friends
+          how much you love club. Apparel has been ordered, but has not arrived
+          yet. We will let you know when it is in!&nbsp;
+        </p>
+        <h3>🗓️ Social Calendar&nbsp;</h3>
+        <p>
+          Check the highlight on our Instagram to see our calendar for the rest
+          of the semester. Mark these dates so you don’t miss them!
+        </p>
+        <h3>👻 Halloween Costume Contest (10/31)</h3>
+        <p>
+          We'll be hosting a Halloween costume contest at practice on Thursday,
+          October 31! The winners will get some extra VT Club XCTF merch we have
+          laying around.&nbsp;
+        </p>
+        <h3>🎥 Movie Night/Poster Making Social (11/3)</h3>
+        <p>
+          With XC Nationals right around the corner, we want everyone to have
+          all the support they can get during their race! What better way to
+          support your fellow teammates than to cheer them on with posters made
+          with love? Poster making is optional but having fun is not, so we will
+          also have a movie for everyone on the projector. Keep an eye out for a
+          GroupMe poll to pick the movie! We will meet in Durham 261 at 6pm on
+          Sunday, November 3.
+        </p>
+        <h3>🥄 Assassin Updates&nbsp;</h3>
+        <p>
+          After 3 weeks of assassin, we have finally made it to the final 4!
+          Here are your finalists and their elimination counts:&nbsp;
+        </p>
+        <ul>
+          <li>
+            <p>Jonathan Goerlich: 4&nbsp;</p>
+          </li>
+          <li>
+            <p>Chatham Campbell: 3&nbsp;</p>
+          </li>
+          <li>
+            <p>Ryan Christman: 3&nbsp;</p>
+          </li>
+          <li>
+            <p>Wyatt Thomas: 2&nbsp;</p>
+          </li>
+        </ul>
+        <p>
+          The next deadline to get your target is Sunday, November 3 at 11:59pm!
+          Place your bets now for who you think will win and if we’ll even make
+          it to Nationals. Good luck to all four remaining contestants!&nbsp;
+        </p>
+        <h3>🏋 Lift Is Back!&nbsp;</h3>
+        <p>
+          Somehow, we’ve always had events on Thursdays, but we’re so back this
+          week! After the costume contest and practice, head over to the Bubble
+          to pump some iron with your fellow cross country and track &amp; field
+          stars.
+        </p>
+        <p>Have a great week!</p>
+        <img src="https://i.imgur.com/5ywLrDE.png" />
+      </div>
+    ),
+  },
+  {
+    title: "Thomas Takeover!",
+    url: "thomas-takeover-2024",
+    year: "2024",
+    date: "10 - 21",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/1dkQUfO.jpeg",
+    content: (
+      <div class="article-content">
+        <p>
+          Congratulations to everyone that raced this past weekend at NIRCA XC
+          Regionals. We had our second ever regionals sweep thanks to the
+          incredible performances by our racers. With three weeks left until
+          nationals and the time trial happening this week, there’s no lack of
+          excitement as we head into the tail end of the season!
+        </p>
+        <img src="https://i.imgur.com/X0HsllQ.jpeg" />
+        <h3>
+          <strong>⏱️ Time Trial &amp; Practice at BHS track (10/24</strong>)
+        </h3>
+        <p>
+          The time trial is this Thursday! We are super excited to offer this
+          opportunity to get an electronically timed race in the fall for sprint
+          events as well as a 2 mile for distance all on the Blacksburg High
+          School track.&nbsp;Because of this,
+          <strong>practice is moving to BHS on Thursday</strong>. The events
+          will start at 5:15pm, so get there early enough to warm up. The
+          schedule can be found on the sign up form below.
+          <strong>
+            We’ve decided to extend the registration deadline until 10PM
+            tonight!
+          </strong>
+          Make sure to sign up
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.office.com%2FPages%2FResponsePage.aspx%3Fid%3DhGiVYK0Q-kCGPU8yweOjesWALSeB089Pmst0CjSf87dUN0RORlQ2S1daRFJBQlIySzlDNTJLNTZDSyQlQCN0PWcu&amp;data=05%7C02%7Ctarablue%40vt.edu%7C9a8e7a538a694a9b648008dcf2105655%7C6095688410ad40fa863d4f32c1e3a37a%7C0%7C0%7C638651401517360996%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=r4qSpJ2kSdY37FJv%2BLbHjL5gSOfOA5iqVuIAld5LeZA%3D&amp;reserved=0"
+          >
+            here
+          </a>
+          if you’re interested.
+        </p>
+        <p>
+          If you are men’s or women’s distance, the workout for Thursday is to
+          run the 2 mile at BHS, so please sign up!
+        </p>
+        <h3>
+          <strong>🏆 NIRCA Nationals – Signup Closes Thursday</strong>
+        </h3>
+        <p>
+          We made it! It’s the final race of the season and, surprise: it’s
+          several races. Prepare your vocal chords because you will be cheering
+          for 6 different races on Nov 9! The freshman/sophomore,
+          junior/senior/grad, and championship races for both men and women will
+          be happening from 10am to 4pm. You can find the full schedule on the
+          sign up form
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.office.com%2FPages%2FResponsePage.aspx%3Fid%3DhGiVYK0Q-kCGPU8yweOjesWALSeB089Pmst0CjSf87dUOEFKTE9CTlJMNFhKUkVHMVFaQTI0V0UySCQlQCN0PWcu&amp;data=05%7C02%7Ctarablue%40vt.edu%7C9a8e7a538a694a9b648008dcf2105655%7C6095688410ad40fa863d4f32c1e3a37a%7C0%7C0%7C638651401517381844%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=odRhTi5NANvx1UXGDKB0dFsemMgpyxqL0kxZnUqmnis%3D&amp;reserved=0"
+          >
+            here
+          </a>
+          . <strong>Sign-up closes this Thursday, October 24</strong>. &nbsp;
+        </p>
+        <p>
+          We are aiming to leave at 9am on Friday to make it before dusk to
+          preview the course and have time to hang out at the hotel. If you will
+          miss class, make sure to note this on the form so we can get you an
+          excused absence letter.&nbsp;
+        </p>
+        <h3>
+          <strong>🍫 Important info regarding Hersheypark:</strong>&nbsp;
+        </h3>
+        <p>
+          NIRCA is offering an opportunity to get $15 off of Hersheypark
+          tickets, bringing the ticket price to $40.84. You can buy tickets
+          until November 10. Use promo code 90664 to get your tickets from
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.hersheypark.com%2Fqr%2FLJU6LK2W3K%2F&amp;data=05%7C02%7Ctarablue%40vt.edu%7C9a8e7a538a694a9b648008dcf2105655%7C6095688410ad40fa863d4f32c1e3a37a%7C0%7C0%7C638651401517397969%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=f68KkGcSnpSCAoQvn8CIJyZ%2FUEtCwZZryCm44BAvt2Q%3D&amp;reserved=0"
+          >
+            this link
+          </a>
+          .&nbsp;
+        </p>
+        <p>
+          There will not be time to visit the park after Nationals and the club
+          as a whole will not be staying an extra day.
+          <strong>
+            If you want to go, you must arrange your own transportation to and
+            from Hershey, as well as lodging the night of November 9.
+          </strong>
+          You will still be able to stay at the club hotel on Friday, November
+          8.
+        </p>
+        <h3>
+          <strong>✏️ Mid-Semester Anonymous Feedback Survey</strong>&nbsp;
+        </h3>
+        <p>
+          It’s never too late to give feedback! The feedback survey is open for
+          another week. We’d love to hear your thoughts on everything club
+          related. The survey can be found
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.office.com%2FPages%2FResponsePage.aspx%3Fid%3DhGiVYK0Q-kCGPU8yweOjesWALSeB089Pmst0CjSf87dUMkNNMlc4Rko1TlBFV1FHWlc1WVZPUFpBSCQlQCN0PWcu&amp;data=05%7C02%7Ctarablue%40vt.edu%7C9a8e7a538a694a9b648008dcf2105655%7C6095688410ad40fa863d4f32c1e3a37a%7C0%7C0%7C638651401517413456%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=SlASpK7YEDZFiMPhTXg5eNybjY9oIZqaoP%2Fj2HzmWVg%3D&amp;reserved=0"
+          >
+            here
+          </a>
+          and is completely anonymous. Please fill it out as it’ll let us know
+          how we can best run the club going forward. Thank you!&nbsp;
+        </p>
+        <h3>
+          <strong>🐼 Panda Express Percentage Night (10/28</strong>)
+        </h3>
+        <p>
+          It’s time to get more yummy food and support your team. We will be
+          heading over to Panda Express on Prices Fork after practice on Monday,
+          October 28. 20% of the proceeds go to the club, so make sure to show
+          them the attached flyer next Monday. If you can’t make it after
+          practice, the deal is in place from 10:30am to 9:30pm.
+        </p>
+        <h3>
+          <strong>🥄 Assassin Updates</strong>&nbsp;
+        </h3>
+        <p>
+          We are in the end game now! 13 players remain in assassin, and things
+          are getting intense! Here is your updated kill leaderboard:&nbsp;
+        </p>
+        <ul>
+          <li>
+            <p>Jonathan Goerlich: 3&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Chatham Campbell: 2&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Noah Gibson: 2&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Jamie Short: 2&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Danielle Metzger: 2&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Volkan Akkale: 1&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Nathan Montgomery: 1&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Ben Darden: 1&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Andrew Olivieri: 1&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Sam Harvey: 1&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Samuel Yakulis: 1&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Harris Naseh: 1&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Caleb Kline: 1&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Luis Ducharne: 1&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Bridget Fuchs: 1&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Jackson McDreamy: 1&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Luke Thomas: 1&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Wyatt Thomas: 1&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Ryan Christman: 1&nbsp;</p>
+          </li>
+        </ul>
+        <p>
+          The deadline to get your target is Sunday the 27th at 11:59pm,
+          otherwise you will be eliminated. Best of luck to those still alive,
+          and trust nobody!&nbsp;
+        </p>
+        <h3>
+          <strong>📸 Photo Album</strong>&nbsp;
+        </h3>
+        <p>
+          You can find the photos from last weekend’s race and any other club
+          event here:
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://virginiatech.sharepoint.com/:f:/s/VTClubXCTF/EiFSRjLeEyJIiO5pu6v5NJMB8t-Aiuxm2V2-ws9XEsWnig?e=BdQxdM&amp;xsdata=MDV8MDJ8dGFyYWJsdWVAdnQuZWR1fDlhOGU3YTUzOGE2OTRhOWI2NDgwMDhkY2YyMTA1NjU1fDYwOTU2ODg0MTBhZDQwZmE4NjNkNGYzMmMxZTNhMzdhfDB8MHw2Mzg2NTE0MDE1MTc0MjkwOTR8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fDB8fHw%3d&amp;sdata=UnEzbEpBdFJDUjRsLzJHcWhoWUZ5T3BaSmRxL2dXR011S1V2aCtSUUpQUT0%3d"
+          >
+            Photos
+          </a>
+          . This album will have all the photos from this year so be sure to
+          check it out after each event to see if you made it!&nbsp;
+        </p>
+        <p>
+          For the best way to view photos:&nbsp;
+          <br />
+          1. Click on the link to get access.&nbsp;
+          <br />
+          2. Download the OneDrive app or go to OneDrive on your computer.&nbsp;
+          <br />
+          3. Find the VT Club XCTF Photo album.&nbsp;
+          <br />
+          4. On the top right, you can select to view the photos as tiles,
+          instead of a list. This will give you the best experience looking
+          through photos. I’ve also noticed that the app tends to load
+          significantly quicker than the website.
+        </p>
+        <p>Have a great week!</p>
+        <img src="https://i.imgur.com/EZEbrZI.jpeg" />
+      </div>
+    ),
+  },
+  {
+    title: "Football on a Thursday?",
+    url: "football-on-a-thursday-2024",
+    year: "2024",
+    date: "10 - 14",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/s9lifif.jpeg",
+    content: (
+      <div class="article-content">
+        <p>
+          Regionals is so soon. It is time to reap the benefits of fitness and
+          secure a sweep!
+        </p>
+        <img src="https://i.imgur.com/0x5fJ7k.jpeg" />
+        <h3>
+          <strong>🕠 Practice at 5:30 PM Starting Today&nbsp;</strong>
+        </h3>
+        <p>What it says above. Don’t show up 30 minutes late.</p>
+        <h3>
+          <strong>✏️ Mid-Semester Anonymous Feedback Survey&nbsp;</strong>
+        </h3>
+        <p>
+          Now that we’re halfway through the semester and have some races under
+          our belt, we'd love to hear your thoughts on everything club related.
+          Whether it be feedback on socials, races, practice, communication,
+          please let us know. The survey can be found
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.office.com%2FPages%2FResponsePage.aspx%3Fid%3DhGiVYK0Q-kCGPU8yweOjesWALSeB089Pmst0CjSf87dUMkNNMlc4Rko1TlBFV1FHWlc1WVZPUFpBSCQlQCN0PWcu&amp;data=05%7C02%7Ctarablue%40vt.edu%7Caf5e0df13bd2400897af08dcec892916%7C6095688410ad40fa863d4f32c1e3a37a%7C0%7C0%7C638645321070081924%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=K%2BLynDIZfoJOUMgX8hbNevt4CcKEXzBhfMW%2BBArk56k%3D&amp;reserved=0"
+          >
+            here
+          </a>
+          and is completely anonymous. Please fill it out as it’ll let us know
+          how we can best run the club going forward. Thank you!&nbsp;
+        </p>
+        <h3>
+          <strong>🏆 NIRCA Regionals (10/19)</strong>
+        </h3>
+        <p>
+          Welcome to the post-season (kinda)! It’s regionals week which means
+          it’s time for our first overnight meet of the year as we travel to
+          Bethlehem, PA. Signups have already closed so you will receive an
+          email from Ellie later this week with info regarding travel and
+          lodging. We will be traveling with 7 vans, each crafted with love by
+          your officer board and staying 15 minutes away from the course. There
+          will be free breakfast in the morning so you can fuel up and turn on
+          the jets on the course.
+        </p>
+        <h3>
+          <strong>
+            🚫 No Practice Thursday &amp; Friday (10/17 &amp; 10/18)&nbsp;
+          </strong>
+        </h3>
+        <p>
+          There will be no practice on Thursday, October 17 due to the Boston
+          College football game. There will also be no practice on Friday,
+          October 18 because we will be on our way to Pennsylvania. Rec Sports
+          is canceling all practices and most of campus will be shut down on
+          Thursday.
+        </p>
+        <h3>
+          <strong>🥄 Assassin Updates&nbsp;</strong>
+        </h3>
+        <p>
+          We are a week into assassin and a lot has happened so far! 11 players
+          have been eliminated and 39 players remain alive. The following
+          contestants have at least 1 elimination and will proceed into the next
+          round:&nbsp;
+        </p>
+        <ul>
+          <li>
+            <p>Bridget Fuchs&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Luis Ducharne&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Andrew Olivieri&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Nathan Montgomery&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Ryan Christman&nbsp;&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Noah Gibson&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Harris Naseh&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Danielle Metzger&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Luke Thomas&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Jonathan Goerlich&nbsp;</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Sam Harvey&nbsp;</p>
+          </li>
+        </ul>
+        <p>
+          If you haven’t done so already, the deadline to eliminate your first
+          target is Sunday, October 20 at 11:59 PM. If you do not get your
+          target by the deadline, you will be eliminated. If you have any
+          questions, reach out to Kevin. Best of luck to everyone still
+          alive!&nbsp;
+        </p>
+        <h3>
+          <strong>🎽 Singlet Requirement for Racing&nbsp;</strong>
+        </h3>
+        <p>
+          To compete in NIRCA meets, you are required to wear a VT singlet. We
+          have specially licensed singlets that we purchase every year and sell
+          for $40.&nbsp;
+        </p>
+        <p>
+          You can purchase a singlet during practice from our apparel officer
+          Molly. We only accept cash or check (made out to “Treasurer at
+          Virginia Tech”). You only have to purchase a singlet once and you can
+          reuse it every other year you compete with club.
+        </p>
+        <p>
+          If you are only planning on racing in the Spring, you can wait till
+          then to purchase one.&nbsp;
+        </p>
+        <h3>
+          <strong>📸 Photo Album&nbsp;</strong>
+        </h3>
+        <p>
+          You can find the photos from last weekend’s race and any other club
+          event here:
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://virginiatech.sharepoint.com/:f:/s/VTClubXCTF/EiFSRjLeEyJIiO5pu6v5NJMB8t-Aiuxm2V2-ws9XEsWnig?e=BdQxdM&amp;xsdata=MDV8MDJ8dGFyYWJsdWVAdnQuZWR1fGFmNWUwZGYxM2JkMjQwMDg5N2FmMDhkY2VjODkyOTE2fDYwOTU2ODg0MTBhZDQwZmE4NjNkNGYzMmMxZTNhMzdhfDB8MHw2Mzg2NDUzMjEwNzAxMDE4MDJ8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fDB8fHw%3d&amp;sdata=M05hbGwrSEJHaWxOVHNxMG4xcEQ4dHJnaHk3VWd4ZHhEMU9CKy9Vc2VLRT0%3d"
+          >
+            Photos
+          </a>
+          . This album will have all the photos from this year so be sure to
+          check it out after each event to see if you made it!&nbsp;
+        </p>
+        <p>
+          For the best way to view photos: <br />
+          1. Click on the link to get access. <br />
+          2. Download the OneDrive app or go to OneDrive on your computer.{" "}
+          <br />
+          3. Find the VT Club XCTF Photo album. <br />
+          4. On the top right, you can select to view the photos as tiles,
+          instead of a list. This will give you the best experience looking
+          through photos. I’ve also noticed that the app tends to load
+          significantly quicker than the website.&nbsp;
+        </p>
+        <p>
+          As always, the best place to get up-to-date information related to
+          anything club is through GroupMe. Please join these group chats if you
+          haven’t already, and ask your captains at practice to get added to the
+          training group-specific chats.&nbsp;
+        </p>
+        <h3>
+          <strong>🍽️ D2sday &amp; 5:00 PM practice Tuesday (10/15)</strong>
+        </h3>
+        <p>
+          We heard the demand for more team dinners, so we are having another
+          D2sday this Tuesday! Practice is moving to 5:00. Whoa, that's a lot of
+          practice moves. To recap: practice is now at 5:30 pm except for
+          tomorrow, when it is at 5:00 pm so we can go eat yummy food after.
+        </p>
+        <h3>
+          <strong>⏱️ Time Trial (10/24)</strong>
+        </h3>
+        <p>
+          We are pleased to announce that we will have a track time trial for
+          the first time in 3 years! It will be at Blacksburg High School and
+          cover the following events preliminarily:
+          <br />
+          <br />
+          100m/110m hurdles
+          <br />
+          100m
+          <br />2 mile
+          <br />
+          200m
+          <br />
+          400m
+          <br />
+          300m hurdles
+        </p>
+        <p>
+          A full signup will be sent in the announcements chat this week but I
+          just wanted to get this out there so you can mark it on your
+          calendars.
+        </p>
+        <p>Have a great week!</p>
+        <img src="https://i.imgur.com/PucRZP7.jpeg" />
+      </div>
+    ),
+  },
+  {
     title: "Waterless in Blacksburg",
     url: "waterless-in-blacksburg-oct-7-2024",
     year: "2024",
