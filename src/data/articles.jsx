@@ -19,6 +19,251 @@ function Gallery({ images }) {
 }
 const articles = [
   {
+    title: "NATIONAL CHAMPIONS!",
+    url: "national-champions-2024",
+    year: "2024",
+    date: "11 - 11",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/Pr2xNdZ.jpeg",
+    content: (
+      <div class="article-content">
+        <p>
+          As you all likely know by now, for the first time in club history, we
+          have claimed the XC nationals title! In a nail-biting race, your men’s
+          championship team edged out Cal Poly by a single point to win the race
+          and bring home our first XC Nats trophy (and a giant Hershey’s bar)!
+          The women’s championship team finished 5th after a very competitive
+          race and cemented the fact that we are undoubtedly the most
+          well-rounded team in the nation.&nbsp;
+        </p>
+        <p>
+          In the last 3 years of national competition (track and XC, men and
+          women), we’ve come in 1st place 3 times, 2nd place 2 times, 3rd place
+          5 times and 5th place 2 times. And 0 times below 5th place in that
+          time span. No one else does it like we do, and the culture of
+          consistency, well-roundedness, and depth we have is something to
+          appreciate.
+        </p>
+        <p>
+          As we wrap up the season, take pride in what we’ve accomplished
+          together and the legacy we’re building for the future. This title
+          belongs to every one of you, and it’s a reflection of the hard work
+          and heart you bring to this team.
+        </p>
+        <img src="https://i.imgur.com/ZKyZfZu.jpeg" />
+        <p>Now back to the regularly scheduled programming...</p>
+        <h3>🧘 Yoga Social (11/16)</h3>
+        <p>
+          We’re doing a yoga social with In Balance Yoga on November 16 at
+          4:30pm! This is a pay as you can event (usually $5 to $10), with 100%
+          of proceeds going to the club. It will last around 1 hour. There’s a
+          women’s basketball game at 2pm, so you can head over right
+          after.&nbsp;
+        </p>
+        <p>
+          This is an open event so invite your friends! Make sure to bring water
+          and a yoga mat if you have one. Lastly, if you have not been to In
+          Balance Yoga before, complete the new student form
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://www.inbalanceyogastudio.com/new-students/"
+          >
+            here
+          </a>
+          before arriving.
+        </p>
+        <h3>👔 Last Week to Pick Up Your Semester Shirt!&nbsp;</h3>
+        <p>
+          If you have paid your dues and completed the IMLeagues forms, you can
+          now pick up your semester shirt from Molly at practice.&nbsp;
+        </p>
+        <h3>🦃 Friendsgiving (11/21)</h3>
+        <p>
+          We'll be having our annual Friendsgiving celebration on the evening of
+          Thursday, November 21 6 to 9:30pm at 212 Courtney Circle. This is a
+          potluck event so sign up here to RSVP. If you don't know,
+          Friendsgiving is just like Thanksgiving, except with your friends, so
+          much fun will be had.&nbsp;
+        </p>
+        <p>
+          For transportation you can take NMG from the Marron Bay to stop #1428,
+          or park at the local Food Lion or Kibbles on Main and walk about a
+          quarter mile.&nbsp;
+        </p>
+        <p>
+          If you are able, please sign up and bring any food of your choice!
+          Regardless of if you can bring anything, there will be a section for
+          you to RSVP just so we can get a headcount.
+        </p>
+        <h3>❄️ Winter Formal (12/7) &amp; Planning Committee&nbsp;</h3>
+        <p>
+          That's right, mark your calendars! We will have our Winter Formal on
+          Saturday, December 7, at the Blacksburg Community Center from 5 to
+          8pm. There is no action to be taken yet on your part besides making
+          sure you clear all your plans so you can attend.
+        </p>
+        <p>
+          There is no admission fee, there will just be a signup released in a
+          couple weeks so we can order the appropriate amount of food. There is
+          no dress code, but most people will be dressing up as they would for a
+          prom/homecoming. Plus-ones are welcome! Also have a good karaoke/Just
+          Dance song in mind.&nbsp;
+        </p>
+        <p>
+          If you’d like to be involved in the planning/set-up of the Winter
+          Formal, please reach out to Kevin.
+        </p>
+        <p>Have a great week!</p>
+        <img src="https://i.imgur.com/hDFFsf4.jpeg" />
+      </div>
+    ),
+  },
+  {
+    title: "Twas the Week Before Nationals",
+    url: "twas-the-week-before-nationals-2024",
+    year: "2024",
+    date: "11 - 4",
+    season: "Fall",
+    category: "Announcements",
+    image: "https://i.imgur.com/cHNapZf.jpeg",
+    content: (
+      <div class="article-content">
+        <p>
+          It's championship season! Time to lock in, as the kids are saying
+          these days.
+        </p>
+        <img src="https://i.imgur.com/7qB9lm3.jpeg" />
+        <h3>
+          <strong>🕟 Practice Time Moving to 4:30 (11/4)</strong>
+        </h3>
+        <p>Don’t be late! It gets dark earlier now.</p>
+        <h3>
+          <strong>🍽️ D2sday (11/5)</strong>
+        </h3>
+        <p>
+          Come get food with the team after practice! We need to break our cup
+          stacking record of 51, so we need as many people as possible. Every
+          cup matters.
+        </p>
+        <h3>
+          <strong> NIRCA Nationals Fast Facts (11/8)</strong>
+        </h3>
+        <p>
+          If you signed up to race this weekend, you will receive an email from
+          our dear race coordinator later this week with the full details.
+        </p>
+        <p>
+          Here is some quick info:
+          <strong>
+            We will be meeting at 9 am on Friday, November 8, at the McComas
+            parking lot
+          </strong>
+          .
+        </p>
+        <p>
+          It’s a 5-hour drive to Pennslyvania, and the vans will stop for a
+          quick lunch so we can get to the course before sunset for a course
+          preview. The vans will then go out for dinner. We have the conference
+          room of the hotel booked Friday night for movies.
+        </p>
+        <p>
+          Please be respectful of all staff and remember that we represent the
+          university as we travel. We can’t wait for Friday!
+        </p>
+        <h3>
+          <strong>
+            🥄 Jonathan Goerlich is your Fall 2024 Assassin Champion!&nbsp;
+          </strong>
+        </h3>
+        <p>
+          That's a wrap on Assassin, folks! In a last-day gambit, Jonathan took
+          Ryan. Ryan had eliminated the other 2 players from the final four just
+          the day before. We’ll be running it back in the Spring, so you may
+          want to start planning if you’re in it to win it!&nbsp;
+        </p>
+        <h3>
+          <strong>👔 Last Week to Pick Up Your Semester Shirt!&nbsp;</strong>
+        </h3>
+        <p>
+          The semester shirts have arrived! If you paid your dues by September
+          13th and filled out the membership survey, we have a shirt for you!
+          You can pick it up at practice and wear it every day for the rest of
+          eternity to show all your friends how much you love club.&nbsp;
+        </p>
+        <p>
+          Apparel has been ordered, but has not arrived yet. We will let you
+          know when it's in.
+        </p>
+        <h3>
+          <strong>🦃 Friendsgiving (11/21)</strong>
+        </h3>
+        <p>
+          <strong>
+            We'll be having our annual Friendsgiving celebration on the evening
+            of Thursday, November 21
+          </strong>
+          . Please be on the lookout for the signup to be sent on Wednesday in
+          the GroupMe! If you don't know, Friendsgiving is just like
+          Thanksgiving, except with your friends.&nbsp;&nbsp;
+        </p>
+        <p>
+          If you are able, please sign up and bring any food of your choice!
+          Regardless if you can bring anything, there will be a section for you
+          to RSVP just so we can get a headcount.
+        </p>
+        <h3>
+          <strong>❄️ Winter Formal &amp; Planning Committee</strong>
+        </h3>
+        <p>
+          We will have our Winter Formal on Saturday, December 7 at the
+          Blacksburg Community Center from 5-8pm. There is no action to be taken
+          yet on your part besides making sure you clear all your plans so you
+          can attend.&nbsp;&nbsp;
+        </p>
+        <p>
+          There is no admission fee, there will just be a signup released in a
+          couple weeks so we can order the appropriate amount of food. There is
+          no dress code, but most people will be dressing up as they would for
+          Homecoming. Plus-ones are welcome! Also have a good karaoke/Just Dance
+          song in mind.&nbsp;
+        </p>
+        <p>
+          If you’d like to be involved in the planning/set-up of the Winter
+          Formal, please reach out to Kevin.&nbsp;
+        </p>
+        <h3>
+          <strong>♻️ Trash Pickup Community Service Opportunity&nbsp;</strong>
+        </h3>
+        <p>
+          Lambda Iota Mu is hosting trash pickup events for their community
+          service week. I wanted to promote that here in case you are
+          interested. There are slots for Tuesday through Thursday and you can
+          sign up{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSejfSIgZGQHVtbMYKNWddP0JUDZEu9-3mKqug0rJRsa2NU99g%2Fviewform&amp;data=05%7C02%7Ctarablue%40vt.edu%7C1b2a0e1c667f4ca1345f08dcfd09cb1c%7C6095688410ad40fa863d4f32c1e3a37a%7C0%7C0%7C638663465790042572%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=CEUMIvEy2epFqpqa%2BMMpGuFZm45JapV4UCmZ7YkCLA4%3D&amp;reserved=0"
+          >
+            here
+          </a>
+          .&nbsp;
+        </p>
+        <h3>
+          <strong>🧘 Yoga Social (11/16)&nbsp;</strong>
+        </h3>
+        <p>
+          We’re doing a yoga social with In Balance Yoga on November 16. Details
+          to come!
+        </p>
+        <p>Good luck to everyone racing at XC Nationals!</p>
+        <p>Have a great week!</p>
+        <img src="https://i.imgur.com/26gcmh1.jpeg" />
+      </div>
+    ),
+  },
+  {
     title: "Happy Bye Week!",
     url: "happy-bye-week-2024",
     year: "2024",

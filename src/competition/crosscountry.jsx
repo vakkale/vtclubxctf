@@ -57,7 +57,8 @@ export default function CrossCountry() {
         },
         {
             title: "Nov. 9 - NIRCA National Championship",
-            location: "Hershey Parkview Cross Country Course: Hershey, PA"
+            location: "Hershey Parkview Cross Country Course: Hershey, PA",
+            url: "https://clubrunning.org/races/race_results.php?race=1239"
         }
     ];
 
