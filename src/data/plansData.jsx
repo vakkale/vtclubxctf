@@ -1,27 +1,27 @@
-const fall24sheets = [
+const winterSpring25sheets = [
   {
-    title: "August",
-    url: "august",
+    title: "January",
+    url: "january",
     range: "B2:H22",
   },
   {
-    title: "September",
-    url: "september",
+    title: "February",
+    url: "february",
     range: "B2:H22",
   },
   {
-    title: "October",
-    url: "october",
+    title: "March",
+    url: "march",
+    range: "B2:H26",
+  },
+  {
+    title: "April",
+    url: "april",
     range: "B2:H22",
   },
   {
-    title: "November",
-    url: "november",
-    range: "B2:H22",
-  },
-  {
-    title: "December",
-    url: "december",
+    title: "May",
+    url: "may",
     range: "B2:H22",
   }
 ]
@@ -35,12 +35,21 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "Fall Plan",
-        url: "fall",
-        year: "2024",
-        season: "Fall",
-        sheetID: "1mQbbB2b56Toi2eMH16BQM7PtymVwiE__8XXekq5SG5U",
-        sheets: fall24sheets,
+        title: "800m/1500m Plan",
+        url: "800m-1500m",
+        year: "2025",
+        season: "Spring",
+        sheetID: "1zSYM-CFPC6q6QmcATQeeSC7ZngjEg2GO8C0Lexs-7gA",
+        sheets: winterSpring25sheets,
+      },
+      {
+        calendar: true,
+        title: "3k/5k Plan",
+        url: "3k-5k",
+        year: "2025",
+        season: "Spring",
+        sheetID: "1fq4JRvpcQpE3luK_Lu4H1b8q_0Bhev9wm9Vf-W7PSII",
+        sheets: winterSpring25sheets,
       },
       {
         calendar: false,
@@ -514,12 +523,21 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "Fall Plan",
-        url: "fall",
-        year: "2024",
-        season: "Fall",
-        sheetID: "1AA9FWpvcEDaef5AqaF-IfAak6hdsp4jRJPZValfldqI",
-        sheets: fall24sheets,
+        title: "800m/1500m Plan",
+        url: "800m-1500m",
+        year: "2025",
+        season: "Spring",
+        sheetID: "1ZF439g0B3q2F1nNMnxS7RBtx9SLOwW4GsooTbCk8zeQ",
+        sheets: winterSpring25sheets,
+      },
+      {
+        calendar: true,
+        title: "3k/5k Plan",
+        url: "3k-5k",
+        year: "2025",
+        season: "Spring",
+        sheetID: "111hEWzDmhrd6Z_GPxGrQrQFETAn2PqB4mCfLqT6Nt0Y",
+        sheets: winterSpring25sheets,
       },
       {
         calendar: false,
@@ -663,7 +681,7 @@ const plansData = [
         year: "2024",
         season: "Fall",
         sheetID: "1hkyicpKSVDiT9BjXqvK8GBObpJ0u6S4OhwJWxdIn2KQ",
-        sheets: fall24sheets,
+        sheets: winterSpring25sheets,
       },
       {
         calendar: false,
