@@ -28,13 +28,13 @@ export default function Join() {
       <h3>As easy as 1-2-3!</h3>
       <p>
         There are 3 steps to becoming a member of the club. All items are due by{" "}
-        <span style={{ fontWeight: "bold" }}>Friday, Sept. 13.</span>
+        <span style={{ fontWeight: "bold" }}>Friday, Jan. 31 for indoor competition and Friday, Feb. 7 otherwise. The first indoor meet will be Liberty Open on Feb 7.</span>
       </p>
       <ol>
         <li>
           Complete the{" "}
           <a
-            href="https://forms.office.com/r/Xgm9Cn9FEP"
+            href="https://forms.office.com/r/uF24ivFK52"
             target="_blank"
             rel="noreferrer"
           >
@@ -95,7 +95,18 @@ export default function Join() {
         </li>
         <li>
           <ul>
-            Pay Dues. Dues are $100 for racers and $30 for non-racers. <br></br>
+            Pay Dues. Dues are $30 for non-competition and there is now a two-tier dues structure for those competing. We're having our first official indoor track season this year, meaning there will now be up to 6 meets covered by competition dues.<br></br>
+            <li>
+              <span style={{ fontWeight: "bold" }}>Competition: </span>There are two tiers for competition dues:
+              <ul>
+              <li>
+                <span style={{ fontWeight: "bold" }}>Outdoor Only: </span>$80 for 4 outdoor track meets.
+              </li>
+              <li>
+                <span style={{ fontWeight: "bold" }}>Indoor + Outdoor: </span>$120 for 2 indoor and 4 outdoor track meets.
+              </li>
+              </ul>
+            </li>
             Dues can be paid using cash or check (made out to “Treasurer of
             Virginia Tech”) and should be paid at the Sport Clubs Office in War Memorial Hall (on your left past where you scan).
             <br></br>
@@ -123,10 +134,10 @@ export default function Join() {
             <li>
               <span style={{ fontWeight: "bold" }}>Racing: </span>All of the
               above plus more! This includes all race entry fees, travel costs,
-              hotel costs and more for 5 meets per season. Our official race
+              hotel costs and more for all meets covered by your dues per season. Our official race
               schedule will be released soon, but a sneak preview includes a
-              home meet on Sept 28th here in Blacksburg as well as NIRCA
-              Nationals in Hershey, PA on November 9th! We're looking to win our first national title on both mens' and womens' sides! Anyone is welcome to compete and there are no time requirements to compete. This is the best way to get
+              home meet on March 22nd here in Blacksburg as well as NIRCA Track & Field
+              Nationals in Richmond, VA on April 5-6th! We're looking to win our third national title on the mens' side and our first national title in the womens' side! Anyone is welcome to compete and there are no time requirements to compete. This is the best way to get
               the most out of the club, and we promise that if you choose to
               race with us you will not regret it!
             </li>
