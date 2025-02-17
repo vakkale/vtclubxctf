@@ -86,17 +86,17 @@ export default function Banner() {
       }}
     >
       <h1 className="banner-text">
-        {!isMobile ? "Hokie Track Invitational Schedule/Results: " : "Hokie Track Invitational Schedule/Results: "}
+        {!isMobile ? "Here it is, Woz: " : "Here it is, Woz: "}
       </h1>
       {/* TIP: YOU CAN USE <LINK> AND <A> INTERCHANGABLY HERE, THEY HAVE THE SAME STYLING */}
       {/* <Link to="/join" className="banner-link">
         <button className="banner-button">Click Here</button>
       </Link> */}
-      <a href="http://results.tfmeetpro.com/Laurence_Loesel/Hokie_Track_Invitational_31624/"
+      <a href="https://docs.google.com/spreadsheets/d/1XZuBcySO-EjvlqbeP2af8TAGS6w_v97xLn420QLyHs8/edit?gid=0#gid=0"
         target="_blank"
         rel="noreferrer"
         className="banner-link">
-        <button className="banner-button">Here</button>
+        <button className="banner-button">Please Stop Asking</button>
       </a>
       {/* {now > countDownStart ?
                 <a
