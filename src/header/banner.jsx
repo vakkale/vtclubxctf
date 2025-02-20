@@ -86,17 +86,19 @@ export default function Banner() {
       }}
     >
       <h1 className="banner-text">
-        {!isMobile ? "Here it is, Woz: " : "Here it is, Woz: "}
+        {!isMobile ? "Giving Day Ends @ Noon: " : "Giving Day Ends @ Noon: "}
       </h1>
       {/* TIP: YOU CAN USE <LINK> AND <A> INTERCHANGABLY HERE, THEY HAVE THE SAME STYLING */}
       {/* <Link to="/join" className="banner-link">
         <button className="banner-button">Click Here</button>
       </Link> */}
-      <a href="https://docs.google.com/spreadsheets/d/1XZuBcySO-EjvlqbeP2af8TAGS6w_v97xLn420QLyHs8/edit?gid=0#gid=0"
+      <a
+        href="https://givingday.vt.edu/amb/xctf"
         target="_blank"
         rel="noreferrer"
-        className="banner-link">
-        <button className="banner-button">Please Stop Asking</button>
+        className="banner-link"
+      >
+        <button className="banner-button">Donate!</button>
       </a>
       {/* {now > countDownStart ?
                 <a

@@ -23,7 +23,7 @@ const navData = [
         submenus: [
             {
                 name: "sprint",
-                url: "/training/sprint/warmups",
+                url: "/training/sprint/spring",
                 image: 'https://i.imgur.com/zsLMckC.jpg'
             },
             {

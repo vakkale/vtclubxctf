@@ -1,10 +1,5 @@
 const winterSpring25sheets = [
   {
-    title: "January",
-    url: "january",
-    range: "B2:H22",
-  },
-  {
     title: "February",
     url: "february",
     range: "B2:H22",
@@ -939,11 +934,11 @@ const plansData = [
       // {
       //   calendar: true,
       //   title: "Summer Plan",
-      //   url: "fall",
+      //   url: "spring",
       //   year: "2024",
-      //   season: "Fall",
-      //   sheetID: "1cN61bZL9q0V40jn107uo6zo4T4x7QQbqOCg64HPSCgY",
-      //   sheets: fall24sheets,
+      //   season: "Spring",
+      //   sheetID: "1XSc4zouwAfJGW2ENu2t6HQYTJ_y01YDJH1QvDPt3cms",
+      //   sheets: winterSpring25sheets,
       // },
       {
         calendar: false,
