@@ -13,143 +13,122 @@ export default function Join() {
 
   const pageContent = (
     <div className="article-content">
-      {/* <div className="highlighted-message">
-        <h3>Practice starts MONDAY 8/28 @ The Johnson-Miller Track Complex!</h3>
-      </div> */}
-      <h3>Want to join the best?</h3>
+      <h2>Want to Join the Best Rec Sports Club at Virginia Tech?</h2>
       <p>
-        Want to run distance, sprint, jump, or throw? Well you came to the right
-        place. Before we get into it, we want to let you know that we know life
-        as a college student is very busy. Because of this, nothing we do as a
-        club is mandatory, whether it be practice, socials, or even meets. With
-        that out of the way, there's just a few things you need to do before you
-        can officially be a part of the club.
+        Whether you're into distance running, sprints, jumps, or throws — you're
+        in the right place. We get it: college life is busy. That’s why nothing
+        in our club is mandatory. You can come to practice, meets, and socials
+        as your schedule allows. With that said, there are just
+        <strong> three things you need to do to officially join:</strong>
       </p>
-      <h3>As easy as 1-2-3!</h3>
+
+      <h2>1. Fill out the Membership Survey</h2>
+      <a
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        href="https://forms.office.com/r/Mmssbc7TzT"
+      >
+        Membership Survey Link
+      </a>
+      <p>This gives us your info and helps us get you connected.</p>
+
+      <h2>2. Complete IMLeagues Registration</h2>
+      <a
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        href="https://connect.recsports.vt.edu/IMLeague"
+      >
+        IMLeagues Registration
+      </a>
       <p>
-        There are 3 steps to becoming a member of the club. All items are due by{" "}
-        <span style={{ fontWeight: "bold" }}>Friday, Jan. 31 for indoor competition and Friday, Feb. 7 otherwise. The first indoor meet will be Liberty Open on Feb 7.</span>
+        Sign in with your VT PID and password. If you're redirected after
+        logging in, return to the link without logging out.
       </p>
-      <ol>
+      <ul>
         <li>
-          Complete the{" "}
-          <a
-            href="https://forms.office.com/r/uF24ivFK52"
-            target="_blank"
-            rel="noreferrer"
-          >
-            membership survey.
-          </a>
+          <p>Click the orange IMLeagues button</p>
         </li>
         <li>
-          <ul>
-            Complete your IMLeague forms.{" "}
-            <li>
-              Go to{" "}
-              <a
-                href="https://connect.recsports.vt.edu/IMLeague"
-                target="_blank"
-                rel="noreferrer"
-              >
-                IMLeagues
-              </a>
-              .
-            </li>
-            <li>
-              <ul>
-                Sign in with your VT PID (first half of your @vt.edu email) and
-                Password.
-                <li>
-                  (NOTE: If you're sent to another website after signing in,
-                  come back to this page and follow the link above again (make
-                  sure you don't close your browser or sign out). That should
-                  bring you to the IMleagues site described below.)
-                </li>
-              </ul>
-            </li>
-            <li>
-              Click on the orange button with the IMLeagues logo to go to the
-              site.
-            </li>
-            <li>
-              This will take you to your profile. At the top, next to your
-              profile picture, select "Sport Clubs."
-            </li>
-            <li>
-              Scroll down the list to find "Cross Country/Track & Field" and
-              click "Join". This will send a request to join the sport club.
-            </li>
-            <li>
-              Fill out the required forms listed on the next page, and you're
-              done with forms!
-            </li>
-            <li>
-              For medical forms, if you have had previous injuries, please explain in detail (specific body part, length of injury, etc.)
-            </li>
-            <li>
-              <span style={{ fontWeight: "bold" }}>
-                You DO NOT have to pay the $25 intramural fee on IMLeagues
-              </span>  
-            </li>
-          </ul>
+          <p>At the top, click “Sport Clubs”</p>
         </li>
         <li>
-          <ul>
-            Pay Dues. Dues are $30 for non-competition and there is now a two-tier dues structure for those competing. We're having our first official indoor track season this year, meaning there will now be up to 6 meets covered by competition dues.<br></br>
-            <li>
-              <span style={{ fontWeight: "bold" }}>Competition: </span>There are two tiers for competition dues:
-              <ul>
-              <li>
-                <span style={{ fontWeight: "bold" }}>Outdoor Only: </span>$80 for 4 outdoor track meets.
-              </li>
-              <li>
-                <span style={{ fontWeight: "bold" }}>Indoor + Outdoor: </span>$120 for 2 indoor and 4 outdoor track meets.
-              </li>
-              </ul>
-            </li>
-            Dues can be paid using cash or check (made out to “Treasurer of
-            Virginia Tech”) and should be paid at the Sport Clubs Office in War Memorial Hall (on your left past where you scan).
-            <br></br>
-            <p>Sport Clubs Office dues payment hours:</p>
-            <ul>
-              <li>Monday: 2:30 - 5:30 pm</li>
-              <li>Tuesday: 8:30 - 11:30 am</li>
-              <li>Wednesday: 8:30 - 11:30 am</li>
-              <li>Thursday: 2:30 - 5:30 pm</li>
-              <li>Friday: 9:30 - 11:30 am</li>
-            </ul>
-            <li>
-              <span style={{ fontWeight: "bold" }}>Non-Racing: </span>You get
-              access to all team equipment (blocks, throwing implements, etc)
-              and practices as well as being able to attend all of our social
-              events! As a member of an official sports club, you also will be
-              able to see an official{" "}
-              <Link to={"/athletic-trainer"}>VT athletic trainer </Link>who can
-              help with injury prevention and rehabilitation. You also get a
-              semester shirt and are able to purchase official VT Club XCTF
-              apparel and gear. If you are simply interested in staying in
-              shape, meeting new people in a friendly community, or finding a
-              great group to run/train with, this is for you!
-            </li>
-            <li>
-              <span style={{ fontWeight: "bold" }}>Racing: </span>All of the
-              above plus more! This includes all race entry fees, travel costs,
-              hotel costs and more for all meets covered by your dues per season. Our official race
-              schedule will be released soon, but a sneak preview includes a
-              home meet on March 22nd here in Blacksburg as well as NIRCA Track & Field
-              Nationals in Richmond, VA on April 5-6th! We're looking to win our third national title on the mens' side and our first national title in the womens' side! Anyone is welcome to compete and there are no time requirements to compete. This is the best way to get
-              the most out of the club, and we promise that if you choose to
-              race with us you will not regret it!
-            </li>
-          </ul>
+          <p>Scroll down to “Cross Country/Track &amp; Field” and click Join</p>
         </li>
-      </ol>
+        <li>
+          <p>Complete all required forms</p>
+        </li>
+        <li>
+          <p>
+            <em>
+              Be thorough with injury history (specific body part, time frame,
+              etc.)
+            </em>
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>
+              If you are not, they will ask you to explain in better detail
+            </em>
+          </p>
+        </li>
+      </ul>
+      <p>Note: You do not need to pay the $25 intramural fee.</p>
+
+      <h2>3. Pay Your Dues</h2>
       <p>
-        And you're done! If any item is not completed by the deadline, you will
-        not be able to participate in any practices or meets until it is
-        completed. If you have any questions, please contact an{" "}
-        <Link to={"/contact"}>officer</Link> or come speak with us at practice.
-        We can't wait to see you there!
+        Dues are paid in person at the Sport Clubs Office in War Memorial Hall
+        (on your left after you scan in).
+      </p>
+      <p>
+        You can pay via cash or check (made out to "Treasurer of Virginia
+        Tech").
+      </p>
+      <p>Here are our options:</p>
+      <ul>
+        <li>
+          <p>Non-Competition, Membership: $30</p>
+        </li>
+        <li>
+          <p>Cross Country Racing Dues (Fall): $100</p>
+        </li>
+        <li>
+          <p>
+            Indoor/Outdoor Track Racing Dues (Spring): Prices will be announced
+          </p>
+        </li>
+      </ul>
+
+      <p>Sports Club Office Hours:</p>
+      <ul>
+        <li>
+          <p>Monday &amp; Thursday: 2:30–5:30 PM</p>
+        </li>
+        <li>
+          <p>Tuesday &amp; Wednesday: 8:30–11:30 AM</p>
+        </li>
+        <li>
+          <p>Friday: 9:30–11:30 AM</p>
+        </li>
+      </ul>
+
+      <p>
+        Note: If you are planning on racing for us, please go to our{" "}
+        <Link to="/racing-forms">race forms</Link> page and follow those steps
+        on setting up your NIRCA account.
+      </p>
+
+      <h2>Questions?</h2>
+      <p>
+        Feel free to reach out to an officer or chat with us at practice. We’re
+        excited to have you join VT Club XC/TF.
+      </p>
+      <p>
+        Joe, President – <a href="mailto:gora2026@vt.edu">gora2026@vt.edu</a>
+      </p>
+      <p>
+        Ashley, Vice President –{" "}
+        <a href="mailto:ashleymort05@vt.edu">ashleymort05@vt.edu</a>
       </p>
     </div>
   );

@@ -3,8 +3,8 @@ import PageHeader from "../modules/PageHeader";
 import officers from "../data/officers";
 
 export default function Contact() {
-
-    const image = "https://i.imgur.com/IW4buZJ.jpeg";
+    
+    const image = "https://i.imgur.com/GVt7cqA.jpeg";
 
     const OffcierCards = ({ officer }) => {
         return (
