@@ -44,21 +44,21 @@ const sponsors = [
     url: "https://runaboutsports.com/",
     logo: runabout_logo,
   },
-  {
-    name: "Adjust NRV",
-    url: "https://www.adjustnrv.com/",
-    logo: adjustnrv_logo,
-  },
-  {
-    name: "Counts Family Pharmacy",
-    url: "https://www.msblacksburg.com/",
-    logo: counts_pharmacy_logo,
-  },
-  {
-    name: "In Balance Yoga",
-    url: "https://www.inbalanceyogastudio.com/",
-    logo: yoga_logo,
-  },
+  // {
+  //   name: "Adjust NRV",
+  //   url: "https://www.adjustnrv.com/",
+  //   logo: adjustnrv_logo,
+  // },
+  // {
+  //   name: "Counts Family Pharmacy",
+  //   url: "https://www.msblacksburg.com/",
+  //   logo: counts_pharmacy_logo,
+  // },
+  // {
+  //   name: "In Balance Yoga",
+  //   url: "https://www.inbalanceyogastudio.com/",
+  //   logo: yoga_logo,
+  // },
   {
     name: "Crimper's Climbing Gym",
     url: "https://www.crimpersclimbing.com/",
@@ -74,11 +74,11 @@ const sponsors = [
     url: "https://www.instagram.com/bolloscafe/",
     logo: bollos_logo,
   },
-  {
-    name: "Core Physical Therapy",
-    url: "https://www.coreptblacksburg.com/",
-    logo: core_pyhsical_therapy_logo,
-  },
+  // {
+  //   name: "Core Physical Therapy",
+  //   url: "https://www.coreptblacksburg.com/",
+  //   logo: core_pyhsical_therapy_logo,
+  // },
 ];
 
 /* TODO: Add orgs */

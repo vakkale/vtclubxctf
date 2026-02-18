@@ -86,14 +86,14 @@ export default function Banner() {
       }}
     >
       <h1 className="banner-text">
-        {!isMobile ? "Giving Day Ends @ Noon: " : "Giving Day Ends @ Noon: "}
+        {!isMobile ? "Giving Day Starts @ Noon: " : "Giving Day Starts @ Noon: "}
       </h1>
       {/* TIP: YOU CAN USE <LINK> AND <A> INTERCHANGABLY HERE, THEY HAVE THE SAME STYLING */}
       {/* <Link to="/join" className="banner-link">
         <button className="banner-button">Click Here</button>
       </Link> */}
       <a
-        href="https://givingday.vt.edu/amb/xctf"
+        href="https://givingday.vt.edu/amb/joeauraclubxctf"
         target="_blank"
         rel="noreferrer"
         className="banner-link"

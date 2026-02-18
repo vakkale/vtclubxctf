@@ -41,14 +41,14 @@ export default function Sponsors() {
             alt="Runabout Sports logo."
           ></img>
         </a>
-        <a href="https://www.adjustnrv.com/" rel="noreferrer" target="_blank">
+        {/* <a href="https://www.adjustnrv.com/" rel="noreferrer" target="_blank">
           <img
             className="sponsor-image"
             src={adjustnrv}
             alt="Adjust NRV logo."
           ></img>
-        </a>
-        <a
+        </a> */}
+        {/* <a
           href="https://www.msblacksburg.com/"
           rel="noreferrer"
           target="_blank"
@@ -58,14 +58,14 @@ export default function Sponsors() {
             src={counts_pharmacy}
             alt="Counts Family Pharmacy logo."
           ></img>
-        </a>
-        <a href="https://www.inbalanceyogastudio.com" rel="noreferrer" target="_blank">
+        </a> */}
+        {/* <a href="https://www.inbalanceyogastudio.com" rel="noreferrer" target="_blank">
           <img
             className="sponsor-image"
             src={in_balance_yoga}
             alt="In Balance Yoga logo."
           ></img>
-        </a>
+        </a> */}
         <a
           href="https://www.crimpersclimbing.com/"
           rel="noreferrer"
@@ -99,7 +99,7 @@ export default function Sponsors() {
             alt="Bollo's Cafe & Bakery logo."
           ></img>
         </a>
-        <a
+        {/* <a
           href="https://www.coreptblacksburg.com/"
           rel="noreferrer"
           target="_blank"
@@ -109,7 +109,7 @@ export default function Sponsors() {
             src={core_pysical_therapy}
             alt="Core Physical Therapy logo."
           ></img>
-          </a>
+          </a> */}
       </ul>
     </div>
   );
