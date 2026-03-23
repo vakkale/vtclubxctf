@@ -85,9 +85,9 @@ export default function Banner() {
         animationDelay: location.pathname === "/" ? "3.2s" : "0s",
       }}
     >
-      <h1 className="banner-text">
+      {/* <h1 className="banner-text">
         {!isMobile ? "Giving Day Starts @ Noon: " : "Giving Day Starts @ Noon: "}
-      </h1>
+      </h1> */}
       {/* TIP: YOU CAN USE <LINK> AND <A> INTERCHANGABLY HERE, THEY HAVE THE SAME STYLING */}
       {/* <Link to="/join" className="banner-link">
         <button className="banner-button">Click Here</button>
