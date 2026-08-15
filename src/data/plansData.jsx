@@ -536,127 +536,64 @@ const plansData = [
       },
       {
         calendar: false,
-        title: "Pre/Post Run",
-        url: "pre-post-run",
+        title: "Warmup",
+        url: "warmup",
         season: "Extras",
         content: (
           <div className="article-content">
-            <ul className="training-extras">
-              <li className="extras-section">
-                <h3>Pre - Every Day</h3>
-                <a
-                  href="https://www.youtube.com/embed/GJo7_MiRLkU"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h4>Lunge Matrix</h4>
-                </a>
-                <ul>
-                  <li>10x forward lunges</li>
-                  <li>10x lunge w/ a twist</li>
-                  <li>10x side lunges</li>
-                  <li>10x 135° lunges</li>
-                  <li>10x backwards lunges</li>
-                </ul>
-                <p>Leg Swings</p>
-                <ul>
-                  <li>10x front-facing</li>
-                  <li>10x side-facing</li>
-                  <li>10x forward circles</li>
-                  <li>10x backward circles</li>
-                  <li>10x front-facing bent-knee</li>
-                  <li>10x side-facing bent-knee</li>
-                </ul>
-              </li>
-              <li className="extras-section">
-                <h3>Post - Every Day</h3>
-                <p>
-                  CORE: choose an exercise, do for 45 sec, rest for 15 sec, and
-                  repeat for 5-10 minutes (switch to 60 sec, 15 sec intervals
-                  for a challenge) examples of exercises: plank, side plank,
-                  bicycles, crunches, scissors, flutter kicks, suitcases,
-                  penguins, russian twists, etc.
-                </p>
-              </li>
-              <li className="extras-section">
-                <h3>Pre - Workout/Sprints</h3>
-                <p>Dynamics</p>
-                <p>
-                  20m: toe walks, heel walks, inside walks, outside walks,
-                  scoops, quad stretch, Frankensteins, baby yodas 30m: A walks,
-                  B walks, A skips, B skips, open the gate, close the gate, side
-                  shuffle (each side), karaokes (each side) + any other
-                  exercises you feel like adding! 3× 80m (grass) strides
-                </p>
-              </li>
-              <li className="extras-section">
-                Post - Workout/Sprints
-                <a
-                  href="https://www.youtube.com/embed/5-2gUAOnrco"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h4>SAMs:</h4>
-                </a>
-                <ul>
-                  <li>push-ups</li>
-                  <li>mountain climbers</li>
-                  <li>squats</li>
-                  <li>step-ups</li>
-                  <li>6× [clams, reverse clams, reverse air clams]*</li>
-                  <li>6× leg raises (toe up, neutral, down)*</li>
-                  <li>8× donkey kicks*</li>
-                  <li>8× fire hydrants*</li>
-                  <li>8× leg circles*, each direction</li>
-                  <li>8× donkey whips*</li>
-                  <li>6× cat-cow</li>
-                </ul>
-                <a
-                  href="https://www.runnersworld.com/uk/training/beginners/a32172701/how-to-stretch-post-run/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h4>Stretch:</h4>
-                </a>
-                <ul>
-                  <li>hamstring stretch</li>
-                  <li>quad stretch</li>
-                  <li>hip flexor stretch</li>
-                  <li>calf stretch</li>
-                  <li>+ any additional stretches you'd like</li>
-                </ul>
-                <p>*on each side</p>
-              </li>
+            <h3>Dynamic Warmup</h3>
+            <ul>
+              <li>High Knees</li>
+              <li>Butt Kicks</li>
+              <li>A Skips</li>
+              <li>B Skips</li>
+              <li>Scoops</li>
+              <li>Frankensteins</li>
+              <li>Cariocas</li>
+              <li>Front Lunges</li>
+              <li>Quad Pulls</li>
+              <li>Open the Gate</li>
+              <li>Close the Gate</li>
+              <li>2 Strides</li>
+              <li>Toe Walks</li>
+              <li>Heel Walks</li>
+              <li>Figure 4</li>
             </ul>
           </div>
         ),
       },
       {
         calendar: false,
-        title: "Lifts",
-        url: "lifts",
+        title: "Strength",
+        url: "strength",
         season: "Extras",
         image: "https://i.imgur.com/lMFZMsa.jpg",
         content: (
           <div className="article-content">
-            <ul className="training-extras">
-              <li className="extras-section">
-                <h3>Lifts</h3>
-                <a
-                  href="https://www.outsideonline.com/health/training-performance/absolute-minimalists-strength-workout/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h4>Base Routing</h4>
-                </a>
+            <h3>Core and Hips</h3>
+            <ul>
+              <li>20 Deadbugs</li>
+              <li>20 Bicycles</li>
+              <li>20 Russian Twists</li>
+              <li>15-20 pushups</li>
+              <li>20 In n Outs</li>
+              <li>20 Straight Leg Lifts</li>
+              <li>1 min Plank</li>
+              <li>Steamboats: 2x10e</li>
+              <li>Pistol Squats 3x5</li>
+              <li>Clamshells</li>
+              <li>Monster walks</li>
+              <li>
+                <p>Side Leg Raises</p>
                 <ul>
-                  <li>3× [6x (assisted) pull-ups]</li>
-                  <li>3× [8x goblet squats]</li>
-                  <li>3× [16x push-ups]</li>
-                  <li>3× [8x weighted lunges]</li>
-                  <li>3× [8x single-leg deadlift]</li>
+                  <li>
+                    Foot Neutral, Down, Up
+                  </li>
                 </ul>
               </li>
+              <li>Hip Circles</li>
+              <li>Fire Hydrants</li>
+              <li>Donkey Kicks</li>
             </ul>
           </div>
         ),
