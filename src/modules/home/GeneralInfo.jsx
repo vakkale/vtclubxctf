@@ -20,7 +20,11 @@ export default function GeneralInfo() {
                 <h1 className="gi-title">We Are VT Club XCTF</h1>
                 <p>We are Virginia Tech's Cross Country and Track & Field club. Dedicated to all things running, throwing and jumping! We welcome athletes of all skill levels, whether you're just trying to stay in shape or want to continue competing in track/cross country in college.</p>
                 <p>Originally founded in 2007, the club has since grown to over 230 dues-paying members and is supported by Virginia Tech's Rec Sports department! <Link to={'/join'} >Join us</Link> and be a part of the biggest and most welcoming sport club community at VT!</p>
-                <p>Make sure to follow our Instagram <Link to={'https://www.instagram.com/vt_clubxctf'} >@vt_clubxctf</Link> for the latest updates and highlights!</p>
+                <p>Make sure to follow our Instagram <a
+                                    href="https://www.instagram.com/vt_clubxctf"
+                                    rel="noreferrer"
+                                    target="_blank"
+                                >@vt_clubxctf</a> for the latest updates and highlights!</p>
             </div>
         </div>
     );
