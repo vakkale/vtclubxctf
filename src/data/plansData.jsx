@@ -48,462 +48,276 @@ const plansData = [
       },
       {
         calendar: false,
-        title: "Strength",
-        url: "strength",
+        title: "Drills",
+        url: "drills",
         season: "Extras",
         content: (
           <div className="article-content">
             <div className="tables">
               <table className="distance-table">
                 <tr>
-                  <th colspan="3">Strength 1A</th>
+                  <th colspan="2">Core Circuit</th>
+                </tr>
+                <tr>
+                  <th>Exercise</th>
+                  <th>Reps</th>
+                </tr>
+                <tr>
+                  <td>Deadbugs</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Bicycles</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Russian Twists</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Situps</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Reverse Crunches</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Straight Leg Lifts</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Scissor Kicks</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>V-Ups</td>
+                  <td>10</td>
+                </tr>
+              </table>
+              {/*  */}
+              <table className="distance-table">
+                <tr>
+                  <th colspan="2">Hip Drills</th>
                 </tr>
                 <tr>
                   <th>Exercise</th>
                   <th>Sets/Reps</th>
-                  <th>Explanation</th>
                 </tr>
                 <tr>
-                  <th colspan="3">SS1 - Strength</th>
+                  <td>Steamboats</td>
+                  <td>2x10e</td>
                 </tr>
                 <tr>
-                  <td>Squats</td>
+                  <td>Pistol Squats</td>
+                  <td>3x5</td>
+                </tr>
+                <tr>
+                  <td>Clamshells</td>
+                  <td>3x15e</td>
+                </tr>
+                <tr>
+                  <td>Straight Leg Hip Flexor Raises</td>
                   <td>3x10</td>
-                  <td></td>
                 </tr>
                 <tr>
-                  <td>Alt DB Incline Press</td>
+                  <td>Monster Walks</td>
+                  <td>3x20 steps</td>
+                </tr>
+                <tr>
+                  <td>Sidesteps</td>
                   <td>3x10e</td>
-                  <td></td>
                 </tr>
                 <tr>
-                  <td>Tricep Extensions</td>
+                  <td>Single-leg Glute Bridges</td>
+                  <td>3x15s</td>
+                </tr>
+                <tr>
+                  <td>Reverse clamshells</td>
                   <td>3x10</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th colspan="3">SS2 - Special Movements</th>
-                </tr>
-                <tr>
-                  <td>Eccentric Calf Raises</td>
-                  <td>3x10e</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>SL RDLs</td>
-                  <td>3x10e</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Deadbug</td>
-                  <td>3x10</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th colspan="3">SS3 - Power/Plyos</th>
-                </tr>
-                <tr>
-                  <td>Pogos</td>
-                  <td>1-2x30</td>
-                  <td>Keep knees straight, and pogo</td>
-                </tr>
-                <tr>
-                  <td>MB Slam</td>
-                  <td>1-2x5</td>
-                  <td></td>
                 </tr>
               </table>
               {/*  */}
               <table className="distance-table">
                 <tr>
-                  <th colspan="3">Strength 1B</th>
-                </tr>
-                <tr>
-                  <th>Exercise</th>
-                  <th>Sets/Reps</th>
-                  <th>Explanation</th>
-                </tr>
-                <tr>
-                  <th colspan="3">SS1 - Strength</th>
-                </tr>
-                <tr>
-                  <td>RDLs</td>
-                  <td>3x10e</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>DB Curl → Press</td>
-                  <td>3x10e</td>
-                  <td>Bicep curl into overhead press</td>
-                </tr>
-                <tr>
-                  <td>DB Rows</td>
-                  <td>3x10e</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th colspan="3">SS2 - Special Movements</th>
-                </tr>
-                <tr>
-                  <td>Seated Calf Raises</td>
-                  <td>3x10e</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>RFE Split Squats</td>
-                  <td>3x10e</td>
-                  <td>Rear foot elevated on bench/step</td>
-                </tr>
-                <tr>
-                  <td>High Plank Pull Thrus</td>
-                  <td>3x20</td>
-                  <td>
-                    In a high plank, take some weight and drag it under your
-                    body. Keeping your hips as flat as possible
-                  </td>
-                </tr>
-                <tr>
-                  <th colspan="3">SS3 - Power/Plyos</th>
-                </tr>
-                <tr>
-                  <td>Broad Jumps</td>
-                  <td>1-2x5e</td>
-                  <td>Off on 1 leg, land on 2</td>
-                </tr>
-                <tr>
-                  <td>SL Lateral Pogos</td>
-                  <td>1-2x30</td>
-                  <td>Pogo on 1 leg side to side</td>
-                </tr>
-              </table>
-              {/*  */}
-              <table className="distance-table">
-                <tr>
-                  <th colspan="3">Strength 2A</th>
-                </tr>
-                <tr>
-                  <th>Exercise</th>
-                  <th>Sets/Reps</th>
-                  <th>Explanation</th>
-                </tr>
-                <tr>
-                  <th colspan="3">SS1 - Strength</th>
-                </tr>
-                <tr>
-                  <td>Squats</td>
-                  <td>3x10e, 3x6e (heavy)</td>
-                  <td>6 reps heavy on 2AH days</td>
-                </tr>
-                <tr>
-                  <td>Alt DB Incline Press</td>
-                  <td>3x10e, 3x6e (heavy)</td>
-                  <td>6 reps heavy on 2AH days</td>
-                </tr>
-                <tr>
-                  <td>Tricep Extensions</td>
-                  <td>3x10e, 3x6e (heavy)</td>
-                  <td>6 reps heavy on 2AH days</td>
-                </tr>
-                <tr>
-                  <th colspan="3">SS2 - Special Movements</th>
-                </tr>
-                <tr>
-                  <td>Eccentric Calf Raises</td>
-                  <td>3x10e, 3x6e (heavy)</td>
-                  <td>6 reps heavy on 2AH days</td>
-                </tr>
-                <tr>
-                  <td>SL RDLs</td>
-                  <td>3x10e, 3x6e (heavy)</td>
-                  <td>6 reps heavy on 2AH days</td>
-                </tr>
-                <tr>
-                  <td>Deadbug</td>
-                  <td>3x10e, 3x6e (heavy)</td>
-                  <td>6 reps heavy on 2AH days</td>
-                </tr>
-                <tr>
-                  <th colspan="3">SS3 - Power/Plyos</th>
-                </tr>
-                <tr>
-                  <td>Pogos</td>
-                  <td>2-3x30</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>MB Slam</td>
-                  <td>2-3x5</td>
-                  <td></td>
-                </tr>
-              </table>
-              {/*  */}
-              <table className="distance-table">
-                <tr>
-                  <th colspan="3">Strength 2B</th>
-                </tr>
-                <tr>
-                  <th>Exercise</th>
-                  <th>Sets/Reps</th>
-                  <th>Explanation</th>
-                </tr>
-                <tr>
-                  <th colspan="3">SS1 - Strength</th>
-                </tr>
-                <tr>
-                  <td>RDLs</td>
-                  <td>3x10e, 3x6e (heavy)</td>
-                  <td>Heavy on 2BH days</td>
-                </tr>
-                <tr>
-                  <td>DB Curl → Press</td>
-                  <td>3x10e, 3x6e (heavy)</td>
-                  <td>Heavy on 2BH days</td>
-                </tr>
-                <tr>
-                  <td>DB Rows</td>
-                  <td>3x10e, 3x6e (heavy)</td>
-                  <td>Heavy on 2BH days</td>
-                </tr>
-                <tr>
-                  <th colspan="3">SS2 - Special Movements</th>
-                </tr>
-                <tr>
-                  <td>Seated Calf Raises</td>
-                  <td>3x10e, 3x6e (heavy)</td>
-                  <td>Heavy on 2BH days</td>
-                </tr>
-                <tr>
-                  <td>RFE Split Squats</td>
-                  <td>3x10e, 3x6e (heavy)</td>
-                  <td>Heavy on 2BH days</td>
-                </tr>
-                <tr>
-                  <td>High Plank Pull Thrus</td>
-                  <td>3x10e, 3x6e (heavy)</td>
-                  <td>Heavy on 2BH days</td>
-                </tr>
-                <tr>
-                  <th colspan="3">SS3 - Power/Plyos</th>
-                </tr>
-                <tr>
-                  <td>Broad Jumps</td>
-                  <td>2-3x5e</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>SL Lateral Pogos</td>
-                  <td>2-3x30</td>
-                  <td></td>
-                </tr>
-              </table>
-              {/*  */}
-              <table className="distance-table">
-                <tr>
-                  <th colspan="2">Strength 3A</th>
+                  <th colspan="2">Walking Drills</th>
                 </tr>
                 <tr>
                   <th>Exercise</th>
                   <th>Sets/Reps</th>
                 </tr>
                 <tr>
-                  <th colspan="2">SS1 - Strength</th>
+                  <td>Toe Walks</td>
+                  <td>15s</td>
                 </tr>
                 <tr>
-                  <td>Weighted Squat Jumps</td>
-                  <td>2x8</td>
+                  <td>Inner Pointing Toe Walks</td>
+                  <td>15s</td>
                 </tr>
                 <tr>
-                  <td>DB Rows</td>
-                  <td>2x8e</td>
+                  <td>Outer Pointing Toe Walks</td>
+                  <td>15s</td>
                 </tr>
                 <tr>
-                  <th colspan="2">SS2 - Special Movements</th>
+                  <td>Heel Walks</td>
+                  <td>3x15s</td>
                 </tr>
                 <tr>
-                  <td>Calf Pulses</td>
-                  <td>2x20</td>
+                  <td>Side Foot Walks</td>
+                  <td>3x15s</td>
                 </tr>
                 <tr>
-                  <td>Hip Thrust</td>
-                  <td>2x6</td>
+                  <td>Balance in Running Form</td>
+                  <td>3x30s</td>
                 </tr>
                 <tr>
-                  <th colspan="2">SS3 - Power/Plyos</th>
+                  <td>Fast Feet</td>
+                  <td>3x15s</td>
+                </tr>
+              </table>
+              {/*  */}
+              <table className="distance-table">
+                <tr>
+                  <th colspan="2">Lift 1</th>
                 </tr>
                 <tr>
-                  <td>Weighted Step Ups</td>
-                  <td>2-3x5e</td>
+                  <th>Exercise</th>
+                  <th>Sets/Reps</th>
                 </tr>
                 <tr>
                   <td>Box Jumps</td>
-                  <td>2-3x5</td>
-                </tr>
-              </table>
-              {/*  */}
-              <table className="distance-table">
-                <tr>
-                  <th colspan="2">Strength 3B</th>
+                  <td>3x5</td>
                 </tr>
                 <tr>
-                  <th>Exercise</th>
-                  <th>Sets/Reps</th>
-                </tr>
-                <tr>
-                  <th colspan="2">SS1 - Strength</th>
-                </tr>
-                <tr>
-                  <td>RDL</td>
-                  <td>2x8e</td>
-                </tr>
-                <tr>
-                  <td>Alt Incline Press</td>
-                  <td>2x8e</td>
-                </tr>
-                <tr>
-                  <th colspan="2">SS2 - Special Movements</th>
-                </tr>
-                <tr>
-                  <td>Reverse Lunges</td>
-                  <td>2x6e</td>
-                </tr>
-                <tr>
-                  <td>Deadbug</td>
-                  <td>2x30</td>
-                </tr>
-                <tr>
-                  <th colspan="2">SS3 - Power/Plyos</th>
-                </tr>
-                <tr>
-                  <td>Double Broad Jump</td>
-                  <td>2-3x5e</td>
-                </tr>
-                <tr>
-                  <td>Drop Jump</td>
-                  <td>2-3x5</td>
-                </tr>
-              </table>
-              {/*  */}
-              <table className="distance-table">
-                <tr>
-                  <th colspan="2">Bodyweight Circuit</th>
-                </tr>
-                <tr>
-                  <th>Exercise</th>
-                  <th>Sets/Reps</th>
-                </tr>
-                <tr>
-                  <td>Push-ups</td>
-                  <td>3x15</td>
-                </tr>
-                <tr>
-                  <td>SL Glute Bridge</td>
-                  <td>3x10e</td>
-                </tr>
-                <tr>
-                  <td>Deadbug</td>
+                  <td>Single-leg Pogos</td>
                   <td>3x20</td>
                 </tr>
                 <tr>
-                  <td>Supermans</td>
-                  <td>3x20"</td>
+                  <td>Bulgarian Split Squats</td>
+                  <td>3x 6-8</td>
                 </tr>
                 <tr>
-                  <td>Side Plank w/ Top Leg Raises</td>
-                  <td>3x20"</td>
+                  <td>Single-leg Calf Raises</td>
+                  <td>3x 6-8</td>
                 </tr>
                 <tr>
-                  <td>Slow Calf Raises</td>
-                  <td>3x15</td>
+                  <td>Single-leg RDL</td>
+                  <td>3x 6-8</td>
+                </tr>
+              </table>
+              {/*  */}
+              <table className="distance-table">
+                <tr>
+                  <th colspan="2">Lift 2</th>
                 </tr>
                 <tr>
-                  <td>Squat Jumps</td>
+                  <th>Exercise</th>
+                  <th>Sets/Reps</th>
+                </tr>
+                <tr>
+                  <td>Scissor Jumps (Explosive)</td>
                   <td>3x6</td>
+                </tr>
+                <tr>
+                  <td>Clean</td>
+                  <td>3x5</td>
+                </tr>
+                <tr>
+                  <td>Goblet Squats</td>
+                  <td>3x 6-8</td>
+                </tr>
+                <tr>
+                  <td>Toe Taps</td>
+                  <td>3x60s</td>
+                </tr>
+                <tr>
+                  <td>Single-leg Hip Thrusts</td>
+                  <td>3x 6-8</td>
                 </tr>
               </table>
             </div>
-          </div>
+          </div>      
         ),
       },
       {
         calendar: false,
-        title: "Drills",
-        url: "drills",
+        title: "Warmup",
+        url: "warmup",
         season: "Extras",
         content: (
           <div className="article-content">
-            <h3>Form Drills</h3>
+            <h3>Dynamic Warmup 1 (Short)</h3>
+            <ul>
+              <li>High Knees</li>
+              <li>Butt Kicks</li>
+              <li>A Skips</li>
+              <li>B Skips</li>
+              <li>Woodsons</li>
+              <li>Swan Dives</li>
+              <li>Swoops</li>
+              <li>Frankensteins</li>
+              <li>Cariocas</li>
+              <li>2 Strides</li>
+            </ul>
+            <h3>Dynamic Warmup 2 (Mid)</h3>
+            <ul>
+              <li>High Knees</li>
+              <li>Butt Kicks</li>
+              <li>A Skips</li>
+              <li>B Skips</li>
+              <li>Open the Gate</li>
+              <li>Close the Gate</li>
+              <li>Front Lunges</li>
+              <li>Swoops</li>
+              <li>Swan Dives</li>
+              <li>Frankensteins</li>
+              <li>Knee Pulls</li>
+              <li>Quad Pulls</li>
+              <li>Heel to Pocket</li>
+              <li>2 Strides</li>
+            </ul>
+            <h3>Dynamic Warmup 3 (Long)</h3>
             <ul>
               <li>Toe Walks</li>
               <li>Heel Walks</li>
-              <li>A-Walks</li>
-              <li>B-Walks</li>
-              <li>
-                <p>Seated Arm Drills</p>
-                <ul>
-                  <li>Switches → Constant → Max Speed</li>
-                  <li>
-                    Sitting on the ground, start with basic switches bringing
-                    your arms all the way through ROM, progress to constant
-                    swing, and them max speed. If you do it right, you should be
-                    able to bounce off the ground
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <p>Wall Arm Swing Drill</p>
-                <ul>
-                  <li>
-                    Stand ~1ft away from the wall, swing your arms to tap the
-                    wall with your fist and drive your elbows back. Keep your
-                    arms moving front to back.
-                  </li>
-                </ul>
-              </li>
+              <li>Side Foot Walks</li>
+              <li>March with Foot to Ankle</li>
+              <li>March with Foot to Knee</li>
+              <li>Knee Pulls</li>
+              <li>Quad Pulls</li>
+              <li>Heel to Pocket</li>
+              <li>Front Lunges</li>
+              <li>Side Lunges</li>
+              <li>Open the Gate</li>
+              <li>Close the Gate</li>
+              <li>A Skips</li>
+              <li>B Skips</li>
+              <li>Swoops</li>
+              <li>Swan Dives</li>
+              <li>Frankensteins</li>
+              <li>Woodsons</li>
+              <li>2 Strides</li>
             </ul>
-            <h3>Speed Drills</h3>
+            <h3>Static Warmup</h3>
             <ul>
-              <li>A-Skips</li>
-              <li>B-Skips</li>
-              <li>Straight Leg Bound</li>
-              <li>Backwards Run</li>
-              <li>High Knees</li>
-              <li>Butt Kicks</li>
-              <li>
-                <p>High Knee Circles</p>
-                <ul>
-                  <li>
-                    Act as if there is a 6x6x6 in box you want to step over and
-                    not hit while doing this high knee drill. Go up and forward{" "}
-                  </li>
-                </ul>
-              </li>
+              <li>Ankle Rotations</li>
+              <li>Knee Rotations</li>
+              <li>Hip Rotations</li>
+              <li>Arm Extensions</li>
+              <li>Hurdle Trail Leg</li>
+              <li>Side Lunges</li>
+              <li>45 Degree Side Lunges</li>
+              <li>Front Lunges</li>
+              <li>Front Lunges w/ Twist</li>
+              <li>Run in Place</li>
             </ul>
-            <h3>Plyo Drills</h3>
+            <h3>Ebbet Foot Drills</h3>
             <ul>
-              <li>Bound (Distance)</li>
-              <li>Bound (Height)</li>
-              <li>SL Hops</li>
-              <li>Pogos</li>
-              <li>High Knee Switches</li>
-              <li>Calf Smash Run</li>
-            </ul>
-            <h3>Hurdle Drills</h3>
-            <ul>
-              <li>Standard Walk Over</li>
-              <li>Double Walk Over</li>
-              <li>Backwards Walk Over</li>
-              <li>2 Forward, 1 Back</li>
-              <li>Kick Overs</li>
-              <li>Over-Unders</li>
-              <li>Side Skips</li>
-            </ul>
-            <h3>Steeple Drills</h3>
-            <ul>
-              <li>Trail Leg</li>
-              <li>Lead Leg</li>
-              <li>Trail Leg Strides</li>
-              <li>Lead Leg Strides</li>
-              <li>Full Steeple Run Thru</li>
+              <li>Walk on outside of foot</li>
+              <li>Walk on inside of foot</li>
+              <li>Feet out, heel to big toe walks</li>
+              <li>Heel walks</li>
+              <li>Backwards calf raise walks</li>
             </ul>
           </div>
         ),
