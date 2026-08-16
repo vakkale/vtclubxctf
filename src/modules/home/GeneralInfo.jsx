@@ -24,7 +24,7 @@ export default function GeneralInfo() {
                                     href="https://www.instagram.com/vt_clubxctf"
                                     rel="noreferrer"
                                     target="_blank"
-                                >@vt_clubxctf</a> for the latest updates and highlights!</p>
+                                >@vt_clubxctf</a> for the latest updates and highlights.</p>
             </div>
         </div>
     );
