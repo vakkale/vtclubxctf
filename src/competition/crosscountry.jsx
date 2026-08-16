@@ -70,6 +70,7 @@ export default function CrossCountry() {
             <p>In 2024, our men's team brought home our 1st national championship at National Intercollegiate Running Club Association (NIRCA) Nationals! Meanwhile in 2023 our women's team placed 3rd, both the highest finishes in club history. Additionally, we've swept the regional championship twice in the last 3 years, showing the .</p>
             <p>We are always looking for dedicated and enthusiastic members to join our team and help us achieve even more success in the future. Whether you're a seasoned veteran or new to the sport, we would love for you to join us on the course.</p>
             <p>Be sure to check this page regularly for updates on meet results and the schedule for upcoming meets. We look forward to seeing you at our next race!</p>
+            <p>***Stay tuned for our Fall 2026 schedule!!</p>
             <div className="img-container">
                 <img src="https://i.imgur.com/VmgLf2v.jpg" alt="Men's track and field team celebrating their nationals victory."></img>
             </div>
