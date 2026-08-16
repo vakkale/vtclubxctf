@@ -16,7 +16,9 @@
     }
 
     .filter-dropdown {
-        flex: 100%;
+        flex: 0 0 auto;
+        width: auto;
+        margin: 0 auto;
         background-color: #971a43;
         border: none;
         position: inherit;
@@ -28,6 +30,7 @@
         text-align: center;
         -webkit-text-align-last: center;
         text-align-last: center;
+        padding: 0 0.75rem;
 
         @media screen and (max-width: 768px) {
             max-width: 100%;

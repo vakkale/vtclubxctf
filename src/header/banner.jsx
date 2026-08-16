@@ -92,6 +92,7 @@ export default function Banner() {
       {/* <Link to="/join" className="banner-link">
         <button className="banner-button">Click Here</button>
       </Link> */}
+      {/*
       <a
         href="https://givingday.vt.edu/amb/joeauraclubxctf"
         target="_blank"
@@ -99,7 +100,7 @@ export default function Banner() {
         className="banner-link"
       >
         <button className="banner-button">Donate!</button>
-      </a>
+      </a>*/}
       {/* {now > countDownStart ?
                 <a
                     href='https://givingday.vt.edu/amb/clubxctf'
