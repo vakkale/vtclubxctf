@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./banner.scss";
 import { useLocation } from "react-router-dom";
-
+/** 
 export default function Banner() {
   //location
   const location = useLocation();
@@ -69,7 +69,7 @@ export default function Banner() {
         )
     } */
 
-  return (
+  /*return (
     <div
       className="banner"
       style={{
@@ -87,7 +87,7 @@ export default function Banner() {
     >
       {/* <h1 className="banner-text">
         {!isMobile ? "Giving Day Starts @ Noon: " : "Giving Day Starts @ Noon: "}
-      </h1> */}
+      </h1> */
       {/* TIP: YOU CAN USE <LINK> AND <A> INTERCHANGABLY HERE, THEY HAVE THE SAME STYLING */}
       {/* <Link to="/join" className="banner-link">
         <button className="banner-button">Click Here</button>
@@ -117,6 +117,8 @@ export default function Banner() {
                 </button>
             </Link>
             <BannerCountdown /> */}
-    </div>
-  );
+//}
+
+export default function Banner() {
+  return null;
 }

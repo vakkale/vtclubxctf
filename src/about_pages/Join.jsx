@@ -13,6 +13,7 @@ export default function Join() {
 
   const pageContent = (
     <div className="article-content">
+      <p>Updated 8/25/2026</p>
       <h2>Want to Join the Best Rec Sports Club at Virginia Tech?</h2>
       <p>
         Whether you're into distance running, sprints, jumps, or throws — you're
@@ -26,11 +27,11 @@ export default function Join() {
       <a
         target="_blank"
         rel="noopener noreferrer nofollow"
-        href="https://forms.office.com/r/Mmssbc7TzT"
+        href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=hGiVYK0Q-kCGPU8yweOjesWALSeB089Pmst0CjSf87dUQzFRN0YzWktRQVJBVlpTSVJUNzRLSUJDViQlQCN0PWcu"
       >
         Membership Survey Link
       </a>
-      <p>This gives us your info and helps us get you connected.</p>
+      <p>The membership survey gives us your information and allows us to put you on the roster.</p>
 
       <h2>2. Complete IMLeagues Registration</h2>
       <a
@@ -57,28 +58,13 @@ export default function Join() {
         <li>
           <p>Complete all required forms</p>
         </li>
-        <li>
-          <p>
-            <em>
-              Be thorough with injury history (specific body part, time frame,
-              etc.)
-            </em>
-          </p>
-        </li>
-        <li>
-          <p>
-            <em>
-              If you are not, they will ask you to explain in better detail
-            </em>
-          </p>
-        </li>
       </ul>
       <p>Note: You do not need to pay the $25 intramural fee.</p>
 
       <h2>3. Pay Your Dues</h2>
       <p>
         Dues are paid in person at the Sport Clubs Office in War Memorial Hall
-        (on your left after you scan in).
+        (on your left after you scan in). The first day you can pay is September 8th.
       </p>
       <p>
         You can pay via cash or check (made out to "Treasurer of Virginia
@@ -124,11 +110,11 @@ export default function Join() {
         excited to have you join VT Club XC/TF.
       </p>
       <p>
-        Joe, President – <a href="mailto:gora2026@vt.edu">gora2026@vt.edu</a>
+        Ashley, President – <a href="mailto:ashleymort05@vt.edu">ashleymort05@vt.edu</a>
       </p>
       <p>
-        Ashley, Vice President –{" "}
-        <a href="mailto:ashleymort05@vt.edu">ashleymort05@vt.edu</a>
+        Luke, Vice President –{" "}
+        <a href="mailto:lukebarlow@vt.edu">lukebarlow@vt.edu</a>
       </p>
     </div>
   );
