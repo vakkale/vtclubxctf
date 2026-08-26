@@ -1,22 +1,22 @@
-const fall25sheets = [
+const fall26sheets = [
   {
-    title: "May",
-    url: "may",
+    title: "September",
+    url: "september",
     range: "B2:H22",
   },
   {
-    title: "June",
-    url: "june",
+    title: "October",
+    url: "october",
     range: "B2:H26",
   },
   {
-    title: "July",
-    url: "july",
+    title: "November",
+    url: "november",
     range: "B2:H22",
   },
   {
-    title: "August",
-    url: "august",
+    title: "December",
+    url: "december",
     range: "B2:H22",
   }
 ]
@@ -30,21 +30,12 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "Lower Volume Plan",
-        url: "low",
+        title: "Training Plan",
+        url: "training-plan",
         year: "2026",
-        season: "Summer",
-        sheetID: "1d8Ez3_qSauB1lM011LnUrzXCVx74KOQaawDOZMWjxc0",
-        sheets: fall25sheets,
-      },
-      {
-        calendar: true,
-        title: "Higher Volume Plan",
-        url: "high",
-        year: "2026",
-        season: "Summer",
-        sheetID: "1sQh9h3o1FGKboNtwWJDN-QEzXm3VZaZU_b-0ij5rxZ0",
-        sheets: fall25sheets,
+        season: "Fall",
+        sheetID: "1CXksML9RwLSt9i4NyrToxgGdkCSDVPNi0Zs1Q8HYVX8",
+        sheets: fall26sheets,
       },
       {
         calendar: false,
@@ -337,7 +328,7 @@ const plansData = [
         year: "2026",
         season: "Summer",
         sheetID: "1pFxCbOYJgjqXjza7mT-1C9RHg6dNKI8UTTu6bRtX_MA",
-        sheets: fall25sheets,
+        sheets: fall26sheets,
       },
       {
         calendar: true,
@@ -346,7 +337,7 @@ const plansData = [
         year: "2026",
         season: "Summer",
         sheetID: "16bmg5ugbAkUEUeoIvj4oVVOBnMSNxrKzg2SDebZj2Ic",
-        sheets: fall25sheets,
+        sheets: fall26sheets,
       },
       {
         calendar: false,
@@ -421,19 +412,92 @@ const plansData = [
     yPos: "top",
     plans: [
       {
-        calendar: true,
+        calendar: false,
         title: "Jumps",
         url: "jumps",
-        year: "2024",
         season: "Fall",
-        sheetID: "1hkyicpKSVDiT9BjXqvK8GBObpJ0u6S4OhwJWxdIn2KQ",
-        sheets: fall25sheets,
+        year: "2026",
+        content: (
+          <div class="article-content">
+            <h1>Example Jumps Week Training</h1>
+            <h3>Important Notes</h3>
+            <p>The training schedule assumes the following:</p>
+            <ul>
+                <li>7+ hours sleep a night minimum</li>
+                <li>Caloric intake enough to maintain bodyweight WITH training (200-400 Kcal above maintenance)</li>
+                <li>⅔ of your body weight in grams of protein consumed each day</li>
+                <li>Follow proper warmup and stretching routine</li>
+            </ul>
+            <p>
+                If you DO NOT follow ALL four of these outlines, the risk of injury is highly probable. This is a 
+                reasonably serious jump training routine. Jumping is an event that will cause serious injury if 
+                you do not properly take care of yourself. If outlines are followed, risk prevention will be 
+                maintained. If you are having any pains or issues during your training or competition, SPEAK 
+                TO ME IMMEDIATELY. I’ve personally injured nearly every part of my lower body jumping, and 
+                am happy to provide advice on issues. Preventing injury is the PRIORITY of this program, and 
+                the program will develop to reflect that as practices progress.
+            </p>
+            <h3>Workout #1 (Top End Approach Speed Work)</h3>
+            <ul>
+                <li>Full warmup and drills (Static flexibility, active flexibility, running drills)</li>
+                <li>2 x 30/30/30m (60/70/80) %, 3 minutes rest between each</li>
+                <li>CNS drills to wake up nervous system before flys (will be explained)</li>
+                <li>10/20/30/20 flys (full speed flys, focusing on building top end speed) 5 minutes rest between each</li>
+                <li>Cooldown lap as a group</li>
+                <li>Core (5 exercises)</li>
+                <li>Stretch as a group</li>
+            </ul>
+            <h3>Recovery #1</h3>
+            <ul>
+                <li>Full warmup and drills (Static flexibility, active flexibility, running drills)</li>
+                <li>3x100 at 60%</li>
+                <li>3 x golfer pickups, golfer squats, walking lunges, band work with a partner (with bands)</li>
+                <li>Cooldown lap as a group</li>
+                <li>Core (5 exercises)</li>
+                <li>Stretch as a group</li>
+            </ul>
+            <h3>Workout #2 (Jumping Form/Power Work)</h3>
+            <ul>
+                <li>Full warmup and drills (Static flexibility, active flexibility, running drills)</li>
+                <li>2 x 30/30/30m (60/70/80) %, 3 minutes rest between each</li>
+                <li>CNS drills to wake up nervous system before jump work (same as Monday)</li>
+                <li>5 x LJ standing body cycle drill (will be explained)</li>
+                <li>5 x TJ standing body cycle drill (will be explained)</li>
+                <li>5 x Hill bounds (no more than 5-6 bounds a set, to prevent injury and fatigue)</li>
+                <li>2 x Single leg bounds (each leg, on runway, no more than 4 bounds a set, to prevent 
+injury and fatigue, final bound should be on 3rd phase foot) </li>
+                <li>2 x 5/7/12 step approach drills for LJ (Focusing on quickly converting horizontal power 
+into vertical takeoff)</li>
+                <li>Cooldown lap as group</li>
+                <li>Core (5 exercises)</li>
+                <li>Stretch as a group</li>
+            </ul>
+            <h3>Recovery #2</h3>
+            <ul>
+                <li>Full warmup and drills (Static flexibility, active flexibility, running drills)</li>
+                <li>3 x golfer pickups, golfer squats, walking lunges, band work with a partner (with bands)</li>
+                <li>Hurdle stretches (will be explained)</li>
+                <li>Core (5 exercises)</li>
+                <li>Stretch as a group</li>
+            </ul>
+            <h3>Workout #3 (Lift Day/Power and Strength)</h3>
+            <ul>
+                <li>Static flexibility, active flexibility</li>
+                <li>Core (5 exercises)</li>
+                <li>3 x 3 nordic curls (seated hamstring curls if need be)</li>
+                <li>5 x 3 front/back squat (front squat preferred, but either works, hack squat is also an option)</li>
+                <li>5 x 3 hang cleans (will be taught to everyone, VITAL lift)</li>
+                <li>4 x 3 Calf Raises (standing preferred over seated)</li>
+                <li>Stretch as a group</li>
+            </ul>
+          </div>
+        )
       },
       {
         calendar: false,
         title: "Throws",
         url: "throws",
-        year: "2024",
+        year: "2026",
         season: "Fall",
         content: (
           <div class="article-content">
@@ -686,10 +750,10 @@ const plansData = [
         calendar: true,
         title: "Fall Plan",
         url: "fall",
-        year: "2025",
+        year: "2026",
         season: "Fall",
         sheetID: "1Kj9BiprDtAzGIcaE0XY-kQhE0kLA0pW6oBQFysUsBZA",
-        sheets: fall25sheets,
+        sheets: fall26sheets,
       },
       {
         calendar: false,
