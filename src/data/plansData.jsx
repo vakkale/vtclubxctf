@@ -1,22 +1,22 @@
 const fall26sheets = [
   {
-    title: "September",
-    url: "september",
+    title: "May",
+    url: "may",
     range: "B2:H22",
   },
   {
-    title: "October",
-    url: "october",
+    title: "June",
+    url: "june",
     range: "B2:H26",
   },
   {
-    title: "November",
-    url: "november",
+    title: "July",
+    url: "july",
     range: "B2:H22",
   },
   {
-    title: "December",
-    url: "december",
+    title: "August",
+    url: "august",
     range: "B2:H22",
   }
 ]
@@ -33,8 +33,8 @@ const plansData = [
         title: "Training Plan",
         url: "training-plan",
         year: "2026",
-        season: "Fall",
-        sheetID: "1CXksML9RwLSt9i4NyrToxgGdkCSDVPNi0Zs1Q8HYVX8",
+        season: "Summer",
+        sheetID: "1sQh9h3o1FGKboNtwWJDN-QEzXm3VZaZU_b-0ij5rxZ0",
         sheets: fall26sheets,
       },
       {
