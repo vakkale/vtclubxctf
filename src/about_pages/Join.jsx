@@ -97,13 +97,6 @@ export default function Join() {
           <p>Friday: 9:30–11:30 AM</p>
         </li>
       </ul>
-
-      <p>
-        Note: If you are planning on racing for us, please go to our{" "}
-        <Link to="/racing-forms">race forms</Link> page and follow those steps
-        on setting up your NIRCA account.
-      </p>
-
       <h2>Questions?</h2>
       <p>
         Feel free to reach out to an officer or chat with us at practice. We’re
