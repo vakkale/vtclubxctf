@@ -25,7 +25,7 @@ const articles = [
     date: "8 - 26",
     season: "Fall",
     category: "Announcements",
-    image: "https://imgur.com/a/rq3d5bv",
+    image: "https://imgur.com/a/rq3d5bv.jpg",
     content: (
       <div className="article-content">
         <h2>Want to Join the Best Rec Sports Club at Virginia Tech?</h2>
