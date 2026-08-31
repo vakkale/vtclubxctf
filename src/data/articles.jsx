@@ -92,7 +92,7 @@ const articles = [
             <p>Non-Competition, Membership: $30</p>
           </li>
           <li>
-            <p>Cross Country Racing Dues (Fall): $100</p>
+            <p>Cross Country Racing Dues (Fall): $120</p>
           </li>
           <li>
             <p>
