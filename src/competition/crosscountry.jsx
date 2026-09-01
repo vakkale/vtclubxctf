@@ -7,7 +7,7 @@ export default function CrossCountry() {
     const background = 'https://i.imgur.com/1oHONQD.jpg';
 
     const item = {
-        date: "Fall 2023",
+        date: "Fall 2026",
         title: "Meet Schedule"
     };
 
@@ -36,29 +36,29 @@ export default function CrossCountry() {
 
     const schedule = [
         {
-            title: "Sept. 21 - Cavalier Invitational",
+            title: "Sept. 12 - Cavalier Invitational",
             location: "Panorama Farms: Charlottesville, VA",
-            url: "http://results.tfmeetpro.com/Laurence_Loesel/Cavalier_Invitational_92124/"
+            //url: "http://results.tfmeetpro.com/Laurence_Loesel/Cavalier_Invitational_92124/"
         },
         {
-            title: "Sept. 28 - Hokie Invite",
-            location: "Blacksburg High School: Blacksburg, VA",
-            url: "http://results.tfmeetpro.com/Laurence_Loesel/Hokie_Invitational_92824/"
+            title: "Sept. 18 - Hokie Invitational",
+            location: "Buford Meredith Cross Country Course: Blacksburg, VA",
         },
         {
-            title: "Oct. 5 - VCU Invite",
-            location: "Pole Green Park: Mechanicsville, VA",
-            url: "http://results.tfmeetpro.com/Laurence_Loesel/VCU_Run_with_the_Rams_Invitational_10524/"
+            title: "Sept. 26 - JMU Invitational",
+            location: "James Madison University: Harrisonburg, VA",
         },
         {
-            title: "Oct. 19 - NIRCA Mid-Atlantic Regionals",
+            title: "Oct. 2 - Paul Short Run",
             location: "Lehigh University: Bethlehem, PA",
-            url: "https://runsignup.com/Race/Results/154924#resultSetId-501335;perpage:100"
         },
         {
-            title: "Nov. 9 - NIRCA National Championship",
-            location: "Hershey Parkview Cross Country Course: Hershey, PA",
-            url: "https://clubrunning.org/races/race_results.php?race=1239"
+            title: "Oct. 17 - NIRCA Mid-Atlantic Regional Championship",
+            location: "Panorama Farms: Charlottesville, VA",
+        },
+        {
+            title: "Nov. 7 - NIRCA National Championship",
+            location: "Blue River Cross Country Course: Shelbyville, IN",
         }
     ];
 
@@ -67,10 +67,9 @@ export default function CrossCountry() {
         <div className="article-content">
             <h3>Find Your Stride!</h3>
             <p>Welcome to VT Club XCTF's Cross Country page! Fall is the season for Cross Country and we compete in a variety of races, from 6k to 8k. Our team is dedicated to pushing ourselves to new limits and achieving success on the national level.</p>
-            <p>In 2024, our men's team brought home our 1st national championship at National Intercollegiate Running Club Association (NIRCA) Nationals! Meanwhile in 2023 our women's team placed 3rd, both the highest finishes in club history. Additionally, we've swept the regional championship twice in the last 3 years, showing the .</p>
+            <p>In 2025, our women's team brought home the national championship at National Intercollegiate Running Club Association (NIRCA) Nationals and our men's team also did in 2024! Additionally, we've swept the regional championship twice in the last 3 years, showing the .</p>
             <p>We are always looking for dedicated and enthusiastic members to join our team and help us achieve even more success in the future. Whether you're a seasoned veteran or new to the sport, we would love for you to join us on the course.</p>
             <p>Be sure to check this page regularly for updates on meet results and the schedule for upcoming meets. We look forward to seeing you at our next race!</p>
-            <p>***Stay tuned for our Fall 2026 schedule!!</p>
             <div className="img-container">
                 <img src="https://i.imgur.com/VmgLf2v.jpg" alt="Men's track and field team celebrating their nationals victory."></img>
             </div>

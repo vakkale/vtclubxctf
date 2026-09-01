@@ -1,24 +1,19 @@
 const fall26sheets = [
   {
-    title: "May",
-    url: "may",
+    title: "September",
+    url: "september",
     range: "B2:H22",
   },
   {
-    title: "June",
-    url: "june",
-    range: "B2:H26",
-  },
-  {
-    title: "July",
-    url: "july",
+    title: "October",
+    url: "october",
     range: "B2:H22",
   },
   {
-    title: "August",
-    url: "august",
+    title: "November",
+    url: "november",
     range: "B2:H22",
-  }
+  },
 ]
 
 const plansData = [
@@ -33,8 +28,8 @@ const plansData = [
         title: "Training Plan",
         url: "training-plan",
         year: "2026",
-        season: "Summer",
-        sheetID: "1sQh9h3o1FGKboNtwWJDN-QEzXm3VZaZU_b-0ij5rxZ0",
+        season: "Fall",
+        sheetID: "1CXksML9RwLSt9i4NyrToxgGdkCSDVPNi0Zs1Q8HYVX8",
         sheets: fall26sheets,
       },
       {
@@ -323,20 +318,11 @@ const plansData = [
     plans: [
       {
         calendar: true,
-        title: "Lower Volume Plan",
-        url: "low",
+        title: "Training Plan",
+        url: "training-plan",
         year: "2026",
-        season: "Summer",
-        sheetID: "1pFxCbOYJgjqXjza7mT-1C9RHg6dNKI8UTTu6bRtX_MA",
-        sheets: fall26sheets,
-      },
-      {
-        calendar: true,
-        title: "Higher Volume Plan",
-        url: "high",
-        year: "2026",
-        season: "Summer",
-        sheetID: "16bmg5ugbAkUEUeoIvj4oVVOBnMSNxrKzg2SDebZj2Ic",
+        season: "Fall",
+        sheetID: "1dyMzi-oVxVWU0Ce3A3hBR_TCJZrpW7IH5f-7mh5MLJg",
         sheets: fall26sheets,
       },
       {
