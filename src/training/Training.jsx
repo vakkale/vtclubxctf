@@ -34,18 +34,12 @@ export default function Training() {
     //set plan as the plan that matches the url
     useEffect(() => {
         try {
-            const foundTeam = planData.find(t => t.url === teamName) || planData[0];
-            const foundPlan = planName !== ''
-                ? (foundTeam.plans.find(p => p.url === planName) || foundTeam.plans[0])
-                : foundTeam.plans[0];
-
-            setCalendar(Boolean(foundPlan && foundPlan.calendar));
-            setTeam(foundTeam);
-            setPlan(foundPlan);
-            setSortedTeams(foundTeam);
+            setCalendar(planData.find(team => team.url === teamName).plans.find(plan => plan.url === planName).calendar);
+            setTeam(planData.find(team => team.url === teamName));
+            setPlan(team.plans.find(plan => plan.url === planName));
+            setSortedTeams(team);
         } catch (error) {
-            const fallbackTeam = planData[0];
-            navigate("/training/" + fallbackTeam.url + "/" + fallbackTeam.plans[0].url);
+            navigate("/training/" + team.url + "/" + team.plans[0].url);
         }
     }, [planName, teamName, team]);
 

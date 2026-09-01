@@ -67,7 +67,7 @@ export default function CrossCountry() {
         <div className="article-content">
             <h3>Find Your Stride!</h3>
             <p>Welcome to VT Club XCTF's Cross Country page! Fall is the season for Cross Country and we compete in a variety of races, from 6k to 8k. Our team is dedicated to pushing ourselves to new limits and achieving success on the national level.</p>
-            <p>In 2025, our women's team brought home the national championship at National Intercollegiate Running Club Association (NIRCA) Nationals and our men's team also did in 2024! Additionally, we've swept the regional championship twice in the last 3 years, showing the .</p>
+            <p>In 2025, our women's team brought home the national championship at National Intercollegiate Running Club Association (NIRCA) Nationals and our men's team also did in 2024.</p>
             <p>We are always looking for dedicated and enthusiastic members to join our team and help us achieve even more success in the future. Whether you're a seasoned veteran or new to the sport, we would love for you to join us on the course.</p>
             <p>Be sure to check this page regularly for updates on meet results and the schedule for upcoming meets. We look forward to seeing you at our next race!</p>
             <div className="img-container">
