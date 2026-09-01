@@ -13,37 +13,35 @@ export default function Training() {
     const location = useLocation();
     const navigate = useNavigate();
     const pathname = location.pathname;
-    const segments = pathname.split('/').filter(Boolean);
-    const teamName = segments[1] || planData[0].url;
-    const planName = segments[2] || planData[0].plans[0].url;
+    const planName = pathname.substring(pathname.lastIndexOf('/') + 1);
 
-    const resolvedTeam = planData.find(team => team.url === teamName) || planData[0];
-    const resolvedPlan = resolvedTeam.plans.find(plan => plan.url === planName) || resolvedTeam.plans[0];
+    //set teamName to the part of the url before the last / but after the second /
+    const teamName = pathname.substring(pathname.indexOf('/', 1) + 1, pathname.lastIndexOf('/'));
 
     //sets the team as the first team in the array
-    const [team, setTeam] = useState(resolvedTeam);
+    const [team, setTeam] = useState((planData.find(team => team.url === teamName) || planData[0]));
 
     //set the plan as the first plan in the array
-    const [plan, setPlan] = useState(resolvedPlan);
+    const [plan, setPlan] = useState(
+        planName !== ''
+            ? team.plans.find(plan => plan.url === planName)
+            : team.plans[0]
+    );
 
     // declare calendar variable. initially set to false
-    const [calendar, setCalendar] = useState(Boolean(resolvedPlan.calendar));
+    const [calendar, setCalendar] = useState(false);
 
     //set plan as the plan that matches the url
     useEffect(() => {
-        const foundTeam = planData.find(team => team.url === teamName) || planData[0];
-        const foundPlan = foundTeam.plans.find(plan => plan.url === planName) || foundTeam.plans[0];
-
-        if (!foundPlan) {
-            navigate("/training/" + foundTeam.url + "/" + foundTeam.plans[0].url);
-            return;
+        try {
+            setCalendar(planData.find(team => team.url === teamName).plans.find(plan => plan.url === planName).calendar);
+            setTeam(planData.find(team => team.url === teamName));
+            setPlan(team.plans.find(plan => plan.url === planName));
+            setSortedTeams(team);
+        } catch (error) {
+            navigate("/training/" + team.url + "/" + team.plans[0].url);
         }
-
-        setCalendar(Boolean(foundPlan.calendar));
-        setTeam(foundTeam);
-        setPlan(foundPlan);
-        setSortedTeams(foundTeam);
-    }, [planName, teamName, navigate]);
+    }, [planName, teamName, team]);
 
     // Array of filters for the ArticleSorter component
     //MASSIVE TIME SINK, FIX LATER
@@ -53,7 +51,6 @@ export default function Training() {
 
     // Callback function to handle sorted articles
     const handleSortedTeams = plansSorted => {
-        if (!plansSorted || !plansSorted[0]) return;
         navigate("/training/" + team.url + "/" + plansSorted[0].url);
     };
 
