@@ -39,7 +39,7 @@ const Officers = [
     position: "Treasurer",
     name: "Christopher Helmsen",
     email: "chelmsen@vt.edu",
-    image: "https://i.imgur.com/IG6YKEu.jpeg",
+    image: "https://i.imgur.com/nGpmcow.jpeg",
     bio: "Hello, my name is Christopher Helmsen and I am the club’s treasurer this year. My events are discus and hammer, so feel free to visit the throws area if you need anything during practice time. Please reach out to me at chelmsen@vt.edu or through GroupMe if you have any questions.",
   },
   {
