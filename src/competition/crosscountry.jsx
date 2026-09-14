@@ -38,14 +38,14 @@ export default function CrossCountry() {
         {
             title: "Sept. 12 - Cavalier Invitational",
             location: "Panorama Farms: Charlottesville, VA",
-            //url: "http://results.tfmeetpro.com/Laurence_Loesel/Cavalier_Invitational_92124/"
+            url: "https://snapresults.snaptiming.com/meets/77405"
         },
         {
             title: "Sept. 18 - Hokie Invitational",
             location: "Buford Meredith Cross Country Course: Blacksburg, VA",
         },
         {
-            title: "Sept. 26 - JMU Invitational",
+            title: "Sept. 26 - JMU Dashing Dukes Invitational",
             location: "James Madison University: Harrisonburg, VA",
         },
         {
@@ -67,7 +67,7 @@ export default function CrossCountry() {
         <div className="article-content">
             <h3>Find Your Stride!</h3>
             <p>Welcome to VT Club XCTF's Cross Country page! Fall is the season for Cross Country and we compete in a variety of races, from 6k to 8k. Our team is dedicated to pushing ourselves to new limits and achieving success on the national level.</p>
-            <p>In 2025, our women's team brought home the national championship at National Intercollegiate Running Club Association (NIRCA) Nationals and our men's team also did in 2024.</p>
+            <p>In 2025, our women's team brought home the national championship at National Intercollegiate Running Club Association (NIRCA) Nationals while our men's team did in 2024.</p>
             <p>We are always looking for dedicated and enthusiastic members to join our team and help us achieve even more success in the future. Whether you're a seasoned veteran or new to the sport, we would love for you to join us on the course.</p>
             <p>Be sure to check this page regularly for updates on meet results and the schedule for upcoming meets. We look forward to seeing you at our next race!</p>
             <div className="img-container">
