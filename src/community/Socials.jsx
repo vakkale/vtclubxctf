@@ -6,42 +6,41 @@ export default function Socials() {
     const background = 'https://i.imgur.com/CELI4D9.jpg';
 
     const item = {
-        date: "Spring 2023 Socials",
-        title: "Upcoming:"
+        date: "Fall 2026",
+        title: "Socials:"
     };
 
     const schedule = [
         {
-            title: "Sep. 12 - Ribbon Making Night",
-            location: "TBA, Check GroupMe for Details"
+            title: "Sept. 13 - Jeopardy Night",
+            location: "5 PM at Holden Hall Room 234"
         },
         {
-            title: "Sep. 23 - Fall Cookout",
-            location: "5:00 - 9:00 pm at Blacksburg Municipal Park",
+            title: "Sept. 14 - Chiptole Percentage Night",
+            location: "5-9 PM at N Main St",
         },
         {
-            title: "Oct. 4 - Mezeh Percentage Night",
-            location: "5:00 - 9:00 pm at Mezeh on UCB",
-            url: "https://drive.google.com/file/d/1rHcl7OzlgL8fgArRf-6wLA7s74Ygiz5Q/view?usp=sharing"
+            title: "Sept. 17 - Home Meet Pasta Party",
+            location: "8-9 PM at The Edge Common Area",
         },
         {
-            title: "Oct. 6 - Fall Break Hike",
+            title: "Sept. 27 - NFL Sunday Social",
+            location: "5-8 PM at Holden Hall Room 234"
+        },
+        {
+            title: "Oct. 6 - Panda Express Percentage Night",
+            location: "10 AM - 10 PM"
+        },
+        {
+            title: "Oct. 9 - Fall Semester Hike",
+            location: "11 AM at Stiles Falls"
+        },
+        {
+            title: "Nov. 19 - Friendsgiving",
             location: "To Be Announced"
         },
         {
-            title: "Oct. 28 - BreakZone Social",
-            location: "To Be Announced"
-        },
-        {
-            title: "Nov. 4 - Boxing Social",
-            location: "Blacksburg Boxing and Fitness",
-        },
-        {
-            title: "Nov. 16 - Friendsgiving",
-            location: "To Be Announced"
-        },
-        {
-            title: "Dec. 2 - Winter Formal",
+            title: "Dec. 5 - Winter Formal",
             location: "To Be Announced"
         }
     ];
