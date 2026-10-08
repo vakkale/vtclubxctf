@@ -43,14 +43,17 @@ export default function CrossCountry() {
         {
             title: "Sept. 18 - Hokie Invitational",
             location: "Buford Meredith Cross Country Course: Blacksburg, VA",
+            url: "https://www.tfrrs.org/results/xc/27650/Hokie_Invitational"
         },
         {
             title: "Sept. 26 - JMU Dashing Dukes Invitational",
             location: "James Madison University: Harrisonburg, VA",
+            url: "https://clubrunning.org/races/race_results.php?race=1497"
         },
         {
             title: "Oct. 2 - Paul Short Run",
             location: "Lehigh University: Bethlehem, PA",
+            url: "https://www.tfrrs.org/results/xc/27832/Lehigh_Paul_Short_Run_College/#event182874"
         },
         {
             title: "Oct. 17 - NIRCA Mid-Atlantic Regional Championship",
