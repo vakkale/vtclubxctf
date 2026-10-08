@@ -16,7 +16,7 @@ export default function Socials() {
             location: "5 PM at Holden Hall Room 234"
         },
         {
-            title: "Sept. 14 - Chiptole Percentage Night",
+            title: "Sept. 14 - Chipotle Percentage Night",
             location: "5-9 PM at N Main St",
         },
         {
